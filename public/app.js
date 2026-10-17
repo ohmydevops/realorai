@@ -21,73 +21,6 @@ let state = { version: 1, seen: {}, answers: [], active: null };
 let storageOK = true;
 let loaded = false;
 let renderToken = 0;
-const SETTINGS_KEY = 'real-or-ai-settings-v1';
-let timerEnabled = true;
-try {
-  timerEnabled =
-    JSON.parse(localStorage.getItem(SETTINGS_KEY))?.timerEnabled !== false;
-} catch {
-  /* Use the default when settings are unavailable. */
-}
-let timerInterval = null;
-let timerDeadline = 0;
-const IMAGE_TIME_MS = 8000;
-let remainingMS = IMAGE_TIME_MS;
-const settingsDialog = document.getElementById('settings-dialog');
-settingsDialog.innerHTML = `<form method="dialog" class="modal-heading"><h2 id="settings-title">${copy.settings}</h2><button class="control" aria-label="${copy.close}" autofocus>×</button></form><label class="timer-setting"><input id="timer-enabled" type="checkbox" ${timerEnabled ? 'checked' : ''}>${copy.timerLabel}</label><p>${copy.timerHelp}</p>`;
-document.getElementById('settings-open').onclick = () => {
-  stopTimer();
-  settingsDialog.showModal();
-};
-document.getElementById('timer-enabled').onchange = (event) => {
-  timerEnabled = event.target.checked;
-  stopTimer();
-  remainingMS = IMAGE_TIME_MS;
-  try {
-    localStorage.setItem(SETTINGS_KEY, JSON.stringify({ timerEnabled }));
-  } catch {
-    /* Keep the preference for this visit. */
-  }
-  updateCountdown();
-};
-settingsDialog.addEventListener('close', () => beginTimer(false));
-function stopTimer() {
-  if (timerInterval !== null) {
-    remainingMS = Math.max(0, timerDeadline - Date.now());
-    clearInterval(timerInterval);
-    timerInterval = null;
-  }
-}
-function updateCountdown() {
-  const countdown = document.getElementById('countdown');
-  if (!countdown) return;
-  countdown.hidden = !timerEnabled || !loaded;
-  countdown.textContent = `${number(Math.ceil(remainingMS / 1000))} ${copy.seconds}`;
-  countdown.dataset.urgent = String(remainingMS <= 3000);
-}
-function beginTimer(reset = true) {
-  stopTimer();
-  if (reset) remainingMS = IMAGE_TIME_MS;
-  updateCountdown();
-  if (
-    !timerEnabled ||
-    !storageOK ||
-    !loaded ||
-    settingsDialog.open ||
-    document.getElementById('history-dialog').open ||
-    document.getElementById('about-dialog').open ||
-    window.location.hash !== '#play'
-  )
-    return;
-  timerDeadline = Date.now() + remainingMS;
-  const token = renderToken;
-  timerInterval = setInterval(() => {
-    if (token !== renderToken || !loaded) return stopTimer();
-    remainingMS = Math.max(0, timerDeadline - Date.now());
-    updateCountdown();
-    if (remainingMS === 0) answer(null);
-  }, 100);
-}
 const unavailable = new Set();
 try {
   const raw = localStorage.getItem(STORAGE_KEY);
@@ -173,7 +106,6 @@ function historyReview(entry) {
 }
 let historyPage = 0;
 function renderHistory() {
-  stopTimer();
   const pages = Math.max(1, Math.ceil(state.history.length / 5));
   historyPage = Math.max(0, Math.min(historyPage, pages - 1));
   historyDialog.innerHTML = `<form method="dialog" class="modal-heading"><h2 id="history-title">${copy.history}</h2><button class="control" aria-label="${copy.close}" autofocus>×</button></form>${
@@ -216,11 +148,6 @@ document.getElementById('history-open').onclick = () => {
   renderHistory();
   if (!historyDialog.open) historyDialog.showModal();
 };
-historyDialog.addEventListener('close', () => beginTimer(false));
-document.getElementById('about-open').addEventListener('click', stopTimer);
-document
-  .getElementById('about-dialog')
-  .addEventListener('close', () => beginTimer(false));
 function save() {
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
@@ -232,7 +159,6 @@ function save() {
   }
 }
 function storageError() {
-  stopTimer();
   app.innerHTML = `<p role="alert">${copy.storage}</p>`;
 }
 function shuffle(items) {
@@ -284,7 +210,6 @@ function selectRound(ai, real, aiCount, roundSize) {
   return selected;
 }
 function home() {
-  stopTimer();
   renderToken++;
   loaded = false;
   app.innerHTML = `<section class="home"><img class="home-art" src="${new URL('assets/home-process.webp', baseURL).href}" width="1200" height="503" fetchpriority="high" alt="${copy.homeAlt}"><p>${copy.homeIntro}</p>${(state.active && state.active.index < state.active.ids.length) || canStartTest() ? `<a class="start-game" href="#play">${copy.start}</a>` : `<p class="finished">${copy.later}</p>`}</section>`;
@@ -292,7 +217,6 @@ function home() {
 let lastReviewHash = null;
 function route() {
   if (window.location.hash.startsWith('#review=')) {
-    stopTimer();
     renderToken++;
     loaded = false;
     const entry = state.history.find(
@@ -319,7 +243,6 @@ function route() {
   else start();
 }
 function start() {
-  stopTimer();
   if (!storageOK) return storageError();
   const pool = unseen();
   if (!pool.length) {
@@ -349,7 +272,6 @@ function start() {
   if (save()) {
     window.QUIZ_ANALYTICS?.track('game-start', {
       total: selected.length,
-      timer: timerEnabled,
     });
     render();
   }
@@ -358,11 +280,9 @@ function canStartTest() {
   return unseen().some((image) => !image.real);
 }
 function exhausted() {
-  stopTimer();
   app.innerHTML = `<section><h2>${unseen().length ? copy.noAI : copy.done}</h2><p>${copy.later}</p></section>`;
 }
 function render() {
-  stopTimer();
   if (!storageOK) return storageError();
   const test = state.active;
   if (!test) return start();
@@ -376,7 +296,6 @@ function render() {
   loaded = false;
   const token = ++renderToken;
   app.innerHTML = `<section class="quiz" aria-label="${copy.round}">
-    <div class="meta"><span id="countdown" role="timer" aria-live="off" aria-label="${copy.timeLeft}" hidden></span></div>
     <figure class="image"><div id="image-frame" class="image-frame" data-state="loading" aria-busy="true"><img id="quiz-image" alt="${language === 'fa' ? 'تصویر آزمون' : 'Quiz image'} ${number(test.index + 1)}" width="1000" height="750"><div class="image-skeleton" aria-hidden="true"></div><p id="image-status" role="status">${copy.loading}</p><div id="load-actions"></div></div><figcaption>${copy.round} ${number(test.index + 1)} ${copy.of} ${number(test.ids.length)}</figcaption></figure>
 
     <div class="buttons"><button id="real" disabled>${copy.real}</button><button id="ai" disabled>${copy.ai}</button></div>
@@ -392,11 +311,10 @@ function render() {
     document.getElementById('image-status').hidden = true;
     document.getElementById('real').disabled = false;
     document.getElementById('ai').disabled = false;
-    beginTimer();
   };
   img.onerror = () => {
     if (token !== renderToken) return;
-    stopTimer();
+
     loaded = false;
     document.getElementById('image-frame').dataset.state = 'error';
     document.getElementById('image-frame').ariaBusy = 'false';
@@ -431,8 +349,7 @@ function render() {
 }
 function answer(value) {
   if (!loaded || !storageOK) return;
-  if (timerInterval !== null && Date.now() >= timerDeadline) value = null;
-  stopTimer();
+
   loaded = false;
   const test = state.active;
   const image = byId.get(test.ids[test.index]);
@@ -452,13 +369,11 @@ function answer(value) {
       correct: record.correct,
       timedOut: record.timedOut,
       position: test.index,
-      timer: timerEnabled,
     });
     render();
   }
 }
 function results() {
-  stopTimer();
   const test = state.active;
   const answers = test.answers.filter((a) => byId.has(a.id));
   const correct = answers.filter((a) => a.correct).length;

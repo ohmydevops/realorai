@@ -16,8 +16,8 @@
 
 ## Game and images
 
-- Each image has a prominent eight-second timer enabled by default, starting only after it loads. When time expires, record it as skipped and advance. Settings can disable the timer; remember that preference across visits and languages. Pause the countdown while dialogs are open and cancel it when leaving gameplay.
-- Display the image number (for example, عکس ۳ از ۵) directly below the image; keep the timer above the image.
+- Gameplay has no timer or automatic timeout. Players answer at their own pace.
+- Display the image number (for example, عکس ۳ از ۵) directly below the image.
 - Save completed game scores, dates, and skipped counts in browser storage and show them in History. Keep existing history intact across visits and languages.
 
 - A round normally has five images, shown one at a time, with randomly one or two AI images and the remaining images real. Never exceed two AI images, including partial final rounds.

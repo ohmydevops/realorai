@@ -20,9 +20,6 @@ function boot(lang = 'en', hash = '#play', trackerMode = 'ready') {
   let nextTimer = 0;
   const timers = new Map();
   const staticIDs = new Set([
-    'settings-dialog',
-    'settings-open',
-    'timer-enabled',
     'history-dialog',
     'history-open',
     'about-dialog',
@@ -288,63 +285,41 @@ console.log(
 );
 
 for (const key of Object.keys(store)) delete store[key];
-const timed = boot();
-assert.equal(timed.timers.size, 0, 'No countdown before the image loads');
-assert.equal(
-  Object.keys(timed.run('state.seen')).length,
-  0,
-  'Loading does not mark an image as seen',
-);
-assert.match(timed.app.innerHTML, /data-state="loading" aria-busy="true"/);
-timed.nodes['quiz-image'].onload();
-assert.equal(timed.nodes['image-frame'].dataset.state, 'ready');
-assert.equal(timed.nodes['image-frame'].ariaBusy, 'false');
-timed.advance(7999);
-assert.equal(timed.run('state.active.index'), 0);
-timed.advance(1);
-assert.equal(timed.analytics.at(-1).name, 'answer');
-assert.equal(timed.analytics.at(-1).data.choice, 'skipped');
-assert.equal(timed.analytics.at(-1).data.timedOut, true);
-assert.equal(timed.run('state.active.index'), 1);
-assert.equal(timed.run('state.answers[0].timedOut'), true);
-assert.equal(timed.run('state.answers[0].choice'), null);
-assert.equal(
-  timed.timers.size,
-  0,
-  'Next image must load before its timer starts',
-);
-timed.nodes['quiz-image'].onload();
-timed.advance(2000);
-timed.nodes['settings-open'].onclick();
-timed.advance(12000);
-assert.equal(timed.run('state.active.index'), 1, 'Settings pauses the clock');
-timed.nodes['settings-dialog'].close();
-timed.advance(5999);
-assert.equal(timed.run('state.active.index'), 1);
-timed.advance(1);
-assert.equal(timed.run('state.active.index'), 2);
-timed.nodes['quiz-image'].onload();
-timed.nodes['timer-enabled'].onchange({ target: { checked: false } });
-timed.advance(20000);
-assert.equal(timed.run('state.active.index'), 2, 'Disabled timer cannot skip');
-const untimed = boot('fa');
-assert.equal(
-  untimed.run('timerEnabled'),
-  false,
-  'Preference survives language changes',
-);
+// Old timer preferences must never restore timed play.
+store['real-or-ai-settings-v1'] = JSON.stringify({ timerEnabled: true });
+const untimed = boot();
+assert(!untimed.app.innerHTML.includes('countdown'));
+assert.match(untimed.app.innerHTML, /data-state="loading" aria-busy="true"/);
+assert.equal(Object.keys(untimed.run('state.seen')).length, 0);
 untimed.nodes['quiz-image'].onload();
-untimed.advance(20000);
-assert.equal(untimed.run('state.active.index'), 2);
+assert.equal(untimed.nodes['image-frame'].dataset.state, 'ready');
+untimed.advance(60000);
+assert.equal(
+  untimed.run('state.active.index'),
+  0,
+  'Waiting never skips an image',
+);
+assert.equal(untimed.timers.size, 0);
+untimed.nodes['history-open'].onclick();
+untimed.nodes['history-dialog'].close();
+untimed.advance(60000);
+assert.equal(untimed.run('state.active.index'), 0);
+const persian = boot('fa');
+persian.nodes['quiz-image'].onload();
+persian.advance(60000);
+assert.equal(persian.run('state.active.index'), 0, 'Untimed across languages');
+// Preserve historical timeout records and their review labels.
 untimed.run('answer(true)');
-assert.equal(untimed.timers.size, 0, 'Answer cancels its timer');
+untimed.run(
+  'state.answers[0].choice = null; state.answers[0].timedOut = true; state.answers[0].correct = false; save()',
+);
 while (untimed.run('state.active.index < state.active.ids.length')) {
   untimed.nodes['quiz-image'].onload();
   untimed.run('answer(true)');
 }
 assert.equal(untimed.run('state.history.length'), 1);
 assert.equal(untimed.run('state.history[0].total'), 5);
-assert.equal(untimed.run('state.history[0].skipped'), 2);
+assert.equal(untimed.run('state.history[0].skipped'), 1);
 assert.equal(untimed.run('state.history[0].answers.length'), 5);
 assert.equal(untimed.run('historyAnswers(state.history[0]).length'), 5);
 assert.equal(
@@ -364,7 +339,7 @@ assert.equal(
   historyReload.analytics.filter((e) => e.name === 'history-open').length,
   1,
 );
-assert(historyReload.nodes['history-dialog'].innerHTML.includes('Skipped: 2'));
+assert(historyReload.nodes['history-dialog'].innerHTML.includes('Skipped: 1'));
 assert(
   historyReload.nodes['history-dialog'].innerHTML.includes(
     'Review images and answers',
@@ -419,17 +394,16 @@ historyReload.run('state = JSON.parse(localStorage.getItem(STORAGE_KEY))');
 historyReload.nodes['history-dialog'].close();
 historyReload.run('start()');
 historyReload.nodes['quiz-image'].onload();
-historyReload.nodes['timer-enabled'].onchange({ target: { checked: true } });
-historyReload.run('beginTimer(); home()');
+historyReload.run('home()');
 historyReload.advance(10000);
 assert.equal(
   historyReload.run('state.active.index'),
   0,
-  'Home cancels countdown',
+  'Home preserves the current image',
 );
 assert.equal(historyReload.timers.size, 0);
 console.log(
-  'PASS: eight-second deadlines, loading, skips, dialog pause/resume, saved settings, history persistence, and timer cleanup.',
+  'PASS: untimed play, loading, legacy skipped answers, language changes, and history persistence.',
 );
 const aboutLink = boot('fa', '#about');
 assert.equal(aboutLink.nodes['about-dialog'].open, true);
@@ -464,7 +438,7 @@ assert.equal(delayed.analytics.length, 1, 'Deferred tracker flushes once');
 assert.equal(delayed.analytics[0].name, 'game-start');
 assert.equal(delayed.analytics[0].data.language, 'fa');
 assert.equal(delayed.analytics[0].data.total, 5);
-assert.equal(delayed.analytics[0].data.timer, true);
+assert(!Object.hasOwn(delayed.analytics[0].data, 'timer'));
 console.log(
   'PASS: analytics failure isolation, delayed loading, and event deduplication.',
 );

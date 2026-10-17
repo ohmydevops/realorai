@@ -1,9 +1,7 @@
 'use strict';
 window.QUIZ_TRANSLATIONS = {
   en: {
-    settings: 'Settings',
     close: 'Close',
-    timerLabel: 'Eight-second timer',
     history: 'History',
     previousPage: 'Previous',
     nextPage: 'Next',
@@ -14,10 +12,6 @@ window.QUIZ_TRANSLATIONS = {
     noHistory: 'Your completed games will appear here.',
     previousAnswers: 'Earlier answers',
     skipped: 'Skipped',
-    timerHelp:
-      'Skip to the next image when time runs out. Turn this off to play at your own pace.',
-    timeLeft: 'Time remaining',
-    seconds: 's',
     timedOut: 'Skipped',
     homeIntro: 'Real photo or AI? You decide.',
     homeAlt:
@@ -48,9 +42,7 @@ window.QUIZ_TRANSLATIONS = {
     answerAI: 'AI',
   },
   fa: {
-    settings: 'تنظیمات',
     close: 'بستن',
-    timerLabel: 'زمان‌سنج هشت‌ثانیه‌ای',
     history: 'تاریخچه',
     previousPage: 'قبلی',
     nextPage: 'بعدی',
@@ -61,10 +53,6 @@ window.QUIZ_TRANSLATIONS = {
     noHistory: 'بازی‌هات که تموم بشن، نتیجه‌شون رو اینجا می‌بینی.',
     previousAnswers: 'جواب‌های قبلی',
     skipped: 'بی‌پاسخ',
-    timerHelp:
-      'وقت که تموم بشه، می‌ریم سراغ عکس بعدی. خاموشش کن تا با خیال راحت بازی کنی.',
-    timeLeft: 'زمان باقی‌مونده',
-    seconds: 'ثانیه',
     timedOut: 'بی‌پاسخ',
     homeIntro: 'عکس واقعیه یا هوش مصنوعیه؟',
     homeAlt:
