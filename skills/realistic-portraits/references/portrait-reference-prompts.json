@@ -1,0 +1,203 @@
+{
+  "generator": "OpenAI ImageGen built-in tool",
+  "portraits": [
+    {
+      "id": "ai-portrait-reference-20261017-01",
+      "file": "public/ai images/portrait-reference-01.jpg",
+      "reference": {
+        "source": "https://unsplash.com/photos/closeup-photography-of-woman-smiling-mEZ3PoFGs_k",
+        "credit": "Michael Dam"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a COMPOSITION AND PHOTOGRAPHIC STYLE REFERENCE. Generate one distinct AI portrait variation, not a collage. Keep the reference upper-body crop, spontaneous open laughing expression, outdoor perspective and simple soft background. Make a different adult woman about 30 with copper-red shoulder-length hair, a slightly longer face, more prominent nose, light freckles, and a muted blue mock-neck cotton top. Keep an ordinary believable laugh with realistic mouth and teeth rather than perfect repeated teeth. Preserve realistic camera geometry, believable illumination, natural facial structure, anatomy and supported pose. Change identity clearly; do not simply recolor the original person. Keep the real photograph’s credible exposure and photographic rendering. No beauty-filter skin, glossy fixed eyes, sculpted cheek lighting, cinematic warm/cool split, exaggerated pores, HDR, fake grain, text, watermark or border. The result is an honestly AI-labeled game asset."
+    },
+    {
+      "id": "ai-portrait-reference-20261017-02",
+      "file": "public/ai images/portrait-reference-02.jpg",
+      "reference": {
+        "source": "https://unsplash.com/photos/a-woman-in-a-white-dress-posing-for-a-picture-cMfLicq8DKo",
+        "credit": "Blake Cheek"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a COMPOSITION AND PHOTOGRAPHIC STYLE REFERENCE. Generate one distinct AI portrait variation, not a collage. Keep the reference half-body framing, plain light background, supported hand near chin and other forearm across waist. Create a different adult woman about 38 with medium brown skin, rounder face, dark wavy shoulder-length hair and an ordinary sage-green short-sleeved blouse. Replace glamour styling with everyday photographic appearance and subtle asymmetrical resting expression. Preserve realistic camera geometry, believable illumination, natural facial structure, anatomy and supported pose. Change identity clearly; do not simply recolor the original person. Keep the real photograph’s credible exposure and photographic rendering. No beauty-filter skin, glossy fixed eyes, sculpted cheek lighting, cinematic warm/cool split, exaggerated pores, HDR, fake grain, text, watermark or border. The result is an honestly AI-labeled game asset."
+    },
+    {
+      "id": "ai-portrait-reference-20261017-03",
+      "file": "public/ai images/portrait-reference-03.jpg",
+      "reference": {
+        "source": "https://unsplash.com/photos/a-woman-sitting-on-top-of-a-table-next-to-a-camera-PaiJ1QuDRbE",
+        "credit": "Kawê Rodrigues"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a COMPOSITION AND PHOTOGRAPHIC STYLE REFERENCE. Generate one distinct AI portrait variation, not a collage. Keep the full-body seated-on-box pose, supported bent leg and dangling foot, camera position and pale room. Change to a different adult woman about 25 with short dark bob, wider face, no glasses, simple navy T-shirt, loose tan trousers. Natural small smile; retain credible hands, bare feet and body support. Remove the studio stand at left, keeping the wall plain. Preserve realistic camera geometry, believable illumination, natural facial structure, anatomy and supported pose. Change identity clearly; do not simply recolor the original person. Keep the real photograph’s credible exposure and photographic rendering. No beauty-filter skin, glossy fixed eyes, sculpted cheek lighting, cinematic warm/cool split, exaggerated pores, HDR, fake grain, text, watermark or border. The result is an honestly AI-labeled game asset."
+    },
+    {
+      "id": "ai-portrait-reference-20261017-04",
+      "file": "public/ai images/portrait-reference-04.jpg",
+      "reference": {
+        "source": "https://unsplash.com/photos/woman-in-black-long-sleeve-dress-sitting-on-chair-C5DxZbuQvf8",
+        "credit": "Willy Ng"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a COMPOSITION AND PHOTOGRAPHIC STYLE REFERENCE. Generate one distinct AI portrait variation, not a collage. Keep the crouching full-body composition, feet supporting weight, one elbow supported on knee with hand near cheek, and plain pale wall. Change to a different adult woman about 32 with dark brown curly hair, an angular face and wider nose, wearing a dark olive jacket, black trousers and practical dark flat shoes. Ordinary daylight and natural resting expression. Preserve realistic camera geometry, believable illumination, natural facial structure, anatomy and supported pose. Change identity clearly; do not simply recolor the original person. Keep the real photograph’s credible exposure and photographic rendering. No beauty-filter skin, glossy fixed eyes, sculpted cheek lighting, cinematic warm/cool split, exaggerated pores, HDR, fake grain, text, watermark or border. The result is an honestly AI-labeled game asset."
+    },
+    {
+      "id": "ai-portrait-reference-20261017-05",
+      "file": "public/ai images/portrait-reference-05.jpg",
+      "reference": {
+        "source": "https://unsplash.com/photos/womans-face-tSX6E9UextA",
+        "credit": "Alexander Krivitskiy"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a COMPOSITION AND PHOTOGRAPHIC STYLE REFERENCE. Generate one distinct AI portrait variation, not a collage. Keep the tight face-only side view, soft black-and-white tones, shallow but plausible focus and reflective expression. Create a different adult woman about 45 with a more prominent curved nose, fuller lower lip and a few age lines; no glamorous makeup. Eye and eyelids must remain naturally photographic. Keep the face unretouched with coherent structure. Preserve realistic camera geometry, believable illumination, natural facial structure, anatomy and supported pose. Change identity clearly; do not simply recolor the original person. Keep the real photograph’s credible exposure and photographic rendering. No beauty-filter skin, glossy fixed eyes, sculpted cheek lighting, cinematic warm/cool split, exaggerated pores, HDR, fake grain, text, watermark or border. The result is an honestly AI-labeled game asset."
+    },
+    {
+      "id": "ai-portrait-reference-20261017-06",
+      "file": "public/ai images/portrait-reference-06.jpg",
+      "reference": {
+        "source": "https://unsplash.com/photos/a-black-and-white-photo-of-a-woman-with-long-hair-jiye9GV0eEM",
+        "credit": "amirreza momennia"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a COMPOSITION AND PHOTOGRAPHIC STYLE REFERENCE. Generate one distinct AI portrait variation, not a collage. Keep the side-facing upper-body pose, white wall, relaxed shoulders and balanced monochrome. Make a different adult woman about 35 with short wavy hair, a broader nose, slightly rounder chin, plain dark sleeveless top and a loose pale cardigan. Preserve the natural profile angle and ordinary daylight. Preserve realistic camera geometry, believable illumination, natural facial structure, anatomy and supported pose. Change identity clearly; do not simply recolor the original person. Keep the real photograph’s credible exposure and photographic rendering. No beauty-filter skin, glossy fixed eyes, sculpted cheek lighting, cinematic warm/cool split, exaggerated pores, HDR, fake grain, text, watermark or border. The result is an honestly AI-labeled game asset."
+    },
+    {
+      "id": "ai-portrait-reference-20261017-07",
+      "file": "public/ai images/portrait-reference-07.jpg",
+      "reference": {
+        "source": "https://unsplash.com/photos/man-with-beard-wearing-denim-shirt-and-white-t-shirt-maHYgkA9yj4",
+        "credit": "Vitaly Gariev"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a COMPOSITION AND PHOTOGRAPHIC STYLE REFERENCE. Generate one distinct AI portrait variation, not a collage. Preserve the horizontal chest-up framing, slight head tilt, direct gaze and pale background. Change to a different adult man about 40 with short curly dark hair, a broader nose and jaw, a short mustache instead of a beard, and a faded green cotton shirt over an off-white T-shirt. Keep casual ordinary color and realistic facial asymmetry. Preserve realistic camera geometry, believable illumination, natural facial structure, anatomy and supported pose. Change identity clearly; do not simply recolor the original person. Keep the real photograph’s credible exposure and photographic rendering. No beauty-filter skin, glossy fixed eyes, sculpted cheek lighting, cinematic warm/cool split, exaggerated pores, HDR, fake grain, text, watermark or border. The result is an honestly AI-labeled game asset."
+    },
+    {
+      "id": "ai-portrait-reference-20261017-08",
+      "file": "public/ai images/portrait-reference-08.jpg",
+      "reference": {
+        "source": "https://unsplash.com/photos/man-in-black-polo-shirt-9HsgkG-_hv4",
+        "credit": "Victor Melo"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a COMPOSITION AND PHOTOGRAPHIC STYLE REFERENCE. Generate one distinct AI portrait variation, not a collage. Preserve the seated three-quarter pose, hands loosely held together in lap, camera perspective and neutral gray backdrop. Make a different adult man about 50 with receding salt-and-pepper hair, clean-shaven face, slightly rounder build and a dark burgundy polo shirt with dark jeans. Gaze naturally to the same side with thoughtful resting expression. Preserve realistic camera geometry, believable illumination, natural facial structure, anatomy and supported pose. Change identity clearly; do not simply recolor the original person. Keep the real photograph’s credible exposure and photographic rendering. No beauty-filter skin, glossy fixed eyes, sculpted cheek lighting, cinematic warm/cool split, exaggerated pores, HDR, fake grain, text, watermark or border. The result is an honestly AI-labeled game asset."
+    },
+    {
+      "id": "ai-portrait-reference-20261017-09",
+      "file": "public/ai images/portrait-reference-09.jpg",
+      "reference": {
+        "source": "https://unsplash.com/photos/man-with-beard-and-glasses-BrZevstmhAo",
+        "credit": "Vitaly Gariev"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a COMPOSITION AND PHOTOGRAPHIC STYLE REFERENCE. Generate one distinct AI portrait variation, not a collage. Preserve the close face-and-collar crop, glasses, soft restrained color and ordinary direct-camera view. Change to a different adult man about 35 with a long narrow face, short dark hair, light stubble rather than full beard, thin rectangular glasses and brown cardigan over a blue shirt. Facial anatomy and optical reflections must be natural. Preserve realistic camera geometry, believable illumination, natural facial structure, anatomy and supported pose. Change identity clearly; do not simply recolor the original person. Keep the real photograph’s credible exposure and photographic rendering. No beauty-filter skin, glossy fixed eyes, sculpted cheek lighting, cinematic warm/cool split, exaggerated pores, HDR, fake grain, text, watermark or border. The result is an honestly AI-labeled game asset."
+    },
+    {
+      "id": "ai-portrait-reference-20261017-10",
+      "file": "public/ai images/portrait-reference-10.jpg",
+      "reference": {
+        "source": "https://unsplash.com/photos/man-with-a-skeptical-expression-on-a-plain-background-oKpGWyD5Kww",
+        "credit": "Christoph Aigner"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a COMPOSITION AND PHOTOGRAPHIC STYLE REFERENCE. Generate one distinct AI portrait variation, not a collage. Preserve the simple horizontal head-and-shoulders framing and warm-neutral wall. Change to a different adult man about 48 with medium brown skin, dark receding hair, a short trimmed beard, rounder cheeks and navy T-shirt. Keep an ordinary mildly skeptical expression with natural unequal brow heights, restrained color and same simple daylight. Preserve realistic camera geometry, believable illumination, natural facial structure, anatomy and supported pose. Change identity clearly; do not simply recolor the original person. Keep the real photograph’s credible exposure and photographic rendering. No beauty-filter skin, glossy fixed eyes, sculpted cheek lighting, cinematic warm/cool split, exaggerated pores, HDR, fake grain, text, watermark or border. The result is an honestly AI-labeled game asset."
+    },
+    {
+      "id": "ai-portrait-reference-20261017-11",
+      "file": "public/ai images/portrait-reference-11.jpg",
+      "reference": {
+        "source": "https://unsplash.com/photos/young-man-smiling-in-a-checkered-shirt-DDqybibS980",
+        "credit": "SABBIR BHUIYAN"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a COMPOSITION AND PHOTOGRAPHIC STYLE REFERENCE. Generate one distinct AI portrait variation, not a collage. Preserve the casual standing half-body composition, arms resting naturally, plain warm gray wall and informal camera rendering. Make a different adult South Asian man about 30 with slightly longer face, curly black hair, no facial hair and a muted blue checked shirt. Keep a small spontaneous smile with believable teeth and normal skin. Preserve realistic camera geometry, believable illumination, natural facial structure, anatomy and supported pose. Change identity clearly; do not simply recolor the original person. Keep the real photograph’s credible exposure and photographic rendering. No beauty-filter skin, glossy fixed eyes, sculpted cheek lighting, cinematic warm/cool split, exaggerated pores, HDR, fake grain, text, watermark or border. The result is an honestly AI-labeled game asset."
+    },
+    {
+      "id": "ai-portrait-reference-20261017-12",
+      "file": "public/ai images/portrait-reference-12.jpg",
+      "reference": {
+        "source": "https://unsplash.com/photos/a-person-with-a-beard-GQeol0YgdG4",
+        "credit": "Mishaal Zahed"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a COMPOSITION AND PHOTOGRAPHIC STYLE REFERENCE. Generate one distinct AI portrait variation, not a collage. Preserve the relaxed upper-body pose and coherent high-key black-and-white rendering against the plain pale background. Create a different adult man about 33 with short wavy dark hair, a broader face and nose, sparse beard and a dark plain crewneck shirt. Keep a neutral contemplative gaze and real contact between clothing and body, no dramatic invented light sources. Preserve realistic camera geometry, believable illumination, natural facial structure, anatomy and supported pose. Change identity clearly; do not simply recolor the original person. Keep the real photograph’s credible exposure and photographic rendering. No beauty-filter skin, glossy fixed eyes, sculpted cheek lighting, cinematic warm/cool split, exaggerated pores, HDR, fake grain, text, watermark or border. The result is an honestly AI-labeled game asset."
+    },
+    {
+      "id": "ai-portrait-reference-20261017-13",
+      "file": "public/ai images/portrait-reference-13.jpg",
+      "reference": {
+        "source": "https://unsplash.com/photos/woman-in-red-cardigan-smiling-mpDV4xaFP8c",
+        "credit": "Clay Elliot"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a COMPOSITION AND PHOTOGRAPHIC STYLE REFERENCE. Generate one distinct AI portrait variation, not a collage. Preserve the half-body framing, pale interior wall, gently clasped hands and ordinary direct-camera smile. Make a different adult woman about 45 with shoulder-length auburn hair, a broader nose, softer round face, a navy cardigan and a pale gray top. Natural smile lines and modest everyday makeup; no perfect repeated teeth. Preserve realistic camera geometry, believable illumination, natural facial structure, anatomy and supported pose. Change identity clearly; do not simply recolor the original person. Keep the real photograph’s credible exposure and photographic rendering. No beauty-filter skin, glossy fixed eyes, sculpted cheek lighting, cinematic warm/cool split, exaggerated pores, HDR, fake grain, text, watermark or border. The result is an honestly AI-labeled game asset."
+    },
+    {
+      "id": "ai-portrait-reference-20261017-14",
+      "file": "public/ai images/portrait-reference-14.jpg",
+      "reference": {
+        "source": "https://unsplash.com/photos/woman-in-white-crew-neck-shirt-smiling-IF9TK5Uy-KI",
+        "credit": "Jake Nackos"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a COMPOSITION AND PHOTOGRAPHIC STYLE REFERENCE. Generate one distinct AI portrait variation, not a collage. Preserve the close head-and-shoulders framing, loose high bun, plain white background and spontaneous smile. Create a different adult woman about 28 with medium brown skin, darker eyes, a wider rounded nose and simple dark blue T-shirt. Remove nose jewelry; retain believable skin and a natural uneven smile. Preserve realistic camera geometry, believable illumination, natural facial structure, anatomy and supported pose. Change identity clearly; do not simply recolor the original person. Keep the real photograph’s credible exposure and photographic rendering. No beauty-filter skin, glossy fixed eyes, sculpted cheek lighting, cinematic warm/cool split, exaggerated pores, HDR, fake grain, text, watermark or border. The result is an honestly AI-labeled game asset."
+    },
+    {
+      "id": "ai-portrait-reference-20261017-15",
+      "file": "public/ai images/portrait-reference-15.jpg",
+      "reference": {
+        "source": "https://unsplash.com/photos/woman-staring-directly-at-camera-near-pink-wall-bqe0J0b26RQ",
+        "credit": "Jimmy Fermin"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a COMPOSITION AND PHOTOGRAPHIC STYLE REFERENCE. Generate one distinct AI portrait variation, not a collage. Preserve the face-only near-frontal crop, simple muted pink background, hair up and quiet neutral expression. Change to a different adult woman about 26 with a longer face, brown eyes, dark blonde hair in loose bun, broader nose and no jewelry. Ordinary soft daylight with natural skin variation, no beauty retouching or glassy eyes. Preserve realistic camera geometry, believable illumination, natural facial structure, anatomy and supported pose. Change identity clearly; do not simply recolor the original person. Keep the real photograph’s credible exposure and photographic rendering. No beauty-filter skin, glossy fixed eyes, sculpted cheek lighting, cinematic warm/cool split, exaggerated pores, HDR, fake grain, text, watermark or border. The result is an honestly AI-labeled game asset."
+    },
+    {
+      "id": "ai-portrait-reference-20261017-16",
+      "file": "public/ai images/portrait-reference-16.jpg",
+      "reference": {
+        "source": "https://unsplash.com/photos/a-woman-is-laughing-and-holding-her-hands-on-her-hips-c78VnupN-Uw",
+        "credit": "Bansah Photography"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a COMPOSITION AND PHOTOGRAPHIC STYLE REFERENCE. Generate one distinct AI portrait variation, not a collage. Preserve the leaning-forward laughing half-body pose with hands supported at hips, simple room and balanced black-and-white rendering. Change to a different adult Black woman around 35 with shorter natural curls, a wider face, a distinct nose and a plain dark sleeveless dress instead of sequins. Keep a spontaneous believable laugh and natural mouth anatomy. Preserve realistic camera geometry, believable illumination, natural facial structure, anatomy and supported pose. Change identity clearly; do not simply recolor the original person. Keep the real photograph’s credible exposure and photographic rendering. No beauty-filter skin, glossy fixed eyes, sculpted cheek lighting, cinematic warm/cool split, exaggerated pores, HDR, fake grain, text, watermark or border. The result is an honestly AI-labeled game asset."
+    },
+    {
+      "id": "ai-portrait-reference-20261017-17",
+      "file": "public/ai images/portrait-reference-17.jpg",
+      "reference": {
+        "source": "https://unsplash.com/photos/woman-in-a-strapless-top-and-black-pants-GsBSWTCP9UM",
+        "credit": "Zaven Baghdasaryan"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a COMPOSITION AND PHOTOGRAPHIC STYLE REFERENCE. Generate one distinct AI portrait variation, not a collage. Preserve the full-body standing pose, weight on one leg, both hands naturally resting near thighs, plain white wall and realistic floor contact. Change to a different adult woman about 30 with short brown curly hair, rounder face, a muted green sleeveless cotton top, loose navy trousers and gray canvas shoes. Ordinary daytime photograph with clear face. Preserve realistic camera geometry, believable illumination, natural facial structure, anatomy and supported pose. Change identity clearly; do not simply recolor the original person. Keep the real photograph’s credible exposure and photographic rendering. No beauty-filter skin, glossy fixed eyes, sculpted cheek lighting, cinematic warm/cool split, exaggerated pores, HDR, fake grain, text, watermark or border. The result is an honestly AI-labeled game asset."
+    },
+    {
+      "id": "ai-portrait-reference-20261017-18",
+      "file": "public/ai images/portrait-reference-18.jpg",
+      "reference": {
+        "source": "https://unsplash.com/photos/woman-in-black-sports-bra-and-blue-denim-jeans-kP8YMskbado",
+        "credit": "Olha Ivanova"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a COMPOSITION AND PHOTOGRAPHIC STYLE REFERENCE. Generate one distinct AI portrait variation, not a collage. Preserve the full-body pose with both arms raised and relaxed weight on one leg, feet on floor, neutral light background and natural perspective. Change to a different adult woman around 28 with black shoulder-length hair, medium olive skin, a broad face, blue sleeveless top, light gray jeans and plain sneakers. Hands and finger positions should be physically credible, joyful but unforced expression. Preserve realistic camera geometry, believable illumination, natural facial structure, anatomy and supported pose. Change identity clearly; do not simply recolor the original person. Keep the real photograph’s credible exposure and photographic rendering. No beauty-filter skin, glossy fixed eyes, sculpted cheek lighting, cinematic warm/cool split, exaggerated pores, HDR, fake grain, text, watermark or border. The result is an honestly AI-labeled game asset."
+    },
+    {
+      "id": "ai-portrait-reference-20261017-19",
+      "file": "public/ai images/portrait-reference-19.jpg",
+      "reference": {
+        "source": "https://unsplash.com/photos/a-woman-wearing-glasses-and-a-dress-5FqewAqvzqU",
+        "credit": "Melanie Rosillo Galvan"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a COMPOSITION AND PHOTOGRAPHIC STYLE REFERENCE. Generate one distinct AI portrait variation, not a collage. Preserve the seated upper-body framing, arms resting loosely across torso, head turned to side, glasses, and soft gray background. Change to a different adult woman about 50 with short salt-and-pepper hair, darker complexion, a longer face and thin rectangular glasses; wear a simple blue cotton sleeveless blouse. Retain realistic window lighting and restrained camera color. Preserve realistic camera geometry, believable illumination, natural facial structure, anatomy and supported pose. Change identity clearly; do not simply recolor the original person. Keep the real photograph’s credible exposure and photographic rendering. No beauty-filter skin, glossy fixed eyes, sculpted cheek lighting, cinematic warm/cool split, exaggerated pores, HDR, fake grain, text, watermark or border. The result is an honestly AI-labeled game asset."
+    },
+    {
+      "id": "ai-portrait-reference-20261017-20",
+      "file": "public/ai images/portrait-reference-20.jpg",
+      "reference": {
+        "source": "https://unsplash.com/photos/woman-with-freckles-resting-her-chin-on-her-arms-EnppVuXbcCE",
+        "credit": "Alexander Aguero"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a COMPOSITION AND PHOTOGRAPHIC STYLE REFERENCE. Generate one distinct AI portrait variation, not a collage. Preserve the close upper-body composition resting chin lightly above folded forearms on a chair back, everyday outdoor daylight, clear face and natural perspective. Change to a different adult woman around 36 with deep brown skin, short coiled dark hair, a wider nose and a dark green T-shirt. Keep the hands, elbows and support physically coherent and expression relaxed. Preserve realistic camera geometry, believable illumination, natural facial structure, anatomy and supported pose. Change identity clearly; do not simply recolor the original person. Keep the real photograph’s credible exposure and photographic rendering. No beauty-filter skin, glossy fixed eyes, sculpted cheek lighting, cinematic warm/cool split, exaggerated pores, HDR, fake grain, text, watermark or border. The result is an honestly AI-labeled game asset."
+    },
+    {
+      "id": "ai-portrait-reference-20261017-21",
+      "file": "public/ai images/portrait-reference-21.jpg",
+      "reference": {
+        "source": "https://unsplash.com/photos/woman-in-black-long-sleeve-shirt-x0c6vTO5ibA",
+        "credit": "Andrey Zvyagintsev"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a COMPOSITION AND PHOTOGRAPHIC STYLE REFERENCE. Generate one distinct AI portrait variation, not a collage. Preserve the half-body three-quarter side pose, arms loosely crossed with one hand touching the opposite upper arm, ordinary window-side setting and coherent daylight. Make a different adult woman about 32 with olive skin, a prominent curved nose, dark curly hair loosely tied up, and a simple charcoal long-sleeved top. Neutral attentive gaze off-camera. Preserve realistic camera geometry, believable illumination, natural facial structure, anatomy and supported pose. Change identity clearly; do not simply recolor the original person. Keep the real photograph’s credible exposure and photographic rendering. No beauty-filter skin, glossy fixed eyes, sculpted cheek lighting, cinematic warm/cool split, exaggerated pores, HDR, fake grain, text, watermark or border. The result is an honestly AI-labeled game asset."
+    },
+    {
+      "id": "ai-portrait-reference-20261017-22",
+      "file": "public/ai images/portrait-reference-22.jpg",
+      "reference": {
+        "source": "https://unsplash.com/photos/woman-wearing-red-long-sleeved-shirt-beside-wall-XttWKETqCCQ",
+        "credit": "Olena Bohovyk"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a COMPOSITION AND PHOTOGRAPHIC STYLE REFERENCE. Generate one distinct AI portrait variation, not a collage. Preserve the turned-shoulder upper-body pose, glance toward lens, natural hair volume and simple colored wall. Change to a different adult woman around 38 with medium brown skin, short dark curly hair, wider nose, a muted blue knitted sweater and a pale cream wall instead of yellow. Keep a quiet unposed expression and realistic ordinary camera rendering. Preserve realistic camera geometry, believable illumination, natural facial structure, anatomy and supported pose. Change identity clearly; do not simply recolor the original person. Keep the real photograph’s credible exposure and photographic rendering. No beauty-filter skin, glossy fixed eyes, sculpted cheek lighting, cinematic warm/cool split, exaggerated pores, HDR, fake grain, text, watermark or border. The result is an honestly AI-labeled game asset."
+    }
+  ]
+}

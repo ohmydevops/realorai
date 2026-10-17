@@ -7,10 +7,20 @@ const context = { window: {} };
 vm.runInNewContext(fs.readFileSync('public/images.js', 'utf8'), context);
 const images = context.window.QUIZ_IMAGES;
 const activeImages = images.filter((image) => image.active !== false);
-assert(images.length >= 5);
+assert(images.length >= 100);
 assert.equal(new Set(images.map((image) => image.id)).size, images.length);
 assert(images.some((image) => image.real));
 assert(images.some((image) => !image.real));
+for (const directory of ['photos', 'ai images']) {
+  const listed = new Set(images.map((image) => image.src));
+  for (const filename of fs.readdirSync(path.join('public', directory))) {
+    assert(
+      listed.has(directory + '/' + filename),
+      'Unlisted quiz asset: ' + filename,
+    );
+  }
+}
+
 assert.equal(
   activeImages.filter((image) => !image.real).length * 4,
   activeImages.length,

@@ -21,6 +21,12 @@ For batches using photographic effects, read [Photographic effects and capture l
 
 Visual realism describes appearance. It does not establish whether an image was captured by a camera. Generated portraits must remain honestly labeled AI, however convincing they look. Verify real-photo labels from source provenance rather than visual judgment alone. Do not fabricate camera metadata, photographer credits, location evidence, or a documentary history.
 
+## Required real-photo reference workflow
+
+For every new AI portrait, start from a real photograph reviewed with the user’s preferred style in mind. This is the user's standing preference. Do not generate portraits from a text description alone. Inspect the reference locally, then supply its path to the image-generation tool. Keep its framing, physical pose, camera perspective, expression type, and plausible lighting as the foundation; change the person's identity and appropriate clothing or background details to make a distinct generated variation. Use varied references across full-body, half-body, head-and-shoulders, and face-only compositions. Favor women in the current expansion, while retaining variety in ages, faces, and expressions.
+
+Keep the original photograph unchanged and honestly labeled real. Store generated variations separately with unique IDs and honest AI labels and generation credits. Record the reference's source credit with the prompt set outside deployable image folders. Review the generated face and physical scene independently; using a real reference does not guarantee acceptance. Never generatively alter a real quiz photograph and keep its real label.
+
 ## What makes a portrait feel photographic
 
 A believable portrait is a consistent scene, not a checklist of pores and defects. The person's anatomy, pose, surroundings, illumination, camera position, focus, and image processing should agree. A slightly soft face in an ordinary setting can feel more photographic than a perfectly detailed face floating in incompatible lighting.
