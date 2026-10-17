@@ -5,7 +5,7 @@
 - Keep this a simple, mobile-friendly English/Persian image guessing game.
 - Home contains only one short, friendly description and a Start game button in its main content. Keep extra headings and explanatory sections off Home.
 - Keep the existing branded title visible on every page, including the game, results, and image sources. The title links to the current language's Home.
-- Keep a small eye-and-sparkle brand icon to the right of the shared title.
+- Keep a small eye-and-sparkle brand icon with the text Real? to the right of the shared title.
 - On mobile, keep primary actions at the bottom of the available content area: Start game, real/AI answers, and the next-game button. Respect safe-area insets, use comfortable touch targets, and prevent content from hiding behind buttons.
 - Keep language and theme controls visually small. Preserve light/dark themes, readable contrast, and keyboard focus indicators.
 - Do not show a creator-credit line in the footer. In RTL layouts, place About on the right and Image sources on the left, across the footer width.

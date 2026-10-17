@@ -1,7 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <rect width="64" height="64" rx="15" fill="#557467"/>
-  <path d="M10 35C16 26 23 22 32 22s16 4 22 13c-6 9-13 13-22 13S16 44 10 35Z" fill="none" stroke="#f8f6eb" stroke-width="3.5" stroke-linejoin="round"/>
-  <circle cx="32" cy="35" r="8" fill="#f8f6eb"/>
-  <circle cx="32" cy="35" r="3.5" fill="#557467"/>
-  <path d="m48 8 2.4 6.6L57 17l-6.6 2.4L48 26l-2.4-6.6L39 17l6.6-2.4Z" fill="#e8cb88" stroke="#557467" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M16 23C21 16 26 13 32 13s11 3 16 10c-5 7-10 10-16 10S21 30 16 23Z" fill="none" stroke="#f8f6eb" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="32" cy="23" r="5.5" fill="#f8f6eb"/>
+  <circle cx="32" cy="23" r="2.5" fill="#557467"/>
+  <path d="m49 7 1.8 4.2L55 13l-4.2 1.8L49 19l-1.8-4.2L43 13l4.2-1.8Z" fill="#e8cb88" stroke="#557467" stroke-width="1.5" stroke-linejoin="round"/>
+  <text x="32" y="52" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#f8f6eb">Real<tspan fill="#e8cb88">?</tspan></text>
 </svg>
