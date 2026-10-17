@@ -111,7 +111,13 @@ function boot(lang = 'en', hash = '#play', trackerMode = 'ready') {
 }
 const q = boot();
 assert.equal(q.analytics.filter((e) => e.name === 'game-start').length, 1);
-assert(q.run('images.length') >= 100);
+assert(q.run('images.length') >= 5);
+assert(q.run('images.every(image => image.active !== false)'));
+assert(
+  q.run(
+    'images.every(image => ["Cars", "Portrait"].includes(image.category.en))',
+  ),
+);
 assert.equal(
   new Set(q.run('images.map(i=>i.id)')).size,
   q.run('images.length'),
@@ -173,7 +179,7 @@ console.log(
 for (const [random, expected] of [
   [0, 1],
   [0.5, 2],
-  [0.999, 3],
+  [0.999, 2],
 ]) {
   q.run(
     `state.seen = {}; state.active = null; Math.random = () => ${random}; start();`,
@@ -205,7 +211,7 @@ assert.equal(
 assert.notEqual(q.run('state.active.ids[state.active.index]'), failedId);
 assert(!q.run(`Object.hasOwn(state.seen, ${JSON.stringify(failedId)})`));
 console.log(
-  'PASS: randomized 1–3 AI images, shuffled unique rounds, AI exhaustion, and same-kind failed-image replacement.',
+  'PASS: randomized 1–2 AI images, shuffled unique rounds, AI exhaustion, and same-kind failed-image replacement.',
 );
 
 // If the only remaining AI cannot load, stop rather than offer a real-only test.
@@ -226,7 +232,7 @@ assert(
 );
 assert(landing.app.innerHTML.includes('href="#play"'));
 assert(!landing.app.innerHTML.includes('id="quiz-image"'));
-for (const aiCount of [1, 2, 3]) {
+for (const aiCount of [1, 2]) {
   q.run('state.seen = {}; unavailable.clear()');
   const round = q.run(
     `selectRound(images.filter(i => !i.real), images.filter(i => i.real), ${aiCount}, 5)`,
@@ -245,7 +251,7 @@ for (const aiCount of [1, 2, 3]) {
   );
   assert(pairs.size >= Math.min(2, aiCount, 5 - aiCount));
   if (aiCount === 2)
-    assert.equal(new Set(round.map((i) => i.category.en)).size, 3);
+    assert.equal(new Set(round.map((i) => i.category.en)).size, 2);
 }
 console.log(
   'PASS: Home does not consume images; category pairs, wildcard, and AI balance.',
@@ -436,7 +442,14 @@ console.log(
 const sourceNodes = {
   'source-warning': { hidden: false },
   'source-list': { hidden: true, focus() {} },
-  'photo-credits': { childElementCount: 0 },
+  'photo-credits': {
+    childElementCount: 0,
+    rows: [],
+    append(row) {
+      this.rows.push(row);
+      this.childElementCount++;
+    },
+  },
   'show-sources': { addEventListener: (_, callback) => (reveal = callback) },
 };
 let reveal;
@@ -444,12 +457,32 @@ const sourceEvents = [];
 const sourceContext = {
   URL,
   window: {
-    QUIZ_IMAGES: [],
+    QUIZ_IMAGES: [
+      {
+        real: true,
+        src: 'photos/current.jpg',
+        source: 'https://example.test/current',
+        credit: 'Current photographer',
+      },
+      {
+        real: true,
+        active: false,
+        src: 'photos/retired.jpg',
+        source: 'https://example.test/retired',
+        credit: 'Retired photographer',
+      },
+      { real: false, src: 'ai images/current.jpg', credit: 'OpenAI ImageGen' },
+    ],
     QUIZ_ANALYTICS: { track: (name) => sourceEvents.push(name) },
   },
   document: {
     currentScript: { src: 'https://example.test/sources.js' },
     getElementById: (id) => sourceNodes[id],
+    createElement: () => ({
+      append(...children) {
+        this.children = children;
+      },
+    }),
   },
 };
 vm.runInNewContext(fs.readFileSync('public/sources.js', 'utf8'), sourceContext);
@@ -458,3 +491,41 @@ reveal();
 reveal();
 assert.deepEqual(sourceEvents, ['sources-reveal']);
 assert.equal(sourceNodes['source-list'].hidden, false);
+assert.equal(
+  sourceNodes['photo-credits'].rows.length,
+  1,
+  'Only current real photographs enter Sources',
+);
+
+// Retiring a catalog entry must preserve completed reviews and an in-progress game.
+for (const key of Object.keys(store)) delete store[key];
+const migration = boot();
+migration.run(`
+  const retired = window.QUIZ_IMAGES.find(image => image.active === false);
+  const record = {id:retired.id,choice:retired.real,correct:true,timedOut:false,answeredAt:'2026-10-16T10:00:00.000Z'};
+  state.seen[retired.id] = record.answeredAt;
+  state.answers = [record];
+  state.history = [{id:'saved-retired-game',correct:1,total:1,skipped:0,completedAt:record.answeredAt,answers:[record]}];
+  state.active = {ids:[retired.id,images[0].id],index:1,answers:[record],startedAt:record.answeredAt};
+  save();
+`);
+const migrated = boot('fa');
+assert.equal(migrated.run('state.active.index'), 1);
+assert.equal(migrated.run('state.active.answers.length'), 1);
+assert.equal(migrated.run('historyAnswers(state.history[0]).length'), 1);
+assert(migrated.run('byId.has(state.history[0].answers[0].id)'));
+assert(
+  migrated.run('Object.hasOwn(state.seen,state.history[0].answers[0].id)'),
+);
+migrated.run('state.active = null; start();');
+assert(
+  migrated.run('state.active.ids.every(id => byId.get(id).active !== false)'),
+);
+migrated.run(
+  'state.seen = Object.fromEntries(images.filter(image => image.real).map(image => [image.id,"seen"])); state.active = null; start();',
+);
+assert.equal(migrated.run('state.active.ids.length'), 2);
+assert(migrated.run('state.active.ids.every(id => !byId.get(id).real)'));
+console.log(
+  'PASS: retired-image reviews and in-progress answers survive; new and partial rounds never exceed two AI images.',
+);

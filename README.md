@@ -24,4 +24,4 @@ Push to `main` to check and deploy `public/` to GitHub Pages.
 
 ## Credits
 
-Photos: [Unsplash](https://unsplash.com/license) via [Lorem Picsum](https://picsum.photos/). AI images: OpenAI. Individual image credits are in `public/images.js` and on the Sources page. The Vazir font license is in `public/fonts/OFL.txt`.
+Photos: [Unsplash](https://unsplash.com/license), including earlier photographs sourced through [Lorem Picsum](https://picsum.photos/). AI images: OpenAI. Individual image credits are in `public/images.js` and on the Sources page. The Vazir font license is in `public/fonts/OFL.txt`.

@@ -1,8 +1,8 @@
 'use strict';
 const language = document.documentElement.lang === 'fa' ? 'fa' : 'en';
 const baseURL = new URL('.', document.currentScript.src);
-const images = window.QUIZ_IMAGES;
-const byId = new Map(images.map((i) => [i.id, i]));
+const images = window.QUIZ_IMAGES.filter((image) => image.active !== false);
+const byId = new Map(window.QUIZ_IMAGES.map((i) => [i.id, i]));
 const app = document.getElementById('app');
 const STORAGE_KEY = 'real-or-ai-history-v1';
 const copy = window.QUIZ_TRANSLATIONS[language];
@@ -248,8 +248,8 @@ function unseen() {
     (i) => !Object.hasOwn(state.seen, i.id) && !unavailable.has(i.id),
   );
 }
-// Prefer two mixed real/AI category pairs and a third-category wildcard.
-// Keep the 1–3 AI balance and unseen-only rule when categories run short.
+// Prefer mixed real/AI pairs across cars and portraits, then fill unseen slots.
+// Keep the 1–2 AI limit and unseen-only rule when categories run short.
 function selectRound(ai, real, aiCount, roundSize) {
   const selected = [];
   let aiLeft = aiCount;
@@ -334,9 +334,9 @@ function start() {
     if (save()) exhausted();
     return;
   }
-  const roundSize = Math.min(5, real.length + Math.min(3, ai.length));
+  const roundSize = Math.min(5, real.length + Math.min(2, ai.length));
   const minimumAI = Math.max(1, roundSize - real.length);
-  const maximumAI = Math.min(3, ai.length, roundSize);
+  const maximumAI = Math.min(2, ai.length, roundSize);
   const aiCount =
     minimumAI + Math.floor(Math.random() * (maximumAI - minimumAI + 1));
   const selected = selectRound(ai, real, aiCount, roundSize);

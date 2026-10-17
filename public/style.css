@@ -340,14 +340,6 @@ main {
   background: var(--surface);
   border: 1px solid var(--border);
 }
-#load-actions {
-  position: absolute;
-  inset-inline: 12px;
-  bottom: 12px;
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-}
 .image p[hidden] {
   display: none;
 }

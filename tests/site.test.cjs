@@ -6,15 +6,29 @@ const vm = require('node:vm');
 const context = { window: {} };
 vm.runInNewContext(fs.readFileSync('public/images.js', 'utf8'), context);
 const images = context.window.QUIZ_IMAGES;
+const activeImages = images.filter((image) => image.active !== false);
 assert(images.length >= 100);
 assert.equal(new Set(images.map((image) => image.id)).size, images.length);
 assert(images.some((image) => image.real));
 assert(images.some((image) => !image.real));
 assert.equal(
-  images.filter((image) => !image.real).length * 4,
-  images.length,
-  'Keep the collection exactly 25% AI',
+  activeImages.filter((image) => !image.real).length * 4,
+  activeImages.length,
+  'Keep the playable collection exactly 25% AI',
 );
+assert(
+  activeImages.every((image) =>
+    ['Cars', 'Portrait'].includes(image.category.en),
+  ),
+);
+for (const category of ['Cars', 'Portrait']) {
+  assert(
+    activeImages.some((image) => image.real && image.category.en === category),
+  );
+  assert(
+    activeImages.some((image) => !image.real && image.category.en === category),
+  );
+}
 assert.equal(
   new Set(images.map((image) => image.src)).size,
   images.length,
@@ -32,7 +46,43 @@ for (const image of images) {
     `Missing image: ${image.src}`,
   );
   assert(!image.src.startsWith('http'), 'Quiz assets must be local');
+  const bytes = fs.readFileSync(path.join('public', image.src));
+  assert(
+    image.src.endsWith('.jpg') && bytes.readUInt16BE(0) === 0xffd8,
+    `Use the same JPEG delivery format for both labels: ${image.id}`,
+  );
+  assert(bytes.length <= 140 * 1024, `Oversized quiz image: ${image.id}`);
+  let offset = 2;
+  let dimensions;
+  while (offset + 9 < bytes.length) {
+    assert.equal(bytes[offset], 0xff, `Invalid JPEG marker: ${image.id}`);
+    const marker = bytes[offset + 1];
+    if ([0xc0, 0xc1, 0xc2].includes(marker)) {
+      dimensions = {
+        height: bytes.readUInt16BE(offset + 5),
+        width: bytes.readUInt16BE(offset + 7),
+      };
+      break;
+    }
+    offset += 2 + bytes.readUInt16BE(offset + 2);
+  }
+  assert(
+    dimensions && Math.max(dimensions.width, dimensions.height) <= 1000,
+    `Quiz image exceeds the shared resolution limit: ${image.id}`,
+  );
 }
+const medianBytes = (real) => {
+  const sizes = activeImages
+    .filter((image) => image.real === real)
+    .map((image) => fs.statSync(path.join('public', image.src)).size)
+    .sort((a, b) => a - b);
+  return sizes[Math.floor(sizes.length / 2)];
+};
+const sizeRatio = medianBytes(false) / medianBytes(true);
+assert(
+  sizeRatio >= 0.67 && sizeRatio <= 1.5,
+  'Real and AI images should have comparable median download sizes',
+);
 for (const [file, language, direction] of [
   ['index.html', 'fa', 'rtl'],
   ['en/index.html', 'en', 'ltr'],
@@ -115,13 +165,9 @@ console.log(
   'PASS: self-hosted site assets and one approved Umami script per page.',
 );
 
-const aiCount = images.filter((image) => !image.real).length;
-assert.equal(
-  aiCount * 4,
-  images.length,
-  'AI images must be exactly 25% of the catalog',
+console.log(
+  'PASS: cars and portraits only, paired categories, and exactly 25% AI in new games.',
 );
-console.log('PASS: exactly 25% AI images in the catalog.');
 
 for (const file of [
   'index.html',

@@ -7,7 +7,9 @@ document.getElementById('show-sources').addEventListener('click', () => {
   if (!sourceList.hidden) return;
   // Do not reveal credits or load thumbnails until the visitor accepts the spoiler.
   if (!credits.childElementCount) {
-    for (const image of window.QUIZ_IMAGES.filter((entry) => entry.real)) {
+    for (const image of window.QUIZ_IMAGES.filter(
+      (entry) => entry.real && entry.active !== false,
+    )) {
       const row = document.createElement('li');
       const thumbnail = document.createElement('img');
       thumbnail.src = new URL(image.src, sourcesBase).href;
