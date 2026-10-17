@@ -1,6 +1,6 @@
 # Real or AI?
 
-An English/Persian game for spotting AI-generated images.
+A game in English, Persian, Arabic, Turkish, French and Russian for spotting AI-generated images.
 
 ## Development
 

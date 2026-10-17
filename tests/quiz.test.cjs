@@ -112,6 +112,22 @@ function boot(lang = 'en', hash = '#play', trackerMode = 'ready') {
   };
 }
 const q = boot();
+for (const lang of ['ar', 'tr', 'fr', 'ru']) {
+  const localized = boot(lang);
+  assert.equal(localized.run('language'), lang);
+  assert.equal(localized.run('languagePath'), `${lang}/`);
+  assert(!localized.app.innerHTML.includes('undefined'));
+  assert.equal(
+    localized.run('JSON.stringify(state.active.ids)'),
+    q.run('JSON.stringify(state.active.ids)'),
+    'Changing language must preserve the current round',
+  );
+  assert.equal(
+    localized.run('JSON.stringify(Object.keys(copy).sort())'),
+    q.run('JSON.stringify(Object.keys(copy).sort())'),
+    'Every gameplay string must be translated',
+  );
+}
 assert.equal(q.analytics.filter((e) => e.name === 'game-start').length, 1);
 assert(q.run('images.length') >= 5);
 assert(q.run('images.every(image => image.active !== false)'));

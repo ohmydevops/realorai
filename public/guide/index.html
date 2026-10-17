@@ -10,21 +10,6 @@
     />
     <meta name="robots" content="index,follow,max-image-preview:large" />
     <link rel="canonical" href="https://ohmydevops.github.io/realorai/guide/" />
-    <link
-      rel="alternate"
-      hreflang="fa"
-      href="https://ohmydevops.github.io/realorai/guide/"
-    />
-    <link
-      rel="alternate"
-      hreflang="en"
-      href="https://ohmydevops.github.io/realorai/en/guide/"
-    />
-    <link
-      rel="alternate"
-      hreflang="x-default"
-      href="https://ohmydevops.github.io/realorai/guide/"
-    />
     <script src="../theme.js"></script>
     <link rel="stylesheet" href="../style.css" />
 
@@ -39,8 +24,7 @@
       property="og:url"
       content="https://ohmydevops.github.io/realorai/guide/"
     />
-    <meta property="og:locale" content="fa_IR" />
-    <meta property="og:locale:alternate" content="en_US" />
+
     <meta
       property="og:image"
       content="https://ohmydevops.github.io/realorai/social/og-fa.png"
@@ -83,19 +67,72 @@
       src="https://cloud.umami.is/script.js"
       data-website-id="e334ba0d-1ec4-4ab7-b4c1-2c1f1477f33b"
     ></script>
+
+    <link
+      rel="alternate"
+      hreflang="fa"
+      href="https://ohmydevops.github.io/realorai/guide/"
+    />
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://ohmydevops.github.io/realorai/en/guide/"
+    />
+    <link
+      rel="alternate"
+      hreflang="ar"
+      href="https://ohmydevops.github.io/realorai/ar/guide/"
+    />
+    <link
+      rel="alternate"
+      hreflang="tr"
+      href="https://ohmydevops.github.io/realorai/tr/guide/"
+    />
+    <link
+      rel="alternate"
+      hreflang="fr"
+      href="https://ohmydevops.github.io/realorai/fr/guide/"
+    />
+    <link
+      rel="alternate"
+      hreflang="ru"
+      href="https://ohmydevops.github.io/realorai/ru/guide/"
+    />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://ohmydevops.github.io/realorai/guide/"
+    />
+    <meta property="og:locale" content="fa_IR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:locale:alternate" content="ar_AR" />
+    <meta property="og:locale:alternate" content="tr_TR" />
+    <meta property="og:locale:alternate" content="fr_FR" />
+    <meta property="og:locale:alternate" content="ru_RU" />
   </head>
   <body class="sources-page">
     <header>
       <h1><a class="brand" href="../">واقعی یا AI؟</a></h1>
       <nav aria-label="تنظیمات">
-        <a
-          class="control"
-          href="../en/guide/"
-          lang="en"
-          hreflang="en"
-          aria-label="English"
-          >EN</a
-        ><button
+        <details class="language-menu">
+          <summary class="control" aria-label="زبان">FA</summary>
+          <div class="language-options">
+            <a href="../guide/" lang="fa" hreflang="fa" aria-current="true"
+              ><bdi>FA · فارسی</bdi></a
+            ><a href="../en/guide/" lang="en" hreflang="en"
+              ><bdi>EN · English</bdi></a
+            ><a href="../ar/guide/" lang="ar" hreflang="ar"
+              ><bdi>AR · العربية</bdi></a
+            ><a href="../tr/guide/" lang="tr" hreflang="tr"
+              ><bdi>TR · Türkçe</bdi></a
+            ><a href="../fr/guide/" lang="fr" hreflang="fr"
+              ><bdi>FR · Français</bdi></a
+            ><a href="../ru/guide/" lang="ru" hreflang="ru"
+              ><bdi>RU · Русский</bdi></a
+            >
+          </div>
+        </details>
+        <button
           class="control"
           id="theme-toggle"
           aria-label="تغییر پوسته"
@@ -170,6 +207,16 @@
             گوشی باشه، نه لزوماً هوش مصنوعی.
           </p>
         </section>
+        <section aria-labelledby="guide-accessories">
+          <h3 id="guide-accessories">عینک، گوشواره و پس‌زمینه</h3>
+          <p>
+            قاب عینک رو از یک طرف تا طرف دیگه دنبال کن. گاهی دستهٔ عینک به مو یا
+            پوست وصل می‌شه یا شکل قاب وسط راه عوض می‌شه. محل اتصال گوشواره و
+            ادامهٔ یقه هم ارزش نگاه کردن دارن. اطراف سر رو هم ببین تا خط‌ها یا
+            اشیای پس‌زمینه بی‌دلیل قطع نشده باشن. فرق داشتن دو گوشواره یا
+            نامتقارن بودن صورت، به‌خودی‌خود ایراد نیست.
+          </p>
+        </section>
         <section aria-labelledby="guide-source">
           <h3 id="guide-source">نسخهٔ اصلی چه کمکی می‌کنه؟</h3>
           <p>
@@ -239,95 +286,84 @@
                     decoding="async"
                 /></a>
                 <figcaption>
-                  عکس واقعی<br /><a
+                  واقعی ·
+                  <a
                     href="https://unsplash.com/photos/a-woman-with-long-blonde-hair-wearing-a-black-shirt-VzusBjHlKM8"
                     target="_blank"
                     rel="noopener noreferrer"
-                    >Giorgio Trovato / Unsplash</a
+                    title="Giorgio Trovato / Unsplash"
+                    >Unsplash</a
                   >
                 </figcaption>
               </figure>
               <figure>
                 <a
                   class="portrait-zoom"
-                  href="../assets/guide-portrait-blonde-ai.jpg"
+                  href="../assets/guide-portrait-blazer-ai.jpg"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="دیدن عکس بزرگ‌تر در تب جدید"
                   ><img
-                    src="../assets/guide-portrait-blonde-ai.jpg"
+                    src="../assets/guide-portrait-blazer-ai.jpg"
                     width="1000"
                     height="667"
                     alt="پرترهٔ ساخته‌شده با هوش مصنوعی با ترکیب‌بندی مشابه و تفاوت در چهره و حالت سر"
                     decoding="async"
                 /></a>
-                <figcaption>ساخته‌شده با هوش مصنوعی<br />OpenAI</figcaption>
+                <figcaption>هوش مصنوعی · OpenAI</figcaption>
               </figure>
             </div>
-            <p>
-              این نمونه برای مقایسه ساخته شده و وارد بازی نمی‌شه. عکس اصلی
-              تغییری نکرده. به‌جای پیدا کردن یک ایراد قطعی، نور، حالت صورت و
-              جزئیات دو تصویر رو کنار هم ببین.
-            </p>
           </div>
         </section>
         <p>
-          این ایرادها با پیشرفت مدل‌ها می‌تونن کمتر یا برطرف بشن. نبودنشون ثابت
-          نمی‌کنه عکس واقعیه، همون‌طور که یک جزئیات عجیب هم برای جعلی دونستن
-          کافی نیست. توی فضای مجازی، برای عکس‌های مهم منبع و توضیح اصلی رو هم
-          ببینیم.
+          با پیشرفت مدل‌ها، این ایرادها هم مدام کمتر می‌شن. برای همین تشخیص از
+          روی ظاهر همیشه ممکن نیست. این نشونه‌ها فقط کمک می‌کنن دقیق‌تر نگاه
+          کنیم، نه اینکه با اطمینان بگیم عکس واقعیه یا ساختگی. برای عکس‌هایی که
+          توی فضای مجازی می‌بینیم، منبع و ماجرای پشت عکس هم به‌اندازهٔ خود تصویر
+          مهمه.
         </p>
         <section aria-labelledby="guide-reading">
           <h3 id="guide-reading">منابع و مطالعهٔ بیشتر</h3>
           <ul>
             <li>
               <a
+                href="https://www.whichfaceisreal.com/learn.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Which Face Is Real?</a
+              >
+            </li>
+            <li>
+              <a
                 href="https://factcheck.afp.com/tips-for-identifying-ai-generated-content"
                 target="_blank"
                 rel="noopener noreferrer"
-                >AFP: سرنخ‌های تصویری و پیدا کردن منبع</a
+                >AFP</a
               >
-              <p>
-                روی پس‌زمینه، بازتاب‌ها و اتصال اجزای تصویر هم تمرکز می‌کنه.
-                مقاله مربوط به ۲۰۲۳ه و مثال‌هاش رو نباید قانون ثابت برای مدل‌های
-                امروز دونست.
-              </p>
             </li>
             <li>
               <a
                 href="https://fullfact.org/blog/2025/apr/spotting-AI-content-guide/"
                 target="_blank"
                 rel="noopener noreferrer"
-                >Full Fact: تجربهٔ راستی‌آزمایی محتوای AI</a
+                >Full Fact</a
               >
-              <p>
-                راهنمای ۲۰۲۵ توضیح می‌ده چرا حتی راستی‌آزماها گاهی فقط می‌تونن
-                بگن یک تصویر احتمالاً ساخته‌شده است.
-              </p>
             </li>
             <li>
               <a
                 href="https://c2pa.org/specifications/specifications/2.0/security/Harms_Modelling.html"
                 target="_blank"
                 rel="noopener noreferrer"
-                >C2PA: معنی و محدودیت سابقهٔ دیجیتال</a
+                >C2PA</a
               >
-              <p>
-                تفاوت بین تأیید سابقهٔ فایل و درست بودن محتوای اون رو توضیح
-                می‌ده.
-              </p>
             </li>
             <li>
               <a
                 href="https://newsinitiative.withgoogle.com/resources/trainings/verification/verification-advanced-reverse-image-search/"
                 target="_blank"
                 rel="noopener noreferrer"
-                >Google News Initiative: جست‌وجوی معکوس تصویر</a
+                >Google News Initiative</a
               >
-              <p>
-                آموزش جست‌وجو با عکس برای پیدا کردن نسخه‌های دیگه و بررسی توضیح
-                و تاریخ انتشارشون.
-              </p>
             </li>
           </ul>
         </section>

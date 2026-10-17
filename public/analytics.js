@@ -2,7 +2,7 @@
 (() => {
   const pending = [];
   let failed = false;
-  const language = document.documentElement.lang === 'fa' ? 'fa' : 'en';
+  const language = document.documentElement.lang || 'en';
   function flush() {
     if (typeof window.umami?.track !== 'function') return;
     while (pending.length) {

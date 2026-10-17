@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Comment repérer les photos générées par IA | Réel ou IA ?</title>
+    <meta
+      name="description"
+      content="Quelques pistes pour examiner les images et leurs sources. Leur apparence seule ne prouve pas qu’elles sont réelles ou générées."
+    />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <link
+      rel="canonical"
+      href="https://ohmydevops.github.io/realorai/fr/guide/"
+    />
+    <script src="../../theme.js"></script>
+    <link rel="stylesheet" href="../../style.css" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Real or AI?" />
+    <meta
+      property="og:title"
+      content="Comment repérer les photos générées par IA | Réel ou IA ?"
+    />
+    <meta
+      property="og:description"
+      content="Quelques pistes pour examiner les images et leurs sources. Leur apparence seule ne prouve pas qu’elles sont réelles ou générées."
+    />
+    <meta
+      property="og:url"
+      content="https://ohmydevops.github.io/realorai/fr/guide/"
+    />
+
+    <meta
+      property="og:image"
+      content="https://ohmydevops.github.io/realorai/social/og-fr.png"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://ohmydevops.github.io/realorai/social/og-fr.png"
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Réel ou IA ?" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Comment repérer les photos générées par IA | Réel ou IA ?"
+    />
+    <meta
+      name="twitter:description"
+      content="Quelques pistes pour examiner les images et leurs sources. Leur apparence seule ne prouve pas qu’elles sont réelles ou générées."
+    />
+    <meta
+      name="twitter:image"
+      content="https://ohmydevops.github.io/realorai/social/og-fr.png"
+    />
+    <meta name="twitter:image:alt" content="Réel ou IA ?" />
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+    <link
+      rel="icon"
+      href="../../favicon-32.png"
+      type="image/png"
+      sizes="32x32"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="../../apple-touch-icon.png"
+      sizes="180x180"
+    />
+    <link rel="manifest" href="../../site.webmanifest" />
+    <script
+      defer
+      src="https://cloud.umami.is/script.js"
+      data-website-id="e334ba0d-1ec4-4ab7-b4c1-2c1f1477f33b"
+    ></script>
+
+    <link
+      rel="alternate"
+      hreflang="fa"
+      href="https://ohmydevops.github.io/realorai/guide/"
+    />
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://ohmydevops.github.io/realorai/en/guide/"
+    />
+    <link
+      rel="alternate"
+      hreflang="ar"
+      href="https://ohmydevops.github.io/realorai/ar/guide/"
+    />
+    <link
+      rel="alternate"
+      hreflang="tr"
+      href="https://ohmydevops.github.io/realorai/tr/guide/"
+    />
+    <link
+      rel="alternate"
+      hreflang="fr"
+      href="https://ohmydevops.github.io/realorai/fr/guide/"
+    />
+    <link
+      rel="alternate"
+      hreflang="ru"
+      href="https://ohmydevops.github.io/realorai/ru/guide/"
+    />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://ohmydevops.github.io/realorai/guide/"
+    />
+    <meta property="og:locale:alternate" content="fa_IR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:locale:alternate" content="ar_AR" />
+    <meta property="og:locale:alternate" content="tr_TR" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:locale:alternate" content="ru_RU" />
+  </head>
+  <body class="sources-page">
+    <header>
+      <h1><a class="brand" href="../">Réel ou IA ?</a></h1>
+      <nav aria-label="Réglages">
+        <details class="language-menu">
+          <summary class="control" aria-label="Langue">FR</summary>
+          <div class="language-options">
+            <a href="../../guide/" lang="fa" hreflang="fa"
+              ><bdi>FA · فارسی</bdi></a
+            ><a href="../../en/guide/" lang="en" hreflang="en"
+              ><bdi>EN · English</bdi></a
+            ><a href="../../ar/guide/" lang="ar" hreflang="ar"
+              ><bdi>AR · العربية</bdi></a
+            ><a href="../../tr/guide/" lang="tr" hreflang="tr"
+              ><bdi>TR · Türkçe</bdi></a
+            ><a
+              href="../../fr/guide/"
+              lang="fr"
+              hreflang="fr"
+              aria-current="true"
+              ><bdi>FR · Français</bdi></a
+            ><a href="../../ru/guide/" lang="ru" hreflang="ru"
+              ><bdi>RU · Русский</bdi></a
+            >
+          </div>
+        </details>
+        <button
+          class="control"
+          id="theme-toggle"
+          aria-label="Changer de thème"
+          type="button"
+        >
+          ☾
+        </button>
+      </nav>
+    </header>
+    <main>
+      <article class="guide" aria-labelledby="guide-title">
+        <hgroup>
+          <h2 id="guide-title">Comment repérer les photos générées par IA</h2>
+          <p>
+            Certaines images IA ressemblent à des photos ordinaires. Examine la
+            cohérence de la scène : ce sont des indices, pas un test
+            infaillible.
+          </p>
+        </hgroup>
+        <section aria-labelledby="guide-tip-0">
+          <h3 id="guide-tip-0">Physique et points de contact</h3>
+          <p>
+            La main tient-elle vraiment la tasse ? Les pieds de la chaise
+            touchent-ils le sol ? Suis la sangle du sac. Des éléments crédibles
+            peuvent être reliés de façon incohérente.
+          </p>
+        </section>
+        <section aria-labelledby="guide-tip-1">
+          <h3 id="guide-tip-1">Lumière et ombres</h3>
+          <p>
+            Compare l’éclairage du visage, des vêtements et du décor. Les ombres
+            doivent correspondre aux sources lumineuses et aux surfaces.
+            Plusieurs lampes ou des reflets peuvent expliquer des directions
+            différentes.
+          </p>
+        </section>
+        <section aria-labelledby="guide-tip-2">
+          <h3 id="guide-tip-2">Verre et miroirs</h3>
+          <p>
+            Compare les reflets à la scène en tenant compte de l’angle du miroir
+            et de la courbure du verre. Un reflet n’est pas une copie de la vue
+            directe de l’appareil.
+          </p>
+        </section>
+        <section aria-labelledby="guide-tip-3">
+          <h3 id="guide-tip-3">Textes et motifs répétés</h3>
+          <p>
+            Agrandis les lettres, logos et chiffres. Suis les structures
+            répétées comme les boutons ou les rambardes. Un texte correct
+            n’exclut pas l’IA : les modèles savent en produire, et il peut être
+            ajouté ensuite.
+          </p>
+        </section>
+        <section aria-labelledby="guide-tip-4">
+          <h3 id="guide-tip-4">Visages, mains et contours</h3>
+          <p>
+            Examine les attaches des doigts, les oreilles, les dents et les
+            contours entre cheveux et vêtements. Les visages naturels ne sont ni
+            parfaits ni symétriques. Le flou, le maquillage et le traitement
+            photo peuvent aussi surprendre.
+          </p>
+        </section>
+        <section aria-labelledby="guide-tip-5">
+          <h3 id="guide-tip-5">Distance, échelle et mise au point</h3>
+          <p>
+            Compare la taille des objets à leur distance et à la perspective.
+            Autour des cheveux, un contour découpé peut aussi venir du mode
+            portrait d’un téléphone.
+          </p>
+        </section>
+        <section aria-labelledby="guide-accessories">
+          <h3 id="guide-accessories">
+            Lunettes, boucles d’oreilles et arrière-plan
+          </h3>
+          <p>
+            Suis la monture et les branches des lunettes, les attaches des
+            boucles et le col. Cherche les lignes interrompues sans raison
+            autour de la tête. Des bijoux différents ou une asymétrie naturelle
+            ne sont pas des erreurs en soi.
+          </p>
+        </section>
+        <section aria-labelledby="guide-source">
+          <h3 id="guide-source">Que révèle la source originale ?</h3>
+          <p>
+            Une copie de meilleure qualité peut révéler des détails masqués par
+            une capture d’écran. Une recherche inversée peut retrouver une
+            publication signalant une création IA. L’absence de métadonnées
+            prouve peu : le partage peut les supprimer.
+          </p>
+        </section>
+        <section aria-labelledby="guide-detectors">
+          <h3 id="guide-detectors">Peut-on se fier aux détecteurs d’IA ?</h3>
+          <p>
+            Le pourcentage d’un détecteur n’est pas une garantie. Ne te fie pas
+            à ce seul résultat : examine l’image, sa source et son contexte.
+          </p>
+        </section>
+        <section aria-labelledby="guide-credentials">
+          <h3 id="guide-credentials">Historique de création et de retouche</h3>
+          <p>
+            Certains fichiers contiennent des Content Credentials, des
+            informations signées sur leur origine et leurs retouches. Leur
+            validité ne prouve pas la véracité d’une affirmation liée à l’image
+            ; leur absence ne prouve pas une falsification.
+          </p>
+        </section>
+        <section aria-labelledby="comparison-title">
+          <h3 id="comparison-title">Un vrai portrait et une variation IA</h3>
+          <p>Cadrage similaire ; personne, expression et tenue différentes.</p>
+          <div class="portrait-comparison">
+            <div class="comparison-pair">
+              <figure>
+                <a
+                  class="portrait-zoom"
+                  href="../../photos/portrait-VzusBjHlKM8.jpg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Ouvrir le portrait en grand"
+                  ><img
+                    src="../../photos/portrait-VzusBjHlKM8.jpg"
+                    width="1000"
+                    height="667"
+                    alt="Photo réelle d’une femme blonde"
+                    decoding="async"
+                /></a>
+                <figcaption>
+                  Réelle ·
+                  <a
+                    href="https://unsplash.com/photos/a-woman-with-long-blonde-hair-wearing-a-black-shirt-VzusBjHlKM8"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Giorgio Trovato / Unsplash"
+                    >Unsplash</a
+                  >
+                </figcaption>
+              </figure>
+              <figure>
+                <a
+                  class="portrait-zoom"
+                  href="../../assets/guide-portrait-blazer-ai.jpg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Ouvrir le portrait en grand"
+                  ><img
+                    src="../../assets/guide-portrait-blazer-ai.jpg"
+                    width="1000"
+                    height="667"
+                    alt="Portrait IA d’une femme en veste habillée"
+                    decoding="async"
+                /></a>
+                <figcaption>IA · OpenAI</figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+        <p>
+          Ces erreurs se raréfient à mesure que les modèles progressent. Les
+          indices aident à regarder de plus près, sans prouver qu’une image est
+          réelle ou générée. La source et le contexte comptent aussi.
+        </p>
+        <section aria-labelledby="guide-reading">
+          <h3 id="guide-reading">Sources et lectures complémentaires</h3>
+          <ul>
+            <li>
+              <a
+                href="https://www.whichfaceisreal.com/learn.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Which Face Is Real?</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://factcheck.afp.com/tips-for-identifying-ai-generated-content"
+                target="_blank"
+                rel="noopener noreferrer"
+                >AFP</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://fullfact.org/blog/2025/apr/spotting-AI-content-guide/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Full Fact</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://c2pa.org/specifications/specifications/2.0/security/Harms_Modelling.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >C2PA</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://newsinitiative.withgoogle.com/resources/trainings/verification/verification-advanced-reverse-image-search/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Google News Initiative</a
+              >
+            </li>
+          </ul>
+        </section>
+        <a class="control" href="../#play">Jouer</a>
+      </article>
+    </main>
+    <footer>
+      <span class="footer-links"
+        ><a href="../about/">À propos</a><a href="../history/">Historique</a
+        ><a href="./" aria-current="page">Guide</a
+        ><a href="../sources/">Sources</a></span
+      >
+    </footer>
+    <script src="../../analytics.js"></script>
+  </body>
+</html>

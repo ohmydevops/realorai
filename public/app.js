@@ -1,13 +1,18 @@
 'use strict';
-const language = document.documentElement.lang === 'fa' ? 'fa' : 'en';
+const language = Object.hasOwn(
+  window.QUIZ_TRANSLATIONS,
+  document.documentElement.lang,
+)
+  ? document.documentElement.lang
+  : 'en';
+const languagePath = language === 'fa' ? '' : `${language}/`;
 const baseURL = new URL('.', document.currentScript.src);
 const images = window.QUIZ_IMAGES.filter((image) => image.active !== false);
 const byId = new Map(window.QUIZ_IMAGES.map((i) => [i.id, i]));
 const app = document.getElementById('app');
 const STORAGE_KEY = 'real-or-ai-history-v1';
 const copy = window.QUIZ_TRANSLATIONS[language];
-const number = (n) =>
-  new Intl.NumberFormat(language === 'fa' ? 'fa-IR' : 'en-US').format(n);
+const number = (n) => new Intl.NumberFormat(language).format(n);
 const escapeHTML = (s) =>
   String(s).replace(
     /[&<>"']/g,
@@ -119,11 +124,11 @@ function renderHistory() {
               ? copy.previousAnswers
               : Number.isNaN(date.getTime())
                 ? ''
-                : new Intl.DateTimeFormat(
-                    language === 'fa' ? 'fa-IR' : 'en-US',
-                    { dateStyle: 'medium', timeStyle: 'short' },
-                  ).format(date);
-            return `<li><div class="history-row"><span>${escapeHTML(label)}</span><strong><bdi>${number(entry.correct)} / ${number(entry.total)}</bdi></strong><small>${copy.skipped}: ${number(entry.skipped || 0)}</small></div><a class="history-review-link" href="${new URL(language === 'fa' ? './' : 'en/', baseURL).href}#review=${encodeURIComponent(entry.id)}" target="_blank" rel="noopener noreferrer">${copy.reviewGame}</a></li>`;
+                : new Intl.DateTimeFormat(language, {
+                    dateStyle: 'medium',
+                    timeStyle: 'short',
+                  }).format(date);
+            return `<li><div class="history-row"><span>${escapeHTML(label)}</span><strong><bdi>${number(entry.correct)} / ${number(entry.total)}</bdi></strong><small>${copy.skipped}: ${number(entry.skipped || 0)}</small></div><a class="history-review-link" href="${new URL(languagePath || './', baseURL).href}#review=${encodeURIComponent(entry.id)}" target="_blank" rel="noopener noreferrer">${copy.reviewGame}</a></li>`;
           })
           .join('')}</ol>`
       : `<p>${copy.noHistory}</p>`
@@ -215,9 +220,7 @@ function route() {
     window.location.hash === '#history'
   ) {
     const page = window.location.hash.slice(1);
-    window.location.replace(
-      new URL((language === 'fa' ? '' : 'en/') + page + '/', baseURL).href,
-    );
+    window.location.replace(new URL(languagePath + page + '/', baseURL).href);
     return;
   }
   if (window.location.pathname?.endsWith('/history/')) {
@@ -300,7 +303,7 @@ function render() {
   loaded = false;
   const token = ++renderToken;
   app.innerHTML = `<section class="quiz" aria-label="${copy.round}">
-    <figure class="image"><div id="image-frame" class="image-frame" data-state="loading" aria-busy="true"><img id="quiz-image" alt="${language === 'fa' ? 'تصویر آزمون' : 'Quiz image'} ${number(test.index + 1)}" width="1000" height="750"><div class="image-skeleton" aria-hidden="true"></div><p id="image-status" role="status">${copy.loading}</p><div id="load-actions"></div></div><figcaption>${copy.round} ${number(test.index + 1)} ${copy.of} ${number(test.ids.length)}</figcaption></figure>
+    <figure class="image"><div id="image-frame" class="image-frame" data-state="loading" aria-busy="true"><img id="quiz-image" alt="${copy.quizImage} ${number(test.index + 1)}" width="1000" height="750"><div class="image-skeleton" aria-hidden="true"></div><p id="image-status" role="status">${copy.loading}</p><div id="load-actions"></div></div><figcaption>${copy.round} ${number(test.index + 1)} ${copy.of} ${number(test.ids.length)}</figcaption></figure>
 
     <div class="buttons"><button id="real" disabled>${copy.real}</button><button id="ai" disabled>${copy.ai}</button></div>
   </section>`;
@@ -421,7 +424,7 @@ function results() {
     </div>
   </section>`;
   document.getElementById('share-result').onclick = async () => {
-    const url = new URL(language === 'fa' ? './' : 'en/', baseURL).href;
+    const url = new URL(languagePath || './', baseURL).href;
     const text = copy.shareText
       .replace('{score}', number(correct))
       .replace('{total}', number(answers.length));

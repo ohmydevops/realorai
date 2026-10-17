@@ -80,3 +80,46 @@ assert(!sitemap.includes('/fa/'), 'Do not submit a duplicate canonical alias');
 console.log(
   'PASS: canonical URLs, language links, metadata, structured data, static Home, shared footers, sitemap, and local links.',
 );
+
+const languages = ['fa', 'en', 'ar', 'tr', 'fr', 'ru'];
+for (const lang of languages) {
+  for (const page of ['', 'about/', 'history/', 'guide/', 'sources/']) {
+    const suffix = (lang === 'fa' ? '' : `${lang}/`) + page;
+    const file = suffix + 'index.html';
+    const html = fs.readFileSync('public/' + file, 'utf8');
+    assert(
+      html.includes(
+        `<html lang="${lang}" dir="${['fa', 'ar'].includes(lang) ? 'rtl' : 'ltr'}">`,
+      ),
+    );
+    assert.equal(
+      html.match(/rel="canonical"\s+href="([^"]+)"/)[1],
+      origin + suffix,
+    );
+    assert(sitemap.includes(`<loc>${origin + suffix}</loc>`));
+    assert(html.includes('class="language-menu"'));
+    assert.equal((html.match(/<main[ >]/g) || []).length, 1);
+    assert.equal((html.match(/id="theme-toggle"/g) || []).length, 1);
+    for (const alternate of languages) {
+      const destination =
+        origin + (alternate === 'fa' ? '' : `${alternate}/`) + page;
+      assert(
+        new RegExp(`hreflang="${alternate}"\\s+href="${destination}"`).test(
+          html,
+        ),
+      );
+    }
+    for (const match of html.matchAll(/(?:src|href)="([^"#]+)"/g)) {
+      if (/^https?:/.test(match[1])) continue;
+      assert(
+        fs.existsSync(
+          path.resolve('public', path.dirname(file), match[1].split('#')[0]),
+        ),
+        `Broken reference: ${file}: ${match[1]}`,
+      );
+    }
+  }
+}
+console.log(
+  'PASS: all six languages have complete page routes, reciprocal SEO links, language controls and valid local assets.',
+);

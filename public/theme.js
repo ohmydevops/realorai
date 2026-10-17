@@ -29,6 +29,28 @@ document.addEventListener('DOMContentLoaded', () => {
     updateToggle();
   });
   updateToggle();
+  const languageMenu = document.querySelector('.language-menu');
+  if (languageMenu) {
+    // Preserve a running game or saved review when choosing another language.
+    for (const link of languageMenu.querySelectorAll('a')) {
+      link.addEventListener('click', () => {
+        if (location.hash) {
+          const destination = new URL(link.href, location.href);
+          destination.hash = location.hash;
+          link.href = destination.href;
+        }
+      });
+    }
+    document.addEventListener('click', (event) => {
+      if (!languageMenu.contains(event.target)) languageMenu.open = false;
+    });
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && languageMenu.open) {
+        languageMenu.open = false;
+        languageMenu.querySelector('summary').focus();
+      }
+    });
+  }
   for (const link of document.querySelectorAll('.footer-links a')) {
     const url = new URL(link.href, location.href);
     if (!url.hash && url.pathname === location.pathname)

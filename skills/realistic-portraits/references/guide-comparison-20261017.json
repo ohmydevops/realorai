@@ -7,13 +7,16 @@
     "source": "https://unsplash.com/photos/a-woman-with-long-blonde-hair-wearing-a-black-shirt-VzusBjHlKM8",
     "path": "public/photos/portrait-VzusBjHlKM8.jpg"
   },
-  "output": "public/assets/guide-portrait-blonde-ai.jpg",
-  "prompt": "Use case: photorealistic-natural. Make a single highly realistic AI variation of the reference portrait for an educational side-by-side comparison. Reference role: photographic framing, camera perspective, pose and lighting. Keep landscape 3:2 framing, ordinary pale gray backdrop, upper-body portrait of an adult white woman with long wavy blonde hair and a simple black long-sleeve top, shoulders relaxed, same lighting direction and everyday camera appearance. Change her to a different adult woman with subtly different eyes, nose and facial proportions. Make only a small change in head angle and a slightly more neutral mouth, like another ordinary portrait taken in the same setup. Preserve natural facial asymmetry and believable eyes. Restrained unretouched skin, coherent hair and clothing, soft neutral daylight. No glossy eyes, sculpted beauty lighting, skin smoothing, fashion styling, cinematic color split, exaggerated HDR or artificial grain. No writing, watermark or collage. Output only one photograph-like portrait.",
-  "review": "Accepted after reviewing full portrait: coherent facial anatomy, restrained neutral lighting, supported shoulders, natural eyes and hair, consistent clothing and perspective.",
+  "output": "public/assets/guide-portrait-blazer-ai.jpg",
+  "review": "Reviewed full frame: natural face and eyes, black formal blazer, coherent lapels and hair, warmer facial rendering closer to original reference.",
   "export": {
     "format": "JPEG",
     "width": 1000,
     "height": 667,
     "quality": 82
-  }
+  },
+  "promptSet": [
+    "Use case: photorealistic-natural. Generate one AI reference-inspired portrait for comparison with this real photograph. Match the reference's photographic rendering very closely: identical light direction and softness, exposure, white balance, warm-neutral skin color, saturation and contrast. In particular preserve the brighter warm face highlights, defined but natural face shadows and ordinary slightly punchy camera rendering. Do not make the face colder, grayer, flatter, paler or more softly lit than the reference. Preserve landscape 3:2 composition, plain gray backdrop, upper-body framing, long wavy blonde hair and plain black top. Subject: a different adult white woman with slightly different facial proportions and only a subtle change in head angle and relaxed mouth. The reference image is the authority for lighting and color, not a beauty styling reference. Plausible natural facial structure, ordinary unretouched skin and eyes, coherent hair and clothing. No beauty retouching, glossy eyes, cinematic grading, artificial grain, text or watermark. Output one portrait only.",
+    "Edit target: image 1 (the AI-generated blonde woman's portrait). Lighting reference: image 2 (the original real photograph). Change only her clothing to a formal tailored black evening blazer with clearly visible elegant lapels over a simple black inner top. Keep her face, expression, hair, head angle, body position, camera perspective and gray background unchanged. Preserve the current warm-natural face color and match the second image's facial exposure, light direction, shadow depth and white balance. This is an ordinary unretouched portrait with a formal jacket, not a fashion campaign. No beauty retouching, extra makeup, jewelry, glow, cinematic lighting, text, watermark or collage. Deliver a single landscape 3:2 portrait."
+  ]
 }
