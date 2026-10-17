@@ -1,5 +1,9 @@
 'use strict';
 (() => {
+  if (window.location.hostname !== 'ohmydevops.github.io') {
+    window.QUIZ_ANALYTICS = { track() {} };
+    return;
+  }
   const pending = [];
   let failed = false;
   const language = document.documentElement.lang || 'en';

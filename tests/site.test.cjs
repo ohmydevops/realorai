@@ -143,6 +143,7 @@ for (const file of [
     if (!/\bsrc=|rel="(?:stylesheet|preload)"/.test(resource[0])) continue;
     if (resource[0].includes(`src="${analyticsURL}"`)) {
       assert(resource[0].includes(`data-website-id="${analyticsID}"`));
+      assert(resource[0].includes('data-domains="ohmydevops.github.io"'));
       assert(/\bdefer\b/.test(resource[0]));
       analyticsCount++;
       continue;

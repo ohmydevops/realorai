@@ -3,7 +3,12 @@ const fs = require('node:fs'),
   assert = require('node:assert/strict');
 const source = fs.readFileSync('public/app.js', 'utf8');
 const store = {};
-function boot(lang = 'en', hash = '#play', trackerMode = 'ready') {
+function boot(
+  lang = 'en',
+  hash = '#play',
+  trackerMode = 'ready',
+  hostname = 'ohmydevops.github.io',
+) {
   const analytics = [];
   const trackerEvents = {};
   const tracker = {
@@ -62,6 +67,7 @@ function boot(lang = 'en', hash = '#play', trackerMode = 'ready') {
   const c = {
     window: {
       location: {
+        hostname,
         hash,
         replace(url) {
           this.redirected = url;
@@ -547,3 +553,17 @@ assert(migrated.run('state.active.ids.every(id => !byId.get(id).real)'));
 console.log(
   'PASS: retired-image reviews and in-progress answers survive; new and partial rounds never exceed two AI images.',
 );
+
+for (const host of [
+  'localhost',
+  '127.0.0.1',
+  '192.168.1.10',
+  '10.0.0.2',
+  '[::1]',
+  '172.16.0.1',
+]) {
+  const local = boot('en', '#play', 'ready', host);
+  local.c.window.QUIZ_ANALYTICS.track('local-test');
+  assert.equal(local.analytics.length, 0, 'No analytics on ' + host);
+}
+console.log('PASS: analytics disabled on localhost and local IP addresses.');
