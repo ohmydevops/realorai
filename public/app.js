@@ -211,6 +211,7 @@ function renderHistory() {
   historyDialog.scrollTop = 0;
 }
 document.getElementById('history-open').onclick = () => {
+  if (!historyDialog.open) window.QUIZ_ANALYTICS?.track('history-open');
   historyPage = 0;
   renderHistory();
   if (!historyDialog.open) historyDialog.showModal();
@@ -288,6 +289,7 @@ function home() {
   loaded = false;
   app.innerHTML = `<section class="home"><img class="home-art" src="${new URL('assets/home-process.webp', baseURL).href}" width="1200" height="503" fetchpriority="high" alt="${copy.homeAlt}"><p>${copy.homeIntro}</p><a class="start-game" href="#play">${copy.start}</a></section>`;
 }
+let lastReviewHash = null;
 function route() {
   if (window.location.hash.startsWith('#review=')) {
     stopTimer();
@@ -298,8 +300,12 @@ function route() {
         `#review=${encodeURIComponent(item.id)}` === window.location.hash,
     );
     app.innerHTML = `<section class="history-page"><h2>${copy.reviewGame}</h2>${entry ? `<p class="score"><bdi>${number(entry.correct)} / ${number(entry.total)}</bdi></p>${historyReview(entry)}` : `<p>${copy.reviewUnavailable}</p>`}</section>`;
+    if (entry && lastReviewHash !== window.location.hash)
+      window.QUIZ_ANALYTICS?.track('review-open');
+    lastReviewHash = window.location.hash;
     return;
   }
+  lastReviewHash = null;
   if (window.location.hash !== '#play') {
     home();
     if (window.location.hash === '#about')
@@ -340,7 +346,13 @@ function start() {
     answers: [],
     startedAt: new Date().toISOString(),
   };
-  if (save()) render();
+  if (save()) {
+    window.QUIZ_ANALYTICS?.track('game-start', {
+      total: selected.length,
+      timer: timerEnabled,
+    });
+    render();
+  }
 }
 function canStartTest() {
   return unseen().some((image) => !image.real);
@@ -434,7 +446,16 @@ function answer(value) {
   test.answers.push(record);
   state.answers.push(record);
   test.index++;
-  if (save()) render();
+  if (save()) {
+    window.QUIZ_ANALYTICS?.track('answer', {
+      choice: value === null ? 'skipped' : value ? 'real' : 'ai',
+      correct: record.correct,
+      timedOut: record.timedOut,
+      position: test.index,
+      timer: timerEnabled,
+    });
+    render();
+  }
 }
 function results() {
   stopTimer();
@@ -455,6 +476,11 @@ function results() {
       answers: test.answers.map((answer) => ({ ...answer })),
     });
     if (!save()) return;
+    window.QUIZ_ANALYTICS?.track('game-complete', {
+      score: correct,
+      total: answers.length,
+      skipped: answers.filter((answer) => answer.timedOut).length,
+    });
   }
   app.innerHTML = `<section class="review">
     <h2>${copy.results}</h2>

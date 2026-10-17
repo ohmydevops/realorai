@@ -3,7 +3,17 @@ const fs = require('node:fs'),
   assert = require('node:assert/strict');
 const source = fs.readFileSync('public/app.js', 'utf8');
 const store = {};
-function boot(lang = 'en', hash = '#play') {
+function boot(lang = 'en', hash = '#play', trackerMode = 'ready') {
+  const analytics = [];
+  const trackerEvents = {};
+  const tracker = {
+    track(name, data) {
+      if (trackerMode === 'throws') throw new Error('Tracker unavailable');
+      if (trackerMode === 'rejects')
+        return Promise.reject(new Error('Offline'));
+      analytics.push({ name, data });
+    },
+  };
   let html = '';
   const nodes = {};
   let now = Date.now();
@@ -53,10 +63,17 @@ function boot(lang = 'en', hash = '#play') {
     },
   };
   const c = {
-    window: { location: { hash }, addEventListener() {} },
+    window: {
+      location: { hash },
+      addEventListener() {},
+      umami: ['missing', 'delayed'].includes(trackerMode) ? undefined : tracker,
+    },
     document: {
       documentElement: { lang },
       currentScript: { src: 'https://example.test/app.js' },
+      querySelector: () => ({
+        addEventListener: (name, callback) => (trackerEvents[name] = callback),
+      }),
       getElementById: (id) => (id === 'app' ? app : node(id)),
     },
     URL,
@@ -75,8 +92,12 @@ function boot(lang = 'en', hash = '#play') {
   vm.createContext(c);
   vm.runInContext(fs.readFileSync('public/images.js', 'utf8'), c);
   vm.runInContext(fs.readFileSync('public/translations.js', 'utf8'), c);
+  vm.runInContext(fs.readFileSync('public/analytics.js', 'utf8'), c);
   vm.runInContext(source, c);
   return {
+    analytics,
+    tracker,
+    trackerEvents,
     c,
     nodes,
     app,
@@ -89,6 +110,7 @@ function boot(lang = 'en', hash = '#play') {
   };
 }
 const q = boot();
+assert.equal(q.analytics.filter((e) => e.name === 'game-start').length, 1);
 assert(q.run('images.length') >= 100);
 assert.equal(
   new Set(q.run('images.map(i=>i.id)')).size,
@@ -106,6 +128,11 @@ function finish(q) {
   assert(q.app.innerHTML.includes('5 / 5'));
 }
 finish(q);
+assert.equal(q.analytics.filter((e) => e.name === 'answer').length, 5);
+assert.equal(q.analytics.filter((e) => e.name === 'game-complete').length, 1);
+assert.equal(q.analytics.at(-1).data.score, 5);
+q.run('results(); route()');
+assert.equal(q.analytics.filter((e) => e.name === 'game-complete').length, 1);
 q.run('start()');
 finish(q);
 assert.equal(
@@ -120,6 +147,11 @@ for (let i = 0; i < 5; i++) {
   fa.run('answer(false)');
 }
 const reload = boot();
+assert.equal(
+  reload.analytics.length,
+  0,
+  'Reloading results sends no game events',
+);
 assert.equal(reload.run('state.answers.length'), 15);
 reload.run(
   'state.active=null; for(const i of images)state.seen[i.id]="seen";save();start()',
@@ -234,6 +266,9 @@ assert.equal(timed.nodes['image-frame'].ariaBusy, 'false');
 timed.advance(7999);
 assert.equal(timed.run('state.active.index'), 0);
 timed.advance(1);
+assert.equal(timed.analytics.at(-1).name, 'answer');
+assert.equal(timed.analytics.at(-1).data.choice, 'skipped');
+assert.equal(timed.analytics.at(-1).data.timedOut, true);
 assert.equal(timed.run('state.active.index'), 1);
 assert.equal(timed.run('state.answers[0].timedOut'), true);
 assert.equal(timed.run('state.answers[0].choice'), null);
@@ -288,6 +323,11 @@ assert.equal(
   'Reload does not duplicate completed games',
 );
 historyReload.nodes['history-open'].onclick();
+historyReload.nodes['history-open'].onclick();
+assert.equal(
+  historyReload.analytics.filter((e) => e.name === 'history-open').length,
+  1,
+);
 assert(historyReload.nodes['history-dialog'].innerHTML.includes('Skipped: 2'));
 assert(
   historyReload.nodes['history-dialog'].innerHTML.includes(
@@ -305,6 +345,11 @@ const reviewPage = boot(
 assert(reviewPage.run('app.innerHTML').includes('Your answer: Skipped'));
 assert(reviewPage.run('app.innerHTML').includes('Correct answer:'));
 assert.equal(reviewPage.timers.size, 0);
+reviewPage.run('route()');
+assert.equal(
+  reviewPage.analytics.filter((e) => e.name === 'review-open').length,
+  1,
+);
 historyReload.run(
   `state.history = Array.from({ length: 7 }, (_, index) => ({ ...state.history[0], id: 'page-test-' + index })); renderHistory()`,
 );
@@ -360,3 +405,56 @@ assert.equal(historyLink.timers.size, 0);
 console.log(
   'PASS: footer links from Sources open About and History without starting a game.',
 );
+
+for (const mode of ['missing', 'throws', 'rejects']) {
+  for (const key of Object.keys(store)) delete store[key];
+  const offline = boot('fa', '#play', mode);
+  while (offline.run('state.active.index < state.active.ids.length')) {
+    offline.nodes['quiz-image'].onload();
+    offline.run('answer(true)');
+  }
+  assert.equal(offline.run('state.history.length'), 1);
+  assert.equal(offline.run('state.history[0].total'), 5);
+  offline.nodes['history-open'].onclick();
+  assert.equal(offline.nodes['history-dialog'].open, true);
+}
+for (const key of Object.keys(store)) delete store[key];
+const delayed = boot('fa', '#play', 'delayed');
+assert.equal(delayed.analytics.length, 0);
+delayed.c.window.umami = delayed.tracker;
+delayed.trackerEvents.load();
+delayed.trackerEvents.load();
+assert.equal(delayed.analytics.length, 1, 'Deferred tracker flushes once');
+assert.equal(delayed.analytics[0].name, 'game-start');
+assert.equal(delayed.analytics[0].data.language, 'fa');
+assert.equal(delayed.analytics[0].data.total, 5);
+assert.equal(delayed.analytics[0].data.timer, true);
+console.log(
+  'PASS: analytics failure isolation, delayed loading, and event deduplication.',
+);
+
+const sourceNodes = {
+  'source-warning': { hidden: false },
+  'source-list': { hidden: true, focus() {} },
+  'photo-credits': { childElementCount: 0 },
+  'show-sources': { addEventListener: (_, callback) => (reveal = callback) },
+};
+let reveal;
+const sourceEvents = [];
+const sourceContext = {
+  URL,
+  window: {
+    QUIZ_IMAGES: [],
+    QUIZ_ANALYTICS: { track: (name) => sourceEvents.push(name) },
+  },
+  document: {
+    currentScript: { src: 'https://example.test/sources.js' },
+    getElementById: (id) => sourceNodes[id],
+  },
+};
+vm.runInNewContext(fs.readFileSync('public/sources.js', 'utf8'), sourceContext);
+assert.equal(sourceEvents.length, 0, 'No reveal event before consent');
+reveal();
+reveal();
+assert.deepEqual(sourceEvents, ['sources-reveal']);
+assert.equal(sourceNodes['source-list'].hidden, false);

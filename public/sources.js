@@ -4,6 +4,7 @@ const warning = document.getElementById('source-warning');
 const sourceList = document.getElementById('source-list');
 const credits = document.getElementById('photo-credits');
 document.getElementById('show-sources').addEventListener('click', () => {
+  if (!sourceList.hidden) return;
   // Do not reveal credits or load thumbnails until the visitor accepts the spoiler.
   if (!credits.childElementCount) {
     for (const image of window.QUIZ_IMAGES.filter((entry) => entry.real)) {
@@ -25,6 +26,7 @@ document.getElementById('show-sources').addEventListener('click', () => {
   }
   warning.hidden = true;
   sourceList.hidden = false;
+  window.QUIZ_ANALYTICS?.track('sources-reveal');
   sourceList.tabIndex = -1;
   sourceList.focus();
 });

@@ -93,6 +93,14 @@ for (const file of [
     );
   }
   assert.equal(analyticsCount, 1, `Exactly one Umami script required: ${file}`);
+  const helper = html.indexOf('analytics.js');
+  const consumer = html.indexOf(
+    file.includes('sources/') ? 'sources.js' : 'app.js',
+  );
+  assert(
+    helper >= 0 && helper < consumer,
+    `Analytics helper loads first: ${file}`,
+  );
 }
 const css = fs.readFileSync('public/style.css', 'utf8');
 assert(!/@import/.test(css), 'No CSS imports');
