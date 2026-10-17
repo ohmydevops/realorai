@@ -78,6 +78,7 @@ header h1 {
 nav {
   flex-shrink: 0;
   display: flex;
+  align-items: center;
   gap: 10px;
 }
 a {
@@ -634,11 +635,13 @@ dialog p {
   color: var(--link);
 }
 nav .control {
+  display: flex;
   width: 28px;
   min-width: 28px;
   height: 28px;
   min-height: 28px;
   padding: 0;
+  margin: 0;
   border-radius: 2px;
   font-size: 11px;
   font-weight: 700;
@@ -671,6 +674,14 @@ nav .control {
   font-size: clamp(18px, 2.4vw, 22px);
   margin: 0;
   line-height: 1.9;
+}
+.home-count,
+.home-rounds {
+  display: block;
+  margin-top: 6px;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--muted);
 }
 .home .finished {
   max-width: 48ch;
@@ -885,6 +896,10 @@ nav .control {
 
 .language-menu {
   position: relative;
+  display: flex;
+  align-items: center;
+  height: 28px;
+  line-height: 1;
 }
 .language-menu summary {
   list-style: none;

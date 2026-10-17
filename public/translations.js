@@ -1,6 +1,8 @@
 'use strict';
 window.QUIZ_TRANSLATIONS = {
   en: {
+    homeRounds: 'Check up to 5 images per round, then move on to the next.',
+    homeCount: '{count} images to guess so far.',
     close: 'Close',
     history: 'History',
     previousPage: 'Previous',
@@ -46,6 +48,8 @@ window.QUIZ_TRANSLATIONS = {
     quizImage: 'Quiz image',
   },
   fa: {
+    homeRounds: 'هر دست ۵ عکس رو بررسی می‌کنی؛ بعدش می‌تونی بری دست بعدی.',
+    homeCount: 'تا این لحظه {count} عکس برای حدس زدن داریم.',
     close: 'بستن',
     history: 'تاریخچه',
     previousPage: 'قبلی',
@@ -92,6 +96,8 @@ window.QUIZ_TRANSLATIONS = {
     quizImage: 'تصویر آزمون',
   },
   ar: {
+    homeRounds: 'افحص حتى ٥ صور في كل جولة، ثم انتقل إلى الجولة التالية.',
+    homeCount: 'لدينا حتى الآن {count} صورة لتخمينها.',
     close: 'إغلاق',
     history: 'السجل',
     previousPage: 'السابق',
@@ -136,6 +142,9 @@ window.QUIZ_TRANSLATIONS = {
     quizImage: 'صورة الاختبار',
   },
   tr: {
+    homeRounds:
+      'Her turda en fazla 5 fotoğrafı incele, ardından yeni tura geç.',
+    homeCount: 'Şu ana kadar tahmin edilecek {count} fotoğraf var.',
     close: 'Kapat',
     history: 'Geçmiş',
     previousPage: 'Önceki',
@@ -182,6 +191,9 @@ window.QUIZ_TRANSLATIONS = {
     quizImage: 'Oyun fotoğrafı',
   },
   fr: {
+    homeRounds:
+      'Examine jusqu’à 5 images par manche, puis passe à la suivante.',
+    homeCount: 'Déjà {count} images à deviner.',
     close: 'Fermer',
     history: 'Historique',
     previousPage: 'Précédent',
@@ -228,6 +240,9 @@ window.QUIZ_TRANSLATIONS = {
     quizImage: 'Image du jeu',
   },
   ru: {
+    homeRounds:
+      'В каждом раунде до 5 изображений. Затем можно перейти к следующему.',
+    homeCount: 'Уже {count} изображений для игры.',
     close: 'Закрыть',
     history: 'История',
     previousPage: 'Назад',

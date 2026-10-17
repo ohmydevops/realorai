@@ -211,7 +211,29 @@ function selectRound(ai, real, aiCount, roundSize) {
 function home() {
   renderToken++;
   loaded = false;
-  app.innerHTML = `<section class="home"><img class="home-art" src="${new URL('assets/home-process.webp', baseURL).href}" width="1600" height="800" fetchpriority="high" alt="${copy.homeAlt}"><p>${copy.homeIntro}</p>${(state.active && state.active.index < state.active.ids.length) || canStartTest() ? `<a class="start-game" href="#play">${copy.start}</a>` : `<p class="finished">${copy.later}</p>`}</section>`;
+  app.innerHTML = `<section class="home"><img class="home-art" src="${new URL('assets/home-process.webp', baseURL).href}" width="1600" height="800" fetchpriority="high" alt="${copy.homeAlt}"><p>${copy.homeIntro}<small class="home-count" aria-live="off">${copy.homeCount.replace('{count}', `<span id="home-count-number">${number(images.length)}</span>`)}</small><small class="home-rounds">${copy.homeRounds}</small></p>${(state.active && state.active.index < state.active.ids.length) || canStartTest() ? `<a class="start-game" href="#play">${copy.start}</a>` : `<p class="finished">${copy.later}</p>`}</section>`;
+  animateHomeCount();
+}
+function animateHomeCount() {
+  if (
+    typeof window.requestAnimationFrame !== 'function' ||
+    window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
+  )
+    return;
+  const counter = document.getElementById('home-count-number');
+  if (!counter) return;
+  const token = renderToken;
+  counter.textContent = number(0);
+  let startTime;
+  function tick(time) {
+    if (token !== renderToken) return;
+    startTime ??= time;
+    const progress = Math.min((time - startTime) / 1100, 1);
+    const eased = 1 - Math.pow(1 - progress, 3);
+    counter.textContent = number(Math.round(images.length * eased));
+    if (progress < 1) window.requestAnimationFrame(tick);
+  }
+  window.requestAnimationFrame(tick);
 }
 let lastReviewHash = null;
 function route() {
