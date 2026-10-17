@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ohmydevops.github.io/realorai/sitemap.xml

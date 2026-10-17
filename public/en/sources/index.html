@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Image sources | Real or AI?</title>
+    <script src="../../theme.js"></script>
+    <link rel="stylesheet" href="../../style.css" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Real or AI?" />
+    <meta property="og:title" content="Image sources | Real or AI?" />
+    <meta
+      property="og:description"
+      content="Photo credits and sources for Real or AI?"
+    />
+    <meta
+      property="og:url"
+      content="https://ohmydevops.github.io/realorai/en/sources/"
+    />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="fa_IR" />
+    <meta
+      property="og:image"
+      content="https://ohmydevops.github.io/realorai/social/og-en.png"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://ohmydevops.github.io/realorai/social/og-en.png"
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Real or AI? Five images, five guesses, beside an illustrated question card."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Image sources | Real or AI?" />
+    <meta
+      name="twitter:description"
+      content="Photo credits and sources for Real or AI?"
+    />
+    <meta
+      name="twitter:image"
+      content="https://ohmydevops.github.io/realorai/social/og-en.png"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Real or AI? Five images, five guesses, beside an illustrated question card."
+    />
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+    <link
+      rel="icon"
+      href="../../favicon-32.png"
+      type="image/png"
+      sizes="32x32"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="../../apple-touch-icon.png"
+      sizes="180x180"
+    />
+    <link rel="manifest" href="../../site.webmanifest" />
+  </head>
+  <body class="sources-page">
+    <header>
+      <h1><a class="brand" href="../">Real or AI?</a></h1>
+      <nav aria-label="Settings">
+        <a
+          class="control"
+          href="../../sources/"
+          lang="fa"
+          hreflang="fa"
+          aria-label="فارسی"
+          >فا</a
+        ><button
+          class="control"
+          id="theme-toggle"
+          aria-label="Change theme"
+          type="button"
+        >
+          ☾
+        </button>
+      </nav>
+    </header>
+    <main>
+      <section id="source-warning">
+        <h2>This could spoil the game</h2>
+        <p>
+          The source list reveals which photos are real and could spoil the
+          game. Do you still want to see it?
+        </p>
+        <div class="source-actions">
+          <a class="control" href="../#play">Back to the game</a
+          ><button id="show-sources" type="button">Show sources</button>
+        </div>
+      </section>
+      <section id="source-list" hidden>
+        <div class="sources-intro">
+          <p>
+            Real photographs and their photographers. The remaining quiz images
+            were generated with AI.
+          </p>
+          <a href="../#play">Back to the game</a>
+        </div>
+        <ol id="photo-credits"></ol>
+      </section>
+    </main>
+    <script src="../../images.js"></script>
+    <script src="../../sources.js"></script>
+  </body>
+</html>
