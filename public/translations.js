@@ -13,7 +13,9 @@ window.QUIZ_TRANSLATIONS = {
     timeLeft: 'Time remaining',
     seconds: 's',
     timedOut: 'Skipped',
-    homeIntro: 'Five images. Can you tell real photos from AI?',
+    homeIntro: 'Can you tell real photos from AI?',
+    homeAlt:
+      'A man considers two matching portraits: one made with an analog camera and film, the other generated from visual noise by a neural network.',
     start: 'Start game',
     round: 'Image',
     of: 'of',
@@ -51,8 +53,9 @@ window.QUIZ_TRANSLATIONS = {
     timeLeft: 'زمان باقی‌مونده',
     seconds: 'ثانیه',
     timedOut: 'بی‌پاسخ',
-    homeIntro:
-      'پنج تا عکس، پنج تا حدس. کدوم واقعیه و کدوم رو هوش مصنوعی ساخته؟',
+    homeIntro: 'کدوم عکس واقعیه و کدوم رو هوش مصنوعی ساخته؟',
+    homeAlt:
+      'مردی به دو پرترهٔ مشابه فکر می‌کنه: یکی با دوربین آنالوگ و فیلم ساخته شده و دیگری از نویز تصویری با شبکهٔ عصبی.',
     start: 'شروع بازی',
     round: 'عکس',
     of: 'از',

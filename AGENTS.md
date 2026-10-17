@@ -3,7 +3,7 @@
 ## Product and design
 
 - Keep this a simple, mobile-friendly English/Persian image guessing game.
-- Home contains only one short, friendly description and a Start game button in its main content. Keep extra headings and explanatory sections off Home.
+- Keep Home minimal: a compact illustration comparing analog photography and neural-network image generation, one short friendly description, and a Start game button. Keep extra headings and explanatory sections off Home.
 - Keep the existing branded title visible on every page, including the game, results, and image sources. The title links to the current language's Home.
 - Keep a small eye-and-sparkle brand icon with the text Real? to the right of the shared title.
 - On mobile, keep primary actions at the bottom of the available content area: Start game, real/AI answers, and the next-game button. Respect safe-area insets, use comfortable touch targets, and prevent content from hiding behind buttons.
@@ -31,11 +31,13 @@
 - `npm run dev` starts Vite at http://127.0.0.1:5174/ with automatic browser reload when site files change. Keep the server running when the user asks for a preview.
 - Keep the published site static and self-host fonts, scripts, styles, icons, and quiz images. The user-approved Umami script at https://cloud.umami.is/script.js is the analytics exception, using website ID e334ba0d-1ec4-4ab7-b4c1-2c1f1477f33b on every page. Do not add a framework or a production build without a concrete need.
 - Keep localized Open Graph and Twitter metadata, 1200 × 630 sharing images, favicon/touch icons, canonical URLs, language alternates, robots.txt, and sitemap valid for GitHub Pages under `/realorai/`.
-- Run `npm test` and `npm run format:check` after relevant changes. Visually verify layout changes at phone and desktop sizes. Use `npm run format` when needed.
+- Before every commit, including small text edits, run `npm run format:check` against the exact content being committed and fix failures before committing. Run `npm test` for relevant changes. Visually verify layout changes at phone and desktop sizes. Use `npm run format` when needed.
 - Remove obsolete prototypes and duplicate output rather than maintaining several competing project directories.
 - At the end of each task, remove unnecessary scripts and temporary helpers. Keep finished assets, application scripts, tests, and required development configuration; do not retain one-time asset-generation or migration scripts.
 - Always remove confirmed dead code, unused translations and dependencies, and duplicate rules before finishing. Preserve compatibility code that still supports saved user data and work currently in use by another active chat.
 - Keep the README concise: setup, checks, deployment, and credits. Do not add task logs, generation details, expansion narratives, or transient collection counts.
 - Use clear, readable fonts in sharing images, with Vazir for Persian. Avoid fixed round lengths in promotional artwork so it remains valid when game length changes.
 - Keep the game installable in Chrome with a standalone manifest and matching icons. Offer installation in About when the browser provides an install prompt; keep Home minimal.
+- Keep the footer visible at the bottom on every page, including Sources, while the main content scrolls separately. All footer destinations must remain available in both languages.
+- Align theme, language, and settings controls with consistent sizes and SVG strokes. Use EN and FA as language labels, readable type on desktop and mobile, and a high-contrast sage/forest palette.
 - Publish through the existing GitHub Pages workflow when requested. The user requested a one-time history reset for this cleanup; do not reset or force-push history again without a new explicit request.

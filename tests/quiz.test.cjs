@@ -289,3 +289,13 @@ assert.equal(historyReload.timers.size, 0);
 console.log(
   'PASS: eight-second deadlines, loading, skips, dialog pause/resume, saved settings, history persistence, and timer cleanup.',
 );
+const aboutLink = boot('fa', '#about');
+assert.equal(aboutLink.nodes['about-dialog'].open, true);
+assert(aboutLink.app.innerHTML.includes('class="home"'));
+assert.equal(aboutLink.timers.size, 0);
+const historyLink = boot('en', '#history');
+assert.equal(historyLink.nodes['history-dialog'].open, true);
+assert.equal(historyLink.timers.size, 0);
+console.log(
+  'PASS: footer links from Sources open About and History without starting a game.',
+);

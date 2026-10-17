@@ -228,10 +228,17 @@ function home() {
   stopTimer();
   renderToken++;
   loaded = false;
-  app.innerHTML = `<section class="home"><p>${copy.homeIntro}</p><a class="start-game" href="#play">${copy.start}</a></section>`;
+  app.innerHTML = `<section class="home"><img class="home-art" src="${new URL('assets/home-process.webp', baseURL).href}" width="1200" height="503" fetchpriority="high" alt="${copy.homeAlt}"><p>${copy.homeIntro}</p><a class="start-game" href="#play">${copy.start}</a></section>`;
 }
 function route() {
-  if (window.location.hash !== '#play') return home();
+  if (window.location.hash !== '#play') {
+    home();
+    if (window.location.hash === '#about')
+      document.getElementById('about-dialog').showModal();
+    if (window.location.hash === '#history')
+      document.getElementById('history-open').onclick();
+    return;
+  }
   if (!storageOK) return storageError();
   if (state.active) render();
   else start();

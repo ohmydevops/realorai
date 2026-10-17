@@ -3,18 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Real or AI? | Five-image photo quiz</title>
+    <title>Real or AI? | Free AI Image Guessing Game</title>
     <meta
       name="description"
-      content="Can you spot an AI-generated image? Try a free five-image quiz featuring real photographs and AI images, with a review of every answer."
+      content="Can you tell real photos from AI-generated images? Play this free image guessing game, challenge your eye, and review your results."
     />
-    <meta name="theme-color" content="#fafaf8" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
     <link rel="canonical" href="https://ohmydevops.github.io/realorai/en/" />
-    <link
-      rel="alternate"
-      hreflang="en"
-      href="https://ohmydevops.github.io/realorai/en/"
-    />
     <link
       rel="alternate"
       hreflang="fa"
@@ -22,31 +17,26 @@
     />
     <link
       rel="alternate"
+      hreflang="en"
+      href="https://ohmydevops.github.io/realorai/en/"
+    />
+    <link
+      rel="alternate"
       hreflang="x-default"
       href="https://ohmydevops.github.io/realorai/"
     />
+    <meta name="theme-color" content="#f4f2e9" />
     <script src="../theme.js"></script>
     <link rel="stylesheet" href="../style.css" />
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebApplication",
-        "name": "Real or AI?",
-        "url": "https://ohmydevops.github.io/realorai/en/",
-        "description": "Can you spot an AI-generated image? Try a free five-image quiz featuring real photographs and AI images, with a review of every answer.",
-        "inLanguage": "en",
-        "applicationCategory": "GameApplication",
-        "operatingSystem": "Any",
-        "isAccessibleForFree": true
-      }
-    </script>
-
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Real or AI?" />
-    <meta property="og:title" content="Real or AI? | Five-image photo quiz" />
+    <meta
+      property="og:title"
+      content="Real or AI? | Free AI Image Guessing Game"
+    />
     <meta
       property="og:description"
-      content="Can you spot an AI-generated image? Try a free five-image quiz featuring real photographs and AI images, with a review of every answer."
+      content="Can you tell real photos from AI-generated images? Play this free image guessing game, challenge your eye, and review your results."
     />
     <meta
       property="og:url"
@@ -70,10 +60,13 @@
       content="Real or AI? A large title, an eye-and-sparkle logo, and an invitation to play."
     />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Real or AI? | Five-image photo quiz" />
+    <meta
+      name="twitter:title"
+      content="Real or AI? | Free AI Image Guessing Game"
+    />
     <meta
       name="twitter:description"
-      content="Can you spot an AI-generated image? Try a free five-image quiz featuring real photographs and AI images, with a review of every answer."
+      content="Can you tell real photos from AI-generated images? Play this free image guessing game, challenge your eye, and review your results."
     />
     <meta
       name="twitter:image"
@@ -96,13 +89,42 @@
       src="https://cloud.umami.is/script.js"
       data-website-id="e334ba0d-1ec4-4ab7-b4c1-2c1f1477f33b"
     ></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://ohmydevops.github.io/realorai/#website",
+            "url": "https://ohmydevops.github.io/realorai/",
+            "name": "Real or AI?",
+            "alternateName": "واقعیه یا هوش مصنوعیه؟",
+            "inLanguage": ["fa", "en"]
+          },
+          {
+            "@type": "WebApplication",
+            "name": "Real or AI?",
+            "url": "https://ohmydevops.github.io/realorai/en/",
+            "description": "Can you tell real photos from AI-generated images? Play this free image guessing game, challenge your eye, and review your results.",
+            "inLanguage": "en",
+            "applicationCategory": "GameApplication",
+            "operatingSystem": "Any",
+            "isAccessibleForFree": true,
+            "image": "https://ohmydevops.github.io/realorai/social/og-en.png",
+            "isPartOf": {
+              "@id": "https://ohmydevops.github.io/realorai/#website"
+            }
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <header>
       <h1><a class="brand" href="./">Real or AI?</a></h1>
       <nav aria-label="Settings">
         <a class="control" href="../" lang="fa" hreflang="fa" aria-label="فارسی"
-          >فا</a
+          >FA</a
         ><button
           class="control"
           id="theme-toggle"
@@ -120,12 +142,30 @@
           aria-label="Settings"
           title="Settings"
         >
-          ⚙
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="m9 3-1 3-3 1-2 3 2 2-2 2 2 3 3 1 1 3h6l1-3 3-1 2-3-2-2 2-2-2-3-3-1-1-3Z"
+            />
+            <circle cx="12" cy="12" r="3" />
+          </svg>
         </button>
       </nav>
     </header>
     <main>
-      <div id="app" aria-live="polite"></div>
+      <div id="app" aria-live="polite">
+        <section class="home">
+          <img
+            class="home-art"
+            src="../assets/home-process.webp"
+            width="1200"
+            height="503"
+            fetchpriority="high"
+            alt="A man considers two matching portraits: one made with an analog camera and film, the other generated from visual noise by a neural network."
+          />
+          <p>Can you tell real photos from AI?</p>
+          <a class="start-game" href="#play">Start game</a>
+        </section>
+      </div>
       <noscript>Please enable JavaScript to play the quiz.</noscript>
     </main>
     <dialog id="settings-dialog" aria-labelledby="settings-title"></dialog>

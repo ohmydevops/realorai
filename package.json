@@ -4,7 +4,7 @@
   "private": true,
   "description": "A minimal bilingual quiz for distinguishing real photographs from AI images.",
   "scripts": {
-    "test": "node --check public/app.js && node tests/quiz.test.cjs && node tests/site.test.cjs",
+    "test": "node --check public/app.js && node tests/quiz.test.cjs && node tests/site.test.cjs && node tests/seo.test.cjs",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "dev": "vite --config vite.config.mjs"
