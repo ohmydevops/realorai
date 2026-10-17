@@ -531,6 +531,10 @@ assert.equal(
 for (const key of Object.keys(store)) delete store[key];
 const migration = boot();
 migration.run(`
+  window.QUIZ_IMAGES.push({...images[0], id:'retired-test-fixture', active:false});
+  byId.set('retired-test-fixture', window.QUIZ_IMAGES.at(-1));
+`);
+migration.run(`
   const retired = window.QUIZ_IMAGES.find(image => image.active === false);
   const record = {id:retired.id,choice:retired.real,correct:true,timedOut:false,answeredAt:'2026-10-16T10:00:00.000Z'};
   state.seen[retired.id] = record.answeredAt;
@@ -540,6 +544,9 @@ migration.run(`
   save();
 `);
 const migrated = boot('fa');
+migrated.run(
+  "byId.set('retired-test-fixture', {...images[0], id:'retired-test-fixture', active:false})",
+);
 assert.equal(migrated.run('state.active.index'), 1);
 assert.equal(migrated.run('state.active.answers.length'), 1);
 assert.equal(migrated.run('historyAnswers(state.history[0]).length'), 1);

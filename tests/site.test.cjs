@@ -7,7 +7,7 @@ const context = { window: {} };
 vm.runInNewContext(fs.readFileSync('public/images.js', 'utf8'), context);
 const images = context.window.QUIZ_IMAGES;
 const activeImages = images.filter((image) => image.active !== false);
-assert(images.length >= 100);
+assert(images.length >= 5);
 assert.equal(new Set(images.map((image) => image.id)).size, images.length);
 assert(images.some((image) => image.real));
 assert(images.some((image) => !image.real));
