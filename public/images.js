@@ -5569,7 +5569,7 @@ window.QUIZ_IMAGES = [
     credit: 'Jeremy McGilvrey',
     source:
       'https://unsplash.com/photos/man-in-white-dress-shirt-and-blue-denim-jeans-20oegq2JDYU',
-    active: true,
+    active: false,
   },
   {
     id: 'unsplash-nkWnc-W_GP8',
@@ -5672,7 +5672,7 @@ window.QUIZ_IMAGES = [
     credit: 'Gean Montoya',
     source:
       'https://unsplash.com/photos/a-man-sitting-on-the-ground-with-his-legs-crossed-1Maz0wJoe00',
-    active: true,
+    active: false,
   },
   {
     id: 'unsplash-0tK9nSbKAkw',
@@ -5685,7 +5685,7 @@ window.QUIZ_IMAGES = [
     credit: 'Angga Pratama',
     source:
       'https://unsplash.com/photos/a-woman-lies-on-her-side-against-a-white-background-0tK9nSbKAkw',
-    active: true,
+    active: false,
   },
   {
     id: 'unsplash-UoCfbBF6m6U',
@@ -5836,7 +5836,7 @@ window.QUIZ_IMAGES = [
       fa: 'چهره',
     },
     credit: 'OpenAI ImageGen',
-    active: true,
+    active: false,
   },
   {
     id: 'ai-portrait-20261017-wavy',
