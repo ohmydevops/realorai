@@ -1,0 +1,19 @@
+{
+  "purpose": "Bilingual guide comparison only; not a quiz asset",
+  "mode": "Built-in image_gen",
+  "reference": {
+    "id": "unsplash-VzusBjHlKM8",
+    "credit": "Giorgio Trovato",
+    "source": "https://unsplash.com/photos/a-woman-with-long-blonde-hair-wearing-a-black-shirt-VzusBjHlKM8",
+    "path": "public/photos/portrait-VzusBjHlKM8.jpg"
+  },
+  "output": "public/assets/guide-portrait-blonde-ai.jpg",
+  "prompt": "Use case: photorealistic-natural. Make a single highly realistic AI variation of the reference portrait for an educational side-by-side comparison. Reference role: photographic framing, camera perspective, pose and lighting. Keep landscape 3:2 framing, ordinary pale gray backdrop, upper-body portrait of an adult white woman with long wavy blonde hair and a simple black long-sleeve top, shoulders relaxed, same lighting direction and everyday camera appearance. Change her to a different adult woman with subtly different eyes, nose and facial proportions. Make only a small change in head angle and a slightly more neutral mouth, like another ordinary portrait taken in the same setup. Preserve natural facial asymmetry and believable eyes. Restrained unretouched skin, coherent hair and clothing, soft neutral daylight. No glossy eyes, sculpted beauty lighting, skin smoothing, fashion styling, cinematic color split, exaggerated HDR or artificial grain. No writing, watermark or collage. Output only one photograph-like portrait.",
+  "review": "Accepted after reviewing full portrait: coherent facial anatomy, restrained neutral lighting, supported shoulders, natural eyes and hair, consistent clothing and perspective.",
+  "export": {
+    "format": "JPEG",
+    "width": 1000,
+    "height": 667,
+    "quality": 82
+  }
+}

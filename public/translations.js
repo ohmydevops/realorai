@@ -28,7 +28,7 @@ window.QUIZ_TRANSLATIONS = {
     results: 'Your results',
     share: 'Share your score',
     copyShare: 'Select and copy your score and game link',
-    shareText: 'I scored {score}/{total} in Real or AI? Can you beat me?',
+    shareText: 'Think you can tell real photos from AI? Come test yourself!',
     correct: 'Correct',
     wrong: 'Incorrect',
     next: 'New game',
@@ -73,7 +73,7 @@ window.QUIZ_TRANSLATIONS = {
     share: 'اشتراک با بقیه',
     copyShare: 'انتخاب و کپی نتیجه و لینک بازی',
     shareText:
-      'تو بازی واقعیه یا هوش مصنوعیه، {score} از {total} گرفتم! تو چند می‌گیری؟',
+      'فکر میکنی بتونی عکس واقعی رو از هوش مصنوعی تشخیص بدی؟ بیا خودتو امتحان کن!',
     correct: 'درست زدی',
     wrong: 'اشتباه زدی',
     next: 'یه بازی جدید',

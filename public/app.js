@@ -66,7 +66,7 @@ if (!Array.isArray(state.history)) {
     });
   if (storageOK) save();
 }
-const historyDialog = document.getElementById('history-dialog');
+const historyContainer = app;
 function historyAnswers(entry) {
   if (Array.isArray(entry.answers)) return entry.answers;
   if (entry.legacy) {
@@ -108,7 +108,7 @@ let historyPage = 0;
 function renderHistory() {
   const pages = Math.max(1, Math.ceil(state.history.length / 5));
   historyPage = Math.max(0, Math.min(historyPage, pages - 1));
-  historyDialog.innerHTML = `<form method="dialog" class="modal-heading"><h2 id="history-title">${copy.history}</h2><button class="control" aria-label="${copy.close}" autofocus>×</button></form>${
+  historyContainer.innerHTML = `<h2 id="history-title">${copy.history}</h2>${
     state.history.length
       ? `<ol class="history-list">${[...state.history]
           .reverse()
@@ -123,7 +123,7 @@ function renderHistory() {
                     language === 'fa' ? 'fa-IR' : 'en-US',
                     { dateStyle: 'medium', timeStyle: 'short' },
                   ).format(date);
-            return `<li><div class="history-row"><span>${escapeHTML(label)}</span><strong><bdi>${number(entry.correct)} / ${number(entry.total)}</bdi></strong><small>${copy.skipped}: ${number(entry.skipped || 0)}</small></div><a class="history-review-link" href="#review=${encodeURIComponent(entry.id)}" target="_blank" rel="noopener noreferrer">${copy.reviewGame}</a></li>`;
+            return `<li><div class="history-row"><span>${escapeHTML(label)}</span><strong><bdi>${number(entry.correct)} / ${number(entry.total)}</bdi></strong><small>${copy.skipped}: ${number(entry.skipped || 0)}</small></div><a class="history-review-link" href="${new URL(language === 'fa' ? './' : 'en/', baseURL).href}#review=${encodeURIComponent(entry.id)}" target="_blank" rel="noopener noreferrer">${copy.reviewGame}</a></li>`;
           })
           .join('')}</ol>`
       : `<p>${copy.noHistory}</p>`
@@ -140,14 +140,8 @@ function renderHistory() {
       document.getElementById('history-next').focus();
     };
   }
-  historyDialog.scrollTop = 0;
+  historyContainer.scrollTop = 0;
 }
-document.getElementById('history-open').onclick = () => {
-  if (!historyDialog.open) window.QUIZ_ANALYTICS?.track('history-open');
-  historyPage = 0;
-  renderHistory();
-  if (!historyDialog.open) historyDialog.showModal();
-};
 function save() {
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
@@ -216,6 +210,20 @@ function home() {
 }
 let lastReviewHash = null;
 function route() {
+  if (
+    window.location.hash === '#about' ||
+    window.location.hash === '#history'
+  ) {
+    const page = window.location.hash.slice(1);
+    window.location.replace(
+      new URL((language === 'fa' ? '' : 'en/') + page + '/', baseURL).href,
+    );
+    return;
+  }
+  if (window.location.pathname?.endsWith('/history/')) {
+    renderHistory();
+    return;
+  }
   if (window.location.hash.startsWith('#review=')) {
     renderToken++;
     loaded = false;
@@ -232,10 +240,6 @@ function route() {
   lastReviewHash = null;
   if (window.location.hash !== '#play') {
     home();
-    if (window.location.hash === '#about')
-      document.getElementById('about-dialog').showModal();
-    if (window.location.hash === '#history')
-      document.getElementById('history-open').onclick();
     return;
   }
   if (!storageOK) return storageError();
@@ -410,8 +414,71 @@ function results() {
         return `<li>${credit}<span class="result-number">${number(index + 1)}</span><strong>${answer.timedOut ? '—' : answer.correct ? '✓' : '×'} ${answer.timedOut ? copy.timedOut : answer.correct ? copy.correct : copy.wrong}</strong><span class="result-answer">${image.real ? copy.answerReal : copy.answerAI}</span></li>`;
       })
       .join('')}</ol>
-    ${canStartTest() ? `<button id="next">${copy.next}</button>` : `<p class="finished">${copy.later}</p>`}
+    <div id="share-options" hidden></div>
+    <div class="result-actions">
+      ${canStartTest() ? `<button id="next">${copy.next}</button>` : `<p class="finished">${copy.later}</p>`}
+      <button id="share-result" type="button">${copy.share}</button>
+    </div>
   </section>`;
+  document.getElementById('share-result').onclick = async () => {
+    const url = new URL(language === 'fa' ? './' : 'en/', baseURL).href;
+    const text = copy.shareText
+      .replace('{score}', number(correct))
+      .replace('{total}', number(answers.length));
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: 'Real or AI?',
+          text: text + '\n\n' + url,
+        });
+        return;
+      } catch (error) {
+        if (error.name === 'AbortError') return;
+      }
+    }
+    const options = document.getElementById('share-options');
+    options.hidden = false;
+    options.replaceChildren();
+    for (const [label, href] of [
+      [
+        'WhatsApp',
+        'https://wa.me/?text=' + encodeURIComponent(text + '\n\n' + url),
+      ],
+      [
+        'Telegram',
+        'https://t.me/share/url?url=' +
+          encodeURIComponent(url) +
+          '&text=' +
+          encodeURIComponent(text),
+      ],
+      [
+        'X',
+        'https://twitter.com/intent/tweet?text=' +
+          encodeURIComponent(text) +
+          '&url=' +
+          encodeURIComponent(url),
+      ],
+      [
+        'Facebook',
+        'https://www.facebook.com/sharer/sharer.php?u=' +
+          encodeURIComponent(url),
+      ],
+    ]) {
+      const link = document.createElement('a');
+      link.textContent = label;
+      link.href = href;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      options.append(link);
+    }
+    const field = document.createElement('input');
+    field.readOnly = true;
+    field.value = text + ' ' + url;
+    field.setAttribute('aria-label', copy.copyShare);
+    field.onclick = () => field.select();
+    options.append(field);
+    options.querySelector('a').focus();
+  };
   const next = document.getElementById('next');
   if (next) next.onclick = start;
 }

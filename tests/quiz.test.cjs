@@ -61,7 +61,12 @@ function boot(lang = 'en', hash = '#play', trackerMode = 'ready') {
   };
   const c = {
     window: {
-      location: { hash },
+      location: {
+        hash,
+        replace(url) {
+          this.redirected = url;
+        },
+      },
       addEventListener() {},
       umami: ['missing', 'delayed'].includes(trackerMode) ? undefined : tracker,
     },
@@ -300,8 +305,9 @@ assert.equal(
   'Waiting never skips an image',
 );
 assert.equal(untimed.timers.size, 0);
-untimed.nodes['history-open'].onclick();
-untimed.nodes['history-dialog'].close();
+untimed.run('renderHistory()');
+untimed.run('render()');
+untimed.nodes['quiz-image'].onload();
 untimed.advance(60000);
 assert.equal(untimed.run('state.active.index'), 0);
 const persian = boot('fa');
@@ -333,22 +339,16 @@ assert.equal(
   1,
   'Reload does not duplicate completed games',
 );
-historyReload.nodes['history-open'].onclick();
-historyReload.nodes['history-open'].onclick();
+historyReload.run('renderHistory()');
+historyReload.run('renderHistory()');
 assert.equal(
   historyReload.analytics.filter((e) => e.name === 'history-open').length,
-  1,
+  0,
 );
-assert(historyReload.nodes['history-dialog'].innerHTML.includes('Skipped: 1'));
-assert(
-  historyReload.nodes['history-dialog'].innerHTML.includes(
-    'Review images and answers',
-  ),
-);
-assert(
-  historyReload.nodes['history-dialog'].innerHTML.includes('target="_blank"'),
-);
-assert(!historyReload.nodes['history-dialog'].innerHTML.includes('<details'));
+assert(historyReload.app.innerHTML.includes('Skipped: 1'));
+assert(historyReload.app.innerHTML.includes('Review images and answers'));
+assert(historyReload.app.innerHTML.includes('target="_blank"'));
+assert(!historyReload.app.innerHTML.includes('<details'));
 const reviewPage = boot(
   'en',
   '#review=' + encodeURIComponent(historyReload.run('state.history[0].id')),
@@ -365,33 +365,19 @@ historyReload.run(
   `state.history = Array.from({ length: 7 }, (_, index) => ({ ...state.history[0], id: 'page-test-' + index })); renderHistory()`,
 );
 assert.equal(
-  (
-    historyReload.nodes['history-dialog'].innerHTML.match(
-      /class="history-row"/g,
-    ) || []
-  ).length,
+  (historyReload.app.innerHTML.match(/class="history-row"/g) || []).length,
   5,
 );
-assert(historyReload.nodes['history-dialog'].innerHTML.includes('page-test-6'));
+assert(historyReload.app.innerHTML.includes('page-test-6'));
 historyReload.run('historyPage = 1; renderHistory()');
 assert.equal(
-  (
-    historyReload.nodes['history-dialog'].innerHTML.match(
-      /class="history-row"/g,
-    ) || []
-  ).length,
+  (historyReload.app.innerHTML.match(/class="history-row"/g) || []).length,
   2,
 );
-assert(
-  !historyReload.nodes['history-dialog'].innerHTML.includes('page-test-6'),
-);
-assert(
-  historyReload.nodes['history-dialog'].innerHTML.includes(
-    'id="history-next" disabled',
-  ),
-);
+assert(!historyReload.app.innerHTML.includes('page-test-6'));
+assert(historyReload.app.innerHTML.includes('id="history-next" disabled'));
 historyReload.run('state = JSON.parse(localStorage.getItem(STORAGE_KEY))');
-historyReload.nodes['history-dialog'].close();
+
 historyReload.run('start()');
 historyReload.nodes['quiz-image'].onload();
 historyReload.run('home()');
@@ -406,11 +392,16 @@ console.log(
   'PASS: untimed play, loading, legacy skipped answers, language changes, and history persistence.',
 );
 const aboutLink = boot('fa', '#about');
-assert.equal(aboutLink.nodes['about-dialog'].open, true);
-assert(aboutLink.app.innerHTML.includes('class="home"'));
+assert.equal(
+  aboutLink.run('window.location.redirected'),
+  'https://example.test/about/',
+);
 assert.equal(aboutLink.timers.size, 0);
 const historyLink = boot('en', '#history');
-assert.equal(historyLink.nodes['history-dialog'].open, true);
+assert.equal(
+  historyLink.run('window.location.redirected'),
+  'https://example.test/en/history/',
+);
 assert.equal(historyLink.timers.size, 0);
 console.log(
   'PASS: footer links from Sources open About and History without starting a game.',
@@ -425,8 +416,8 @@ for (const mode of ['missing', 'throws', 'rejects']) {
   }
   assert.equal(offline.run('state.history.length'), 1);
   assert.equal(offline.run('state.history[0].total'), 5);
-  offline.nodes['history-open'].onclick();
-  assert.equal(offline.nodes['history-dialog'].open, true);
+  offline.run('renderHistory()');
+  assert(offline.app.innerHTML.includes('history-title'));
 }
 for (const key of Object.keys(store)) delete store[key];
 const delayed = boot('fa', '#play', 'delayed');

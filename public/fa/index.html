@@ -171,23 +171,11 @@
       <noscript>برای اجرای آزمون، جاوااسکریپت مرورگر را فعال کنید.</noscript>
     </main>
     <dialog id="settings-dialog" aria-labelledby="settings-title"></dialog>
-    <dialog id="history-dialog" aria-labelledby="history-title"></dialog>
+
     <footer>
       <span class="footer-links"
-        ><button
-          id="about-open"
-          class="text-button"
-          type="button"
-          aria-haspopup="dialog"
-        >
-          دربارهٔ پروژه</button
-        ><button
-          id="history-open"
-          class="text-button"
-          type="button"
-          aria-haspopup="dialog"
-        >
-          تاریخچه</button
+        ><a href="../about/">دربارهٔ پروژه</a><a href="../history/">تاریخچه</a
+        ><a href="../guide/">راهنما</a
         ><a href="../sources/">منبع عکس‌ها</a></span
       >
     </footer>
@@ -195,26 +183,5 @@
     <script src="../images.js"></script>
     <script src="../translations.js"></script>
     <script src="../app.js" defer></script>
-    <dialog id="about-dialog" aria-labelledby="about-title">
-      <form method="dialog" class="modal-heading">
-        <h2 id="about-title">دربارهٔ پروژه</h2>
-        <button class="control" type="submit" autofocus aria-label="بستن">
-          ×
-        </button>
-      </form>
-      <p>
-        این بازی فقط برای سرگرمی ساخته شده. هر وقت دوست داشتی، بیا و بازی کن!
-      </p>
-      <p>
-        منم سعی می‌کنم هر هفته عکس‌های جدید و سخت‌تری اضافه کنم؛ ببینیم به کجا
-        می‌رسه.
-      </p>
-      <p>
-        اگه هم ایدهٔ جالب، پیشنهاد یا نقدی داری، خوشحال می‌شم برام ایمیل بزنی:
-      </p>
-      <p class="contact-address" dir="ltr">ohmydevops [at] gmail [dot] com</p>
-      <button id="install-app" type="button" hidden>نصب بازی</button>
-    </dialog>
-    <script src="../about.js"></script>
   </body>
 </html>

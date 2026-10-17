@@ -29,4 +29,10 @@ document.addEventListener('DOMContentLoaded', () => {
     updateToggle();
   });
   updateToggle();
+  for (const link of document.querySelectorAll('.footer-links a')) {
+    const url = new URL(link.href, location.href);
+    if (!url.hash && url.pathname === location.pathname)
+      link.setAttribute('aria-current', 'page');
+    else link.removeAttribute('aria-current');
+  }
 });
