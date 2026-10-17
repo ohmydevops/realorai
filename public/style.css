@@ -717,6 +717,12 @@ nav .control {
   margin: 0;
   line-height: 1.9;
 }
+.home .finished {
+  max-width: 48ch;
+  font-size: 15px;
+  line-height: 1.8;
+  white-space: normal;
+}
 .home-art {
   display: block;
   width: 100%;
