@@ -495,7 +495,7 @@ function results() {
         return `<li>${credit}<span class="result-number">${number(index + 1)}</span><strong>${answer.timedOut ? '—' : answer.correct ? '✓' : '×'} ${answer.timedOut ? copy.timedOut : answer.correct ? copy.correct : copy.wrong}</strong><span class="result-answer">${image.real ? copy.answerReal : copy.answerAI}</span></li>`;
       })
       .join('')}</ol>
-    ${canStartTest() ? `<button id="next">${copy.next}</button>` : `<p class="finished">${unseen().length ? copy.noAI : copy.done}</p>`}
+    ${canStartTest() ? `<button id="next">${copy.next}</button>` : `<p class="finished">${copy.later}</p>`}
   </section>`;
   const next = document.getElementById('next');
   if (next) next.onclick = start;

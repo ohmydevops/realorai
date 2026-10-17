@@ -36,13 +36,14 @@ window.QUIZ_TRANSLATIONS = {
     wrong: 'Incorrect',
     next: 'New game',
     done: 'You’ve seen every available image.',
-    later: 'New images will appear here when added.',
+    later:
+      'We’re aiming to add fresh content every week. Please check back soon.',
     storage:
       'Browser storage is unavailable. Enable site storage to keep your image history and play.',
     credit: 'Image source',
     generated: 'AI image',
     skiptest: 'No images could be loaded. Please try again later.',
-    noAI: 'No unseen AI images left. Check back for new images.',
+    noAI: 'No unseen AI images left.',
     answerReal: 'Real',
     answerAI: 'AI',
   },
@@ -82,13 +83,14 @@ window.QUIZ_TRANSLATIONS = {
     wrong: 'اشتباه زدی',
     next: 'یه بازی جدید',
     done: 'همه عکسا رو دیدی.',
-    later: 'عکس نو که بیاد، اینجا می‌بینیش.',
+    later:
+      'سعی می‌کنیم هر هفته محتوای تازه به سایت اضافه کنیم. بعداً دوباره یه سر بزن!',
     storage:
       'حافظهٔ مرورگر در دسترس نیست. برای ذخیرهٔ تاریخچه و اجرای آزمون، ذخیره‌سازی سایت را فعال کنید.',
     credit: 'منبع تصویر',
     generated: 'تصویر هوش مصنوعی',
     skiptest: 'عکسا باز نشدن؛ بعداً یه بار دیگه بیا.',
-    noAI: 'عکس هوش مصنوعیِ تازه نداریم؛ بعداً یه سر بزن.',
+    noAI: 'عکس هوش مصنوعیِ تازه نداریم.',
     answerReal: 'واقعیه',
     answerAI: 'مصنوعیه',
   },
