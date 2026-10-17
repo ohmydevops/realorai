@@ -1,0 +1,505 @@
+{
+  "generator": "OpenAI ImageGen built-in tool",
+  "images": [
+    {
+      "id": "ai-portrait-20261017b-01",
+      "file": "public/ai images/portrait-20261017b-01.jpg",
+      "reference": {
+        "file": "public/photos/portrait-EKrFx0S7FuM.jpg",
+        "source": "https://unsplash.com/photos/a-smiling-woman-wearing-glasses-outdoors-EKrFx0S7FuM",
+        "credit": "Grace Anne Bobadilla"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a reference for a distinct AI portrait variation. Preserve its credible photographic rendering, exposure, framing, physically supported pose and camera geometry. Change identity clearly, without beautifying or making a generic AI face. Keep this outdoor seated shoulder-up pose and candid smile. Create a different adult East Asian woman around 35 with a wider rounded face, dark wavy short hair, thin dark oval glasses, and a muted navy sleeveless blouse. Preserve the informal exposure and ordinary green surroundings. Keep face and environment illuminated by the same natural source, coherent gaze, normal eyelids and mouth, realistic skin tones, plausible hands and clothing. Do not add beauty light, glassy fixed eyes, pore stamps, dramatic rim lights, cinematic warm/cool separation, extra sharpening, fake noise, text, watermark or border. One image only."
+    },
+    {
+      "id": "ai-portrait-20261017b-02",
+      "file": "public/ai images/portrait-20261017b-02.jpg",
+      "reference": {
+        "file": "public/photos/portrait-iU04dYsP810.jpg",
+        "source": "https://unsplash.com/photos/woman-in-white-knit-shirt-iU04dYsP810",
+        "credit": "Noah Blaine Clark"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a reference for a distinct AI portrait variation. Preserve its credible photographic rendering, exposure, framing, physically supported pose and camera geometry. Change identity clearly, without beautifying or making a generic AI face. Keep the side-profile head-and-shoulders composition and simple monochrome wall. Create a different woman around 55 with shorter wavy gray hair, a prominent curved nose, fuller chin and dark knitted cardigan. Preserve ordinary facial contours and soft grayscale rendering. Keep face and environment illuminated by the same natural source, coherent gaze, normal eyelids and mouth, realistic skin tones, plausible hands and clothing. Do not add beauty light, glassy fixed eyes, pore stamps, dramatic rim lights, cinematic warm/cool separation, extra sharpening, fake noise, text, watermark or border. One image only."
+    },
+    {
+      "id": "ai-portrait-20261017b-03",
+      "file": "public/ai images/portrait-20261017b-03.jpg",
+      "reference": {
+        "file": "public/photos/portrait-HtzbW4UjJeU.jpg",
+        "source": "https://unsplash.com/photos/woman-with-curly-hair-HtzbW4UjJeU",
+        "credit": "Marshal Quast"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a reference for a distinct AI portrait variation. Preserve its credible photographic rendering, exposure, framing, physically supported pose and camera geometry. Change identity clearly, without beautifying or making a generic AI face. Keep the chin resting above the relaxed hand, casual upper-body framing, stone wall and indirect daylight. Create a different woman around 28 with medium olive skin, straight shoulder-length dark hair, a wider nose, asymmetrical brows and muted green sweatshirt. Keep face and environment illuminated by the same natural source, coherent gaze, normal eyelids and mouth, realistic skin tones, plausible hands and clothing. Do not add beauty light, glassy fixed eyes, pore stamps, dramatic rim lights, cinematic warm/cool separation, extra sharpening, fake noise, text, watermark or border. One image only."
+    },
+    {
+      "id": "ai-portrait-20261017b-04",
+      "file": "public/ai images/portrait-20261017b-04.jpg",
+      "reference": {
+        "file": "public/photos/portrait-kfN-BBbWTWo.jpg",
+        "source": "https://unsplash.com/photos/man-in-black-hoodie-standing-kfN-BBbWTWo",
+        "credit": "Derick McKinney"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a reference for a distinct AI portrait variation. Preserve its credible photographic rendering, exposure, framing, physically supported pose and camera geometry. Change identity clearly, without beautifying or making a generic AI face. Keep the simple chest-up composition and plain pale backdrop. Create a different adult man about 27 with a long face, brown curly hair, prominent rounded nose, sparse mustache and faded maroon cotton hoodie. Quiet slight smile and relaxed eyes. Keep face and environment illuminated by the same natural source, coherent gaze, normal eyelids and mouth, realistic skin tones, plausible hands and clothing. Do not add beauty light, glassy fixed eyes, pore stamps, dramatic rim lights, cinematic warm/cool separation, extra sharpening, fake noise, text, watermark or border. One image only."
+    },
+    {
+      "id": "ai-portrait-20261017b-05",
+      "file": "public/ai images/portrait-20261017b-05.jpg",
+      "reference": {
+        "file": "public/photos/portrait-lLh105fguZA.jpg",
+        "source": "https://unsplash.com/photos/young-man-in-white-shirt-against-a-solid-orange-background-lLh105fguZA",
+        "credit": "McFollis"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a reference for a distinct AI portrait variation. Preserve its credible photographic rendering, exposure, framing, physically supported pose and camera geometry. Change identity clearly, without beautifying or making a generic AI face. Keep the half-body frontal portrait and soft illumination. Create a different Black man around 35 with a wider face, short natural curls, broad nose and muted blue plain cotton T-shirt. Change the bright background to a muted warm beige with the same plausible illumination. Keep face and environment illuminated by the same natural source, coherent gaze, normal eyelids and mouth, realistic skin tones, plausible hands and clothing. Do not add beauty light, glassy fixed eyes, pore stamps, dramatic rim lights, cinematic warm/cool separation, extra sharpening, fake noise, text, watermark or border. One image only."
+    },
+    {
+      "id": "ai-portrait-20261017b-06",
+      "file": "public/ai images/portrait-20261017b-06.jpg",
+      "reference": {
+        "file": "public/photos/portrait-oqr6D_O4IKY.jpg",
+        "source": "https://unsplash.com/photos/a-man-with-a-goatee-is-holding-his-hand-to-his-ear-oqr6D_O4IKY",
+        "credit": "mohammad kashkooli"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a reference for a distinct AI portrait variation. Preserve its credible photographic rendering, exposure, framing, physically supported pose and camera geometry. Change identity clearly, without beautifying or making a generic AI face. Keep the close black-and-white framing and the hand resting against the forehead. Create a different man around 42 with a fuller face, slightly receding wavy hair, short mustache and lighter stubble. Preserve the reflective expression and physically plausible hand contact. Keep face and environment illuminated by the same natural source, coherent gaze, normal eyelids and mouth, realistic skin tones, plausible hands and clothing. Do not add beauty light, glassy fixed eyes, pore stamps, dramatic rim lights, cinematic warm/cool separation, extra sharpening, fake noise, text, watermark or border. One image only."
+    },
+    {
+      "id": "ai-portrait-20261017b-07",
+      "file": "public/ai images/portrait-20261017b-07.jpg",
+      "reference": {
+        "file": "public/photos/portrait-wCIDfKBMDHE.jpg",
+        "source": "https://unsplash.com/photos/older-man-with-long-white-beard-wCIDfKBMDHE",
+        "credit": "Donald Teel"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a reference for a distinct AI portrait variation. Preserve its credible photographic rendering, exposure, framing, physically supported pose and camera geometry. Change identity clearly, without beautifying or making a generic AI face. Keep the close monochrome portrait and natural side daylight. Create a different man around 75 with a shorter white beard, thin receding gray hair, broad nose and a simple dark cotton shirt. Natural uneven wrinkles without stamped detail or dramatic extra processing. Keep face and environment illuminated by the same natural source, coherent gaze, normal eyelids and mouth, realistic skin tones, plausible hands and clothing. Do not add beauty light, glassy fixed eyes, pore stamps, dramatic rim lights, cinematic warm/cool separation, extra sharpening, fake noise, text, watermark or border. One image only."
+    },
+    {
+      "id": "ai-portrait-20261017b-08",
+      "file": "public/ai images/portrait-20261017b-08.jpg",
+      "reference": {
+        "file": "public/photos/portrait-gPShMkwc-fQ.jpg",
+        "source": "https://unsplash.com/photos/mens-gray-and-blue-striped-polo-shirt-gPShMkwc-fQ",
+        "credit": "Mihai Lazăr"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a reference for a distinct AI portrait variation. Preserve its credible photographic rendering, exposure, framing, physically supported pose and camera geometry. Change identity clearly, without beautifying or making a generic AI face. Keep the seated-on-ground supported pose, hands loosely over raised knees and woodland light. Create a different older man around 70 with short white hair, round face, light stubble and plain blue polo shirt with dark trousers. Preserve comfortable bodily support. Keep face and environment illuminated by the same natural source, coherent gaze, normal eyelids and mouth, realistic skin tones, plausible hands and clothing. Do not add beauty light, glassy fixed eyes, pore stamps, dramatic rim lights, cinematic warm/cool separation, extra sharpening, fake noise, text, watermark or border. One image only."
+    },
+    {
+      "id": "ai-portrait-20261017b-09",
+      "file": "public/ai images/portrait-20261017b-09.jpg",
+      "reference": {
+        "file": "public/photos/portrait-IHARyoUjceI.jpg",
+        "source": "https://unsplash.com/photos/man-wearing-blue-collared-top-IHARyoUjceI",
+        "credit": "Ricardo Fontes Mendes"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a reference for a distinct AI portrait variation. Preserve its credible photographic rendering, exposure, framing, physically supported pose and camera geometry. Change identity clearly, without beautifying or making a generic AI face. Keep the candid close portrait and ordinary simple setting. Create a different Black man around 68 with a longer face, narrower nose, closely cropped gray hair and a faded olive work shirt. Natural direct gaze and restrained facial detail. Keep face and environment illuminated by the same natural source, coherent gaze, normal eyelids and mouth, realistic skin tones, plausible hands and clothing. Do not add beauty light, glassy fixed eyes, pore stamps, dramatic rim lights, cinematic warm/cool separation, extra sharpening, fake noise, text, watermark or border. One image only."
+    },
+    {
+      "id": "ai-portrait-20261017b-10",
+      "file": "public/ai images/portrait-20261017b-10.jpg",
+      "reference": {
+        "file": "public/photos/portrait-bhRKz7e2A_E.jpg",
+        "source": "https://unsplash.com/photos/a-black-and-white-photo-of-an-old-man-bhRKz7e2A_E",
+        "credit": "Mehdi Raad"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a reference for a distinct AI portrait variation. Preserve its credible photographic rendering, exposure, framing, physically supported pose and camera geometry. Change identity clearly, without beautifying or making a generic AI face. Keep the monochrome upper-body framing and leaning-forward seated posture. Create a different man around 78 with balding gray hair, broad jaw, slightly curved nose and gray knitted pullover. Preserve relaxed age-appropriate expression and restrained midtone detail. Keep face and environment illuminated by the same natural source, coherent gaze, normal eyelids and mouth, realistic skin tones, plausible hands and clothing. Do not add beauty light, glassy fixed eyes, pore stamps, dramatic rim lights, cinematic warm/cool separation, extra sharpening, fake noise, text, watermark or border. One image only."
+    },
+    {
+      "id": "ai-portrait-20261017b-11",
+      "file": "public/ai images/portrait-20261017b-11.jpg",
+      "reference": {
+        "file": "public/photos/portrait-IxacjtwPdGM.jpg",
+        "source": "https://unsplash.com/photos/woman-in-beige-jumpsuit-smiling-sitting-on-a-stool-IxacjtwPdGM",
+        "credit": "Centre for Ageing Better"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a reference for a distinct AI portrait variation. Preserve its credible photographic rendering, exposure, framing, physically supported pose and camera geometry. Change identity clearly, without beautifying or making a generic AI face. Keep the seated stool pose, hands naturally resting near the knees and plain wall. Create a different woman around 60 with medium brown skin, short loose dark-gray curls, rounder face and simple blue linen shirt with tan trousers. Keep a spontaneous small sideward smile. Keep face and environment illuminated by the same natural source, coherent gaze, normal eyelids and mouth, realistic skin tones, plausible hands and clothing. Do not add beauty light, glassy fixed eyes, pore stamps, dramatic rim lights, cinematic warm/cool separation, extra sharpening, fake noise, text, watermark or border. One image only."
+    },
+    {
+      "id": "ai-portrait-20261017b-12",
+      "file": "public/ai images/portrait-20261017b-12.jpg",
+      "reference": {
+        "file": "public/photos/portrait-VMGAbeeJTKo.jpg",
+        "source": "https://unsplash.com/photos/smiling-woman-VMGAbeeJTKo",
+        "credit": "Ravi Patel"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a reference for a distinct AI portrait variation. Preserve its credible photographic rendering, exposure, framing, physically supported pose and camera geometry. Change identity clearly, without beautifying or making a generic AI face. Keep the close outdoor horizontal crop and genuine cheerful expression. Create a different older woman around 72 with medium-length wavy gray hair, broader cheeks, narrower nose and a dark green casual jacket. Keep smile lines and teeth naturally imperfect and coherent. Keep face and environment illuminated by the same natural source, coherent gaze, normal eyelids and mouth, realistic skin tones, plausible hands and clothing. Do not add beauty light, glassy fixed eyes, pore stamps, dramatic rim lights, cinematic warm/cool separation, extra sharpening, fake noise, text, watermark or border. One image only."
+    },
+    {
+      "id": "ai-portrait-20261017b-13",
+      "file": "public/ai images/portrait-20261017b-13.jpg",
+      "reference": {
+        "file": "public/photos/portrait-eY1_nQs9aNI.jpg",
+        "source": "https://unsplash.com/photos/woman-wearing-eyeglasses-eY1_nQs9aNI",
+        "credit": "Mosoianu Bogdan"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a reference for a distinct AI portrait variation. Preserve its credible photographic rendering, exposure, framing, physically supported pose and camera geometry. Change identity clearly, without beautifying or making a generic AI face. Keep the close face portrait with clear glasses and ordinary pale setting. Create a different woman around 80 with short wavy gray hair, a wider nose, rounder jaw and thin brown rectangular glasses. Plain pale blue blouse; gentle quiet expression with natural skin. Keep face and environment illuminated by the same natural source, coherent gaze, normal eyelids and mouth, realistic skin tones, plausible hands and clothing. Do not add beauty light, glassy fixed eyes, pore stamps, dramatic rim lights, cinematic warm/cool separation, extra sharpening, fake noise, text, watermark or border. One image only."
+    },
+    {
+      "id": "ai-portrait-20261017b-14",
+      "file": "public/ai images/portrait-20261017b-14.jpg",
+      "reference": {
+        "file": "public/photos/portrait-exSbVjfRXTo.jpg",
+        "source": "https://unsplash.com/photos/an-older-woman-with-a-smile-on-her-face-exSbVjfRXTo",
+        "credit": "Michael Thomson"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a reference for a distinct AI portrait variation. Preserve its credible photographic rendering, exposure, framing, physically supported pose and camera geometry. Change identity clearly, without beautifying or making a generic AI face. Keep the quiet head-and-shoulders indoor portrait and natural daylight. Create a different woman around 67 with short straight dark-gray hair, a longer face, small rounded nose and a simple burgundy top. Keep the natural slight smile and ordinary room background. Keep face and environment illuminated by the same natural source, coherent gaze, normal eyelids and mouth, realistic skin tones, plausible hands and clothing. Do not add beauty light, glassy fixed eyes, pore stamps, dramatic rim lights, cinematic warm/cool separation, extra sharpening, fake noise, text, watermark or border. One image only."
+    },
+    {
+      "id": "ai-portrait-20261017b-15",
+      "file": "public/ai images/portrait-20261017b-15.jpg",
+      "reference": {
+        "file": "public/photos/portrait-NABJGMkv-PI.jpg",
+        "source": "https://unsplash.com/photos/a-woman-posing-for-a-picture-NABJGMkv-PI",
+        "credit": "INS Vikrant"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a reference for a distinct AI portrait variation. Preserve its credible photographic rendering, exposure, framing, physically supported pose and camera geometry. Change identity clearly, without beautifying or making a generic AI face. Keep the relaxed standing half-body pose with one hand near the hair and outdoor shade. Create a different woman around 30 with warm brown skin, curly black shoulder-length hair, a broader nose, round face and a muted olive long-sleeved cotton top with jeans. Keep face and environment illuminated by the same natural source, coherent gaze, normal eyelids and mouth, realistic skin tones, plausible hands and clothing. Do not add beauty light, glassy fixed eyes, pore stamps, dramatic rim lights, cinematic warm/cool separation, extra sharpening, fake noise, text, watermark or border. One image only."
+    },
+    {
+      "id": "ai-portrait-20261017b-16",
+      "file": "public/ai images/portrait-20261017b-16.jpg",
+      "reference": {
+        "file": "public/photos/portrait-WShBt9sBfLw.jpg",
+        "source": "https://unsplash.com/photos/a-woman-with-a-watch-on-her-wrist-WShBt9sBfLw",
+        "credit": "sajad karbalaeI"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a reference for a distinct AI portrait variation. Preserve its credible photographic rendering, exposure, framing, physically supported pose and camera geometry. Change identity clearly, without beautifying or making a generic AI face. Keep the close face framing with hands lightly supporting the sides of the face. Create a different woman around 35 with straight dark shoulder-length hair, a wider jaw, smaller eyes and a pale blue cotton shirt. Remove smartwatch and retain naturally supported wrist angles. Keep face and environment illuminated by the same natural source, coherent gaze, normal eyelids and mouth, realistic skin tones, plausible hands and clothing. Do not add beauty light, glassy fixed eyes, pore stamps, dramatic rim lights, cinematic warm/cool separation, extra sharpening, fake noise, text, watermark or border. One image only."
+    },
+    {
+      "id": "ai-portrait-20261017b-17",
+      "file": "public/ai images/portrait-20261017b-17.jpg",
+      "reference": {
+        "file": "public/photos/portrait-5SghKxmY9Fs.jpg",
+        "source": "https://unsplash.com/photos/woman-in-black-crew-neck-shirt-smiling-5SghKxmY9Fs",
+        "credit": "engin akyurt"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a reference for a distinct AI portrait variation. Preserve its credible photographic rendering, exposure, framing, physically supported pose and camera geometry. Change identity clearly, without beautifying or making a generic AI face. Keep the informal front-facing close portrait and unforced uneven half-smile. Create a different woman around 40 with short light-brown wavy hair, rounder face, wider nose and a plain faded blue T-shirt. Preserve the ordinary outdoor camera rendering. Keep face and environment illuminated by the same natural source, coherent gaze, normal eyelids and mouth, realistic skin tones, plausible hands and clothing. Do not add beauty light, glassy fixed eyes, pore stamps, dramatic rim lights, cinematic warm/cool separation, extra sharpening, fake noise, text, watermark or border. One image only."
+    },
+    {
+      "id": "ai-portrait-20261017b-18",
+      "file": "public/ai images/portrait-20261017b-18.jpg",
+      "reference": {
+        "file": "public/photos/portrait-GhhfcTGBnZY.jpg",
+        "source": "https://unsplash.com/photos/woman-on-metal-bench-GhhfcTGBnZY",
+        "credit": "Zulfugar Karimov"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a reference for a distinct AI portrait variation. Preserve its credible photographic rendering, exposure, framing, physically supported pose and camera geometry. Change identity clearly, without beautifying or making a generic AI face. Keep the seated sideways bench pose and upper-body sunlight. Create a different woman around 28 with medium brown skin, short black curls, broad cheekbones and a pale green cotton summer top. Preserve realistic shadows from the same rail and camera position. Keep face and environment illuminated by the same natural source, coherent gaze, normal eyelids and mouth, realistic skin tones, plausible hands and clothing. Do not add beauty light, glassy fixed eyes, pore stamps, dramatic rim lights, cinematic warm/cool separation, extra sharpening, fake noise, text, watermark or border. One image only."
+    },
+    {
+      "id": "ai-portrait-20261017b-19",
+      "file": "public/ai images/portrait-20261017b-19.jpg",
+      "reference": {
+        "file": "public/photos/portrait-rUQSZdEQTMU.jpg",
+        "source": "https://unsplash.com/photos/young-woman-with-crossed-arms-stands-against-a-white-background-rUQSZdEQTMU",
+        "credit": "Anton K Wibowo"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a reference for a distinct AI portrait variation. Preserve its credible photographic rendering, exposure, framing, physically supported pose and camera geometry. Change identity clearly, without beautifying or making a generic AI face. Keep the full-body relaxed standing pose, feet supported, arms loosely across torso and plain white wall. Create a different adult woman around 33 with dark brown skin, short natural curls, a wider face, muted navy cotton top, loose tan trousers and dark flat shoes. Keep face and environment illuminated by the same natural source, coherent gaze, normal eyelids and mouth, realistic skin tones, plausible hands and clothing. Do not add beauty light, glassy fixed eyes, pore stamps, dramatic rim lights, cinematic warm/cool separation, extra sharpening, fake noise, text, watermark or border. One image only."
+    },
+    {
+      "id": "ai-portrait-20261017b-20",
+      "file": "public/ai images/portrait-20261017b-20.jpg",
+      "reference": {
+        "file": "public/photos/portrait-YhMFYJZgMA0.jpg",
+        "source": "https://unsplash.com/photos/a-close-up-of-a-woman-with-a-ponytail-YhMFYJZgMA0",
+        "credit": "Yoad Shejtman"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a reference for a distinct AI portrait variation. Preserve its credible photographic rendering, exposure, framing, physically supported pose and camera geometry. Change identity clearly, without beautifying or making a generic AI face. Keep the close three-quarter face framing and mild off-camera gaze. Create a different woman around 26 with medium olive skin, dark wavy hair tied back, a more prominent nose, dark brown eyes and a simple blue collar. Keep soft ordinary daylight and uneven natural skin tone. Keep face and environment illuminated by the same natural source, coherent gaze, normal eyelids and mouth, realistic skin tones, plausible hands and clothing. Do not add beauty light, glassy fixed eyes, pore stamps, dramatic rim lights, cinematic warm/cool separation, extra sharpening, fake noise, text, watermark or border. One image only."
+    },
+    {
+      "id": "ai-portrait-20261017b-21",
+      "file": "public/ai images/portrait-20261017b-21.jpg",
+      "reference": {
+        "file": "public/photos/portrait-C08I6jjfnxE.jpg",
+        "source": "https://unsplash.com/photos/a-close-up-of-a-woman-with-freckles-on-her-face-C08I6jjfnxE",
+        "credit": "Yara Amaral"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a reference for a distinct AI portrait variation. Preserve its credible photographic rendering, exposure, framing, physically supported pose and camera geometry. Change identity clearly, without beautifying or making a generic AI face. Keep the face-only composition with the eyes, nose and mouth clearly readable. Create a different woman around 28 with deep brown skin, dark short curls, a broader nose and subtle natural freckles. Remove the decorative star stickers; retain quiet resting lips and coherent daylight. Keep face and environment illuminated by the same natural source, coherent gaze, normal eyelids and mouth, realistic skin tones, plausible hands and clothing. Do not add beauty light, glassy fixed eyes, pore stamps, dramatic rim lights, cinematic warm/cool separation, extra sharpening, fake noise, text, watermark or border. One image only."
+    },
+    {
+      "id": "ai-portrait-20261017b-22",
+      "file": "public/ai images/portrait-20261017b-22.jpg",
+      "reference": {
+        "file": "public/photos/portrait-6nXsOFm_lJo.jpg",
+        "source": "https://unsplash.com/photos/woman-in-black-long-sleeve-shirt-6nXsOFm_lJo",
+        "credit": "Ilona Panych"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a reference for a distinct AI portrait variation. Preserve its credible photographic rendering, exposure, framing, physically supported pose and camera geometry. Change identity clearly, without beautifying or making a generic AI face. Keep the seated upper-body framing with one hand resting on the head and the other near the neck, and the soft black-and-white look. Create a different woman around 40 with dark loose shoulder-length hair, a fuller face, longer nose and a simple plain gray knit top. Keep face and environment illuminated by the same natural source, coherent gaze, normal eyelids and mouth, realistic skin tones, plausible hands and clothing. Do not add beauty light, glassy fixed eyes, pore stamps, dramatic rim lights, cinematic warm/cool separation, extra sharpening, fake noise, text, watermark or border. One image only."
+    },
+    {
+      "id": "ai-portrait-20261017b-23",
+      "file": "public/ai images/portrait-20261017b-23.jpg",
+      "reference": {
+        "file": "public/photos/portrait-CvHeSUdjdE4.jpg",
+        "source": "https://unsplash.com/photos/woman-sitting-on-floor-CvHeSUdjdE4",
+        "credit": "Olena Bohovyk"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a reference for a distinct AI portrait variation. Preserve its credible photographic rendering, exposure, framing, physically supported pose and camera geometry. Change identity clearly, without beautifying or making a generic AI face. Keep the full seated pose with knees drawn comfortably toward the chest, one elbow on knee and cheek supported by hand. Create a different adult woman around 30 with short dark wavy hair, rounder face, wider nose, muted olive shirt, blue jeans and ordinary socks. Remove tattoo, preserve support and clothing folds. Keep face and environment illuminated by the same natural source, coherent gaze, normal eyelids and mouth, realistic skin tones, plausible hands and clothing. Do not add beauty light, glassy fixed eyes, pore stamps, dramatic rim lights, cinematic warm/cool separation, extra sharpening, fake noise, text, watermark or border. One image only."
+    },
+    {
+      "id": "ai-portrait-20261017b-24",
+      "file": "public/ai images/portrait-20261017b-24.jpg",
+      "reference": {
+        "file": "public/photos/portrait-Q5YUWBKa5xo.jpg",
+        "source": "https://unsplash.com/photos/woman-sitting-on-brown-wooden-framed-bench-Q5YUWBKa5xo",
+        "credit": "Judeus Samson"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a reference for a distinct AI portrait variation. Preserve its credible photographic rendering, exposure, framing, physically supported pose and camera geometry. Change identity clearly, without beautifying or making a generic AI face. Keep the relaxed full seated chair pose with crossed legs, supported elbows and casual indoor perspective. Create a different adult woman around 35 with dark brown skin, short natural hair, broad face, a plain dark green short-sleeved top, loose beige skirt and simple dark shoes. Keep hands coherent and ordinary room light. Keep face and environment illuminated by the same natural source, coherent gaze, normal eyelids and mouth, realistic skin tones, plausible hands and clothing. Do not add beauty light, glassy fixed eyes, pore stamps, dramatic rim lights, cinematic warm/cool separation, extra sharpening, fake noise, text, watermark or border. One image only."
+    },
+    {
+      "id": "ai-portrait-20261017b-25",
+      "file": "public/ai images/portrait-20261017b-25.jpg",
+      "reference": {
+        "file": "public/photos/portrait-qKjqU_lzYdM.jpg",
+        "source": "https://unsplash.com/photos/a-woman-is-sitting-and-looking-away-qKjqU_lzYdM",
+        "credit": "Ionela Mat"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a reference for a distinct AI portrait variation. Preserve its credible photographic rendering, exposure, framing, physically supported pose and camera geometry. Change identity clearly, without beautifying or making a generic AI face. Keep the seated three-quarter portrait with hands resting together on a knee, off-camera gaze and neutral wall. Create a different woman around 45 with medium olive skin, short wavy brown hair, wider jaw, blue sleeveless blouse and gray trousers. Natural thoughtful expression, no beauty retouching. Keep face and environment illuminated by the same natural source, coherent gaze, normal eyelids and mouth, realistic skin tones, plausible hands and clothing. Do not add beauty light, glassy fixed eyes, pore stamps, dramatic rim lights, cinematic warm/cool separation, extra sharpening, fake noise, text, watermark or border. One image only."
+    },
+    {
+      "id": "ai-car-20261017b-01",
+      "file": "public/ai images/car-20261017b-01.jpg",
+      "reference": {
+        "file": "public/photos/car-MJeyFglfq9E.jpg",
+        "source": "https://unsplash.com/photos/white-vehicle-near-tree-MJeyFglfq9E",
+        "credit": "John Paulsen"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a photographic composition and capture reference for a distinct car photograph variation. This must feel like an ordinary camera photograph, never a digital render or advertisement. Keep the residential driveway view, ordinary garage and natural dappled daylight. Replace the car with a small cream 1970s compact hatchback with round headlights, mild real-world wear and simple steel wheels. Make it a distinct vehicle; preserve coherent wheelbase, body perspective and ground shadows. Prioritize physically consistent wheels, axles, panels, windows, mirrors, reflections, tire contact and scene perspective. Keep ordinary optical sharpness and real surface imperfections only where plausible. No CGI finish, excessive HDR, showroom beauty light, neon grading, glowing contours, pristine invented materials, text overlays, watermark, border or collage. One image only."
+    },
+    {
+      "id": "ai-car-20261017b-02",
+      "file": "public/ai images/car-20261017b-02.jpg",
+      "reference": {
+        "file": "public/photos/car-Os7C4iw2rDc.jpg",
+        "source": "https://unsplash.com/photos/white-aston-martin-convertible-parked-near-trees-Os7C4iw2rDc",
+        "credit": "Andrew Pons"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a photographic composition and capture reference for a distinct car photograph variation. This must feel like an ordinary camera photograph, never a digital render or advertisement. Keep the side profile, paved parking and trees. Replace the vehicle with an ordinary silver two-seat 2000s roadster with its black fabric roof folded down. Change wheel design and body proportions coherently; camera and believable reflections remain photographic. Prioritize physically consistent wheels, axles, panels, windows, mirrors, reflections, tire contact and scene perspective. Keep ordinary optical sharpness and real surface imperfections only where plausible. No CGI finish, excessive HDR, showroom beauty light, neon grading, glowing contours, pristine invented materials, text overlays, watermark, border or collage. One image only."
+    },
+    {
+      "id": "ai-car-20261017b-03",
+      "file": "public/ai images/car-20261017b-03.jpg",
+      "reference": {
+        "file": "public/photos/car-DkGUn0Y1VzA.jpg",
+        "source": "https://unsplash.com/photos/white-honda-sedan-on-road-during-daytime-DkGUn0Y1VzA",
+        "credit": "Youssef D"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a photographic composition and capture reference for a distinct car photograph variation. This must feel like an ordinary camera photograph, never a digital render or advertisement. Keep the everyday parking-space three-quarter view and modest evening light. Replace the car with a slightly used dark blue five-door compact hatchback, ordinary alloy wheels and realistic road dust. Keep the car clearly main subject and background physically plausible. Prioritize physically consistent wheels, axles, panels, windows, mirrors, reflections, tire contact and scene perspective. Keep ordinary optical sharpness and real surface imperfections only where plausible. No CGI finish, excessive HDR, showroom beauty light, neon grading, glowing contours, pristine invented materials, text overlays, watermark, border or collage. One image only."
+    },
+    {
+      "id": "ai-car-20261017b-04",
+      "file": "public/ai images/car-20261017b-04.jpg",
+      "reference": {
+        "file": "public/photos/car-t8kgpZYWRUE.jpg",
+        "source": "https://unsplash.com/photos/silver-porsche-911-turbo-s-parked-t8kgpZYWRUE",
+        "credit": "redcharlie"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a photographic composition and capture reference for a distinct car photograph variation. This must feel like an ordinary camera photograph, never a digital render or advertisement. Keep the rear view in the rainy street, soft practical ambient light and wet cobbles. Replace the vehicle with a dark burgundy 1990s sports coupe with a modest rear spoiler, rectangular taillights and twin exhausts. Preserve believable reflections, water and physical geometry. Prioritize physically consistent wheels, axles, panels, windows, mirrors, reflections, tire contact and scene perspective. Keep ordinary optical sharpness and real surface imperfections only where plausible. No CGI finish, excessive HDR, showroom beauty light, neon grading, glowing contours, pristine invented materials, text overlays, watermark, border or collage. One image only."
+    },
+    {
+      "id": "ai-car-20261017b-05",
+      "file": "public/ai images/car-20261017b-05.jpg",
+      "reference": {
+        "file": "public/photos/car-1BO7FsghW-w.jpg",
+        "source": "https://unsplash.com/photos/black-jeep-wrangler-on-forest-during-daytime-1BO7FsghW-w",
+        "credit": "Cristofer Maximilian"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a photographic composition and capture reference for a distinct car photograph variation. This must feel like an ordinary camera photograph, never a digital render or advertisement. Keep the forest-track front three-quarter composition and ordinary cloudy daylight. Replace the vehicle with a dark green 1990s short-wheelbase off-road SUV with round headlights and a simple boxy body. Natural shallow puddle splash and mud consistent with tires and motion. Prioritize physically consistent wheels, axles, panels, windows, mirrors, reflections, tire contact and scene perspective. Keep ordinary optical sharpness and real surface imperfections only where plausible. No CGI finish, excessive HDR, showroom beauty light, neon grading, glowing contours, pristine invented materials, text overlays, watermark, border or collage. One image only."
+    },
+    {
+      "id": "ai-car-20261017b-06",
+      "file": "public/ai images/car-20261017b-06.jpg",
+      "reference": {
+        "file": "public/photos/car-p7tai9P7H-s.jpg",
+        "source": "https://unsplash.com/photos/blue-coupe-beside-gray-house-p7tai9P7H-s",
+        "credit": "Grahame Jenkins"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a photographic composition and capture reference for a distinct car photograph variation. This must feel like an ordinary camera photograph, never a digital render or advertisement. Keep the side-view parked composition and ordinary brick building. Replace the car with an older muted red two-door compact coupe, simple stock wheels, chrome window trim and a gently faded finish. Remove prominent entrance lettering, preserving a plausible blank sign. Prioritize physically consistent wheels, axles, panels, windows, mirrors, reflections, tire contact and scene perspective. Keep ordinary optical sharpness and real surface imperfections only where plausible. No CGI finish, excessive HDR, showroom beauty light, neon grading, glowing contours, pristine invented materials, text overlays, watermark, border or collage. One image only."
+    },
+    {
+      "id": "ai-car-20261017b-07",
+      "file": "public/ai images/car-20261017b-07.jpg",
+      "reference": {
+        "file": "public/photos/car-Ag8iNRmU3lA.jpg",
+        "source": "https://unsplash.com/photos/black-and-white-side-view-of-a-rugged-suv-Ag8iNRmU3lA",
+        "credit": "CARTIST SARVAM"
+      },
+      "prompt": "Use case: photorealistic-natural. The real photograph is a capture and composition reference for a new AI car photograph. Keep the real photograph's ordinary street profile composition, black-and-white rendering and camera height, but REPLACE the Defender entirely with a 1980s Toyota Land Cruiser 60-series wagon: long rectangular body, flatter hood, long front grille, rectangular side windows and distinctly different door outlines and wheelbase. No Defender body panels, no modern circular LED light design. A visibly different vehicle photographed naturally in this setting. It must look like an ordinary photograph, not CGI, a showroom advertisement or a digitally polished render. Coherent wheels, panels, glass, mirrors, shadows, reflections and perspective. Modest ordinary colors, no HDR, fake texture, cinematic glow, text overlays, watermark or collage."
+    },
+    {
+      "id": "ai-car-20261017b-08",
+      "file": "public/ai images/car-20261017b-08.jpg",
+      "reference": {
+        "file": "public/photos/car-eHtx6vo-Pwc.jpg",
+        "source": "https://unsplash.com/photos/a-teal-sedan-parked-on-a-dirt-road-overlooking-water-eHtx6vo-Pwc",
+        "credit": "Dextar Studio"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a photographic composition and capture reference for a distinct car photograph variation. This must feel like an ordinary camera photograph, never a digital render or advertisement. Keep the wide side view on gravel by a low reservoir, mild natural evening light and realistic distance. Replace with a gray four-door mid-size family sedan with ordinary wheels and restrained reflections. Shift background hillside details modestly so it is a new location variation. Prioritize physically consistent wheels, axles, panels, windows, mirrors, reflections, tire contact and scene perspective. Keep ordinary optical sharpness and real surface imperfections only where plausible. No CGI finish, excessive HDR, showroom beauty light, neon grading, glowing contours, pristine invented materials, text overlays, watermark, border or collage. One image only."
+    },
+    {
+      "id": "ai-car-20261017b-09",
+      "file": "public/ai images/car-20261017b-09.jpg",
+      "reference": {
+        "file": "public/photos/car-mDASgFtuMRQ.jpg",
+        "source": "https://unsplash.com/photos/teal-volkswagen-beetle-car-on-road-mDASgFtuMRQ",
+        "credit": "Wes Hicks"
+      },
+      "prompt": "Use case: photorealistic-natural. The real photograph is a capture and composition reference for a new AI car photograph. Keep this ordinary street-side full profile and overcast exposure, but REPLACE the Volkswagen Beetle entirely with a pale gray Citroen 2CV: angular fabric-roof cabin, narrow wheels, distinctive separate curved fenders, simple corrugated-style hood and four doors. No Beetle bodywork, luggage or roof rack. Change the building details modestly and remove readable stadium signs. It must look like an ordinary photograph, not CGI, a showroom advertisement or a digitally polished render. Coherent wheels, panels, glass, mirrors, shadows, reflections and perspective. Modest ordinary colors, no HDR, fake texture, cinematic glow, text overlays, watermark or collage."
+    },
+    {
+      "id": "ai-car-20261017b-10",
+      "file": "public/ai images/car-20261017b-10.jpg",
+      "reference": {
+        "file": "public/photos/car-Z2uDP3e2XbE.jpg",
+        "source": "https://unsplash.com/photos/blue-classic-3-door-hatchback-on-gray-concrete-road-Z2uDP3e2XbE",
+        "credit": "thomas scott"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a photographic composition and capture reference for a distinct car photograph variation. This must feel like an ordinary camera photograph, never a digital render or advertisement. Keep the side-profile older-car street photograph, brick and fence context and normal daylight. Replace the car with a muted tan 1970s two-door coupe with black rubber bumpers and simple silver wheels. Distinct coherent body geometry, glass and reflections. Prioritize physically consistent wheels, axles, panels, windows, mirrors, reflections, tire contact and scene perspective. Keep ordinary optical sharpness and real surface imperfections only where plausible. No CGI finish, excessive HDR, showroom beauty light, neon grading, glowing contours, pristine invented materials, text overlays, watermark, border or collage. One image only."
+    },
+    {
+      "id": "ai-car-20261017b-11",
+      "file": "public/ai images/car-20261017b-11.jpg",
+      "reference": {
+        "file": "public/photos/car-kfSWl1EoadE.jpg",
+        "source": "https://unsplash.com/photos/a-vintage-car-parked-near-trees-kfSWl1EoadE",
+        "credit": "Carter Bilawchuk"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a photographic composition and capture reference for a distinct car photograph variation. This must feel like an ordinary camera photograph, never a digital render or advertisement. Keep the simple side-profile parked view and green background. Replace with a dark navy early-1990s four-door sedan with straight lines, steel wheels and mild uneven paint. Keep believable ordinary camera color and contact shadows. Prioritize physically consistent wheels, axles, panels, windows, mirrors, reflections, tire contact and scene perspective. Keep ordinary optical sharpness and real surface imperfections only where plausible. No CGI finish, excessive HDR, showroom beauty light, neon grading, glowing contours, pristine invented materials, text overlays, watermark, border or collage. One image only."
+    },
+    {
+      "id": "ai-car-20261017b-12",
+      "file": "public/ai images/car-20261017b-12.jpg",
+      "reference": {
+        "file": "public/photos/car-O255DOFraAc.jpg",
+        "source": "https://unsplash.com/photos/blue-sedan-on-snow-ground-O255DOFraAc",
+        "credit": "Oziel Gómez"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a photographic composition and capture reference for a distinct car photograph variation. This must feel like an ordinary camera photograph, never a digital render or advertisement. Keep the front three-quarter winter view and plain snow landscape. Replace with an aged pale yellow compact 1970s sedan with roof rack carrying two worn canvas bags, narrow black steel wheels and light snow on hood. Keep physical snow buildup, natural wear and soft winter light. Prioritize physically consistent wheels, axles, panels, windows, mirrors, reflections, tire contact and scene perspective. Keep ordinary optical sharpness and real surface imperfections only where plausible. No CGI finish, excessive HDR, showroom beauty light, neon grading, glowing contours, pristine invented materials, text overlays, watermark, border or collage. One image only."
+    },
+    {
+      "id": "ai-car-20261017b-13",
+      "file": "public/ai images/car-20261017b-13.jpg",
+      "reference": {
+        "file": "public/photos/car-eHydtScQK2s.jpg",
+        "source": "https://unsplash.com/photos/black-bmw-coupe-on-snow-covered-road-during-daytime-eHydtScQK2s",
+        "credit": "Martin Katler"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a photographic composition and capture reference for a distinct car photograph variation. This must feel like an ordinary camera photograph, never a digital render or advertisement. Keep the snow-road front three-quarter composition with forest. Replace with an ordinary dark blue mid-size station wagon with stock wheels, roof rails and understated headlights. Preserve light snowfall and tire tracks with realistic exposure rather than glamour. Prioritize physically consistent wheels, axles, panels, windows, mirrors, reflections, tire contact and scene perspective. Keep ordinary optical sharpness and real surface imperfections only where plausible. No CGI finish, excessive HDR, showroom beauty light, neon grading, glowing contours, pristine invented materials, text overlays, watermark, border or collage. One image only."
+    },
+    {
+      "id": "ai-car-20261017b-14",
+      "file": "public/ai images/car-20261017b-14.jpg",
+      "reference": {
+        "file": "public/photos/car-TsV64t-GS_w.jpg",
+        "source": "https://unsplash.com/photos/a-car-covered-in-snow-on-a-street-TsV64t-GS_w",
+        "credit": "Suraj Chilamkruthi"
+      },
+      "prompt": "Use case: photorealistic-natural. The real photograph is a capture and composition reference for a new AI car photograph. Keep the real photograph's mundane snowy residential rear-three-quarter view, but REPLACE the Lexus entirely with an aged dark blue BMW E30 four-door sedan: straight boxy cabin, distinct small rectangular taillamps, narrow 1980s trunk, simple stock wheels. Do not keep Lexus proportions or badge. Snow falls consistently on the different body's horizontal surfaces and tires remain in physical contact. It must look like an ordinary photograph, not CGI, a showroom advertisement or a digitally polished render. Coherent wheels, panels, glass, mirrors, shadows, reflections and perspective. Modest ordinary colors, no HDR, fake texture, cinematic glow, text overlays, watermark or collage."
+    },
+    {
+      "id": "ai-car-20261017b-15",
+      "file": "public/ai images/car-20261017b-15.jpg",
+      "reference": {
+        "file": "public/photos/car-hpS3swVoQMc.jpg",
+        "source": "https://unsplash.com/photos/a-car-driving-down-a-street-next-to-a-tall-building-hpS3swVoQMc",
+        "credit": "Marcel Schachinger"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a photographic composition and capture reference for a distinct car photograph variation. This must feel like an ordinary camera photograph, never a digital render or advertisement. Keep the everyday front three-quarter street composition and overcast daylight. Replace with a modest light gray compact crossover SUV with ordinary wheels, narrow lamps and no advertising decals. Believable pedestrian background, glass perspective and reflections. Prioritize physically consistent wheels, axles, panels, windows, mirrors, reflections, tire contact and scene perspective. Keep ordinary optical sharpness and real surface imperfections only where plausible. No CGI finish, excessive HDR, showroom beauty light, neon grading, glowing contours, pristine invented materials, text overlays, watermark, border or collage. One image only."
+    },
+    {
+      "id": "ai-car-20261017b-16",
+      "file": "public/ai images/car-20261017b-16.jpg",
+      "reference": {
+        "file": "public/photos/car-iNRmhE6DQqA.jpg",
+        "source": "https://unsplash.com/photos/a-car-parked-on-a-street-iNRmhE6DQqA",
+        "credit": "Anna Deli"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a photographic composition and capture reference for a distinct car photograph variation. This must feel like an ordinary camera photograph, never a digital render or advertisement. Keep the frontal older sedan street view, tree-lined residential blocks and flat natural light. Replace with an ordinary faded red 1980s four-door sedan with rectangular headlights and a plain grille. Make the plate naturally unreadable at this resolution, not a blank glowing rectangle. Prioritize physically consistent wheels, axles, panels, windows, mirrors, reflections, tire contact and scene perspective. Keep ordinary optical sharpness and real surface imperfections only where plausible. No CGI finish, excessive HDR, showroom beauty light, neon grading, glowing contours, pristine invented materials, text overlays, watermark, border or collage. One image only."
+    },
+    {
+      "id": "ai-car-20261017b-17",
+      "file": "public/ai images/car-20261017b-17.jpg",
+      "reference": {
+        "file": "public/photos/car-qijkjkJm63c.jpg",
+        "source": "https://unsplash.com/photos/black-chevrolet-impala-with-glowing-headlights-qijkjkJm63c",
+        "credit": "Bradley Dunn"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a photographic composition and capture reference for a distinct car photograph variation. This must feel like an ordinary camera photograph, never a digital render or advertisement. Keep the classic-car front three-quarter view and ordinary open parking lot at dusk. Replace with a cream 1960s four-door sedan with dual round headlights, thin chrome trim and stock wheels. Slight normal wear; avoid polished auction-ad appearance. Prioritize physically consistent wheels, axles, panels, windows, mirrors, reflections, tire contact and scene perspective. Keep ordinary optical sharpness and real surface imperfections only where plausible. No CGI finish, excessive HDR, showroom beauty light, neon grading, glowing contours, pristine invented materials, text overlays, watermark, border or collage. One image only."
+    },
+    {
+      "id": "ai-car-20261017b-18",
+      "file": "public/ai images/car-20261017b-18.jpg",
+      "reference": {
+        "file": "public/photos/car-L9b2ww-sN84.jpg",
+        "source": "https://unsplash.com/photos/classic-two-tone-car-parked-on-a-city-street-L9b2ww-sN84",
+        "credit": "Ruben Mavarez"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a photographic composition and capture reference for a distinct car photograph variation. This must feel like an ordinary camera photograph, never a digital render or advertisement. Keep the full side-profile classic street composition. Replace with a pale blue-and-white 1950s four-door American sedan with curved roof, whitewall tires and restrained chrome. Keep ordinary neighborhood reflections and physical perspective. Prioritize physically consistent wheels, axles, panels, windows, mirrors, reflections, tire contact and scene perspective. Keep ordinary optical sharpness and real surface imperfections only where plausible. No CGI finish, excessive HDR, showroom beauty light, neon grading, glowing contours, pristine invented materials, text overlays, watermark, border or collage. One image only."
+    },
+    {
+      "id": "ai-car-20261017b-19",
+      "file": "public/ai images/car-20261017b-19.jpg",
+      "reference": {
+        "file": "public/photos/car-MlNH_5Pwmcs.jpg",
+        "source": "https://unsplash.com/photos/a-classic-turquoise-convertible-car-driving-on-a-road-MlNH_5Pwmcs",
+        "credit": "Roger Starnes Sr"
+      },
+      "prompt": "Use case: photorealistic-natural. The real photograph is a capture and composition reference for a new AI car photograph. Keep the real photograph's ordinary daytime moving convertible front-three-quarter composition, but REPLACE the Pontiac entirely with a silver 1980s Saab 900 convertible with black open cabin, broad sloping hood, characteristic windshield, rectangular headlights and modest stock wheels. No Pontiac grille or stacked lights. Preserve true camera motion softness and plausible road contact. It must look like an ordinary photograph, not CGI, a showroom advertisement or a digitally polished render. Coherent wheels, panels, glass, mirrors, shadows, reflections and perspective. Modest ordinary colors, no HDR, fake texture, cinematic glow, text overlays, watermark or collage."
+    },
+    {
+      "id": "ai-car-20261017b-20",
+      "file": "public/ai images/car-20261017b-20.jpg",
+      "reference": {
+        "file": "public/photos/car-q6LFMQ6wVZ0.jpg",
+        "source": "https://unsplash.com/photos/blue-coupe-near-gray-concrete-staircase-q6LFMQ6wVZ0",
+        "credit": "Robin Vet"
+      },
+      "prompt": "Use case: photorealistic-natural. The real photograph is a capture and composition reference for a new AI car photograph. Keep the real photograph's ordinary overcast front-three-quarter composition by stone steps, but REPLACE the MG entirely with a dark blue first-generation Mazda MX-5 roadster with raised black soft top and pop-up headlights closed, low rounded body, smooth short nose and stock wheels. Do not keep MG grille, chrome bumper or visible license number. Distinct scene details but same believable physical camera viewpoint. It must look like an ordinary photograph, not CGI, a showroom advertisement or a digitally polished render. Coherent wheels, panels, glass, mirrors, shadows, reflections and perspective. Modest ordinary colors, no HDR, fake texture, cinematic glow, text overlays, watermark or collage."
+    },
+    {
+      "id": "ai-car-20261017b-21",
+      "file": "public/ai images/car-20261017b-21.jpg",
+      "reference": {
+        "file": "public/photos/car-HWUX9YGXPSY.jpg",
+        "source": "https://unsplash.com/photos/black-honda-sedan-on-black-asphalt-road-during-daytime-HWUX9YGXPSY",
+        "credit": "Dzmitry Tselabionak"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a photographic composition and capture reference for a distinct car photograph variation. This must feel like an ordinary camera photograph, never a digital render or advertisement. Keep the rear three-quarter small-hatchback view with hills under cloud. Replace with a pale gray five-door compact city hatchback, tall rear lights, ordinary black trim and simple wheels. Preserve coherent glass, panel gaps and tire contact. Prioritize physically consistent wheels, axles, panels, windows, mirrors, reflections, tire contact and scene perspective. Keep ordinary optical sharpness and real surface imperfections only where plausible. No CGI finish, excessive HDR, showroom beauty light, neon grading, glowing contours, pristine invented materials, text overlays, watermark, border or collage. One image only."
+    },
+    {
+      "id": "ai-car-20261017b-22",
+      "file": "public/ai images/car-20261017b-22.jpg",
+      "reference": {
+        "file": "public/photos/car-KR1tg85bZqU.jpg",
+        "source": "https://unsplash.com/photos/a-white-car-driving-down-a-street-next-to-a-building-KR1tg85bZqU",
+        "credit": "Zakaria Issaad"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a photographic composition and capture reference for a distinct car photograph variation. This must feel like an ordinary camera photograph, never a digital render or advertisement. Keep the plain residential front three-quarter car photograph. Replace with a slightly used dark red compact hatchback with a simple stock grille, halogen headlights and ordinary steel wheels. Keep mundane shadows and foliage reflections, no glossy commercial lighting. Prioritize physically consistent wheels, axles, panels, windows, mirrors, reflections, tire contact and scene perspective. Keep ordinary optical sharpness and real surface imperfections only where plausible. No CGI finish, excessive HDR, showroom beauty light, neon grading, glowing contours, pristine invented materials, text overlays, watermark, border or collage. One image only."
+    },
+    {
+      "id": "ai-car-20261017b-23",
+      "file": "public/ai images/car-20261017b-23.jpg",
+      "reference": {
+        "file": "public/photos/car-C12GcEbPIfE.jpg",
+        "source": "https://unsplash.com/photos/a-white-vintage-car-parked-on-a-street-C12GcEbPIfE",
+        "credit": "Ruben Mavarez"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a photographic composition and capture reference for a distinct car photograph variation. This must feel like an ordinary camera photograph, never a digital render or advertisement. Keep the side-profile modest older hatchback parked by brick apartments. Replace with a faded blue 1980s three-door compact hatchback with black bumpers, small silver steel wheels and light road grime. Preserve the everyday exposure and viewpoint. Prioritize physically consistent wheels, axles, panels, windows, mirrors, reflections, tire contact and scene perspective. Keep ordinary optical sharpness and real surface imperfections only where plausible. No CGI finish, excessive HDR, showroom beauty light, neon grading, glowing contours, pristine invented materials, text overlays, watermark, border or collage. One image only."
+    },
+    {
+      "id": "ai-car-20261017b-24",
+      "file": "public/ai images/car-20261017b-24.jpg",
+      "reference": {
+        "file": "public/photos/car-U4rFbH_XUlY.jpg",
+        "source": "https://unsplash.com/photos/light-blue-station-wagon-driving-on-highway-U4rFbH_XUlY",
+        "credit": "Dan Williams"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a photographic composition and capture reference for a distinct car photograph variation. This must feel like an ordinary camera photograph, never a digital render or advertisement. Keep the roadside side-view full vehicle composition and ordinary sun. Replace with a muted beige 1990s long-roof family station wagon with black trim and plain stock wheels. Change distant traffic and billboard details, preserve coherent glass and contact shadows. Prioritize physically consistent wheels, axles, panels, windows, mirrors, reflections, tire contact and scene perspective. Keep ordinary optical sharpness and real surface imperfections only where plausible. No CGI finish, excessive HDR, showroom beauty light, neon grading, glowing contours, pristine invented materials, text overlays, watermark, border or collage. One image only."
+    },
+    {
+      "id": "ai-car-20261017b-25",
+      "file": "public/ai images/car-20261017b-25.jpg",
+      "reference": {
+        "file": "public/photos/car-JEMyTJ2xcnQ.jpg",
+        "source": "https://unsplash.com/photos/vintage-station-wagon-beside-metal-barn-JEMyTJ2xcnQ",
+        "credit": "Roger Starnes Sr"
+      },
+      "prompt": "Use case: photorealistic-natural. The attached real photograph is a photographic composition and capture reference for a distinct car photograph variation. This must feel like an ordinary camera photograph, never a digital render or advertisement. Keep the classic station wagon three-quarter view beside a plain barn with grass. Replace with a pale turquoise-and-white 1950s station wagon with stock wheels and slightly weathered chrome. Keep ordinary sunlight and realistic body proportions rather than a restored show-car rendering. Prioritize physically consistent wheels, axles, panels, windows, mirrors, reflections, tire contact and scene perspective. Keep ordinary optical sharpness and real surface imperfections only where plausible. No CGI finish, excessive HDR, showroom beauty light, neon grading, glowing contours, pristine invented materials, text overlays, watermark, border or collage. One image only."
+    }
+  ]
+}
