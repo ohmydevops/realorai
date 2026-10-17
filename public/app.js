@@ -212,7 +212,7 @@ function selectRound(ai, real, aiCount, roundSize) {
 function home() {
   renderToken++;
   loaded = false;
-  app.innerHTML = `<section class="home"><img class="home-art" src="${new URL('assets/home-process.webp', baseURL).href}" width="1200" height="503" fetchpriority="high" alt="${copy.homeAlt}"><p>${copy.homeIntro}</p>${(state.active && state.active.index < state.active.ids.length) || canStartTest() ? `<a class="start-game" href="#play">${copy.start}</a>` : `<p class="finished">${copy.later}</p>`}</section>`;
+  app.innerHTML = `<section class="home"><img class="home-art" src="${new URL('assets/home-process.webp', baseURL).href}" width="1600" height="800" fetchpriority="high" alt="${copy.homeAlt}"><p>${copy.homeIntro}</p>${(state.active && state.active.index < state.active.ids.length) || canStartTest() ? `<a class="start-game" href="#play">${copy.start}</a>` : `<p class="finished">${copy.later}</p>`}</section>`;
 }
 let lastReviewHash = null;
 function route() {
@@ -410,8 +410,68 @@ function results() {
         return `<li>${credit}<span class="result-number">${number(index + 1)}</span><strong>${answer.timedOut ? '—' : answer.correct ? '✓' : '×'} ${answer.timedOut ? copy.timedOut : answer.correct ? copy.correct : copy.wrong}</strong><span class="result-answer">${image.real ? copy.answerReal : copy.answerAI}</span></li>`;
       })
       .join('')}</ol>
-    ${canStartTest() ? `<button id="next">${copy.next}</button>` : `<p class="finished">${copy.later}</p>`}
+    <div id="share-options" hidden></div>
+    <div class="result-actions">
+      ${canStartTest() ? `<button id="next">${copy.next}</button>` : `<p class="finished">${copy.later}</p>`}
+      <button id="share-result" type="button">${copy.share}</button>
+    </div>
   </section>`;
+  document.getElementById('share-result').onclick = async () => {
+    const url = new URL(language === 'fa' ? './' : 'en/', baseURL).href;
+    const text = copy.shareText
+      .replace('{score}', number(correct))
+      .replace('{total}', number(answers.length));
+    if (navigator.share) {
+      try {
+        await navigator.share({ title: 'Real or AI?', text, url });
+        return;
+      } catch (error) {
+        if (error.name === 'AbortError') return;
+      }
+    }
+    const options = document.getElementById('share-options');
+    options.hidden = false;
+    options.replaceChildren();
+    for (const [label, href] of [
+      [
+        'WhatsApp',
+        'https://wa.me/?text=' + encodeURIComponent(text + ' ' + url),
+      ],
+      [
+        'Telegram',
+        'https://t.me/share/url?url=' +
+          encodeURIComponent(url) +
+          '&text=' +
+          encodeURIComponent(text),
+      ],
+      [
+        'X',
+        'https://twitter.com/intent/tweet?text=' +
+          encodeURIComponent(text) +
+          '&url=' +
+          encodeURIComponent(url),
+      ],
+      [
+        'Facebook',
+        'https://www.facebook.com/sharer/sharer.php?u=' +
+          encodeURIComponent(url),
+      ],
+    ]) {
+      const link = document.createElement('a');
+      link.textContent = label;
+      link.href = href;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      options.append(link);
+    }
+    const field = document.createElement('input');
+    field.readOnly = true;
+    field.value = text + ' ' + url;
+    field.setAttribute('aria-label', copy.copyShare);
+    field.onclick = () => field.select();
+    options.append(field);
+    options.querySelector('a').focus();
+  };
   const next = document.getElementById('next');
   if (next) next.onclick = start;
 }

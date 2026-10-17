@@ -15,7 +15,7 @@ window.QUIZ_TRANSLATIONS = {
     timedOut: 'Skipped',
     homeIntro: 'Real photo or AI? You decide.',
     homeAlt:
-      'A man considers two matching portraits: one made with an analog camera and film, the other generated from visual noise by a neural network.',
+      'Two paths lead to one portrait: a seated woman photographed with a camera and film, and a chatbot prompt turned into an image through visual noise and a neural network.',
     start: 'Start game',
     round: 'Image',
     of: 'of',
@@ -26,6 +26,9 @@ window.QUIZ_TRANSLATIONS = {
     skip: 'Skip',
     failed: 'Image unavailable.',
     results: 'Your results',
+    share: 'Share your score',
+    copyShare: 'Select and copy your score and game link',
+    shareText: 'I scored {score}/{total} in Real or AI? Can you beat me?',
     correct: 'Correct',
     wrong: 'Incorrect',
     next: 'New game',
@@ -56,7 +59,7 @@ window.QUIZ_TRANSLATIONS = {
     timedOut: 'بی‌پاسخ',
     homeIntro: 'عکس واقعیه یا هوش مصنوعیه؟',
     homeAlt:
-      'مردی به دو پرترهٔ مشابه فکر می‌کنه: یکی با دوربین آنالوگ و فیلم ساخته شده و دیگری از نویز تصویری با شبکهٔ عصبی.',
+      'دو مسیر به یک پرتره می‌رسن: عکس گرفتن از دختری روی صندلی با دوربین و فیلم، و ساختن تصویر از درخواست متنی با نویز و شبکهٔ عصبی.',
     start: 'شروع بازی',
     round: 'عکس',
     of: 'از',
@@ -67,6 +70,10 @@ window.QUIZ_TRANSLATIONS = {
     skip: 'اینو رد کن',
     failed: 'ای عکس باز نشد.',
     results: 'چندتاشو درست زدی؟',
+    share: 'اشتراک با بقیه',
+    copyShare: 'انتخاب و کپی نتیجه و لینک بازی',
+    shareText:
+      'تو بازی واقعیه یا هوش مصنوعیه، {score} از {total} گرفتم! تو چند می‌گیری؟',
     correct: 'درست زدی',
     wrong: 'اشتباه زدی',
     next: 'یه بازی جدید',
