@@ -226,12 +226,36 @@ console.log('PASS: an unavailable last AI never produces a real-only test.');
 
 // Visiting Home never starts or consumes a round, including returning players.
 const landing = boot('en', '');
+landing.run(
+  'state.seen = {}; unavailable.clear(); state.active = null; home()',
+);
 assert(
   landing.app.innerHTML.includes('Start game') ||
     landing.app.innerHTML.includes('Continue game'),
 );
 assert(landing.app.innerHTML.includes('href="#play"'));
 assert(!landing.app.innerHTML.includes('id="quiz-image"'));
+for (const lang of ['en', 'fa']) {
+  const exhaustedHome = boot(lang, '');
+  exhaustedHome.run(
+    'state.active = null; state.seen = Object.fromEntries(images.filter(i => !i.real).map(i => [i.id, true])); home()',
+  );
+  assert(!exhaustedHome.app.innerHTML.includes('href="#play"'));
+  assert(exhaustedHome.app.innerHTML.includes(exhaustedHome.run('copy.later')));
+  exhaustedHome.run(
+    'state.seen = Object.fromEntries(images.map(i => [i.id, true])); home()',
+  );
+  assert(!exhaustedHome.app.innerHTML.includes('href="#play"'));
+  assert(exhaustedHome.app.innerHTML.includes(exhaustedHome.run('copy.later')));
+  exhaustedHome.run(
+    'state.active = { ids: [images[0].id], index: 0, answers: [] }; home()',
+  );
+  assert(
+    exhaustedHome.app.innerHTML.includes('href="#play"'),
+    'An active game remains accessible',
+  );
+}
+
 for (const aiCount of [1, 2]) {
   q.run('state.seen = {}; unavailable.clear()');
   const round = q.run(

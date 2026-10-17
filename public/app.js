@@ -287,7 +287,7 @@ function home() {
   stopTimer();
   renderToken++;
   loaded = false;
-  app.innerHTML = `<section class="home"><img class="home-art" src="${new URL('assets/home-process.webp', baseURL).href}" width="1200" height="503" fetchpriority="high" alt="${copy.homeAlt}"><p>${copy.homeIntro}</p><a class="start-game" href="#play">${copy.start}</a></section>`;
+  app.innerHTML = `<section class="home"><img class="home-art" src="${new URL('assets/home-process.webp', baseURL).href}" width="1200" height="503" fetchpriority="high" alt="${copy.homeAlt}"><p>${copy.homeIntro}</p>${state.active || canStartTest() ? `<a class="start-game" href="#play">${copy.start}</a>` : `<p class="finished">${copy.later}</p>`}</section>`;
 }
 let lastReviewHash = null;
 function route() {
