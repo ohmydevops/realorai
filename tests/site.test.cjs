@@ -68,32 +68,34 @@ for (const file of [
   'en/sources/index.html',
 ]) {
   const html = fs.readFileSync(path.join('public', file), 'utf8');
+  let analyticsCount = 0;
   for (const resource of html.matchAll(/<(?:script|link)\b[^>]*>/g)) {
     if (!/\bsrc=|rel="(?:stylesheet|preload)"/.test(resource[0])) continue;
-    assert(
-      !/(?:src|href)="(?:https?:)?\/\//.test(resource[0]),
-  let analyticsCount = 0;
-      'External runtime resource',
-    );
     if (resource[0].includes(`src="${analyticsURL}"`)) {
       assert(resource[0].includes(`data-website-id="${analyticsID}"`));
       assert(/\bdefer\b/.test(resource[0]));
       analyticsCount++;
       continue;
     }
+    assert(
+      !/(?:src|href)="(?:https?:)?\/\//.test(resource[0]),
+      'External runtime resource',
+    );
   }
+  assert.equal(analyticsCount, 1, `Exactly one Umami script required: ${file}`);
 }
 const css = fs.readFileSync('public/style.css', 'utf8');
 assert(!/@import/.test(css), 'No CSS imports');
 for (const match of css.matchAll(/url\(['"]?([^)'"\s]+)/g)) {
-  assert.equal(analyticsCount, 1, `Exactly one Umami script required: ${file}`);
   assert(!/^https?:/.test(match[1]), 'No CDN fonts');
   assert(
     fs.existsSync(path.join('public', match[1])),
     `Missing font: ${match[1]}`,
   );
 }
-console.log('PASS: self-hosted site assets and one approved Umami script per page.');
+console.log(
+  'PASS: self-hosted site assets and one approved Umami script per page.',
+);
 
 const aiCount = images.filter((image) => !image.real).length;
 assert.equal(
