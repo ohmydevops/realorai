@@ -209,6 +209,9 @@ main {
 .history-review {
   list-style: none;
   padding: 0;
+  margin-block: 12px 0;
+  display: grid;
+  gap: 12px 20px;
 }
 .history-page {
   width: 100%;
@@ -217,19 +220,27 @@ main {
 }
 .history-review li {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  align-items: center;
   gap: 12px;
-  padding-block: 12px;
+  min-width: 0;
+  padding-block: 8px;
+  font-size: 14px;
 }
 .history-review img {
   display: block;
   width: 100%;
-  height: 140px;
+  height: 112px;
   object-fit: contain;
 }
 .history-review p {
   margin-block: 4px;
   overflow-wrap: anywhere;
+}
+@media (min-width: 600px) {
+  .history-review {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 #countdown[hidden] {
   display: none;
