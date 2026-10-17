@@ -23,6 +23,7 @@
   --hover: #e4ebe1;
   --accent: #315b4b;
   --on-accent: #fffdf5;
+  --radius: 8px;
 }
 :root[data-theme='dark'] {
   color-scheme: dark;
@@ -95,7 +96,7 @@ a {
   padding: 0 7px;
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 6px;
+  border-radius: var(--radius);
   color: var(--text);
   font-size: 12px;
   text-decoration: none;
@@ -130,6 +131,8 @@ main {
   align-items: center;
   column-gap: 8px;
   padding-block: 6px;
+}
+.history-list > li:not(:last-child) {
   border-bottom: 1px solid var(--border);
 }
 .history-row {
@@ -226,7 +229,7 @@ main {
   width: 100%;
   min-height: 0;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: var(--radius);
 }
 .image img {
   display: block;
@@ -236,7 +239,7 @@ main {
   max-height: 100%;
   min-height: 0;
   flex-shrink: 1;
-  border-radius: 6px;
+  border-radius: var(--radius);
   object-fit: contain;
 }
 .image-frame:not([data-state='ready']) img {
@@ -321,7 +324,7 @@ button {
   font: inherit;
   font-size: 16px;
   border: 1px solid var(--border);
-  border-radius: 6px;
+  border-radius: var(--radius);
   background: var(--surface);
   color: var(--text);
   cursor: pointer;
@@ -384,7 +387,7 @@ a:focus-visible {
   width: 48px;
   height: 40px;
   object-fit: cover;
-  border-radius: 3px;
+  border-radius: var(--radius);
 }
 .results strong,
 .result-answer {
@@ -533,7 +536,7 @@ dialog {
   max-height: calc(100dvh - 32px);
   padding: 20px;
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: var(--radius);
   background: var(--background);
   color: var(--text);
   font-size: 16px;
@@ -569,6 +572,16 @@ dialog p {
   display: block;
   overflow-y: auto;
   padding-block: 16px;
+}
+.sources-page main.history-index {
+  display: flex;
+  flex-direction: column;
+}
+.history-index .history-pagination {
+  margin-top: auto;
+  padding-top: 12px;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  flex-shrink: 0;
 }
 #source-warning {
   max-width: 460px;
@@ -608,7 +621,7 @@ dialog p {
   width: 64px;
   height: 48px;
   object-fit: cover;
-  border-radius: 3px;
+  border-radius: var(--radius);
 }
 /* Keep the shared title and compact controls consistent across pages. */
 .brand {
@@ -642,7 +655,6 @@ nav .control {
   min-height: 28px;
   padding: 0;
   margin: 0;
-  border-radius: 2px;
   font-size: 11px;
   font-weight: 700;
   line-height: 1;
@@ -704,7 +716,7 @@ nav .control {
   min-height: 48px;
   padding: 10px 28px;
   border: 1px solid var(--border);
-  border-radius: 6px;
+  border-radius: var(--radius);
   background: var(--accent);
   color: var(--on-accent);
   font-weight: 700;
@@ -788,6 +800,14 @@ nav .control {
 .guide p {
   margin-top: 0;
 }
+.guide > .control {
+  display: flex;
+  width: 100%;
+  min-height: 48px;
+  height: auto;
+  padding: 10px 16px;
+  font-size: 16px;
+}
 .footer-links {
   flex-wrap: wrap;
   gap: 8px;
@@ -802,6 +822,8 @@ nav .control {
   padding-block: 10px;
 }
 #share-options input {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
   width: 100%;
   min-width: 0;
   padding: 10px;
@@ -862,7 +884,7 @@ nav .control {
 ::-webkit-scrollbar-thumb {
   background: var(--border);
   border: 2px solid var(--background);
-  border-radius: 8px;
+  border-radius: var(--radius);
 }
 ::-webkit-scrollbar-thumb:hover {
   background: var(--muted);
@@ -885,7 +907,7 @@ nav .control {
   aspect-ratio: 2 / 3;
   object-fit: cover;
   object-position: center;
-  border-radius: 6px;
+  border-radius: var(--radius);
 }
 .comparison-pair figcaption {
   margin-top: 8px;
@@ -918,7 +940,7 @@ nav .control {
   overflow-y: auto;
   padding: 4px;
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: var(--radius);
   background: var(--surface);
   box-shadow: 0 4px 16px #0002;
 }
@@ -927,6 +949,7 @@ nav .control {
   align-items: center;
   min-height: 44px;
   padding: 6px 12px;
+  border-radius: var(--radius);
   font-size: 14px;
   text-decoration: none;
 }
@@ -948,5 +971,5 @@ nav .control {
 .portrait-zoom {
   display: block;
   cursor: zoom-in;
-  border-radius: 6px;
+  border-radius: var(--radius);
 }

@@ -21,23 +21,38 @@ for (const directory of ['photos', 'ai images']) {
   }
 }
 
-assert.equal(
-  activeImages.filter((image) => !image.real).length * 4,
-  activeImages.length,
-  'Keep the playable collection exactly 25% AI',
-);
 assert(
   activeImages.every((image) =>
     ['Cars', 'Portrait'].includes(image.category.en),
   ),
 );
-for (const category of ['Cars', 'Portrait']) {
+for (const [category, maximum] of [
+  ['Cars', 150],
+  ['Portrait', 400],
+]) {
+  const collection = activeImages.filter(
+    (image) => image.category.en === category,
+  );
+  assert(
+    collection.length <= maximum,
+    `Keep at most ${maximum} playable ${category} images`,
+  );
   assert(
     activeImages.some((image) => image.real && image.category.en === category),
   );
   assert(
     activeImages.some((image) => !image.real && image.category.en === category),
   );
+}
+for (const [category, real, ai] of [
+  ['Cars', 120, 30],
+  ['Portrait', 320, 80],
+]) {
+  const collection = activeImages.filter(
+    (image) => image.category.en === category,
+  );
+  assert.equal(collection.filter((image) => image.real).length, real);
+  assert.equal(collection.filter((image) => !image.real).length, ai);
 }
 assert.equal(
   new Set(images.map((image) => image.src)).size,
@@ -177,7 +192,7 @@ console.log(
 );
 
 console.log(
-  'PASS: cars and portraits only, paired categories, and exactly 25% AI in new games.',
+  'PASS: cars and portraits within category limits, with real and AI available in each.',
 );
 
 for (const file of [

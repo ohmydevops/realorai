@@ -1,0 +1,421 @@
+{
+  "generator": "OpenAI ImageGen built-in tool",
+  "images": [
+    {
+      "id": "ai-portrait-20261017c-01",
+      "file": "public/ai images/portrait-20261017c-01.jpg",
+      "category": "portrait",
+      "generatedFile": "exec-b72b3577-4cfe-4bea-9f4e-9fae3552f266.png"
+    },
+    {
+      "id": "ai-portrait-20261017c-02",
+      "file": "public/ai images/portrait-20261017c-02.jpg",
+      "category": "portrait",
+      "generatedFile": "exec-8e6c0f4d-a740-4fca-9331-8387605fcfce.png"
+    },
+    {
+      "id": "ai-portrait-20261017c-03",
+      "file": "public/ai images/portrait-20261017c-03.jpg",
+      "category": "portrait",
+      "generatedFile": "exec-9d3dd171-9f57-4f43-ba02-3dbe2ea9eb45.png"
+    },
+    {
+      "id": "ai-portrait-20261017c-04",
+      "file": "public/ai images/portrait-20261017c-04.jpg",
+      "category": "portrait",
+      "generatedFile": "exec-9b7efd25-0cad-40fe-bc32-43428cd432f9.png"
+    },
+    {
+      "id": "ai-portrait-20261017c-05",
+      "file": "public/ai images/portrait-20261017c-05.jpg",
+      "category": "portrait",
+      "generatedFile": "exec-60d3868a-eca7-4bf0-b603-76ffac35e8ec.png"
+    },
+    {
+      "id": "ai-portrait-20261017c-06",
+      "file": "public/ai images/portrait-20261017c-06.jpg",
+      "category": "portrait",
+      "generatedFile": "exec-108f909b-935c-454f-bd91-03ebea0fd0cd.png"
+    },
+    {
+      "id": "ai-portrait-20261017c-07",
+      "file": "public/ai images/portrait-20261017c-07.jpg",
+      "category": "portrait",
+      "generatedFile": "exec-600f8116-5fa8-430d-a889-0a80866071b2.png"
+    },
+    {
+      "id": "ai-portrait-20261017c-08",
+      "file": "public/ai images/portrait-20261017c-08.jpg",
+      "category": "portrait",
+      "generatedFile": "exec-2738dcd1-dd9f-4764-85b7-befe64eb7967.png"
+    },
+    {
+      "id": "ai-portrait-20261017c-09",
+      "file": "public/ai images/portrait-20261017c-09.jpg",
+      "category": "portrait",
+      "generatedFile": "exec-63e47a36-1572-4a29-bec6-3f0bc50a8885.png"
+    },
+    {
+      "id": "ai-portrait-20261017c-10",
+      "file": "public/ai images/portrait-20261017c-10.jpg",
+      "category": "portrait",
+      "generatedFile": "exec-37ba001a-155d-4616-b21e-6f287001c8e2.png"
+    },
+    {
+      "id": "ai-portrait-20261017c-11",
+      "file": "public/ai images/portrait-20261017c-11.jpg",
+      "category": "portrait",
+      "generatedFile": "exec-a4cc3150-12c2-4f0f-bb81-e0e4a2d5b33e.png"
+    },
+    {
+      "id": "ai-portrait-20261017c-12",
+      "file": "public/ai images/portrait-20261017c-12.jpg",
+      "category": "portrait",
+      "generatedFile": "exec-341dbc4c-494f-4de0-be5e-795241fa8c60.png"
+    },
+    {
+      "id": "ai-portrait-20261017c-13",
+      "file": "public/ai images/portrait-20261017c-13.jpg",
+      "category": "portrait",
+      "generatedFile": "exec-2f052e12-a947-4514-b282-0ba6730e3a4e.png"
+    },
+    {
+      "id": "ai-portrait-20261017c-14",
+      "file": "public/ai images/portrait-20261017c-14.jpg",
+      "category": "portrait",
+      "generatedFile": "exec-158ddf2f-d2db-48d0-aba7-e134fde8a60d.png"
+    },
+    {
+      "id": "ai-portrait-20261017c-15",
+      "file": "public/ai images/portrait-20261017c-15.jpg",
+      "category": "portrait",
+      "generatedFile": "exec-d7d66a6e-03ba-49c9-aab2-53bbc0084a00.png"
+    },
+    {
+      "id": "ai-portrait-20261017c-16",
+      "file": "public/ai images/portrait-20261017c-16.jpg",
+      "category": "portrait",
+      "generatedFile": "exec-c1cd28e5-f4bc-4808-b371-d81dc1389419.png"
+    },
+    {
+      "id": "ai-portrait-20261017c-17",
+      "file": "public/ai images/portrait-20261017c-17.jpg",
+      "category": "portrait",
+      "generatedFile": "exec-93f2a714-ba7e-4ff3-a56a-2fca96bbf658.png"
+    },
+    {
+      "id": "ai-portrait-20261017c-18",
+      "file": "public/ai images/portrait-20261017c-18.jpg",
+      "category": "portrait",
+      "generatedFile": "exec-57040ae7-187e-47e8-bf0c-b2cbe5646e5b.png"
+    },
+    {
+      "id": "ai-portrait-20261017c-19",
+      "file": "public/ai images/portrait-20261017c-19.jpg",
+      "category": "portrait",
+      "generatedFile": "exec-db935921-7073-4b88-8e1f-fd4574d60f1b.png"
+    },
+    {
+      "id": "ai-portrait-20261017c-20",
+      "file": "public/ai images/portrait-20261017c-20.jpg",
+      "category": "portrait",
+      "generatedFile": "exec-7a02f9d5-6d69-4ebd-b75a-5556b4ccfa90.png"
+    },
+    {
+      "id": "ai-portrait-20261017c-21",
+      "file": "public/ai images/portrait-20261017c-21.jpg",
+      "category": "portrait",
+      "generatedFile": "exec-30d870a7-91e3-412e-a50a-5b0f6fd7d16b.png"
+    },
+    {
+      "id": "ai-portrait-20261017c-22",
+      "file": "public/ai images/portrait-20261017c-22.jpg",
+      "category": "portrait",
+      "generatedFile": "exec-25f222ae-0c42-4643-84c8-5a872a37401a.png"
+    },
+    {
+      "id": "ai-portrait-20261017c-23",
+      "file": "public/ai images/portrait-20261017c-23.jpg",
+      "category": "portrait",
+      "generatedFile": "exec-9e5a0733-5c34-400c-b0b3-18337657ab03.png"
+    },
+    {
+      "id": "ai-portrait-20261017c-24",
+      "file": "public/ai images/portrait-20261017c-24.jpg",
+      "category": "portrait",
+      "generatedFile": "exec-0c9360bd-3ef2-42f4-a455-bffbef13c55f.png"
+    },
+    {
+      "id": "ai-portrait-20261017c-25",
+      "file": "public/ai images/portrait-20261017c-25.jpg",
+      "category": "portrait",
+      "generatedFile": "exec-cbb80b98-ca42-45d6-8821-d650f23a1a66.png"
+    },
+    {
+      "id": "ai-portrait-20261017c-26",
+      "file": "public/ai images/portrait-20261017c-26.jpg",
+      "category": "portrait",
+      "generatedFile": "exec-54375996-7bb7-402a-b02d-f57b652daa15.png"
+    },
+    {
+      "id": "ai-portrait-20261017c-27",
+      "file": "public/ai images/portrait-20261017c-27.jpg",
+      "category": "portrait",
+      "generatedFile": "exec-d87e7c5e-c523-47d5-bc37-f8e08e560e5c.png"
+    },
+    {
+      "id": "ai-portrait-20261017c-28",
+      "file": "public/ai images/portrait-20261017c-28.jpg",
+      "category": "portrait",
+      "generatedFile": "exec-8a41a91e-7d53-4101-8767-bd5acd7b6f0e.png"
+    },
+    {
+      "id": "ai-portrait-20261017c-29",
+      "file": "public/ai images/portrait-20261017c-29.jpg",
+      "category": "portrait",
+      "generatedFile": "exec-e20650d3-5cda-495d-9bbb-a95ba052c065.png"
+    },
+    {
+      "id": "ai-portrait-20261017c-30",
+      "file": "public/ai images/portrait-20261017c-30.jpg",
+      "category": "portrait",
+      "generatedFile": "exec-7de95ca9-69eb-47f1-aaa1-dbb555cfa270.png"
+    },
+    {
+      "id": "ai-car-20261017c-01",
+      "file": "public/ai images/car-20261017c-01.jpg",
+      "category": "car",
+      "generatedFile": "exec-97b97796-a3aa-498c-98b2-2d6bce333e1c.png"
+    }
+  ],
+  "knownPrompts": [
+    {
+      "referenceKey": "000",
+      "prompt": "Use case: photorealistic-natural. Input image is a real Unsplash photograph used only as a composition and photographic-light reference for a distinct AI portrait. Generate one portrait photograph of a different adult woman around 40, with shoulder-length chestnut hair, a broader nose and a softly angular jaw, wearing a light gray cotton sweater. Preserve the side-on upper body, closed eyes, natural head tilt and plain wall from the reference. Natural soft color. Change the person's identity clearly. Preserve coherent camera perspective, framing and physically supported pose. Ordinary DSLR photograph, modest processing, believable uneven skin tone and natural eyelids, normal gaze. Keep face and surroundings in the same simple illumination. No beauty retouching, plastic skin, fixed glossy eyes, sculpted lighting, cinematic warm/cool split, invented pore stamps, excessive HDR, watermark, text or border. One image only.",
+      "generatedPath": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14b2b-57d9-7080-9e9d-5c9b0ea749b1\\exec-b72b3577-4cfe-4bea-9f4e-9fae3552f266.png"
+    },
+    {
+      "referenceKey": "003",
+      "prompt": "Use case: photorealistic-natural. Input image is a real Unsplash photograph used only as a composition and photographic-light reference for a distinct AI portrait. Generate one portrait photograph of a different adult Black woman around 35 with short natural coiled hair, a longer oval face, wider-set eyes and a muted olive sleeveless cotton top. Preserve the slightly turned close portrait, small spontaneous tooth-showing smile and light neutral wall. Natural soft color. Change the person's identity clearly. Preserve coherent camera perspective, framing and physically supported pose. Ordinary DSLR photograph, modest processing, believable uneven skin tone and natural eyelids, normal gaze. Keep face and surroundings in the same simple illumination. No beauty retouching, plastic skin, fixed glossy eyes, sculpted lighting, cinematic warm/cool split, invented pore stamps, excessive HDR, watermark, text or border. One image only.",
+      "generatedPath": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14b2b-57d9-7080-9e9d-5c9b0ea749b1\\exec-8e6c0f4d-a740-4fca-9331-8387605fcfce.png"
+    },
+    {
+      "referenceKey": "007",
+      "prompt": "Use case: photorealistic-natural. Input image is a real Unsplash photograph used only as a composition and photographic-light reference for a distinct AI portrait. Generate one portrait photograph of a different adult woman around 30 with shoulder-length dark wavy hair, a more rounded face, softer eyebrows and a plain dark jacket, holding plain sunglasses above her brow as in the reference. Preserve the close portrait framing, lightly amused expression and ordinary black-and-white rendering. Change the person's identity clearly. Preserve coherent camera perspective, framing and physically supported pose. Ordinary DSLR photograph, modest processing, believable uneven skin tone and natural eyelids, normal gaze. Keep face and surroundings in the same simple illumination. No beauty retouching, plastic skin, fixed glossy eyes, sculpted lighting, cinematic warm/cool split, invented pore stamps, excessive HDR, watermark, text or border. One image only.",
+      "generatedPath": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14b2b-57d9-7080-9e9d-5c9b0ea749b1\\exec-9d3dd171-9f57-4f43-ba02-3dbe2ea9eb45.png"
+    }
+  ],
+  "reviewedReferenceSet": {
+    "000": {
+      "file": "public/photos/portrait-0b_7r_dNjFs.jpg",
+      "source": "https://unsplash.com/photos/a-woman-with-long-black-hair-standing-in-front-of-a-wall-0b_7r_dNjFs",
+      "credit": "Valeria Lendel",
+      "downloadedFrom": "https://images.unsplash.com/photo-1636153279424-cb5d1e00f5a2",
+      "matchDistance": 5
+    },
+    "003": {
+      "file": "public/photos/portrait-ZKaV12KPnRc.jpg",
+      "source": "https://unsplash.com/photos/a-woman-in-a-black-top-smiling-at-the-camera-ZKaV12KPnRc",
+      "credit": "Good Faces",
+      "downloadedFrom": "https://images.unsplash.com/photo-1710196598824-ca4ca5fefae4",
+      "matchDistance": 0
+    },
+    "007": {
+      "file": "public/photos/portrait-Z6mkSUryIvY.jpg",
+      "source": "https://unsplash.com/photos/a-black-and-white-photo-of-a-woman-wearing-sunglasses-Z6mkSUryIvY",
+      "credit": "Jay Alexander",
+      "downloadedFrom": "https://images.unsplash.com/photo-1645348312532-3a5821714690",
+      "matchDistance": 0
+    },
+    "044": {
+      "file": "public/photos/portrait-cRRjxqTo2aI.jpg",
+      "source": "https://unsplash.com/photos/woman-in-grey-shirt-with-earrings-cRRjxqTo2aI",
+      "credit": "Vitaly Gariev",
+      "downloadedFrom": "https://images.unsplash.com/photo-1790575187910-20b6dd3d3ee5",
+      "matchDistance": 0
+    },
+    "047": {
+      "file": "public/photos/portrait-BrZevstmhAo.jpg",
+      "source": "https://unsplash.com/photos/man-with-beard-and-glasses-BrZevstmhAo",
+      "credit": "Vitaly Gariev",
+      "downloadedFrom": "https://images.unsplash.com/photo-1790575169060-aeae367a83bb",
+      "matchDistance": 4
+    },
+    "051": {
+      "file": "public/photos/portrait-LHotCeR8Ap0.jpg",
+      "source": "https://unsplash.com/photos/a-smiling-young-black-man-in-a-t-shirt-LHotCeR8Ap0",
+      "credit": "Ian Pette",
+      "downloadedFrom": "https://images.unsplash.com/photo-1771584969936-571ef1c3f130",
+      "matchDistance": 0
+    },
+    "064": {
+      "file": "public/photos/portrait-IxacjtwPdGM.jpg",
+      "source": "https://unsplash.com/photos/woman-in-beige-jumpsuit-smiling-sitting-on-a-stool-IxacjtwPdGM",
+      "credit": "Centre for Ageing Better",
+      "downloadedFrom": "https://images.unsplash.com/photo-1780387477222-730504564368",
+      "matchDistance": 3
+    },
+    "067": {
+      "file": "public/photos/portrait-l9I93gZKTG4.jpg",
+      "source": "https://unsplash.com/photos/grayscale-photography-of-woman-standing-l9I93gZKTG4",
+      "credit": "Danie Franco",
+      "downloadedFrom": "https://images.unsplash.com/photo-1498757581981-8ddb3c0b9b07",
+      "matchDistance": 0
+    },
+    "088": {
+      "file": "public/photos/portrait-QXevDflbl8A.jpg",
+      "source": "https://unsplash.com/photos/smiling-woman-wearing-white-and-black-pinstriped-collared-top-QXevDflbl8A",
+      "credit": "Štefan Štefančík",
+      "downloadedFrom": "https://images.unsplash.com/photo-1544005313-94ddf0286df2",
+      "matchDistance": 0
+    },
+    "089": {
+      "file": "public/photos/portrait-0fN7Fxv1eWA.jpg",
+      "source": "https://unsplash.com/photos/grayscale-photo-of-woman-wearing-necklace-and-top-0fN7Fxv1eWA",
+      "credit": "Rachel McDermott",
+      "downloadedFrom": "https://images.unsplash.com/photo-1506863530036-1efeddceb993",
+      "matchDistance": 4
+    },
+    "091": {
+      "file": "public/photos/portrait-JRa8lCQQhSs.jpg",
+      "source": "https://unsplash.com/photos/a-woman-with-a-straight-face-JRa8lCQQhSs",
+      "credit": "Dmitry Ganin",
+      "downloadedFrom": "https://images.unsplash.com/photo-1667053508464-eb11b394df83",
+      "matchDistance": 0
+    },
+    "095": {
+      "file": "public/photos/portrait-94KXnFBNCW4.jpg",
+      "source": "https://unsplash.com/photos/a-black-and-white-photo-of-a-woman-with-curly-hair-94KXnFBNCW4",
+      "credit": "Levi Meir Clancy",
+      "downloadedFrom": "https://images.unsplash.com/photo-1644718847151-fff2271484a1",
+      "matchDistance": 0
+    },
+    "096": {
+      "file": "public/photos/portrait-bYPKdhZimic.jpg",
+      "source": "https://unsplash.com/photos/a-woman-standing-in-front-of-a-tree-bYPKdhZimic",
+      "credit": "Cunyu 7",
+      "downloadedFrom": "https://images.unsplash.com/photo-1691495257420-bc31c53097f2",
+      "matchDistance": 0
+    },
+    "101": {
+      "file": "public/photos/portrait-yAggztEQFsA.jpg",
+      "source": "https://unsplash.com/photos/a-woman-standing-in-a-field-with-her-hair-blowing-in-the-wind-yAggztEQFsA",
+      "credit": "Tima Ilyasov",
+      "downloadedFrom": "https://images.unsplash.com/photo-1724690336308-02af024b76ab",
+      "matchDistance": 0
+    },
+    "102": {
+      "file": "public/photos/portrait-bXZ4GuHX6e8.jpg",
+      "source": "https://unsplash.com/photos/a-woman-with-long-hair-bXZ4GuHX6e8",
+      "credit": "Umit",
+      "downloadedFrom": "https://images.unsplash.com/photo-1656417670990-cf239b816e7a",
+      "matchDistance": 0
+    },
+    "119": {
+      "file": "public/photos/portrait-YhMFYJZgMA0.jpg",
+      "source": "https://unsplash.com/photos/a-close-up-of-a-woman-with-a-ponytail-YhMFYJZgMA0",
+      "credit": "Yoad Shejtman",
+      "downloadedFrom": "https://images.unsplash.com/photo-1674932668403-33398b81c92f",
+      "matchDistance": 3
+    },
+    "124": {
+      "file": "public/photos/portrait-cC2TKDf21jY.jpg",
+      "source": "https://unsplash.com/photos/a-person-with-no-shirt-cC2TKDf21jY",
+      "credit": "see plus",
+      "downloadedFrom": "https://images.unsplash.com/photo-1651534400411-eaf227f82ee4",
+      "matchDistance": 0
+    },
+    "128": {
+      "file": "public/photos/portrait-NTjSR3zYpsY.jpg",
+      "source": "https://unsplash.com/photos/portrait-photograph-of-woman-in-gray-and-brown-coat-NTjSR3zYpsY",
+      "credit": "Ethan Haddox",
+      "downloadedFrom": "https://images.unsplash.com/photo-1517462964-21fdcec3f25b",
+      "matchDistance": 0
+    },
+    "140": {
+      "file": "public/photos/portrait-D-wZyA0Lj1s.jpg",
+      "source": "https://unsplash.com/photos/a-black-and-white-photo-of-a-woman-smiling-D-wZyA0Lj1s",
+      "credit": "amirreza momennia",
+      "downloadedFrom": "https://images.unsplash.com/photo-1716428401265-6e0ed6cf32bc",
+      "matchDistance": 0
+    },
+    "144": {
+      "file": "public/photos/portrait-V7KtKamftUU.jpg",
+      "source": "https://unsplash.com/photos/woman-in-white-floral-lace-shirt-V7KtKamftUU",
+      "credit": "Elisaveta Bunduche",
+      "downloadedFrom": "https://images.unsplash.com/photo-1628695444176-79ef329a6015",
+      "matchDistance": 0
+    },
+    "031": {
+      "file": "public/photos/portrait-s3aDHKxHZSc.jpg",
+      "source": "https://unsplash.com/photos/a-woman-with-glasses-smiles-against-a-gray-background-s3aDHKxHZSc",
+      "credit": "Vitaly Gariev",
+      "downloadedFrom": "https://images.unsplash.com/photo-1758600587839-56ba05596c69",
+      "matchDistance": 0
+    },
+    "032": {
+      "file": "public/photos/portrait-DaD2we5ov7E.jpg",
+      "source": "https://unsplash.com/photos/a-young-woman-with-curly-dark-hair-looks-forward-DaD2we5ov7E",
+      "credit": "Vitaly Gariev",
+      "downloadedFrom": "https://images.unsplash.com/photo-1758600434324-41712d1f530e",
+      "matchDistance": 0
+    },
+    "040": {
+      "file": "public/photos/portrait-UZmSn5GaSWY.jpg",
+      "source": "https://unsplash.com/photos/young-woman-with-long-brown-hair-wearing-a-black-shirt-UZmSn5GaSWY",
+      "credit": "Beatriz Cattel",
+      "downloadedFrom": "https://images.unsplash.com/photo-1770058443069-e384cd001e9b",
+      "matchDistance": 0
+    },
+    "042": {
+      "file": "public/photos/portrait-W3Y7Pxv35NA.jpg",
+      "source": "https://unsplash.com/photos/woman-with-curly-hair-smiling-W3Y7Pxv35NA",
+      "credit": "Vitaly Gariev",
+      "downloadedFrom": "https://images.unsplash.com/photo-1790575187732-8f706425ee75",
+      "matchDistance": 0
+    },
+    "048": {
+      "file": "public/photos/portrait-3gX9JXXSGF0.jpg",
+      "source": "https://unsplash.com/photos/man-wearing-glasses-and-beanie-looking-forward-3gX9JXXSGF0",
+      "credit": "Gabriel Cox",
+      "downloadedFrom": "https://images.unsplash.com/photo-1762733031326-73adceedbe1c",
+      "matchDistance": 1
+    },
+    "049": {
+      "file": "public/photos/portrait-_uljrWDcB6s.jpg",
+      "source": "https://unsplash.com/photos/man-in-beige-polo-shirt-_uljrWDcB6s",
+      "credit": "Ernest Flowers",
+      "downloadedFrom": "https://images.unsplash.com/photo-1791579521834-b0df021ee97f",
+      "matchDistance": 0
+    },
+    "060": {
+      "file": "public/photos/portrait-1nuwz0dIn9Y.jpg",
+      "source": "https://unsplash.com/photos/man-portrait-with-facial-hair-1nuwz0dIn9Y",
+      "credit": "Vitaly Gariev",
+      "downloadedFrom": "https://images.unsplash.com/photo-1790575169233-4dc4f2b969a5",
+      "matchDistance": 0
+    },
+    "071": {
+      "file": "public/photos/portrait-A6O7pgc7vHg.jpg",
+      "source": "https://unsplash.com/photos/grayscale-photo-of-closed-eyes-woman-A6O7pgc7vHg",
+      "credit": "Danie Franco",
+      "downloadedFrom": "https://images.unsplash.com/photo-1496672254107-b07a26403885",
+      "matchDistance": 1
+    },
+    "086": {
+      "file": "public/photos/portrait-Y9e_VmrdpQI.jpg",
+      "source": "https://unsplash.com/photos/a-man-with-a-white-beard-wearing-sunglasses-Y9e_VmrdpQI",
+      "credit": "Donald Teel",
+      "downloadedFrom": "https://images.unsplash.com/photo-1687377559195-87aa52e57acb",
+      "matchDistance": 0
+    },
+    "104": {
+      "file": "public/photos/portrait-_gDoyVv5F4c.jpg",
+      "source": "https://unsplash.com/photos/man-in-white-crew-neck-shirt-_gDoyVv5F4c",
+      "credit": "Vicky Hladynets",
+      "downloadedFrom": "https://images.unsplash.com/photo-1600603406200-5b2a104684ac",
+      "matchDistance": 0
+    }
+  },
+  "notes": "Recovered outputs from the interrupted expansion. Exact individual prompt records survive only for the first three portraits; other output-to-reference mappings were not retained. The portrait reference set was downloaded and reviewed before generation. Excluded exec-35022409-f3c5-4198-98fb-c4882753811d.png during final review."
+}

@@ -55,6 +55,12 @@ function boot(
     }
   }
   const app = {
+    classList: { add() {} },
+    getBoundingClientRect: () => ({ bottom: 600 }),
+    querySelector: () => ({
+      getBoundingClientRect: () => ({ top: 100 }),
+      children: [{ getBoundingClientRect: () => ({ height: 86 }) }],
+    }),
     get innerHTML() {
       return html;
     },
@@ -85,6 +91,7 @@ function boot(
       getElementById: (id) => (id === 'app' ? app : node(id)),
     },
     URL,
+    getComputedStyle: () => ({ paddingBottom: '0' }),
     Intl,
     Date: FakeDate,
     setInterval: (callback) => {
@@ -202,8 +209,8 @@ console.log(
 // Exercise every allowed AI count without relying on statistical assertions.
 for (const [random, expected] of [
   [0, 1],
-  [0.5, 2],
-  [0.999, 2],
+  [0.5, 1],
+  [0.999, 1],
 ]) {
   q.run(
     `state.seen = {}; state.active = null; Math.random = () => ${random}; start();`,
@@ -235,7 +242,7 @@ assert.equal(
 assert.notEqual(q.run('state.active.ids[state.active.index]'), failedId);
 assert(!q.run(`Object.hasOwn(state.seen, ${JSON.stringify(failedId)})`));
 console.log(
-  'PASS: randomized 1–2 AI images, shuffled unique rounds, AI exhaustion, and same-kind failed-image replacement.',
+  'PASS: exactly four real and one AI image, shuffled unique rounds, AI exhaustion, and same-kind failed-image replacement.',
 );
 
 // If the only remaining AI cannot load, stop rather than offer a real-only test.
@@ -286,7 +293,7 @@ for (const lang of ['en', 'fa']) {
   assert(exhaustedHome.app.innerHTML.includes(exhaustedHome.run('copy.later')));
 }
 
-for (const aiCount of [1, 2]) {
+for (const aiCount of [1]) {
   q.run('state.seen = {}; unavailable.clear()');
   const round = q.run(
     `selectRound(images.filter(i => !i.real), images.filter(i => i.real), ${aiCount}, 5)`,
@@ -304,8 +311,6 @@ for (const aiCount of [1, 2]) {
       .map((i) => i.category.en),
   );
   assert(pairs.size >= Math.min(2, aiCount, 5 - aiCount));
-  if (aiCount === 2)
-    assert.equal(new Set(round.map((i) => i.category.en)).size, 2);
 }
 console.log(
   'PASS: Home does not consume images; category pairs, wildcard, and AI balance.',
@@ -548,10 +553,34 @@ assert(
 migrated.run(
   'state.seen = Object.fromEntries(images.filter(image => image.real).map(image => [image.id,"seen"])); state.active = null; start();',
 );
-assert.equal(migrated.run('state.active.ids.length'), 2);
+assert.equal(migrated.run('state.active.ids.length'), 1);
 assert(migrated.run('state.active.ids.every(id => !byId.get(id).real)'));
 console.log(
-  'PASS: retired-image reviews and in-progress answers survive; new and partial rounds never exceed two AI images.',
+  'PASS: retired-image reviews and in-progress answers survive; new and partial rounds contain exactly one AI image.',
+);
+
+// Only a completed round consumes images; partial progress remains resumable.
+const completion = boot();
+completion.run(
+  'state = {version:1, seen:{}, answers:[], history:[], active:null}; start()',
+);
+completion.nodes['quiz-image'].onload();
+completion.run('answer(true)');
+assert.equal(completion.run('Object.keys(state.seen).length'), 0);
+assert.equal(completion.run('state.history.length'), 0);
+const resumedCompletion = boot();
+assert.equal(resumedCompletion.run('state.active.index'), 1);
+assert.equal(resumedCompletion.run('Object.keys(state.seen).length'), 0);
+while (resumedCompletion.run('state.active.index < state.active.ids.length')) {
+  resumedCompletion.nodes['quiz-image'].onload();
+  resumedCompletion.run('answer(true)');
+}
+assert.equal(resumedCompletion.run('Object.keys(state.seen).length'), 5);
+assert.equal(resumedCompletion.run('state.history.length'), 1);
+resumedCompletion.run('renderHistory()');
+assert(!resumedCompletion.app.innerHTML.includes('<small>'));
+console.log(
+  'PASS: unfinished rounds resume without consuming images; completion records all images and hides zero skipped counts.',
 );
 
 for (const host of [

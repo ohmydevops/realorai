@@ -110,14 +110,19 @@ function historyReview(entry) {
     .join('')}</ol>`;
 }
 let historyPage = 0;
-function renderHistory() {
-  const pages = Math.max(1, Math.ceil(state.history.length / 5));
+let historyPageSize = 5;
+function renderHistory(measure = true) {
+  historyContainer.classList.add('history-index');
+  const pages = Math.max(1, Math.ceil(state.history.length / historyPageSize));
   historyPage = Math.max(0, Math.min(historyPage, pages - 1));
   historyContainer.innerHTML = `<h2 id="history-title">${copy.history}</h2>${
     state.history.length
       ? `<ol class="history-list">${[...state.history]
           .reverse()
-          .slice(historyPage * 5, historyPage * 5 + 5)
+          .slice(
+            historyPage * historyPageSize,
+            (historyPage + 1) * historyPageSize,
+          )
           .map((entry) => {
             const date = new Date(entry.completedAt);
             const label = entry.legacy
@@ -128,11 +133,31 @@ function renderHistory() {
                     dateStyle: 'medium',
                     timeStyle: 'short',
                   }).format(date);
-            return `<li><div class="history-row"><span>${escapeHTML(label)}</span><strong><bdi>${number(entry.correct)} / ${number(entry.total)}</bdi></strong><small>${copy.skipped}: ${number(entry.skipped || 0)}</small></div><a class="history-review-link" href="${new URL(languagePath || './', baseURL).href}#review=${encodeURIComponent(entry.id)}" target="_blank" rel="noopener noreferrer">${copy.reviewGame}</a></li>`;
+            return `<li><div class="history-row"><span>${escapeHTML(label)}</span><strong><bdi>${number(entry.correct)} / ${number(entry.total)}</bdi></strong>${entry.skipped > 0 ? `<small>${copy.skipped}: ${number(entry.skipped)}</small>` : ''}</div><a class="history-review-link" href="${new URL(languagePath || './', baseURL).href}#review=${encodeURIComponent(entry.id)}" target="_blank" rel="noopener noreferrer">${copy.reviewGame}</a></li>`;
           })
           .join('')}</ol>`
       : `<p>${copy.noHistory}</p>`
   }${pages > 1 ? `<nav class="history-pagination" aria-label="${copy.history}"><button id="history-prev" ${historyPage === 0 ? 'disabled' : ''}>${copy.previousPage}</button><span><bdi>${number(historyPage + 1)} / ${number(pages)}</bdi></span><button id="history-next" ${historyPage === pages - 1 ? 'disabled' : ''}>${copy.nextPage}</button></nav>` : ''}`;
+  if (measure && state.history.length) {
+    const list = historyContainer.querySelector('.history-list');
+    const rows = [...list.children];
+    const rowHeight = Math.max(
+      ...rows.map((row) => row.getBoundingClientRect().height),
+    );
+    const styles = getComputedStyle(historyContainer);
+    const available =
+      historyContainer.getBoundingClientRect().bottom -
+      list.getBoundingClientRect().top -
+      parseFloat(styles.paddingBottom) -
+      68;
+    const size = Math.max(1, Math.floor(available / rowHeight));
+    if (size !== historyPageSize) {
+      historyPage = Math.floor((historyPage * historyPageSize) / size);
+      historyPageSize = size;
+      renderHistory(false);
+      return;
+    }
+  }
   if (pages > 1) {
     document.getElementById('history-prev').onclick = () => {
       historyPage--;
@@ -147,6 +172,9 @@ function renderHistory() {
   }
   historyContainer.scrollTop = 0;
 }
+window.addEventListener('resize', () => {
+  if (window.location.pathname?.endsWith('/history/')) renderHistory();
+});
 function save() {
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
@@ -174,7 +202,7 @@ function unseen() {
   );
 }
 // Prefer mixed real/AI pairs across cars and portraits, then fill unseen slots.
-// Keep the 1–2 AI limit and unseen-only rule when categories run short.
+// Keep exactly one AI image and use only unseen images, including partial rounds.
 function selectRound(ai, real, aiCount, roundSize) {
   const selected = [];
   let aiLeft = aiCount;
@@ -286,12 +314,8 @@ function start() {
     if (save()) exhausted();
     return;
   }
-  const roundSize = Math.min(5, real.length + Math.min(2, ai.length));
-  const minimumAI = Math.max(1, roundSize - real.length);
-  const maximumAI = Math.min(2, ai.length, roundSize);
-  const aiCount =
-    minimumAI + Math.floor(Math.random() * (maximumAI - minimumAI + 1));
-  const selected = selectRound(ai, real, aiCount, roundSize);
+  const roundSize = Math.min(5, real.length + 1);
+  const selected = selectRound(ai, real, 1, roundSize);
   state.active = {
     ids: shuffle(selected).map((i) => i.id),
     index: 0,
@@ -332,7 +356,6 @@ function render() {
   const img = document.getElementById('quiz-image');
   img.onload = () => {
     if (token !== renderToken || loaded) return;
-    state.seen[image.id] ??= new Date().toISOString();
     if (!save()) return;
     loaded = true;
     document.getElementById('image-frame').dataset.state = 'ready';
@@ -411,6 +434,9 @@ function results() {
     answers.length &&
     !state.history.some((entry) => entry.id === historyID)
   ) {
+    for (const answer of answers) {
+      state.seen[answer.id] ??= answer.answeredAt;
+    }
     state.history.push({
       id: historyID,
       correct,
