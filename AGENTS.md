@@ -34,4 +34,5 @@
 - Run `npm test` and `npm run format:check` after relevant changes. Visually verify layout changes at phone and desktop sizes. Use `npm run format` when needed.
 - Remove obsolete prototypes and duplicate output rather than maintaining several competing project directories.
 - At the end of each task, remove unnecessary scripts and temporary helpers. Keep finished assets, application scripts, tests, and required development configuration; do not retain one-time asset-generation or migration scripts.
+- Always remove confirmed dead code, unused translations and dependencies, and duplicate rules before finishing. Preserve compatibility code that still supports saved user data and work currently in use by another active chat.
 - Publish through the existing GitHub Pages workflow when requested. The user requested a one-time history reset for this cleanup; do not reset or force-push history again without a new explicit request.

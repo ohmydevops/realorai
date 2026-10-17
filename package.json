@@ -14,7 +14,6 @@
   },
   "devDependencies": {
     "prettier": "3.9.10",
-    "vazir-font": "30.1.0",
     "vite": "8.3.4"
   }
 }

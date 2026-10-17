@@ -93,9 +93,6 @@ a {
   font-size: 12px;
   text-decoration: none;
 }
-#theme-toggle {
-  font-size: 20px;
-}
 main {
   flex: 1;
   min-height: 0;
@@ -205,9 +202,6 @@ nav #settings-open {
   color: var(--muted);
   font-size: 13px;
   flex-shrink: 0;
-}
-#load-actions:empty {
-  display: none;
 }
 .image p {
   position: absolute;
@@ -330,6 +324,8 @@ a:focus-visible {
   flex-shrink: 0;
 }
 footer {
+  flex-wrap: wrap;
+  row-gap: 4px;
   width: calc(100% - 32px);
   max-width: 668px;
   margin-inline: auto;
@@ -531,11 +527,6 @@ dialog p {
   object-fit: cover;
   border-radius: 3px;
 }
-footer {
-  flex-wrap: wrap;
-  row-gap: 4px;
-}
-
 /* Keep the shared title and compact controls consistent across pages. */
 .brand {
   display: inline-flex;
@@ -606,9 +597,6 @@ nav #theme-toggle {
 @media (max-width: 380px) {
   header {
     gap: 8px;
-  }
-  header h1 {
-    font-size: 16px;
   }
 }
 @media (max-width: 600px) {
