@@ -254,6 +254,12 @@ for (const lang of ['en', 'fa']) {
     exhaustedHome.app.innerHTML.includes('href="#play"'),
     'An active game remains accessible',
   );
+  exhaustedHome.run('state.active.index = state.active.ids.length; home()');
+  assert(
+    !exhaustedHome.app.innerHTML.includes('href="#play"'),
+    'Completed games do not show Start',
+  );
+  assert(exhaustedHome.app.innerHTML.includes(exhaustedHome.run('copy.later')));
 }
 
 for (const aiCount of [1, 2]) {
