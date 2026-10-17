@@ -6,13 +6,50 @@ const store = {};
 function boot(lang = 'en', hash = '#play') {
   let html = '';
   const nodes = {};
+  let now = Date.now();
+  let nextTimer = 0;
+  const timers = new Map();
+  const staticIDs = new Set([
+    'settings-dialog',
+    'settings-open',
+    'timer-enabled',
+    'history-dialog',
+    'history-open',
+    'about-dialog',
+    'about-open',
+  ]);
+  function node(id) {
+    return (nodes[id] ??= {
+      dataset: {},
+      events: {},
+      addEventListener(name, callback) {
+        this.events[name] = callback;
+      },
+      showModal() {
+        this.open = true;
+      },
+      close() {
+        this.open = false;
+        this.events.close?.();
+      },
+    });
+  }
+  class FakeDate extends Date {
+    constructor(...args) {
+      super(...(args.length ? args : [now]));
+    }
+    static now() {
+      return now;
+    }
+  }
   const app = {
     get innerHTML() {
       return html;
     },
     set innerHTML(v) {
       html = v;
-      for (const k of Object.keys(nodes)) delete nodes[k];
+      for (const k of Object.keys(nodes))
+        if (!staticIDs.has(k)) delete nodes[k];
     },
   };
   const c = {
@@ -20,10 +57,16 @@ function boot(lang = 'en', hash = '#play') {
     document: {
       documentElement: { lang },
       currentScript: { src: 'https://example.test/app.js' },
-      getElementById: (id) => (id === 'app' ? app : (nodes[id] ??= {})),
+      getElementById: (id) => (id === 'app' ? app : node(id)),
     },
     URL,
     Intl,
+    Date: FakeDate,
+    setInterval: (callback) => {
+      timers.set(++nextTimer, callback);
+      return nextTimer;
+    },
+    clearInterval: (id) => timers.delete(id),
     localStorage: {
       getItem: (k) => store[k] ?? null,
       setItem: (k, v) => (store[k] = v),
@@ -33,7 +76,17 @@ function boot(lang = 'en', hash = '#play') {
   vm.runInContext(fs.readFileSync('public/images.js', 'utf8'), c);
   vm.runInContext(fs.readFileSync('public/translations.js', 'utf8'), c);
   vm.runInContext(source, c);
-  return { c, nodes, app, run: (s) => vm.runInContext(s, c) };
+  return {
+    c,
+    nodes,
+    app,
+    run: (s) => vm.runInContext(s, c),
+    advance(ms) {
+      now += ms;
+      for (const callback of [...timers.values()]) callback();
+    },
+    timers,
+  };
 }
 const q = boot();
 assert(q.run('images.length') >= 100);
@@ -164,4 +217,75 @@ for (const aiCount of [1, 2, 3]) {
 }
 console.log(
   'PASS: Home does not consume images; category pairs, wildcard, and AI balance.',
+);
+
+for (const key of Object.keys(store)) delete store[key];
+const timed = boot();
+assert.equal(timed.timers.size, 0, 'No countdown before the image loads');
+timed.nodes['quiz-image'].onload();
+timed.advance(7999);
+assert.equal(timed.run('state.active.index'), 0);
+timed.advance(1);
+assert.equal(timed.run('state.active.index'), 1);
+assert.equal(timed.run('state.answers[0].timedOut'), true);
+assert.equal(timed.run('state.answers[0].choice'), null);
+assert.equal(
+  timed.timers.size,
+  0,
+  'Next image must load before its timer starts',
+);
+timed.nodes['quiz-image'].onload();
+timed.advance(2000);
+timed.nodes['settings-open'].onclick();
+timed.advance(12000);
+assert.equal(timed.run('state.active.index'), 1, 'Settings pauses the clock');
+timed.nodes['settings-dialog'].close();
+timed.advance(5999);
+assert.equal(timed.run('state.active.index'), 1);
+timed.advance(1);
+assert.equal(timed.run('state.active.index'), 2);
+timed.nodes['quiz-image'].onload();
+timed.nodes['timer-enabled'].onchange({ target: { checked: false } });
+timed.advance(20000);
+assert.equal(timed.run('state.active.index'), 2, 'Disabled timer cannot skip');
+const untimed = boot('fa');
+assert.equal(
+  untimed.run('timerEnabled'),
+  false,
+  'Preference survives language changes',
+);
+untimed.nodes['quiz-image'].onload();
+untimed.advance(20000);
+assert.equal(untimed.run('state.active.index'), 2);
+untimed.run('answer(true)');
+assert.equal(untimed.timers.size, 0, 'Answer cancels its timer');
+while (untimed.run('state.active.index < state.active.ids.length')) {
+  untimed.nodes['quiz-image'].onload();
+  untimed.run('answer(true)');
+}
+assert.equal(untimed.run('state.history.length'), 1);
+assert.equal(untimed.run('state.history[0].total'), 5);
+assert.equal(untimed.run('state.history[0].skipped'), 2);
+const historyReload = boot();
+assert.equal(
+  historyReload.run('state.history.length'),
+  1,
+  'Reload does not duplicate completed games',
+);
+historyReload.nodes['history-open'].onclick();
+assert(historyReload.nodes['history-dialog'].innerHTML.includes('Skipped: 2'));
+historyReload.nodes['history-dialog'].close();
+historyReload.run('start()');
+historyReload.nodes['quiz-image'].onload();
+historyReload.nodes['timer-enabled'].onchange({ target: { checked: true } });
+historyReload.run('beginTimer(); home()');
+historyReload.advance(10000);
+assert.equal(
+  historyReload.run('state.active.index'),
+  0,
+  'Home cancels countdown',
+);
+assert.equal(historyReload.timers.size, 0);
+console.log(
+  'PASS: eight-second deadlines, loading, skips, dialog pause/resume, saved settings, history persistence, and timer cleanup.',
 );

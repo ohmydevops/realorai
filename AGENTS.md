@@ -14,6 +14,10 @@
 
 ## Game and images
 
+- Each image has a prominent eight-second timer enabled by default, starting only after it loads. When time expires, record it as skipped and advance. Settings can disable the timer; remember that preference across visits and languages. Pause the countdown while dialogs are open and cancel it when leaving gameplay.
+- Display the image number (for example, عکس ۳ از ۵) directly below the image; keep the timer above the image.
+- Save completed game scores, dates, and skipped counts in browser storage and show them in History. Keep existing history intact across visits and languages.
+
 - A round normally has five images, shown one at a time, with one to three AI images and the remaining images real.
 - Categorize real and AI images by actual subject. Prefer two real/AI pairs from two different matching categories and a fifth image from a third category; with one AI image, create one matching pair. Shuffle the presentation.
 - Use the remaining unseen collection when matching categories run short. Never silently reset history or repeat seen images just to create a pair.

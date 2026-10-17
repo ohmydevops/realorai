@@ -1,6 +1,18 @@
 'use strict';
 window.QUIZ_TRANSLATIONS = {
   en: {
+    settings: 'Settings',
+    close: 'Close',
+    timerLabel: 'Eight-second timer',
+    history: 'History',
+    noHistory: 'Your completed games will appear here.',
+    previousAnswers: 'Earlier answers',
+    skipped: 'Skipped',
+    timerHelp:
+      'Skip to the next image when time runs out. Turn this off to play at your own pace.',
+    timeLeft: 'Time remaining',
+    seconds: 's',
+    timedOut: 'Skipped',
     homeIntro: 'Five images. Can you tell real photos from AI?',
     start: 'Start game',
     round: 'Image',
@@ -30,6 +42,18 @@ window.QUIZ_TRANSLATIONS = {
     answerAI: 'AI',
   },
   fa: {
+    settings: 'تنظیمات',
+    close: 'بستن',
+    timerLabel: 'زمان‌سنج هشت‌ثانیه‌ای',
+    history: 'تاریخچه',
+    noHistory: 'بازی‌هات که تموم بشن، نتیجه‌شون رو اینجا می‌بینی.',
+    previousAnswers: 'جواب‌های قبلی',
+    skipped: 'بی‌پاسخ',
+    timerHelp:
+      'وقت که تموم بشه، می‌ریم سراغ عکس بعدی. خاموشش کن تا با خیال راحت بازی کنی.',
+    timeLeft: 'زمان باقی‌مونده',
+    seconds: 'ثانیه',
+    timedOut: 'بی‌پاسخ',
     homeIntro:
       'پنج تا عکس، پنج تا حدس. کدوم واقعیه و کدوم رو هوش مصنوعی ساخته؟',
     start: 'شروع بازی',

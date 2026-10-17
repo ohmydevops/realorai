@@ -28,6 +28,8 @@ npm run format:check
 
 Home introduces the game; Start game opens `#play`. The shared title always links Home. Saved rounds and seen-image history remain in browser storage.
 
+Each loaded image gets an eight-second countdown, then skips automatically if unanswered. Settings can turn the timer off and remembers that choice. Dialogs pause the countdown. History shows saved scores, completion dates, and skipped-image counts; older saved answers are retained as an earlier-answers summary. Progress appears directly below each image.
+
 ## Image selection
 
 Each test includes one to three AI images. Selection prefers two different subject categories containing both an AI image and a real photo, plus a fifth image from a third category. With only one AI image, it creates one matching pair. When unseen categories run short, it fills the round from the remaining unseen collection without repeating images. New tests pause when no unseen AI images remain.

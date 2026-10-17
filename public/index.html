@@ -111,12 +111,24 @@
         >
           ☾
         </button>
+        <button
+          class="control"
+          id="settings-open"
+          type="button"
+          aria-haspopup="dialog"
+          aria-label="تنظیمات"
+          title="تنظیمات"
+        >
+          ⚙
+        </button>
       </nav>
     </header>
     <main>
       <div id="app" aria-live="polite"></div>
       <noscript>برای اجرای آزمون، جاوااسکریپت مرورگر را فعال کنید.</noscript>
     </main>
+    <dialog id="settings-dialog" aria-labelledby="settings-title"></dialog>
+    <dialog id="history-dialog" aria-labelledby="history-title"></dialog>
     <footer>
       <span class="footer-links"
         ><button
@@ -126,12 +138,19 @@
           aria-haspopup="dialog"
         >
           دربارهٔ پروژه</button
+        ><button
+          id="history-open"
+          class="text-button"
+          type="button"
+          aria-haspopup="dialog"
+        >
+          تاریخچه</button
         ><a href="sources/">منبع عکس‌ها</a></span
       >
     </footer>
     <script src="images.js"></script>
     <script src="translations.js"></script>
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
     <dialog id="about-dialog" aria-labelledby="about-title">
       <form method="dialog" class="modal-heading">
         <h2 id="about-title">دربارهٔ پروژه</h2>
