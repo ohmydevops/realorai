@@ -1,9 +1,13 @@
 {
   "name": "Real or AI?",
   "short_name": "Real or AI?",
+  "id": "./",
+  "description": "Can you tell real photographs from AI-generated images?",
   "start_url": "./",
   "scope": "./",
-  "display": "browser",
+  "display": "standalone",
+  "prefer_related_applications": false,
+  "categories": ["games"],
   "background_color": "#eeeddf",
   "theme_color": "#557467",
   "icons": [
