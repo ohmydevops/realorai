@@ -71,7 +71,7 @@ header {
 header h1 {
   min-width: 0;
   margin: 0;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.5;
   font-weight: 700;
 }
@@ -161,18 +161,75 @@ main {
   padding: 0;
   margin: 0;
 }
-.history-list li {
-  display: flex;
-  flex-wrap: wrap;
+.history-list > li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
-  justify-content: space-between;
-  gap: 8px 16px;
-  padding-block: 14px;
+  column-gap: 8px;
+  padding-block: 6px;
   border-bottom: 1px solid var(--border);
 }
-.history-list small {
-  width: 100%;
+.history-row {
+  display: contents;
+}
+.history-row > span {
+  font-size: 14px;
+}
+.history-row > strong {
+  text-align: end;
+}
+.history-row small {
+  grid-column: 2;
+  grid-row: 2;
+  white-space: nowrap;
   color: var(--muted);
+}
+.history-review-link {
+  grid-column: 1;
+  grid-row: 2;
+  display: block;
+  align-content: center;
+  font-size: 14px;
+  padding-block: 8px;
+  min-height: 44px;
+  cursor: pointer;
+  color: var(--link);
+}
+.history-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 12px;
+}
+.history-pagination button {
+  min-height: 44px;
+  padding: 6px 14px;
+}
+.history-review {
+  list-style: none;
+  padding: 0;
+}
+.history-page {
+  width: 100%;
+  max-width: 680px;
+  margin-inline: auto;
+}
+.history-review li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 12px;
+  padding-block: 12px;
+}
+.history-review img {
+  display: block;
+  width: 100%;
+  height: 140px;
+  object-fit: contain;
+}
+.history-review p {
+  margin-block: 4px;
+  overflow-wrap: anywhere;
 }
 #countdown[hidden] {
   display: none;
@@ -190,32 +247,95 @@ main {
   justify-content: center;
   overflow: hidden;
 }
+.image-frame {
+  position: relative;
+  display: grid;
+  place-items: center;
+  flex: 1;
+  width: 100%;
+  min-height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+}
 .image img {
   display: block;
   width: auto;
   height: auto;
   max-width: 100%;
-  max-height: calc(100% - 32px);
+  max-height: 100%;
   min-height: 0;
   flex-shrink: 1;
   border-radius: 6px;
   object-fit: contain;
+}
+.image-frame:not([data-state='ready']) img {
+  visibility: hidden;
+}
+.image-skeleton {
+  display: none;
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: inherit;
+  background: var(--hover);
+}
+.image-frame[data-state='loading'] .image-skeleton {
+  display: block;
+}
+.image-skeleton::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    100deg,
+    transparent 20%,
+    var(--surface) 50%,
+    transparent 80%
+  );
+  opacity: 0.55;
+  transform: translateX(-100%);
+  animation: image-shimmer 1.8s ease-in-out infinite;
+}
+@keyframes image-shimmer {
+  to {
+    transform: translateX(100%);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .image-skeleton::after {
+    animation: none;
+    transform: none;
+    opacity: 0.2;
+  }
 }
 .image figcaption {
   color: var(--muted);
   font-size: 13px;
   flex-shrink: 0;
 }
-.image p {
+.image-frame p {
   position: absolute;
   inset: 0;
   display: grid;
   place-content: center;
   margin: 0;
   padding: 12px;
-  background: var(--surface);
+  background: transparent;
   text-align: center;
   font-size: 13px;
+}
+.image-frame[data-state='error'] {
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+#load-actions {
+  position: absolute;
+  inset-inline: 12px;
+  bottom: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
 }
 .image p[hidden] {
   display: none;
@@ -346,7 +466,7 @@ footer a {
 }
 @media (max-width: 420px) {
   header h1 {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 @media (max-height: 480px) {
@@ -536,7 +656,7 @@ dialog p {
 /* Keep the shared title and compact controls consistent across pages. */
 .brand {
   max-width: 100%;
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   align-items: center;
   gap: 8px;
@@ -638,7 +758,10 @@ nav .control {
   }
   .home p {
     margin-block: 0;
-    max-width: 32ch;
+    max-width: 100%;
+    font-size: clamp(15px, 4.4vw, 18px);
+    line-height: 1.6;
+    white-space: nowrap;
   }
   .home-art {
     margin-top: auto;

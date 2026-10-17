@@ -222,7 +222,15 @@ console.log(
 for (const key of Object.keys(store)) delete store[key];
 const timed = boot();
 assert.equal(timed.timers.size, 0, 'No countdown before the image loads');
+assert.equal(
+  Object.keys(timed.run('state.seen')).length,
+  0,
+  'Loading does not mark an image as seen',
+);
+assert.match(timed.app.innerHTML, /data-state="loading" aria-busy="true"/);
 timed.nodes['quiz-image'].onload();
+assert.equal(timed.nodes['image-frame'].dataset.state, 'ready');
+assert.equal(timed.nodes['image-frame'].ariaBusy, 'false');
 timed.advance(7999);
 assert.equal(timed.run('state.active.index'), 0);
 timed.advance(1);
@@ -266,6 +274,13 @@ while (untimed.run('state.active.index < state.active.ids.length')) {
 assert.equal(untimed.run('state.history.length'), 1);
 assert.equal(untimed.run('state.history[0].total'), 5);
 assert.equal(untimed.run('state.history[0].skipped'), 2);
+assert.equal(untimed.run('state.history[0].answers.length'), 5);
+assert.equal(untimed.run('historyAnswers(state.history[0]).length'), 5);
+assert.equal(
+  untimed.run('historyAnswers({ id: state.history[0].id }).length'),
+  5,
+  'Recover older game details from saved image IDs and answer records',
+);
 const historyReload = boot();
 assert.equal(
   historyReload.run('state.history.length'),
@@ -274,6 +289,52 @@ assert.equal(
 );
 historyReload.nodes['history-open'].onclick();
 assert(historyReload.nodes['history-dialog'].innerHTML.includes('Skipped: 2'));
+assert(
+  historyReload.nodes['history-dialog'].innerHTML.includes(
+    'Review images and answers',
+  ),
+);
+assert(
+  historyReload.nodes['history-dialog'].innerHTML.includes('target="_blank"'),
+);
+assert(!historyReload.nodes['history-dialog'].innerHTML.includes('<details'));
+const reviewPage = boot(
+  'en',
+  '#review=' + encodeURIComponent(historyReload.run('state.history[0].id')),
+);
+assert(reviewPage.run('app.innerHTML').includes('Your answer: Skipped'));
+assert(reviewPage.run('app.innerHTML').includes('Correct answer:'));
+assert.equal(reviewPage.timers.size, 0);
+historyReload.run(
+  `state.history = Array.from({ length: 7 }, (_, index) => ({ ...state.history[0], id: 'page-test-' + index })); renderHistory()`,
+);
+assert.equal(
+  (
+    historyReload.nodes['history-dialog'].innerHTML.match(
+      /class="history-row"/g,
+    ) || []
+  ).length,
+  5,
+);
+assert(historyReload.nodes['history-dialog'].innerHTML.includes('page-test-6'));
+historyReload.run('historyPage = 1; renderHistory()');
+assert.equal(
+  (
+    historyReload.nodes['history-dialog'].innerHTML.match(
+      /class="history-row"/g,
+    ) || []
+  ).length,
+  2,
+);
+assert(
+  !historyReload.nodes['history-dialog'].innerHTML.includes('page-test-6'),
+);
+assert(
+  historyReload.nodes['history-dialog'].innerHTML.includes(
+    'id="history-next" disabled',
+  ),
+);
+historyReload.run('state = JSON.parse(localStorage.getItem(STORAGE_KEY))');
 historyReload.nodes['history-dialog'].close();
 historyReload.run('start()');
 historyReload.nodes['quiz-image'].onload();

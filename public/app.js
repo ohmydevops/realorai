@@ -134,12 +134,53 @@ if (!Array.isArray(state.history)) {
   if (storageOK) save();
 }
 const historyDialog = document.getElementById('history-dialog');
-document.getElementById('history-open').onclick = () => {
+function historyAnswers(entry) {
+  if (Array.isArray(entry.answers)) return entry.answers;
+  if (entry.legacy) {
+    const activeIDs = new Set(state.active?.ids || []);
+    return state.answers.filter((answer) => !activeIDs.has(answer.id));
+  }
+  const ids = entry.id?.split(':').at(-1)?.split(',') || [];
+  return ids
+    .map((id) => state.answers.find((answer) => answer.id === id))
+    .filter(Boolean);
+}
+function historyReview(entry) {
+  const answers = historyAnswers(entry);
+  if (!answers.length) return `<small>${copy.reviewUnavailable}</small>`;
+  return `<ol class="history-review">${answers
+    .map((answer, index) => {
+      const image = byId.get(answer.id);
+      if (!image)
+        return `<li>${copy.round} ${number(index + 1)}: ${copy.failed}</li>`;
+      const choice =
+        answer.timedOut || answer.choice === null
+          ? copy.timedOut
+          : answer.choice === true
+            ? copy.answerReal
+            : answer.choice === false
+              ? copy.answerAI
+              : answer.correct
+                ? image.real
+                  ? copy.answerReal
+                  : copy.answerAI
+                : image.real
+                  ? copy.answerAI
+                  : copy.answerReal;
+      return `<li><a href="${escapeHTML(src(image))}" target="_blank" rel="noopener noreferrer"><img src="${escapeHTML(src(image))}" loading="lazy" alt="${copy.round} ${number(index + 1)}"></a><div><strong>${copy.round} ${number(index + 1)}</strong><p>${copy.yourAnswer}: ${choice}</p><p>${copy.rightAnswer}: ${image.real ? copy.answerReal : copy.answerAI}</p><p>${answer.timedOut ? copy.timedOut : answer.correct ? copy.correct : copy.wrong}</p></div></li>`;
+    })
+    .join('')}</ol>`;
+}
+let historyPage = 0;
+function renderHistory() {
   stopTimer();
+  const pages = Math.max(1, Math.ceil(state.history.length / 5));
+  historyPage = Math.max(0, Math.min(historyPage, pages - 1));
   historyDialog.innerHTML = `<form method="dialog" class="modal-heading"><h2 id="history-title">${copy.history}</h2><button class="control" aria-label="${copy.close}" autofocus>×</button></form>${
     state.history.length
       ? `<ol class="history-list">${[...state.history]
           .reverse()
+          .slice(historyPage * 5, historyPage * 5 + 5)
           .map((entry) => {
             const date = new Date(entry.completedAt);
             const label = entry.legacy
@@ -150,12 +191,29 @@ document.getElementById('history-open').onclick = () => {
                     language === 'fa' ? 'fa-IR' : 'en-US',
                     { dateStyle: 'medium', timeStyle: 'short' },
                   ).format(date);
-            return `<li><span>${escapeHTML(label)}</span><strong><bdi>${number(entry.correct)} / ${number(entry.total)}</bdi></strong>${entry.skipped ? `<small>${copy.skipped}: ${number(entry.skipped)}</small>` : ''}</li>`;
+            return `<li><div class="history-row"><span>${escapeHTML(label)}</span><strong><bdi>${number(entry.correct)} / ${number(entry.total)}</bdi></strong><small>${copy.skipped}: ${number(entry.skipped || 0)}</small></div><a class="history-review-link" href="#review=${encodeURIComponent(entry.id)}" target="_blank" rel="noopener noreferrer">${copy.reviewGame}</a></li>`;
           })
           .join('')}</ol>`
       : `<p>${copy.noHistory}</p>`
-  }`;
-  historyDialog.showModal();
+  }${pages > 1 ? `<nav class="history-pagination" aria-label="${copy.history}"><button id="history-prev" ${historyPage === 0 ? 'disabled' : ''}>${copy.previousPage}</button><span><bdi>${number(historyPage + 1)} / ${number(pages)}</bdi></span><button id="history-next" ${historyPage === pages - 1 ? 'disabled' : ''}>${copy.nextPage}</button></nav>` : ''}`;
+  if (pages > 1) {
+    document.getElementById('history-prev').onclick = () => {
+      historyPage--;
+      renderHistory();
+      document.getElementById('history-prev').focus();
+    };
+    document.getElementById('history-next').onclick = () => {
+      historyPage++;
+      renderHistory();
+      document.getElementById('history-next').focus();
+    };
+  }
+  historyDialog.scrollTop = 0;
+}
+document.getElementById('history-open').onclick = () => {
+  historyPage = 0;
+  renderHistory();
+  if (!historyDialog.open) historyDialog.showModal();
 };
 historyDialog.addEventListener('close', () => beginTimer(false));
 document.getElementById('about-open').addEventListener('click', stopTimer);
@@ -231,6 +289,17 @@ function home() {
   app.innerHTML = `<section class="home"><img class="home-art" src="${new URL('assets/home-process.webp', baseURL).href}" width="1200" height="503" fetchpriority="high" alt="${copy.homeAlt}"><p>${copy.homeIntro}</p><a class="start-game" href="#play">${copy.start}</a></section>`;
 }
 function route() {
+  if (window.location.hash.startsWith('#review=')) {
+    stopTimer();
+    renderToken++;
+    loaded = false;
+    const entry = state.history.find(
+      (item) =>
+        `#review=${encodeURIComponent(item.id)}` === window.location.hash,
+    );
+    app.innerHTML = `<section class="history-page"><h2>${copy.reviewGame}</h2>${entry ? `<p class="score"><bdi>${number(entry.correct)} / ${number(entry.total)}</bdi></p>${historyReview(entry)}` : `<p>${copy.reviewUnavailable}</p>`}</section>`;
+    return;
+  }
   if (window.location.hash !== '#play') {
     home();
     if (window.location.hash === '#about')
@@ -296,7 +365,7 @@ function render() {
   const token = ++renderToken;
   app.innerHTML = `<section class="quiz" aria-label="${copy.round}">
     <div class="meta"><span id="countdown" role="timer" aria-live="off" aria-label="${copy.timeLeft}" hidden></span></div>
-    <figure class="image"><img id="quiz-image" alt="${language === 'fa' ? 'تصویر آزمون' : 'Quiz image'} ${number(test.index + 1)}" width="1000" height="750"><p id="image-status" role="status">${copy.loading}</p><div id="load-actions"></div><figcaption>${copy.round} ${number(test.index + 1)} ${copy.of} ${number(test.ids.length)}</figcaption></figure>
+    <figure class="image"><div id="image-frame" class="image-frame" data-state="loading" aria-busy="true"><img id="quiz-image" alt="${language === 'fa' ? 'تصویر آزمون' : 'Quiz image'} ${number(test.index + 1)}" width="1000" height="750"><div class="image-skeleton" aria-hidden="true"></div><p id="image-status" role="status">${copy.loading}</p><div id="load-actions"></div></div><figcaption>${copy.round} ${number(test.index + 1)} ${copy.of} ${number(test.ids.length)}</figcaption></figure>
 
     <div class="buttons"><button id="real" disabled>${copy.real}</button><button id="ai" disabled>${copy.ai}</button></div>
   </section>`;
@@ -306,6 +375,8 @@ function render() {
     state.seen[image.id] ??= new Date().toISOString();
     if (!save()) return;
     loaded = true;
+    document.getElementById('image-frame').dataset.state = 'ready';
+    document.getElementById('image-frame').ariaBusy = 'false';
     document.getElementById('image-status').hidden = true;
     document.getElementById('real').disabled = false;
     document.getElementById('ai').disabled = false;
@@ -315,6 +386,8 @@ function render() {
     if (token !== renderToken) return;
     stopTimer();
     loaded = false;
+    document.getElementById('image-frame').dataset.state = 'error';
+    document.getElementById('image-frame').ariaBusy = 'false';
     document.getElementById('image-status').textContent = copy.failed;
     document.getElementById('load-actions').innerHTML =
       `<button id="retry">${copy.retry}</button><button id="skip">${copy.skip}</button>`;
@@ -379,6 +452,7 @@ function results() {
       total: answers.length,
       skipped: answers.filter((answer) => answer.timedOut).length,
       completedAt: new Date().toISOString(),
+      answers: test.answers.map((answer) => ({ ...answer })),
     });
     if (!save()) return;
   }

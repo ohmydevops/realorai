@@ -10,6 +10,16 @@ assert(images.length >= 100);
 assert.equal(new Set(images.map((image) => image.id)).size, images.length);
 assert(images.some((image) => image.real));
 assert(images.some((image) => !image.real));
+assert.equal(
+  images.filter((image) => !image.real).length * 4,
+  images.length,
+  'Keep the collection exactly 25% AI',
+);
+assert.equal(
+  new Set(images.map((image) => image.src)).size,
+  images.length,
+  'Every entry must use a distinct local image',
+);
 for (const image of images) {
   assert.equal(typeof image.real, 'boolean');
   assert(
