@@ -44,7 +44,7 @@ Push to `main`. GitHub Actions checks and deploys `public/` to GitHub Pages. No 
 
 Every page includes localized Open Graph and Twitter cards, plus favicon and touch icons. The English and Persian preview PNGs in `public/social/` are 1200 × 630 pixels. Sharing URLs use the production GitHub Pages address.
 
-To regenerate the artwork on Windows after installing dependencies, run `./scripts/create-social-assets.ps1`. To refresh metadata after changing page titles or descriptions, run `node scripts/update-social-metadata.cjs`, followed by `npm run format`.
+When changing page titles or descriptions, update their sharing metadata too. Keep the localized preview images and icon files in `public/`.
 
 ## Credits
 

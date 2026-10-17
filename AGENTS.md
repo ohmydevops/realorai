@@ -22,10 +22,11 @@
 
 ## Development and delivery
 
-- Use this repository root as the single project root. The deployable static site is in `public/`; tests in `tests/`; asset-maintenance helpers in `scripts/`.
+- Use this repository root as the single project root. The deployable static site is in `public/`; tests are in `tests/`.
 - `npm run dev` starts Vite at http://127.0.0.1:5174/ with automatic browser reload when site files change. Keep the server running when the user asks for a preview.
 - Keep the published site static and self-host fonts, scripts, styles, icons, and quiz images. Do not add a framework or a production build without a concrete need.
 - Keep localized Open Graph and Twitter metadata, 1200 × 630 sharing images, favicon/touch icons, canonical URLs, language alternates, robots.txt, and sitemap valid for GitHub Pages under `/realorai/`.
 - Run `npm test` and `npm run format:check` after relevant changes. Visually verify layout changes at phone and desktop sizes. Use `npm run format` when needed.
 - Remove obsolete prototypes and duplicate output rather than maintaining several competing project directories.
+- At the end of each task, remove unnecessary scripts and temporary helpers. Keep finished assets, application scripts, tests, and required development configuration; do not retain one-time asset-generation or migration scripts.
 - Publish through the existing GitHub Pages workflow when requested. The user requested a one-time history reset for this cleanup; do not reset or force-push history again without a new explicit request.
