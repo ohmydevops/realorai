@@ -7,7 +7,7 @@
 - Keep this a simple, mobile-friendly English/Persian image guessing game.
 - Keep Home minimal: a compact illustration comparing analog photography and neural-network image generation, one short friendly description, and a Start game button. Keep extra headings and explanatory sections off Home.
 - Keep the existing branded title visible on every page, including the game, results, and image sources. The title links to the current language's Home.
-- Keep a small eye-and-sparkle brand icon with the text Real? to the right of the shared title.
+- Keep the shared title text-only, without a logo or icon alongside it.
 - On mobile, keep primary actions at the bottom of the available content area: Start game, real/AI answers, and the next-game button. Respect safe-area insets, use comfortable touch targets, and prevent content from hiding behind buttons.
 - Keep language and theme controls visually small. Preserve light/dark themes, readable contrast, and keyboard focus indicators.
 - Use the shared corner-radius design token consistently for visible buttons, compact controls, dropdowns, dialogs, images, and section surfaces. Keep the same treatment across every page and language.
@@ -20,22 +20,23 @@
 ## Game and images
 
 - Gameplay has no timer or automatic timeout. Players answer at their own pace.
-- Display the image number (for example, عکس ۳ از ۵) directly below the image.
-- Save completed game scores, dates, and skipped counts in browser storage and show them in History. Keep existing history intact across visits and languages.
+- Display the running image number (for example, عکس ۳) directly below the image.
+- Save each answered image, the player’s choice, the correct answer, and the date in browser storage and show them in History.
 
-- Every full round has exactly five images: four real and one AI, shown one at a time in shuffled order. Partial final rounds contain one AI and up to four remaining unseen real images; never add a second AI.
-- Use only Cars and Portrait images in new games, with at most 150 active car images and 400 active portrait images. Cars should be the main subject. Portraits should show a clear face, preferably head-and-shoulders against a white or neutral background. Keep real and AI examples visually comparable within each category. Prefer one matching real/AI category pair when available, fill remaining slots from unseen images, and shuffle the presentation.
-- Retired images may remain available for saved game reviews, but must not enter new rounds or the current Sources collection. Preserve their permanent IDs, seen records, and completed history.
+- Each language has a dedicated /play/ page; do not use #play routes.
+- Gameplay is a continuous feed of individual images, starting with a car and alternating Cars and Portrait. If one category has no unseen images, continue with the other. Do not impose rounds or fixed real/AI ratios.
+- Use only Cars and Portrait images in new games, with at most 150 active car images and 400 active portrait images. Cars should be the main subject. Portraits should show a clear face, preferably head-and-shoulders against a white or neutral background. Keep real and AI examples visually comparable within each category.
+- Retired images may remain available for saved game reviews, but must not enter new gameplay or the current Sources collection. Preserve their permanent IDs, seen records, and completed history.
 - Export real and AI quiz images using the same size and compression policy: JPEG, at most 1000 pixels on the longest edge, and at most 140 KiB per file. Preserve aspect ratios and compare the file-size distributions to avoid loading-speed clues. Do not pad files or delay downloads artificially to make sizes match.
-- Use the remaining unseen collection when matching categories run short. Never silently reset history or repeat seen images just to create a pair.
-- New rounds stop when no unseen AI images remain. Preserve partial final rounds, loading/error handling, and browser-local progress across languages.
+- Never repeat answered images or silently reset progress to match categories. Save each answer immediately and show whether it was correct before the player moves to the next image.
+- Continue until no unseen images remain, regardless of real/AI type. Preserve loading/error handling and browser-local progress across languages. Use the new per-image storage format without migration or backward compatibility for old round history.
 - Existing image IDs are permanent. When adding images, supply unique IDs, bilingual categories, honest real/AI labels, local files, and credits. Add real and AI examples in the same category where possible.
 - Choose and generate highly realistic images that look like ordinary photographs taken with DSLR cameras or mobile phones. Favor natural lighting, believable textures, candid framing, and subtle camera imperfections. Avoid polished studio styling, heavy retouching, excessive HDR, and a glossy or artificially perfect appearance, especially in AI images.
 - Always download real Unsplash portraits first, then review and select some of those downloaded photographs as inspiration and references for new AI portraits. Do not generate the AI portraits before downloading and reviewing their references.
 - Before creating, selecting, or reviewing portrait images, read the project skill at `skills/realistic-portraits/SKILL.md`. Always use a reviewed real photograph as the generation reference for a new AI portrait, preserving photographic composition while changing the person and details. Use plausible real-world places, natural supported poses, and consistent camera perspective.
 - Give faces and lighting a strict realism review before accepting people images. Avoid synthetic facial structure, fixed glossy eyes, a repeated posed smile, sculpted beauty lighting, and cinematic warm/cool separation. Adding pores, grain, or camera names does not fix an artificial-looking face; judge the face at gameplay size and close up, together with its surroundings.
 - Include occasional photographic effects such as black-and-white, restrained film looks, and subtle cinematic grading alongside ordinary color images. Before generating an effects batch, read `skills/realistic-portraits/references/photographic-effects.md`. Use a coherent look per image, preserve realistic faces and physical scenes, and distribute styles across real and AI images so effects do not reveal the answer.
-- Target 400 portraits (320 real + 80 AI) and at most 150 cars (120 real + 30 AI). Keep all existing restored images active while expanding; do not retire images solely to enforce the collection ratio. The exact four-real/one-AI rule applies to every full new round. Do not show category or answer clues during play. Warn before revealing image sources.
+- Target 400 portraits (320 real + 80 AI) and at most 150 cars (120 real + 30 AI). Keep all existing restored images active while expanding; do not retire images solely to enforce the collection ratio. Do not show category or answer clues during play. Warn before revealing image sources.
 
 ## Development and delivery
 

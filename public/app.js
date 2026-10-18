@@ -5,12 +5,12 @@ const language = Object.hasOwn(
 )
   ? document.documentElement.lang
   : 'en';
-const languagePath = language === 'fa' ? '' : `${language}/`;
+const languagePath = language === 'fa' ? '' : language + '/';
 const baseURL = new URL('.', document.currentScript.src);
 const images = window.QUIZ_IMAGES.filter((image) => image.active !== false);
-const byId = new Map(window.QUIZ_IMAGES.map((i) => [i.id, i]));
+const byId = new Map(window.QUIZ_IMAGES.map((image) => [image.id, image]));
 const app = document.getElementById('app');
-const STORAGE_KEY = 'real-or-ai-history-v1';
+const STORAGE_KEY = 'real-or-ai-images-v2';
 const copy = window.QUIZ_TRANSLATIONS[language];
 const number = (n) => new Intl.NumberFormat(language).format(n);
 const escapeHTML = (s) =>
@@ -22,159 +22,35 @@ const escapeHTML = (s) =>
       ],
   );
 const src = (image) => new URL(image.src, baseURL).href;
-let state = { version: 1, seen: {}, answers: [], active: null };
+let state = { version: 2, history: [], current: null };
 let storageOK = true;
 let loaded = false;
 let renderToken = 0;
+let historyPage = 0;
+let historyPageSize = 12;
 const unavailable = new Set();
 try {
   const raw = localStorage.getItem(STORAGE_KEY);
   if (raw) {
     const parsed = JSON.parse(raw);
     if (
-      parsed.version === 1 &&
-      parsed.seen &&
-      typeof parsed.seen === 'object' &&
-      !Array.isArray(parsed.seen) &&
-      Array.isArray(parsed.answers)
-    ) {
+      parsed.version === 2 &&
+      Array.isArray(parsed.history) &&
+      parsed.history.every(
+        (record) =>
+          typeof record.id === 'string' &&
+          typeof record.choice === 'boolean' &&
+          typeof record.real === 'boolean' &&
+          typeof record.answeredAt === 'string',
+      ) &&
+      (parsed.current === null || typeof parsed.current === 'string')
+    )
       state = parsed;
-      if (
-        state.active &&
-        (!Array.isArray(state.active.ids) ||
-          !Number.isInteger(state.active.index) ||
-          !Array.isArray(state.active.answers) ||
-          state.active.index < 0 ||
-          state.active.index > state.active.ids.length)
-      )
-        state.active = null;
-    }
   }
   localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
 } catch {
   storageOK = false;
 }
-if (!Array.isArray(state.history)) {
-  state.history = [];
-  const currentIDs = new Set(
-    state.active?.answers.map((answer) => answer.id) || [],
-  );
-  const earlier = state.answers.filter((answer) => !currentIDs.has(answer.id));
-  if (earlier.length)
-    state.history.push({
-      id: 'legacy',
-      legacy: true,
-      correct: earlier.filter((answer) => answer.correct).length,
-      total: earlier.length,
-      skipped: earlier.filter((answer) => answer.timedOut).length,
-      completedAt: earlier.at(-1).answeredAt,
-    });
-  if (storageOK) save();
-}
-const historyContainer = app;
-function historyAnswers(entry) {
-  if (Array.isArray(entry.answers)) return entry.answers;
-  if (entry.legacy) {
-    const activeIDs = new Set(state.active?.ids || []);
-    return state.answers.filter((answer) => !activeIDs.has(answer.id));
-  }
-  const ids = entry.id?.split(':').at(-1)?.split(',') || [];
-  return ids
-    .map((id) => state.answers.find((answer) => answer.id === id))
-    .filter(Boolean);
-}
-function historyReview(entry) {
-  const answers = historyAnswers(entry);
-  if (!answers.length) return `<small>${copy.reviewUnavailable}</small>`;
-  return `<ol class="history-review">${answers
-    .map((answer, index) => {
-      const image = byId.get(answer.id);
-      if (!image)
-        return `<li>${copy.round} ${number(index + 1)}: ${copy.failed}</li>`;
-      const choice =
-        answer.timedOut || answer.choice === null
-          ? copy.timedOut
-          : answer.choice === true
-            ? copy.answerReal
-            : answer.choice === false
-              ? copy.answerAI
-              : answer.correct
-                ? image.real
-                  ? copy.answerReal
-                  : copy.answerAI
-                : image.real
-                  ? copy.answerAI
-                  : copy.answerReal;
-      return `<li><a href="${escapeHTML(src(image))}" target="_blank" rel="noopener noreferrer"><img src="${escapeHTML(src(image))}" loading="lazy" alt="${copy.round} ${number(index + 1)}"></a><div><strong>${copy.round} ${number(index + 1)}</strong><p>${copy.yourAnswer}: ${choice}</p><p>${copy.rightAnswer}: ${image.real ? copy.answerReal : copy.answerAI}</p><p>${answer.timedOut ? copy.timedOut : answer.correct ? copy.correct : copy.wrong}</p></div></li>`;
-    })
-    .join('')}</ol>`;
-}
-let historyPage = 0;
-let historyPageSize = 5;
-function renderHistory(measure = true) {
-  historyContainer.classList.add('history-index');
-  const pages = Math.max(1, Math.ceil(state.history.length / historyPageSize));
-  historyPage = Math.max(0, Math.min(historyPage, pages - 1));
-  historyContainer.innerHTML = `<h2 id="history-title">${copy.history}</h2>${
-    state.history.length
-      ? `<ol class="history-list">${[...state.history]
-          .reverse()
-          .slice(
-            historyPage * historyPageSize,
-            (historyPage + 1) * historyPageSize,
-          )
-          .map((entry) => {
-            const date = new Date(entry.completedAt);
-            const label = entry.legacy
-              ? copy.previousAnswers
-              : Number.isNaN(date.getTime())
-                ? ''
-                : new Intl.DateTimeFormat(language, {
-                    dateStyle: 'medium',
-                    timeStyle: 'short',
-                  }).format(date);
-            return `<li><div class="history-row"><span>${escapeHTML(label)}</span><strong><bdi>${number(entry.correct)} / ${number(entry.total)}</bdi></strong>${entry.skipped > 0 ? `<small>${copy.skipped}: ${number(entry.skipped)}</small>` : ''}</div><a class="history-review-link" href="${new URL(languagePath || './', baseURL).href}#review=${encodeURIComponent(entry.id)}" target="_blank" rel="noopener noreferrer">${copy.reviewGame}</a></li>`;
-          })
-          .join('')}</ol>`
-      : `<p>${copy.noHistory}</p>`
-  }${pages > 1 ? `<nav class="history-pagination" aria-label="${copy.history}"><button id="history-prev" ${historyPage === 0 ? 'disabled' : ''}>${copy.previousPage}</button><span><bdi>${number(historyPage + 1)} / ${number(pages)}</bdi></span><button id="history-next" ${historyPage === pages - 1 ? 'disabled' : ''}>${copy.nextPage}</button></nav>` : ''}`;
-  if (measure && state.history.length) {
-    const list = historyContainer.querySelector('.history-list');
-    const rows = [...list.children];
-    const rowHeight = Math.max(
-      ...rows.map((row) => row.getBoundingClientRect().height),
-    );
-    const styles = getComputedStyle(historyContainer);
-    const available =
-      historyContainer.getBoundingClientRect().bottom -
-      list.getBoundingClientRect().top -
-      parseFloat(styles.paddingBottom) -
-      68;
-    const size = Math.max(1, Math.floor(available / rowHeight));
-    if (size !== historyPageSize) {
-      historyPage = Math.floor((historyPage * historyPageSize) / size);
-      historyPageSize = size;
-      renderHistory(false);
-      return;
-    }
-  }
-  if (pages > 1) {
-    document.getElementById('history-prev').onclick = () => {
-      historyPage--;
-      renderHistory();
-      document.getElementById('history-prev').focus();
-    };
-    document.getElementById('history-next').onclick = () => {
-      historyPage++;
-      renderHistory();
-      document.getElementById('history-next').focus();
-    };
-  }
-  historyContainer.scrollTop = 0;
-}
-window.addEventListener('resize', () => {
-  if (window.location.pathname?.endsWith('/history/')) renderHistory();
-});
 function save() {
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
@@ -186,60 +62,41 @@ function save() {
   }
 }
 function storageError() {
-  app.innerHTML = `<p role="alert">${copy.storage}</p>`;
-}
-function shuffle(items) {
-  const out = [...items];
-  for (let i = out.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [out[i], out[j]] = [out[j], out[i]];
-  }
-  return out;
+  app.innerHTML = '<p role="alert">' + copy.storage + '</p>';
 }
 function unseen() {
+  const seen = new Set(state.history.map((record) => record.id));
   return images.filter(
-    (i) => !Object.hasOwn(state.seen, i.id) && !unavailable.has(i.id),
+    (image) => !seen.has(image.id) && !unavailable.has(image.id),
   );
 }
-// Prefer mixed real/AI pairs across cars and portraits, then fill unseen slots.
-// Keep exactly one AI image and use only unseen images, including partial rounds.
-function selectRound(ai, real, aiCount, roundSize) {
-  const selected = [];
-  let aiLeft = aiCount;
-  let realLeft = roundSize - aiCount;
-  const paired = new Set();
-  const category = (image) => image.category.en;
-  const pairCategories = shuffle([...new Set(ai.map(category))]).filter((key) =>
-    real.some((image) => category(image) === key),
-  );
-  for (const key of pairCategories) {
-    if (paired.size === 2 || !aiLeft || !realLeft) break;
-    selected.push(
-      ai.find((image) => category(image) === key),
-      real.find((image) => category(image) === key),
-    );
-    paired.add(key);
-    aiLeft--;
-    realLeft--;
-  }
-  const fill = (pool, count) => {
-    for (let n = 0; n < count; n++) {
-      const available = pool.filter((image) => !selected.includes(image));
-      const usedCategories = new Set(selected.map(category));
-      const next =
-        available.find((image) => !usedCategories.has(category(image))) ||
-        available[0];
-      if (next) selected.push(next);
-    }
-  };
-  fill(ai, aiLeft);
-  fill(real, realLeft);
-  return selected;
+function currentRecord() {
+  return state.history.find((record) => record.id === state.current);
 }
 function home() {
   renderToken++;
   loaded = false;
-  app.innerHTML = `<section class="home"><img class="home-art" src="${new URL('assets/home-process.webp', baseURL).href}" width="1600" height="800" fetchpriority="high" alt="${copy.homeAlt}"><p>${copy.homeIntro}<small class="home-count" aria-live="off">${copy.homeCount.replace('{count}', `<span id="home-count-number">${number(images.length)}</span>`)}</small><small class="home-rounds">${copy.homeRounds}</small></p>${(state.active && state.active.index < state.active.ids.length) || canStartTest() ? `<a class="start-game" href="#play">${copy.start}</a>` : `<p class="finished">${copy.later}</p>`}</section>`;
+  app.innerHTML =
+    '<section class="home"><img class="home-art" src="' +
+    new URL('assets/home-process.webp', baseURL).href +
+    '" width="1600" height="800" fetchpriority="high" alt="' +
+    copy.homeAlt +
+    '"><p>' +
+    copy.homeIntro +
+    '<small class="home-count">' +
+    copy.homeCount.replace(
+      '{count}',
+      '<span id="home-count-number">' + number(images.length) + '</span>',
+    ) +
+    '</small></p>' +
+    (state.current || unseen().length
+      ? '<a class="start-game" href="' +
+        new URL(languagePath + 'play/', baseURL).href +
+        '">' +
+        copy.start +
+        '</a>'
+      : '<p class="finished">' + copy.later + '</p>') +
+    '</section>';
   animateHomeCount();
 }
 function animateHomeCount() {
@@ -256,283 +113,297 @@ function animateHomeCount() {
   function tick(time) {
     if (token !== renderToken) return;
     startTime ??= time;
-    const progress = Math.min((time - startTime) / 1100, 1);
+    const progress = Math.min((time - startTime) / 1800, 1);
     const eased = 1 - Math.pow(1 - progress, 3);
     counter.textContent = number(Math.round(images.length * eased));
     if (progress < 1) window.requestAnimationFrame(tick);
   }
   window.requestAnimationFrame(tick);
 }
-let lastReviewHash = null;
-function route() {
-  if (
-    window.location.hash === '#about' ||
-    window.location.hash === '#history'
-  ) {
-    const page = window.location.hash.slice(1);
-    window.location.replace(new URL(languagePath + page + '/', baseURL).href);
-    return;
+
+function renderHistory(measure = true) {
+  renderToken++;
+  loaded = false;
+  app.classList.add('history-index');
+  const pages = Math.max(1, Math.ceil(state.history.length / historyPageSize));
+  historyPage = Math.max(0, Math.min(historyPage, pages - 1));
+  const entries = [...state.history]
+    .reverse()
+    .slice(historyPage * historyPageSize, (historyPage + 1) * historyPageSize);
+  app.innerHTML =
+    '<h2>' +
+    copy.history +
+    '</h2>' +
+    (entries.length
+      ? '<ol class="history-review">' +
+        entries
+          .map((record) => {
+            const image = byId.get(record.id);
+            const date = new Date(record.answeredAt);
+            const label = Number.isNaN(date.getTime())
+              ? ''
+              : new Intl.DateTimeFormat(language, {
+                  dateStyle: 'short',
+                  timeStyle: 'short',
+                }).format(date);
+            return (
+              '<li>' +
+              (image
+                ? '<button class="history-thumbnail" data-image-id="' +
+                  escapeHTML(image.id) +
+                  '" aria-label="' +
+                  copy.enlarge +
+                  '"><img src="' +
+                  escapeHTML(src(image)) +
+                  '" loading="lazy" alt="' +
+                  copy.quizImage +
+                  '"></button>'
+                : '<p>' + copy.failed + '</p>') +
+              '<div><time datetime="' +
+              escapeHTML(record.answeredAt) +
+              '">' +
+              escapeHTML(label) +
+              '</time><strong>' +
+              (record.choice === record.real
+                ? '✓ ' + copy.correct
+                : '× ' + copy.wrong) +
+              '</strong><p>' +
+              copy.yourAnswer +
+              ': ' +
+              (record.choice ? copy.answerReal : copy.answerAI) +
+              '</p><p>' +
+              copy.rightAnswer +
+              ': ' +
+              (record.real ? copy.answerReal : copy.answerAI) +
+              '</p></div></li>'
+            );
+          })
+          .join('') +
+        '</ol>'
+      : '<p>' + copy.noHistory + '</p>') +
+    (pages > 1
+      ? '<nav class="history-pagination" aria-label="' +
+        copy.history +
+        '"><button id="history-prev" ' +
+        (historyPage === 0 ? 'disabled' : '') +
+        '>' +
+        copy.previousPage +
+        '</button><span><bdi>' +
+        number(historyPage + 1) +
+        ' / ' +
+        number(pages) +
+        '</bdi></span><button id="history-next" ' +
+        (historyPage === pages - 1 ? 'disabled' : '') +
+        '>' +
+        copy.nextPage +
+        '</button></nav>'
+      : '');
+  if (pages > 1) {
+    document.getElementById('history-prev').onclick = () => {
+      historyPage--;
+      renderHistory();
+      document.getElementById('history-prev').focus();
+    };
+    document.getElementById('history-next').onclick = () => {
+      historyPage++;
+      renderHistory();
+      document.getElementById('history-next').focus();
+    };
   }
-  if (window.location.pathname?.endsWith('/history/')) {
-    renderHistory();
-    return;
-  }
-  if (window.location.hash.startsWith('#review=')) {
-    renderToken++;
-    loaded = false;
-    const entry = state.history.find(
-      (item) =>
-        `#review=${encodeURIComponent(item.id)}` === window.location.hash,
+  if (measure && entries.length) {
+    const list = app.querySelector('.history-review');
+    const rowHeight = Math.max(
+      ...[...list.children].map((row) => row.getBoundingClientRect().height),
     );
-    app.innerHTML = `<section class="history-page"><h2>${copy.reviewGame}</h2>${entry ? `<p class="score"><bdi>${number(entry.correct)} / ${number(entry.total)}</bdi></p>${historyReview(entry)}` : `<p>${copy.reviewUnavailable}</p>`}</section>`;
-    if (entry && lastReviewHash !== window.location.hash)
-      window.QUIZ_ANALYTICS?.track('review-open');
-    lastReviewHash = window.location.hash;
-    return;
+    const available =
+      app.getBoundingClientRect().bottom -
+      list.getBoundingClientRect().top -
+      68;
+    const size = Math.max(2, Math.floor((available + 8) / (rowHeight + 8)) * 2);
+    if (size !== historyPageSize) {
+      historyPage = Math.floor((historyPage * historyPageSize) / size);
+      historyPageSize = size;
+      return renderHistory(false);
+    }
   }
-  lastReviewHash = null;
-  if (window.location.hash !== '#play') {
-    home();
-    return;
+  for (const thumbnail of app.querySelectorAll('.history-thumbnail')) {
+    thumbnail.onclick = () =>
+      openHistoryImage(thumbnail.dataset.imageId, thumbnail);
   }
+  app.scrollTop = 0;
+}
+function openHistoryImage(id, trigger) {
+  const image = byId.get(id);
+  if (!image) return;
+  const dialog = document.createElement('dialog');
+  dialog.className = 'history-image-modal';
+  dialog.setAttribute('aria-label', copy.enlarge);
+  dialog.innerHTML =
+    '<button class="control modal-close" aria-label="' +
+    copy.close +
+    '">×</button><img src="' +
+    escapeHTML(src(image)) +
+    '" alt="' +
+    copy.quizImage +
+    '">';
+  document.body.append(dialog);
+  dialog.querySelector('button').onclick = () => dialog.close();
+  dialog.addEventListener('click', (event) => {
+    if (event.target === dialog) dialog.close();
+  });
+  dialog.addEventListener(
+    'close',
+    () => {
+      dialog.remove();
+      trigger.focus();
+    },
+    { once: true },
+  );
+  dialog.showModal();
+}
+window.addEventListener('resize', () => {
+  if (window.location.pathname.endsWith('/history/')) renderHistory();
+});
+function route() {
   if (!storageOK) return storageError();
-  if (state.active) render();
+  if (window.location.pathname.endsWith('/history/')) return renderHistory();
+  if (!window.location.pathname.endsWith('/play/')) return home();
+  if (state.current) render();
   else start();
 }
 function start() {
   if (!storageOK) return storageError();
   const pool = unseen();
-  if (!pool.length) {
-    state.active = null;
-    save();
-    return exhausted();
-  }
-  const ai = shuffle(pool.filter((image) => !image.real));
-  const real = shuffle(pool.filter((image) => image.real));
-  if (!ai.length) {
-    state.active = null;
-    if (save()) exhausted();
-    return;
-  }
-  const roundSize = Math.min(5, real.length + 1);
-  const selected = selectRound(ai, real, 1, roundSize);
-  state.active = {
-    ids: shuffle(selected).map((i) => i.id),
-    index: 0,
-    answers: [],
-    startedAt: new Date().toISOString(),
-  };
-  if (save()) {
-    window.QUIZ_ANALYTICS?.track('game-start', {
-      total: selected.length,
-    });
-    render();
-  }
-}
-function canStartTest() {
-  return unseen().some((image) => !image.real);
+  const previous =
+    byId.get(state.current) || byId.get(state.history.at(-1)?.id);
+  const category = previous?.category.en === 'Cars' ? 'Portrait' : 'Cars';
+  const matching = pool.filter((image) => image.category.en === category);
+  const candidates = matching.length ? matching : pool;
+  state.current = candidates.length
+    ? candidates[Math.floor(Math.random() * candidates.length)].id
+    : null;
+  if (!save()) return;
+  if (!state.current) return exhausted();
+  window.QUIZ_ANALYTICS?.track('image-start');
+  render();
 }
 function exhausted() {
-  app.innerHTML = `<section><h2>${unseen().length ? copy.noAI : copy.done}</h2><p>${copy.later}</p></section>`;
+  renderToken++;
+  loaded = false;
+  app.innerHTML =
+    '<section class="empty-game"><h2>' +
+    (images.some(
+      (image) => !state.history.some((record) => record.id === image.id),
+    )
+      ? copy.failed
+      : copy.done) +
+    '</h2><p>' +
+    copy.later +
+    '</p></section>';
+}
+function answerControls(record) {
+  return record
+    ? '<div class="answer-feedback" role="status" tabindex="-1" id="answer-feedback"><strong>' +
+        (record.choice === record.real
+          ? '✓ ' + copy.correct
+          : '× ' + copy.wrong) +
+        '</strong><p>' +
+        copy.yourAnswer +
+        ': ' +
+        (record.choice ? copy.answerReal : copy.answerAI) +
+        ' · ' +
+        copy.rightAnswer +
+        ': ' +
+        (record.real ? copy.answerReal : copy.answerAI) +
+        '</p></div><button id="next">' +
+        copy.next +
+        '</button>'
+    : '<div class="buttons"><button id="real" disabled>' +
+        copy.real +
+        '</button><button id="ai" disabled>' +
+        copy.ai +
+        '</button></div>';
 }
 function render() {
   if (!storageOK) return storageError();
-  const test = state.active;
-  if (!test) return start();
-  if (test.index >= test.ids.length) return results();
-  const image = byId.get(test.ids[test.index]);
-  if (!image) {
-    test.ids.splice(test.index, 1);
-    if (save()) render();
-    return;
-  }
+  const image = byId.get(state.current);
+  const record = currentRecord();
+  if (!image || (image.active === false && !record)) return start();
   loaded = false;
   const token = ++renderToken;
-  app.innerHTML = `<section class="quiz" aria-label="${copy.round}">
-    <figure class="image"><div id="image-frame" class="image-frame" data-state="loading" aria-busy="true"><img id="quiz-image" alt="${copy.quizImage} ${number(test.index + 1)}" width="1000" height="750"><div class="image-skeleton" aria-hidden="true"></div><p id="image-status" role="status">${copy.loading}</p><div id="load-actions"></div></div><figcaption>${copy.round} ${number(test.index + 1)} ${copy.of} ${number(test.ids.length)}</figcaption></figure>
-
-    <div class="buttons"><button id="real" disabled>${copy.real}</button><button id="ai" disabled>${copy.ai}</button></div>
-  </section>`;
+  const position = state.history.length + (record ? 0 : 1);
+  app.innerHTML =
+    '<section class="quiz" aria-label="' +
+    copy.image +
+    '"><figure class="image"><div id="image-frame" class="image-frame" data-state="loading" aria-busy="true"><img id="quiz-image" alt="' +
+    copy.quizImage +
+    ' ' +
+    number(position) +
+    '" width="1000" height="750"><div class="image-skeleton" aria-hidden="true"></div><p id="image-status" role="status">' +
+    copy.loading +
+    '</p><div id="load-actions"></div></div><figcaption>' +
+    copy.image +
+    ' ' +
+    number(position) +
+    '</figcaption></figure><div id="answer-panel" class="answer-panel">' +
+    answerControls(record) +
+    '</div></section>';
   const img = document.getElementById('quiz-image');
   img.onload = () => {
-    if (token !== renderToken || loaded) return;
-    if (!save()) return;
+    if (token !== renderToken) return;
     loaded = true;
     document.getElementById('image-frame').dataset.state = 'ready';
     document.getElementById('image-frame').ariaBusy = 'false';
     document.getElementById('image-status').hidden = true;
-    document.getElementById('real').disabled = false;
-    document.getElementById('ai').disabled = false;
+    if (!currentRecord()) {
+      document.getElementById('real').disabled = false;
+      document.getElementById('ai').disabled = false;
+    }
   };
   img.onerror = () => {
     if (token !== renderToken) return;
-
     loaded = false;
     document.getElementById('image-frame').dataset.state = 'error';
     document.getElementById('image-frame').ariaBusy = 'false';
     document.getElementById('image-status').textContent = copy.failed;
     document.getElementById('load-actions').innerHTML =
-      `<button id="retry">${copy.retry}</button><button id="skip">${copy.skip}</button>`;
+      '<button id="retry">' +
+      copy.retry +
+      '</button>' +
+      (record ? '' : '<button id="skip">' + copy.skip + '</button>');
     document.getElementById('retry').onclick = render;
-    document.getElementById('skip').onclick = () => {
-      unavailable.add(image.id);
-      const used = new Set(test.ids);
-      const replacements = shuffle(
-        unseen().filter((i) => !used.has(i.id) && i.real === image.real),
-      );
-      const replacement =
-        replacements.find((i) => i.category.en === image.category.en) ||
-        replacements[0];
-      if (replacement) test.ids[test.index] = replacement.id;
-      else if (
-        !image.real &&
-        !test.ids.some((id) => id !== image.id && !byId.get(id)?.real)
-      ) {
-        state.active = null;
-        if (save()) exhausted();
-        return;
-      } else test.ids.splice(test.index, 1);
-      if (save()) render();
-    };
+    if (!record)
+      document.getElementById('skip').onclick = () => {
+        unavailable.add(image.id);
+        start();
+      };
   };
-  document.getElementById('real').onclick = () => answer(true);
-  document.getElementById('ai').onclick = () => answer(false);
+  if (record) document.getElementById('next').onclick = start;
+  else {
+    document.getElementById('real').onclick = () => answer(true);
+    document.getElementById('ai').onclick = () => answer(false);
+  }
   img.src = src(image);
 }
-function answer(value) {
-  if (!loaded || !storageOK) return;
-
+function answer(choice) {
+  if (!loaded || !storageOK || typeof choice !== 'boolean' || currentRecord())
+    return;
   loaded = false;
-  const test = state.active;
-  const image = byId.get(test.ids[test.index]);
-  const record = {
+  const image = byId.get(state.current);
+  state.history.push({
     id: image.id,
-    choice: value,
-    correct: value === image.real,
-    timedOut: value === null,
+    choice,
+    real: image.real,
     answeredAt: new Date().toISOString(),
-  };
-  test.answers.push(record);
-  state.answers.push(record);
-  test.index++;
-  if (save()) {
-    window.QUIZ_ANALYTICS?.track('answer', {
-      choice: value === null ? 'skipped' : value ? 'real' : 'ai',
-      correct: record.correct,
-      timedOut: record.timedOut,
-      position: test.index,
-    });
-    render();
-  }
+  });
+  if (!save()) return;
+  window.QUIZ_ANALYTICS?.track('answer', {
+    choice: choice ? 'real' : 'ai',
+    correct: choice === image.real,
+  });
+  document.getElementById('answer-panel').innerHTML =
+    answerControls(currentRecord());
+  document.getElementById('next').onclick = start;
+  document.getElementById('answer-feedback').focus();
 }
-function results() {
-  const test = state.active;
-  const answers = test.answers.filter((a) => byId.has(a.id));
-  const correct = answers.filter((a) => a.correct).length;
-  const historyID = `${test.startedAt}:${test.ids.join(',')}`;
-  if (
-    answers.length &&
-    !state.history.some((entry) => entry.id === historyID)
-  ) {
-    for (const answer of answers) {
-      state.seen[answer.id] ??= answer.answeredAt;
-    }
-    state.history.push({
-      id: historyID,
-      correct,
-      total: answers.length,
-      skipped: answers.filter((answer) => answer.timedOut).length,
-      completedAt: new Date().toISOString(),
-      answers: test.answers.map((answer) => ({ ...answer })),
-    });
-    if (!save()) return;
-    window.QUIZ_ANALYTICS?.track('game-complete', {
-      score: correct,
-      total: answers.length,
-      skipped: answers.filter((answer) => answer.timedOut).length,
-    });
-  }
-  app.innerHTML = `<section class="review">
-    <h2>${copy.results}</h2>
-    <p class="score"><bdi>${number(correct)} / ${number(answers.length)}</bdi></p>
-    ${answers.length ? '' : `<p>${copy.skiptest}</p>`}
-    <ol class="results">${answers
-      .map((answer, index) => {
-        const image = byId.get(answer.id);
-        const credit = image.source
-          ? `<a class="result-photo" href="${escapeHTML(image.source)}" target="_blank" rel="noopener noreferrer" aria-label="${copy.credit}: ${escapeHTML(image.credit)}" title="${escapeHTML(image.credit)}"><img src="${src(image)}" width="48" height="40" alt="${copy.round} ${number(index + 1)}"></a>`
-          : `<img src="${src(image)}" width="48" height="40" alt="${copy.round} ${number(index + 1)}" title="${copy.generated}">`;
-        return `<li>${credit}<span class="result-number">${number(index + 1)}</span><strong>${answer.timedOut ? '—' : answer.correct ? '✓' : '×'} ${answer.timedOut ? copy.timedOut : answer.correct ? copy.correct : copy.wrong}</strong><span class="result-answer">${image.real ? copy.answerReal : copy.answerAI}</span></li>`;
-      })
-      .join('')}</ol>
-    <div id="share-options" hidden></div>
-    <div class="result-actions">
-      ${canStartTest() ? `<button id="next">${copy.next}</button>` : `<p class="finished">${copy.later}</p>`}
-      <button id="share-result" type="button">${copy.share}</button>
-    </div>
-  </section>`;
-  document.getElementById('share-result').onclick = async () => {
-    const url = new URL(languagePath || './', baseURL).href;
-    const text = copy.shareText
-      .replace('{score}', number(correct))
-      .replace('{total}', number(answers.length));
-    if (navigator.share) {
-      try {
-        await navigator.share({
-          title: 'Real or AI?',
-          text: text + '\n\n' + url,
-        });
-        return;
-      } catch (error) {
-        if (error.name === 'AbortError') return;
-      }
-    }
-    const options = document.getElementById('share-options');
-    options.hidden = false;
-    options.replaceChildren();
-    for (const [label, href] of [
-      [
-        'WhatsApp',
-        'https://wa.me/?text=' + encodeURIComponent(text + '\n\n' + url),
-      ],
-      [
-        'Telegram',
-        'https://t.me/share/url?url=' +
-          encodeURIComponent(url) +
-          '&text=' +
-          encodeURIComponent(text),
-      ],
-      [
-        'X',
-        'https://twitter.com/intent/tweet?text=' +
-          encodeURIComponent(text) +
-          '&url=' +
-          encodeURIComponent(url),
-      ],
-      [
-        'Facebook',
-        'https://www.facebook.com/sharer/sharer.php?u=' +
-          encodeURIComponent(url),
-      ],
-    ]) {
-      const link = document.createElement('a');
-      link.textContent = label;
-      link.href = href;
-      link.target = '_blank';
-      link.rel = 'noopener noreferrer';
-      options.append(link);
-    }
-    const field = document.createElement('input');
-    field.readOnly = true;
-    field.value = text + ' ' + url;
-    field.setAttribute('aria-label', copy.copyShare);
-    field.onclick = () => field.select();
-    options.append(field);
-    options.querySelector('a').focus();
-  };
-  const next = document.getElementById('next');
-  if (next) next.onclick = start;
-}
-// Stable IDs preserve history when this catalog grows. Never automatically clear seen IDs.
-window.addEventListener('hashchange', route);
 route();

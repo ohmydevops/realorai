@@ -56,7 +56,7 @@ for (const file of [
       html.includes('class="home-art"'),
       'Home should have visible initial content without JS',
     );
-    assert(html.includes('href="#play"'));
+    assert(html.includes('href="play/"') || html.includes('href="../play/"'));
     assert(
       data['@graph'].some(
         (item) =>
@@ -87,6 +87,7 @@ for (const lang of languages) {
     '',
     'about/',
     'history/',
+    'play/',
     'guide/',
     'sources/',
     'ai-for-business/',
