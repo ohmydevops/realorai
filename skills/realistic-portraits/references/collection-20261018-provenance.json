@@ -1,0 +1,1833 @@
+{
+  "generator": "OpenAI ImageGen built-in tool",
+  "export_policy": {
+    "format": "JPEG",
+    "longest_edge": 1000,
+    "maximum_bytes": 143360,
+    "quality_steps": [85, 82, 79, 76, 73, 70, 67],
+    "optimize": true,
+    "preserve_aspect_ratio": true
+  },
+  "file_size_distribution": {
+    "real": {
+      "count": 150,
+      "min": 41428,
+      "p10": 55044,
+      "median": 90264.0,
+      "p90": 123101,
+      "max": 143283
+    },
+    "ai": {
+      "count": 50,
+      "min": 42778,
+      "p10": 51772,
+      "median": 74989.5,
+      "p90": 115990,
+      "max": 140826
+    }
+  },
+  "real": [
+    {
+      "id": "unsplash-N9HrmdEH_js",
+      "file": "public/photos/portrait-20261018-001.jpg",
+      "source": "https://unsplash.com/photos/woman-with-glasses-wearing-a-white-shirt-N9HrmdEH_js",
+      "credit": "Vitaly Gariev",
+      "download": "https://images.unsplash.com/photo-1758600587730-a11917c13b85",
+      "description": "Woman with glasses wearing a white shirt"
+    },
+    {
+      "id": "unsplash-_JAAQZ2wt5I",
+      "file": "public/photos/portrait-20261018-002.jpg",
+      "source": "https://unsplash.com/photos/a-woman-in-a-pink-shirt-posing-for-a-picture-_JAAQZ2wt5I",
+      "credit": "Dynamic Wang",
+      "download": "https://images.unsplash.com/photo-1695757002354-8bca71d087c7",
+      "description": "a woman in a pink shirt posing for a picture"
+    },
+    {
+      "id": "unsplash-YSq9L7AWP5o",
+      "file": "public/photos/portrait-20261018-003.jpg",
+      "source": "https://unsplash.com/photos/woman-in-black-and-red-floral-button-up-shirt-YSq9L7AWP5o",
+      "credit": "IDMH",
+      "download": "https://images.unsplash.com/photo-1613937054494-63ee8ee19359",
+      "description": "woman in black and red floral button up shirt"
+    },
+    {
+      "id": "unsplash-REcX8fwYz24",
+      "file": "public/photos/portrait-20261018-004.jpg",
+      "source": "https://unsplash.com/photos/a-woman-with-long-hair-and-a-black-top-REcX8fwYz24",
+      "credit": "Dynamic Wang",
+      "download": "https://images.unsplash.com/photo-1695754834691-f3add17f2b98",
+      "description": "a woman with long hair and a black top"
+    },
+    {
+      "id": "unsplash-QoXMdJcHYSw",
+      "file": "public/photos/portrait-20261018-005.jpg",
+      "source": "https://unsplash.com/photos/a-smiling-man-with-arms-crossed-QoXMdJcHYSw",
+      "credit": "Beatriz Cattel",
+      "download": "https://images.unsplash.com/photo-1770058428276-7ca3d2f98568",
+      "description": "A smiling man with arms crossed"
+    },
+    {
+      "id": "unsplash-UzaE-ZAs-Ko",
+      "file": "public/photos/portrait-20261018-006.jpg",
+      "source": "https://unsplash.com/photos/a-woman-wearing-glasses-and-a-black-shirt-UzaE-ZAs-Ko",
+      "credit": "HamZa NOUASRIA",
+      "download": "https://images.unsplash.com/photo-1637066725859-5cf5bbffe0b9",
+      "description": "a woman wearing glasses and a black shirt"
+    },
+    {
+      "id": "unsplash-fE_8Zs38bR0",
+      "file": "public/photos/portrait-20261018-007.jpg",
+      "source": "https://unsplash.com/photos/smiling-woman-fE_8Zs38bR0",
+      "credit": "Katy Ward",
+      "download": "https://images.unsplash.com/flagged/photo-1573582677725-863b570e3c00",
+      "description": "smiling woman"
+    },
+    {
+      "id": "unsplash-1axSISqHG9s",
+      "file": "public/photos/portrait-20261018-008.jpg",
+      "source": "https://unsplash.com/photos/a-person-with-white-hair-1axSISqHG9s",
+      "credit": "Urban Gyllström",
+      "download": "https://images.unsplash.com/photo-1664897604719-f97662af3de2",
+      "description": "a person with white hair"
+    },
+    {
+      "id": "unsplash-UGjuYZegs88",
+      "file": "public/photos/portrait-20261018-009.jpg",
+      "source": "https://unsplash.com/photos/a-woman-wearing-glasses-and-a-black-top-UGjuYZegs88",
+      "credit": "Good Faces",
+      "download": "https://images.unsplash.com/photo-1710196598700-7601526f3038",
+      "description": "a woman wearing glasses and a black top"
+    },
+    {
+      "id": "unsplash-dKAUJ4uDArM",
+      "file": "public/photos/portrait-20261018-010.jpg",
+      "source": "https://unsplash.com/photos/a-man-wearing-glasses-dKAUJ4uDArM",
+      "credit": "Dima Solomin",
+      "download": "https://images.unsplash.com/photo-1651869311270-39f03ad3d763",
+      "description": "a man wearing glasses"
+    },
+    {
+      "id": "unsplash-wMSfkVs-05g",
+      "file": "public/photos/portrait-20261018-011.jpg",
+      "source": "https://unsplash.com/photos/a-woman-with-her-hands-on-her-head-wMSfkVs-05g",
+      "credit": "Amir Abbaspoor",
+      "download": "https://images.unsplash.com/photo-1720910197923-ebb988253bfb",
+      "description": "A woman with her hands on her head"
+    },
+    {
+      "id": "unsplash-uaRFLJ1okfI",
+      "file": "public/photos/portrait-20261018-012.jpg",
+      "source": "https://unsplash.com/photos/young-black-woman-in-white-top-with-arms-crossed-uaRFLJ1okfI",
+      "credit": "McFollis",
+      "download": "https://images.unsplash.com/photo-1784979195572-783914980763",
+      "description": "Young black woman in white top with arms crossed"
+    },
+    {
+      "id": "unsplash-cCsT_1hMu7U",
+      "file": "public/photos/portrait-20261018-013.jpg",
+      "source": "https://unsplash.com/photos/a-man-with-a-bald-head-and-a-goatee-cCsT_1hMu7U",
+      "credit": "TopSphere Media",
+      "download": "https://images.unsplash.com/photo-1647623790833-c43b11a25f7d",
+      "description": "a man with a bald head and a goatee"
+    },
+    {
+      "id": "unsplash-M3kSpOY6A6g",
+      "file": "public/photos/portrait-20261018-014.jpg",
+      "source": "https://unsplash.com/photos/a-person-wearing-a-black-jacket-M3kSpOY6A6g",
+      "credit": "Redicul Pict",
+      "download": "https://images.unsplash.com/photo-1669266586576-639523db9306",
+      "description": "a person wearing a black jacket"
+    },
+    {
+      "id": "unsplash-hmJFNYX4dK4",
+      "file": "public/photos/portrait-20261018-015.jpg",
+      "source": "https://unsplash.com/photos/woman-in-black-and-white-floral-shirt-smiling-hmJFNYX4dK4",
+      "credit": "Design Hills",
+      "download": "https://images.unsplash.com/photo-1621419108169-336815c767e6",
+      "description": "woman in black and white floral shirt smiling"
+    },
+    {
+      "id": "unsplash-ctc26srDL3Y",
+      "file": "public/photos/portrait-20261018-016.jpg",
+      "source": "https://unsplash.com/photos/a-person-with-the-arms-crossed-ctc26srDL3Y",
+      "credit": "Amirhossein Soltani",
+      "download": "https://images.unsplash.com/photo-1659800776839-75192d08417a",
+      "description": "a person with the arms crossed"
+    },
+    {
+      "id": "unsplash-UZoZ4UHGz6s",
+      "file": "public/photos/portrait-20261018-017.jpg",
+      "source": "https://unsplash.com/photos/a-black-and-white-photo-of-a-woman-wearing-glasses-UZoZ4UHGz6s",
+      "credit": "Pedro Miguel Aires",
+      "download": "https://images.unsplash.com/photo-1644551012443-00cfd90f9640",
+      "description": "a black and white photo of a woman wearing glasses"
+    },
+    {
+      "id": "unsplash-40-oJFZq-aU",
+      "file": "public/photos/portrait-20261018-018.jpg",
+      "source": "https://unsplash.com/photos/a-man-with-his-hand-on-his-chin-40-oJFZq-aU",
+      "credit": "Amirhossein Soltani",
+      "download": "https://images.unsplash.com/photo-1659800822694-730c76fb4576",
+      "description": "a man with his hand on his chin"
+    },
+    {
+      "id": "unsplash-8HYnWP4MRGQ",
+      "file": "public/photos/portrait-20261018-019.jpg",
+      "source": "https://unsplash.com/photos/young-man-in-white-t-shirt-against-a-bamboo-wall-8HYnWP4MRGQ",
+      "credit": "Cord Allman",
+      "download": "https://images.unsplash.com/photo-1785088560522-a63fd9681dda",
+      "description": "Young man in white t-shirt against a bamboo wall"
+    },
+    {
+      "id": "unsplash-4inPokO5kGM",
+      "file": "public/photos/portrait-20261018-020.jpg",
+      "source": "https://unsplash.com/photos/a-black-and-white-photo-of-a-woman-with-long-hair-4inPokO5kGM",
+      "credit": "Pablo Arenas",
+      "download": "https://images.unsplash.com/photo-1641744515686-da9336a2d38c",
+      "description": "a black and white photo of a woman with long hair"
+    },
+    {
+      "id": "unsplash-lw-BiIFMcUQ",
+      "file": "public/photos/portrait-20261018-021.jpg",
+      "source": "https://unsplash.com/photos/woman-in-blue-and-yellow-crew-neck-shirt-lw-BiIFMcUQ",
+      "credit": "Yusron El Jihan",
+      "download": "https://images.unsplash.com/photo-1621398945253-00498f153e4b",
+      "description": "woman in blue and yellow crew neck shirt"
+    },
+    {
+      "id": "unsplash-Y66b4Ig058o",
+      "file": "public/photos/portrait-20261018-022.jpg",
+      "source": "https://unsplash.com/photos/a-man-wearing-headphones-Y66b4Ig058o",
+      "credit": "I'M ZION",
+      "download": "https://images.unsplash.com/photo-1651905714402-f4fbbc075a8d",
+      "description": "a man wearing headphones"
+    },
+    {
+      "id": "unsplash-2mWKL_I70qk",
+      "file": "public/photos/portrait-20261018-023.jpg",
+      "source": "https://unsplash.com/photos/man-in-white-dress-shirt-2mWKL_I70qk",
+      "credit": "Chalo Garcia",
+      "download": "https://images.unsplash.com/photo-1579983926774-399a9cb765c3",
+      "description": "man in white dress shirt"
+    },
+    {
+      "id": "unsplash-1KBzdJF6uVU",
+      "file": "public/photos/portrait-20261018-024.jpg",
+      "source": "https://unsplash.com/photos/man-in-black-crew-neck-shirt-wearing-black-framed-eyeglasses-1KBzdJF6uVU",
+      "credit": "Usman Yousaf",
+      "download": "https://images.unsplash.com/photo-1610611666931-8789fd05e006",
+      "description": "man in black crew neck shirt wearing black framed eyeglasses"
+    },
+    {
+      "id": "unsplash-N-H7J2WiE08",
+      "file": "public/photos/portrait-20261018-025.jpg",
+      "source": "https://unsplash.com/photos/black-and-white-portrait-of-a-man-outdoors-N-H7J2WiE08",
+      "credit": "Sibel Kusdemir",
+      "download": "https://images.unsplash.com/photo-1758223354991-057276da3580",
+      "description": "Black and white portrait of a man outdoors"
+    },
+    {
+      "id": "unsplash-Dh36N-3PLyM",
+      "file": "public/photos/portrait-20261018-026.jpg",
+      "source": "https://unsplash.com/photos/young-man-in-knit-cardigan-Dh36N-3PLyM",
+      "credit": "Kai Carter",
+      "download": "https://images.unsplash.com/photo-1786141251776-7d596304dc77",
+      "description": "A young man in a white t-shirt and a cream knit cardigan outdoors"
+    },
+    {
+      "id": "unsplash-vDDU5jfMGQg",
+      "file": "public/photos/portrait-20261018-027.jpg",
+      "source": "https://unsplash.com/photos/man-in-white-dress-shirt-wearing-black-framed-eyeglasses-vDDU5jfMGQg",
+      "credit": "Usman Yousaf",
+      "download": "https://images.unsplash.com/photo-1616851273103-5f0ec44e546f",
+      "description": "man in white dress shirt wearing black framed eyeglasses"
+    },
+    {
+      "id": "unsplash-2H81ZTVo-C4",
+      "file": "public/photos/portrait-20261018-028.jpg",
+      "source": "https://unsplash.com/photos/man-in-blue-dress-shirt-smiling-2H81ZTVo-C4",
+      "credit": "Usman Yousaf",
+      "download": "https://images.unsplash.com/photo-1612276529418-52e6ad86ee1d",
+      "description": "man in blue dress shirt smiling"
+    },
+    {
+      "id": "unsplash-Ydc_6QLNhGs",
+      "file": "public/photos/portrait-20261018-029.jpg",
+      "source": "https://unsplash.com/photos/a-man-with-curly-hair-wearing-a-black-jacket-Ydc_6QLNhGs",
+      "credit": "Anastasia Brekerovska",
+      "download": "https://images.unsplash.com/photo-1640123547348-235d188819d8",
+      "description": "a man with curly hair wearing a black jacket"
+    },
+    {
+      "id": "unsplash-8Cbk_IGBoQU",
+      "file": "public/photos/portrait-20261018-030.jpg",
+      "source": "https://unsplash.com/photos/a-smiling-woman-in-a-white-shirt-and-black-outfit-8Cbk_IGBoQU",
+      "credit": "Joecalih",
+      "download": "https://images.unsplash.com/photo-1765005204227-bf58bcdd4449",
+      "description": "A smiling woman in a white shirt and black outfit"
+    },
+    {
+      "id": "unsplash-QJEVpydulGs",
+      "file": "public/photos/portrait-20261018-031.jpg",
+      "source": "https://unsplash.com/photos/man-wearing-eyeglasses-and-blue-shirt-inside-coffee-shop-QJEVpydulGs",
+      "credit": "Darshan Patel",
+      "download": "https://images.unsplash.com/photo-1540569014015-19a7be504e3a",
+      "description": "man wearing eyeglasses and blue shirt inside coffee shop"
+    },
+    {
+      "id": "unsplash-oz2wj86hGxA",
+      "file": "public/photos/portrait-20261018-032.jpg",
+      "source": "https://unsplash.com/photos/a-man-in-a-blue-shirt-smiling-at-the-camera-oz2wj86hGxA",
+      "credit": "Greg Edwards",
+      "download": "https://images.unsplash.com/photo-1686063165043-45243dab25ab",
+      "description": "a man in a blue shirt smiling at the camera"
+    },
+    {
+      "id": "unsplash-4lnzxFIgTmg",
+      "file": "public/photos/portrait-20261018-033.jpg",
+      "source": "https://unsplash.com/photos/man-standing-near-window-during-daytime-4lnzxFIgTmg",
+      "credit": "Ronny Sison",
+      "download": "https://images.unsplash.com/photo-1543949806-2c9935e6aa78",
+      "description": "man standing near window during daytime"
+    },
+    {
+      "id": "unsplash-4GL0-ynnIXc",
+      "file": "public/photos/portrait-20261018-034.jpg",
+      "source": "https://unsplash.com/photos/a-woman-with-red-wavy-hair-wearing-a-striped-shirt-4GL0-ynnIXc",
+      "credit": "Abu Saied",
+      "download": "https://images.unsplash.com/photo-1650091903034-5f3bb37c35d2",
+      "description": "A woman with red wavy hair wearing a striped shirt"
+    },
+    {
+      "id": "unsplash-kXmKqYOGA4Y",
+      "file": "public/photos/portrait-20261018-035.jpg",
+      "source": "https://unsplash.com/photos/smiling-woman-sitting-on-black-chair-kXmKqYOGA4Y",
+      "credit": "Christina @ wocintechchat.com M",
+      "download": "https://images.unsplash.com/photo-1573497161161-c3e73707e25c",
+      "description": "smiling woman sitting on black chair"
+    },
+    {
+      "id": "unsplash-ZAo0cKz_IKM",
+      "file": "public/photos/portrait-20261018-036.jpg",
+      "source": "https://unsplash.com/photos/a-person-with-a-grey-sweater-ZAo0cKz_IKM",
+      "credit": "Tony Luginsland",
+      "download": "https://images.unsplash.com/photo-1655249493799-9cee4fe983bb",
+      "description": "a person with a grey sweater"
+    },
+    {
+      "id": "unsplash-J1OScm_uHUQ",
+      "file": "public/photos/portrait-20261018-037.jpg",
+      "source": "https://unsplash.com/photos/women-holding-her-collar-standing-near-wall-J1OScm_uHUQ",
+      "credit": "Prince Akachi",
+      "download": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce",
+      "description": "women holding her collar standing near wall"
+    },
+    {
+      "id": "unsplash-f5xiGmFwXIU",
+      "file": "public/photos/portrait-20261018-038.jpg",
+      "source": "https://unsplash.com/photos/man-in-gray-crew-neck-shirt-f5xiGmFwXIU",
+      "credit": "Zoran Borojevic",
+      "download": "https://images.unsplash.com/photo-1589279715734-6631a314dfa2",
+      "description": "man in gray crew neck shirt"
+    },
+    {
+      "id": "unsplash-ODrd-02Q6JI",
+      "file": "public/photos/portrait-20261018-039.jpg",
+      "source": "https://unsplash.com/photos/a-woman-in-a-blue-dress-ODrd-02Q6JI",
+      "credit": "Tony Luginsland",
+      "download": "https://images.unsplash.com/photo-1655249481446-25d575f1c054",
+      "description": "a woman in a blue dress"
+    },
+    {
+      "id": "unsplash-lQDwFkhSJrg",
+      "file": "public/photos/portrait-20261018-040.jpg",
+      "source": "https://unsplash.com/photos/woman-in-yellow-button-up-shirt-wearing-black-and-white-scarf-lQDwFkhSJrg",
+      "credit": "Tahiti Spears",
+      "download": "https://images.unsplash.com/photo-1606415918835-88d0614e75ad",
+      "description": "woman in yellow button up shirt wearing black and white scarf"
+    },
+    {
+      "id": "unsplash-OswNOXPNU1k",
+      "file": "public/photos/portrait-20261018-041.jpg",
+      "source": "https://unsplash.com/photos/a-woman-in-a-red-shirt-and-black-jacket-OswNOXPNU1k",
+      "credit": "Tony Luginsland",
+      "download": "https://images.unsplash.com/photo-1652471949169-9c587e8898cd",
+      "description": "a woman in a red shirt and black jacket"
+    },
+    {
+      "id": "unsplash-cdZcNIca4w0",
+      "file": "public/photos/portrait-20261018-042.jpg",
+      "source": "https://unsplash.com/photos/a-smiling-woman-poses-for-a-portrait-cdZcNIca4w0",
+      "credit": "Brooke Balentine",
+      "download": "https://images.unsplash.com/photo-1745434159123-5b99b94206ca",
+      "description": "A smiling woman poses for a portrait"
+    },
+    {
+      "id": "unsplash-_5_CBVCLBsY",
+      "file": "public/photos/portrait-20261018-043.jpg",
+      "source": "https://unsplash.com/photos/woman-in-gray-and-yellow-pussybow-top-_5_CBVCLBsY",
+      "credit": "Christina @ wocintechchat.com M",
+      "download": "https://images.unsplash.com/photo-1573497491765-dccce02b29df",
+      "description": "woman in gray and yellow pussybow top"
+    },
+    {
+      "id": "unsplash--dntKy_x8qo",
+      "file": "public/photos/portrait-20261018-044.jpg",
+      "source": "https://unsplash.com/photos/a-smiling-man-in-a-blue-collared-shirt--dntKy_x8qo",
+      "credit": "Abu Saied",
+      "download": "https://images.unsplash.com/photo-1650091903029-fc3f1ddcb7f9",
+      "description": "A smiling man in a blue collared shirt"
+    },
+    {
+      "id": "unsplash-BUlOJ2Ag_24",
+      "file": "public/photos/portrait-20261018-045.jpg",
+      "source": "https://unsplash.com/photos/a-woman-sitting-down-with-her-hand-on-her-chin-BUlOJ2Ag_24",
+      "credit": "Giorgio Trovato",
+      "download": "https://images.unsplash.com/photo-1699899657675-1003c7d28f2d",
+      "description": "a woman sitting down with her hand on her chin"
+    },
+    {
+      "id": "unsplash-2crxTr4jCkc",
+      "file": "public/photos/portrait-20261018-046.jpg",
+      "source": "https://unsplash.com/photos/woman-in-gray-jacket-2crxTr4jCkc",
+      "credit": "Connor Wilkins",
+      "download": "https://images.unsplash.com/photo-1553514029-1318c9127859",
+      "description": "woman in gray jacket"
+    },
+    {
+      "id": "unsplash-lFntEHwQvi4",
+      "file": "public/photos/portrait-20261018-047.jpg",
+      "source": "https://unsplash.com/photos/crossed-arm-woman-smiling-lFntEHwQvi4",
+      "credit": "Christina @ wocintechchat.com M",
+      "download": "https://images.unsplash.com/photo-1573496799515-eebbb63814f2",
+      "description": "crossed arm woman smiling"
+    },
+    {
+      "id": "unsplash-xSEFkIAopxA",
+      "file": "public/photos/portrait-20261018-048.jpg",
+      "source": "https://unsplash.com/photos/a-smiling-woman-poses-in-front-of-a-wall-xSEFkIAopxA",
+      "credit": "Brooke Balentine",
+      "download": "https://images.unsplash.com/photo-1745434159123-4908d0b9df94",
+      "description": "A smiling woman poses in front of a wall"
+    },
+    {
+      "id": "unsplash-eGbWStueZXU",
+      "file": "public/photos/portrait-20261018-049.jpg",
+      "source": "https://unsplash.com/photos/a-woman-with-white-hair-sitting-on-a-chair-eGbWStueZXU",
+      "credit": "Jennifer Kalenberg",
+      "download": "https://images.unsplash.com/photo-1692167759863-a2d447a834ba",
+      "description": "a woman with white hair sitting on a chair"
+    },
+    {
+      "id": "unsplash-QuDxxWypu9U",
+      "file": "public/photos/portrait-20261018-050.jpg",
+      "source": "https://unsplash.com/photos/a-woman-wearing-glasses-and-a-black-shirt-QuDxxWypu9U",
+      "credit": "amirreza momennia",
+      "download": "https://images.unsplash.com/photo-1701728667207-54b43dbdab97",
+      "description": "a woman wearing glasses and a black shirt"
+    },
+    {
+      "id": "unsplash-HfMCgqOLTyM",
+      "file": "public/photos/portrait-20261018-051.jpg",
+      "source": "https://unsplash.com/photos/man-in-gray-suit-jacket-standing-beside-brown-brick-wall-HfMCgqOLTyM",
+      "credit": "Clay Elliot",
+      "download": "https://images.unsplash.com/photo-1627161684458-a62da52b51c3",
+      "description": "man in gray suit jacket standing beside brown brick wall"
+    },
+    {
+      "id": "unsplash-hr_feH2URs0",
+      "file": "public/photos/portrait-20261018-052.jpg",
+      "source": "https://unsplash.com/photos/man-in-black-crew-neck-shirt-hr_feH2URs0",
+      "credit": "Nartan Büyükyıldız",
+      "download": "https://images.unsplash.com/photo-1624395213043-fa2e123b2656",
+      "description": "man in black crew neck shirt"
+    },
+    {
+      "id": "unsplash-qpyR0WKV_Cs",
+      "file": "public/photos/portrait-20261018-053.jpg",
+      "source": "https://unsplash.com/photos/a-man-in-a-suit-and-glasses-posing-for-a-picture-qpyR0WKV_Cs",
+      "credit": "Olawale Munna",
+      "download": "https://images.unsplash.com/photo-1642257859842-c95f9fa8121d",
+      "description": "a man in a suit and glasses posing for a picture"
+    },
+    {
+      "id": "unsplash-3paKXHWzsDw",
+      "file": "public/photos/portrait-20261018-054.jpg",
+      "source": "https://unsplash.com/photos/a-woman-with-long-brown-hair-smiling-at-the-camera-3paKXHWzsDw",
+      "credit": "Troy Spoelma",
+      "download": "https://images.unsplash.com/photo-1701096351544-7de3c7fa0272",
+      "description": "a woman with long brown hair smiling at the camera"
+    },
+    {
+      "id": "unsplash-N8lRH2uxih4",
+      "file": "public/photos/portrait-20261018-055.jpg",
+      "source": "https://unsplash.com/photos/a-man-smiling-for-the-camera-N8lRH2uxih4",
+      "credit": "The Connected Narrative",
+      "download": "https://images.unsplash.com/photo-1651684215020-f7a5b6610f23",
+      "description": "a man smiling for the camera"
+    },
+    {
+      "id": "unsplash-KmRM8RkL2ZI",
+      "file": "public/photos/portrait-20261018-056.jpg",
+      "source": "https://unsplash.com/photos/a-woman-with-her-arms-crossed-standing-in-front-of-a-building-KmRM8RkL2ZI",
+      "credit": "DarceyStone Photography",
+      "download": "https://images.unsplash.com/photo-1685760259914-ee8d2c92d2e0",
+      "description": "a woman with her arms crossed standing in front of a building"
+    },
+    {
+      "id": "unsplash-O3D-teBz0Bg",
+      "file": "public/photos/portrait-20261018-057.jpg",
+      "source": "https://unsplash.com/photos/a-woman-standing-in-front-of-a-sculpture-O3D-teBz0Bg",
+      "credit": "Philip White",
+      "download": "https://images.unsplash.com/photo-1689600944138-da3b150d9cb8",
+      "description": "a woman standing in front of a sculpture"
+    },
+    {
+      "id": "unsplash-bbOOTiq-EPA",
+      "file": "public/photos/portrait-20261018-058.jpg",
+      "source": "https://unsplash.com/photos/a-man-in-a-suit-posing-for-a-picture-bbOOTiq-EPA",
+      "credit": "Tony Luginsland",
+      "download": "https://images.unsplash.com/photo-1652471943570-f3590a4e52ed",
+      "description": "a man in a suit posing for a picture"
+    },
+    {
+      "id": "unsplash-v7Jja2ChN6s",
+      "file": "public/photos/portrait-20261018-059.jpg",
+      "source": "https://unsplash.com/photos/man-wearing-grey-jacket-v7Jja2ChN6s",
+      "credit": "Ryan Hoffman",
+      "download": "https://images.unsplash.com/photo-1576558656222-ba66febe3dec",
+      "description": "man wearing grey jacket"
+    },
+    {
+      "id": "unsplash-pUhxoSapPFA",
+      "file": "public/photos/portrait-20261018-060.jpg",
+      "source": "https://unsplash.com/photos/man-in-cap-and-green-shirt-pUhxoSapPFA",
+      "credit": "Jeffrey Keenan",
+      "download": "https://images.unsplash.com/photo-1600486913747-55e5470d6f40",
+      "description": "A man in a green t-shirt and cap looking away in golden light"
+    },
+    {
+      "id": "unsplash-J6MK67MIs0I",
+      "file": "public/photos/portrait-20261018-061.jpg",
+      "source": "https://unsplash.com/photos/woman-in-black-turtleneck-long-sleeve-shirt-standing-on-green-grass-field-during-daytime-J6MK67MIs0I",
+      "credit": "Dillon Kydd",
+      "download": "https://images.unsplash.com/photo-1606335192038-f5a05f761b3a",
+      "description": "woman in black turtleneck long sleeve shirt standing on green grass field during daytime"
+    },
+    {
+      "id": "unsplash-Y7TEMCKRIgI",
+      "file": "public/photos/portrait-20261018-062.jpg",
+      "source": "https://unsplash.com/photos/man-in-black-nike-hoodie-and-blue-fitted-cap-Y7TEMCKRIgI",
+      "credit": "Karabo Mdluli",
+      "download": "https://images.unsplash.com/photo-1603871165848-0aa92c869fa1",
+      "description": "man in black nike hoodie and blue fitted cap"
+    },
+    {
+      "id": "unsplash-hwc7eIQiTCE",
+      "file": "public/photos/portrait-20261018-063.jpg",
+      "source": "https://unsplash.com/photos/man-in-blazer-and-turtleneck-hwc7eIQiTCE",
+      "credit": "Zahir Namane",
+      "download": "https://images.unsplash.com/photo-1558222218-b7b54eede3f3",
+      "description": "A smiling man in a dark blazer and black turtleneck against a stone pillar"
+    },
+    {
+      "id": "unsplash-YmQ8TrsieE4",
+      "file": "public/photos/portrait-20261018-064.jpg",
+      "source": "https://unsplash.com/photos/man-in-black-suit-jacket-YmQ8TrsieE4",
+      "credit": "itay verchik",
+      "download": "https://images.unsplash.com/photo-1600878459138-e1123b37cb30",
+      "description": "man in black suit jacket"
+    },
+    {
+      "id": "unsplash-sgZX15Da8YE",
+      "file": "public/photos/portrait-20261018-065.jpg",
+      "source": "https://unsplash.com/photos/portrait-photography-of-man-wearing-black-suit-jacket-sgZX15Da8YE",
+      "credit": "Shipman Northcutt",
+      "download": "https://images.unsplash.com/photo-1562788869-4ed32648eb72",
+      "description": "portrait photography of man wearing black suit jacket"
+    },
+    {
+      "id": "unsplash-MQ2xYBHImKM",
+      "file": "public/photos/portrait-20261018-066.jpg",
+      "source": "https://unsplash.com/photos/smiling-woman-in-white-and-black-checkered-dress-shirt-MQ2xYBHImKM",
+      "credit": "Compagnons",
+      "download": "https://images.unsplash.com/photo-1607990283143-e81e7a2c9349",
+      "description": "smiling woman in white and black checkered dress shirt"
+    },
+    {
+      "id": "unsplash-tAvpDE7fXgY",
+      "file": "public/photos/portrait-20261018-067.jpg",
+      "source": "https://unsplash.com/photos/man-self-portrait-wearing-gray-and-white-collared-button-up-shirt-near-green-leaf-plant-with-white-ceramic-pot-tAvpDE7fXgY",
+      "credit": "Harps Joseph",
+      "download": "https://images.unsplash.com/photo-1530268729831-4b0b9e170218",
+      "description": "man self portrait wearing gray and white collared button-up shirt near green leaf plant with white ceramic pot"
+    },
+    {
+      "id": "unsplash-7uoMmzPd2JA",
+      "file": "public/photos/portrait-20261018-068.jpg",
+      "source": "https://unsplash.com/photos/man-in-blazer-at-restaurant-bar-7uoMmzPd2JA",
+      "credit": "Austin Distel",
+      "download": "https://images.unsplash.com/photo-1556157382-97eda2d62296",
+      "description": "A man in a light blue blazer and white shirt at a restaurant bar"
+    },
+    {
+      "id": "unsplash-Hmg8hRqQMKo",
+      "file": "public/photos/portrait-20261018-069.jpg",
+      "source": "https://unsplash.com/photos/a-man-with-dreadlocks-wearing-a-black-hoodie-Hmg8hRqQMKo",
+      "credit": "Dalton Smith",
+      "download": "https://images.unsplash.com/photo-1646197879190-78a962aab29b",
+      "description": "a man with dreadlocks wearing a black hoodie"
+    },
+    {
+      "id": "unsplash-yIOViGQmjJ4",
+      "file": "public/photos/portrait-20261018-070.jpg",
+      "source": "https://unsplash.com/photos/man-in-black-crew-neck-shirt-wearing-black-framed-eyeglasses-yIOViGQmjJ4",
+      "credit": "Usman Yousaf",
+      "download": "https://images.unsplash.com/photo-1600180758890-6b94519a8ba6",
+      "description": "man in black crew neck shirt wearing black framed eyeglasses"
+    },
+    {
+      "id": "unsplash-RiDxDgHg7pw",
+      "file": "public/photos/portrait-20261018-071.jpg",
+      "source": "https://unsplash.com/photos/man-wearing-green-crew-neck-top-and-eyeglasses-with-black-frames-looking-at-side-RiDxDgHg7pw",
+      "credit": "Samuel Raita",
+      "download": "https://images.unsplash.com/photo-1566753323558-f4e0952af115",
+      "description": "man wearing green crew-neck top and eyeglasses with black frames looking at side"
+    },
+    {
+      "id": "unsplash-snFilgm4_RU",
+      "file": "public/photos/portrait-20261018-072.jpg",
+      "source": "https://unsplash.com/photos/man-smiling-while-sitting-snFilgm4_RU",
+      "credit": "James Balensiefen",
+      "download": "https://images.unsplash.com/photo-1530983822321-fcac2d3c0f06",
+      "description": "man smiling while sitting"
+    },
+    {
+      "id": "unsplash-nRwJaWg7McU",
+      "file": "public/photos/portrait-20261018-073.jpg",
+      "source": "https://unsplash.com/photos/man-in-black-and-orange-pullover-hoodie-wearing-blue-cap-nRwJaWg7McU",
+      "credit": "Karabo Mdluli",
+      "download": "https://images.unsplash.com/photo-1604336732494-d8386c7029e3",
+      "description": "man in black and orange pullover hoodie wearing blue cap"
+    },
+    {
+      "id": "unsplash-kwKAvFdfWg8",
+      "file": "public/photos/portrait-20261018-074.jpg",
+      "source": "https://unsplash.com/photos/a-man-in-a-green-shirt-looking-off-into-the-distance-kwKAvFdfWg8",
+      "credit": "Michael Proctor",
+      "download": "https://images.unsplash.com/photo-1714750977930-e7a7f4611257",
+      "description": "a man in a green shirt looking off into the distance"
+    },
+    {
+      "id": "unsplash-52rOMaF0aVw",
+      "file": "public/photos/portrait-20261018-075.jpg",
+      "source": "https://unsplash.com/photos/a-close-up-of-a-person-wearing-a-black-shirt-52rOMaF0aVw",
+      "credit": "Robbie Duncan",
+      "download": "https://images.unsplash.com/photo-1684077305149-968c8afa1883",
+      "description": "a close up of a person wearing a black shirt"
+    },
+    {
+      "id": "unsplash-Pc0ToyoR5Xo",
+      "file": "public/photos/portrait-20261018-076.jpg",
+      "source": "https://unsplash.com/photos/man-in-black-and-white-nike-zip-up-jacket-smiling-Pc0ToyoR5Xo",
+      "credit": "Amir Seilsepour",
+      "download": "https://images.unsplash.com/photo-1595152772835-219674b2a8a6",
+      "description": "man in black and white nike zip up jacket smiling"
+    },
+    {
+      "id": "unsplash-UJbqowk5fso",
+      "file": "public/photos/portrait-20261018-077.jpg",
+      "source": "https://unsplash.com/photos/a-man-wearing-glasses-and-a-black-turtle-neck-sweater-UJbqowk5fso",
+      "credit": "Kate Bezzubets",
+      "download": "https://images.unsplash.com/photo-1631885628726-d60689c330db",
+      "description": "a man wearing glasses and a black turtle neck sweater"
+    },
+    {
+      "id": "unsplash-tHk6m4vgMys",
+      "file": "public/photos/portrait-20261018-078.jpg",
+      "source": "https://unsplash.com/photos/woman-in-black-spaghetti-strap-top-tHk6m4vgMys",
+      "credit": "Dillon Kydd",
+      "download": "https://images.unsplash.com/photo-1617037448248-6bd7b4a0d038",
+      "description": "woman in black spaghetti strap top"
+    },
+    {
+      "id": "unsplash-4iYwSwx6Fxo",
+      "file": "public/photos/portrait-20261018-079.jpg",
+      "source": "https://unsplash.com/photos/woman-in-yellow-button-up-shirt-sitting-on-gray-rock-4iYwSwx6Fxo",
+      "credit": "Tahiti Spears",
+      "download": "https://images.unsplash.com/photo-1606416041875-c020fd6cd16c",
+      "description": "woman in yellow button up shirt sitting on gray rock"
+    },
+    {
+      "id": "unsplash-ljmkV7y7Y9I",
+      "file": "public/photos/portrait-20261018-080.jpg",
+      "source": "https://unsplash.com/photos/smiling-man-poses-for-a-photo-ljmkV7y7Y9I",
+      "credit": "PodMatch",
+      "download": "https://images.unsplash.com/photo-1746813629025-67ccab1f4edd",
+      "description": "Smiling man poses for a photo"
+    },
+    {
+      "id": "unsplash-Gv_gOJ-Va7Y",
+      "file": "public/photos/portrait-20261018-081.jpg",
+      "source": "https://unsplash.com/photos/a-man-with-curly-hair-wearing-a-turtle-neck-sweater-Gv_gOJ-Va7Y",
+      "credit": "Rafael Rodrigues",
+      "download": "https://images.unsplash.com/photo-1674664981250-faac1df370cb",
+      "description": "a man with curly hair wearing a turtle neck sweater"
+    },
+    {
+      "id": "unsplash-a0EQFTH4ZfA",
+      "file": "public/photos/portrait-20261018-082.jpg",
+      "source": "https://unsplash.com/photos/smiling-woman-wearing-red-black-and-gray-plaid-blazer-a0EQFTH4ZfA",
+      "credit": "Mandy Zhang",
+      "download": "https://images.unsplash.com/photo-1529232356377-57971f020a94",
+      "description": "smiling woman wearing red, black, and gray plaid blazer"
+    },
+    {
+      "id": "unsplash-Qk8o8S_PMTY",
+      "file": "public/photos/portrait-20261018-083.jpg",
+      "source": "https://unsplash.com/photos/man-taking-selfie-outdoors-Qk8o8S_PMTY",
+      "credit": "Chase Fade",
+      "download": "https://images.unsplash.com/photo-1535419218759-c71f0a6015b3",
+      "description": "man taking selfie outdoors"
+    },
+    {
+      "id": "unsplash-UUNoXZ8H56Q",
+      "file": "public/photos/portrait-20261018-084.jpg",
+      "source": "https://unsplash.com/photos/portrait-photography-of-woman-wearing-black-sweatshirt-UUNoXZ8H56Q",
+      "credit": "Kelly Sikkema",
+      "download": "https://images.unsplash.com/photo-1499358517822-d8578907a095",
+      "description": "portrait photography of woman wearing black sweatshirt"
+    },
+    {
+      "id": "unsplash-_WHmeGzrqvs",
+      "file": "public/photos/portrait-20261018-085.jpg",
+      "source": "https://unsplash.com/photos/a-man-smiling-for-the-camera-_WHmeGzrqvs",
+      "credit": "Ansspvt Titan",
+      "download": "https://images.unsplash.com/photo-1657218380188-40c56bfdf97f",
+      "description": "a man smiling for the camera"
+    },
+    {
+      "id": "unsplash-fD3vZ7adJY8",
+      "file": "public/photos/portrait-20261018-086.jpg",
+      "source": "https://unsplash.com/photos/a-woman-in-a-yellow-dress-posing-for-a-picture-fD3vZ7adJY8",
+      "credit": "Jennifer Kalenberg",
+      "download": "https://images.unsplash.com/photo-1708737749033-aa9b7bd00507",
+      "description": "a woman in a yellow dress posing for a picture"
+    },
+    {
+      "id": "unsplash--zqoE7jnQgw",
+      "file": "public/photos/portrait-20261018-087.jpg",
+      "source": "https://unsplash.com/photos/woman-wearing-striped-top--zqoE7jnQgw",
+      "credit": "Zoe Fernandez",
+      "download": "https://images.unsplash.com/photo-1521252659862-eec69941b071",
+      "description": "woman wearing striped top"
+    },
+    {
+      "id": "unsplash-AR9mvykzSOA",
+      "file": "public/photos/portrait-20261018-088.jpg",
+      "source": "https://unsplash.com/photos/smiling-man-wearing-blue-denim-jacket-AR9mvykzSOA",
+      "credit": "Jackson Schaal",
+      "download": "https://images.unsplash.com/photo-1531750026848-8ada78f641c2",
+      "description": "smiling man wearing blue denim jacket"
+    },
+    {
+      "id": "unsplash-u3WmDyKGsrY",
+      "file": "public/photos/portrait-20261018-089.jpg",
+      "source": "https://unsplash.com/photos/woman-with-red-hair-and-freckles-u3WmDyKGsrY",
+      "credit": "Gabriel Silvério",
+      "download": "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb",
+      "description": "A smiling woman with red hair in a bun and visible freckles"
+    },
+    {
+      "id": "unsplash-s55Di5cdiSM",
+      "file": "public/photos/portrait-20261018-090.jpg",
+      "source": "https://unsplash.com/photos/woman-in-white-long-sleeve-shirt-s55Di5cdiSM",
+      "credit": "Zoran Borojevic",
+      "download": "https://images.unsplash.com/photo-1589729482945-ca6f3a235f7a",
+      "description": "woman in white long sleeve shirt"
+    },
+    {
+      "id": "unsplash-XIA_tvrvFAw",
+      "file": "public/photos/portrait-20261018-091.jpg",
+      "source": "https://unsplash.com/photos/a-man-sitting-at-a-table-with-a-laptop-XIA_tvrvFAw",
+      "credit": "Paolo Resteghini",
+      "download": "https://images.unsplash.com/photo-1723538523199-61e20b5de045",
+      "description": "A man sitting at a table with a laptop"
+    },
+    {
+      "id": "unsplash-Hzsv2g0XNFo",
+      "file": "public/photos/portrait-20261018-092.jpg",
+      "source": "https://unsplash.com/photos/a-beautiful-young-woman-posing-for-a-picture-Hzsv2g0XNFo",
+      "credit": "Anupam Roy",
+      "download": "https://images.unsplash.com/photo-1631606931376-f2845ed31d9d",
+      "description": "a beautiful young woman posing for a picture"
+    },
+    {
+      "id": "unsplash-xRVSrfNG6fA",
+      "file": "public/photos/portrait-20261018-093.jpg",
+      "source": "https://unsplash.com/photos/a-man-wearing-a-black-hat-and-scarf-xRVSrfNG6fA",
+      "credit": "Cord Allman",
+      "download": "https://images.unsplash.com/photo-1704253801154-e7da0cafd28b",
+      "description": "a man wearing a black hat and scarf"
+    },
+    {
+      "id": "unsplash-eDVQwVMLMgU",
+      "file": "public/photos/portrait-20261018-094.jpg",
+      "source": "https://unsplash.com/photos/shallow-focus-photo-of-woman-standing-near-wall-eDVQwVMLMgU",
+      "credit": "Tamara Bellis",
+      "download": "https://images.unsplash.com/photo-1509868918748-a554ad25f858",
+      "description": "shallow focus photo of woman standing near wall"
+    },
+    {
+      "id": "unsplash-bdWqmV7UrXI",
+      "file": "public/photos/portrait-20261018-095.jpg",
+      "source": "https://unsplash.com/photos/a-man-wearing-glasses-and-a-red-shirt-bdWqmV7UrXI",
+      "credit": "Larry George II",
+      "download": "https://images.unsplash.com/photo-1642736468842-c6bdcfbbcd28",
+      "description": "a man wearing glasses and a red shirt"
+    },
+    {
+      "id": "unsplash-Ba1eGcAFj5w",
+      "file": "public/photos/portrait-20261018-096.jpg",
+      "source": "https://unsplash.com/photos/man-in-white-long-sleeve-shirt-wearing-black-framed-eyeglasses-Ba1eGcAFj5w",
+      "credit": "Shedrack Salami",
+      "download": "https://images.unsplash.com/photo-1620932934088-fbdb2920e484",
+      "description": "man in white long sleeve shirt wearing black framed eyeglasses"
+    },
+    {
+      "id": "unsplash-7B4zs9M8rYI",
+      "file": "public/photos/portrait-20261018-097.jpg",
+      "source": "https://unsplash.com/photos/man-in-black-scarf-and-gray-sweater-7B4zs9M8rYI",
+      "credit": "Brian Lundquist",
+      "download": "https://images.unsplash.com/photo-1597346908500-28cda8acfe4e",
+      "description": "man in black scarf and gray sweater"
+    },
+    {
+      "id": "unsplash-jIM8kVsFKlM",
+      "file": "public/photos/portrait-20261018-098.jpg",
+      "source": "https://unsplash.com/photos/man-in-blue-button-up-shirt-smiling-jIM8kVsFKlM",
+      "credit": "Dylan Ferreira",
+      "download": "https://images.unsplash.com/photo-1579420593648-0deba81fd762",
+      "description": "man in blue button up shirt smiling"
+    },
+    {
+      "id": "unsplash-6ml7EMjw1EQ",
+      "file": "public/photos/portrait-20261018-099.jpg",
+      "source": "https://unsplash.com/photos/a-black-and-white-photo-of-a-man-in-a-black-shirt-6ml7EMjw1EQ",
+      "credit": "David Chang Kit",
+      "download": "https://images.unsplash.com/photo-1719603785926-84d214438120",
+      "description": "A black and white photo of a man in a black shirt"
+    },
+    {
+      "id": "unsplash-G5O5WHbxG9s",
+      "file": "public/photos/portrait-20261018-100.jpg",
+      "source": "https://unsplash.com/photos/a-woman-standing-in-the-woods-with-her-hands-on-her-hips-G5O5WHbxG9s",
+      "credit": "amirreza momennia",
+      "download": "https://images.unsplash.com/photo-1701728527169-23d44cd6e65d",
+      "description": "a woman standing in the woods with her hands on her hips"
+    },
+    {
+      "id": "unsplash-NS3_cp6vSpI",
+      "file": "public/photos/portrait-20261018-101.jpg",
+      "source": "https://unsplash.com/photos/a-smiling-woman-with-glasses-and-arms-crossed-NS3_cp6vSpI",
+      "credit": "Vitaly Gariev",
+      "download": "https://images.unsplash.com/photo-1758600587728-9bde755354ad",
+      "description": "A smiling woman with glasses and arms crossed"
+    },
+    {
+      "id": "unsplash-IH1w8JkmEhU",
+      "file": "public/photos/portrait-20261018-102.jpg",
+      "source": "https://unsplash.com/photos/woman-in-black-crew-neck-shirt-IH1w8JkmEhU",
+      "credit": "Luis Santoyo",
+      "download": "https://images.unsplash.com/photo-1606115690424-49770e55a2bc",
+      "description": "woman in black crew neck shirt"
+    },
+    {
+      "id": "unsplash-b0l7znNeluE",
+      "file": "public/photos/portrait-20261018-103.jpg",
+      "source": "https://unsplash.com/photos/blonde-woman-in-black-blazer-with-a-silver-heart-necklace-b0l7znNeluE",
+      "credit": "ola szkolda",
+      "download": "https://images.unsplash.com/photo-1779400204041-4ce332e68c23",
+      "description": "Blonde woman in black blazer with a silver heart necklace"
+    },
+    {
+      "id": "unsplash-TYDLLLE7vWQ",
+      "file": "public/photos/portrait-20261018-104.jpg",
+      "source": "https://unsplash.com/photos/woman-in-green-crew-neck-shirt-TYDLLLE7vWQ",
+      "credit": "Meg Wagener",
+      "download": "https://images.unsplash.com/photo-1607569490015-7101095605ed",
+      "description": "woman in green crew neck shirt"
+    },
+    {
+      "id": "unsplash-WpKYyQ8hOpw",
+      "file": "public/photos/portrait-20261018-105.jpg",
+      "source": "https://unsplash.com/photos/a-man-with-a-black-shirt-and-a-bush-in-the-background-WpKYyQ8hOpw",
+      "credit": "Mohamed Elwaid",
+      "download": "https://images.unsplash.com/photo-1680104073282-8462cdf70b6a",
+      "description": "a man with a black shirt and a bush in the background"
+    },
+    {
+      "id": "unsplash-jzNZGBw1nNk",
+      "file": "public/photos/portrait-20261018-106.jpg",
+      "source": "https://unsplash.com/photos/a-man-with-a-beard-and-a-white-shirt-jzNZGBw1nNk",
+      "credit": "Venti Views",
+      "download": "https://images.unsplash.com/photo-1674786266914-9a8ab3dd6f44",
+      "description": "a man with a beard and a white shirt"
+    },
+    {
+      "id": "unsplash-kVbhPkoyYN0",
+      "file": "public/photos/portrait-20261018-107.jpg",
+      "source": "https://unsplash.com/photos/a-man-with-curly-hair-smiling-at-the-camera-kVbhPkoyYN0",
+      "credit": "Brayden Prato",
+      "download": "https://images.unsplash.com/photo-1717705714614-a685ba26690f",
+      "description": "a man with curly hair smiling at the camera"
+    },
+    {
+      "id": "unsplash-auCjz0gucr0",
+      "file": "public/photos/portrait-20261018-108.jpg",
+      "source": "https://unsplash.com/photos/photo-of-man-wearing-black-framed-eyeglasses-beside-wall-tile-auCjz0gucr0",
+      "credit": "Petr Sevcovic",
+      "download": "https://images.unsplash.com/photo-1520341280432-4749d4d7bcf9",
+      "description": "photo of man wearing black-framed eyeglasses beside wall tile"
+    },
+    {
+      "id": "unsplash-I7dGp6--Gro",
+      "file": "public/photos/portrait-20261018-109.jpg",
+      "source": "https://unsplash.com/photos/a-beautiful-young-woman-leaning-against-a-glass-wall-I7dGp6--Gro",
+      "credit": "Venrick Azcueta",
+      "download": "https://images.unsplash.com/photo-1631680900243-3c207cf5a481",
+      "description": "a beautiful young woman leaning against a glass wall"
+    },
+    {
+      "id": "unsplash-UgVbUMQrmjY",
+      "file": "public/photos/portrait-20261018-110.jpg",
+      "source": "https://unsplash.com/photos/man-in-blue-crew-neck-shirt-wearing-gold-necklace-UgVbUMQrmjY",
+      "credit": "Yonas Bekele",
+      "download": "https://images.unsplash.com/photo-1601576084861-5de423553c0f",
+      "description": "man in blue crew neck shirt wearing gold necklace"
+    },
+    {
+      "id": "unsplash-WjUy3NY95yU",
+      "file": "public/photos/portrait-20261018-111.jpg",
+      "source": "https://unsplash.com/photos/man-in-black-and-gray-striped-crew-neck-shirt-WjUy3NY95yU",
+      "credit": "Jordan Whitfield",
+      "download": "https://images.unsplash.com/photo-1615862915913-b93d20d742a3",
+      "description": "man in black and gray striped crew neck shirt"
+    },
+    {
+      "id": "unsplash-BOHyxqepP9Y",
+      "file": "public/photos/portrait-20261018-112.jpg",
+      "source": "https://unsplash.com/photos/woman-wearing-black-off-shoulder-top-with-left-hand-under-chin-during-daytime-BOHyxqepP9Y",
+      "credit": "Caique Nascimento",
+      "download": "https://images.unsplash.com/photo-1541216970279-affbfdd55aa8",
+      "description": "woman wearing black off-shoulder top with left hand under chin during daytime"
+    },
+    {
+      "id": "unsplash-l8LZPdcuUf4",
+      "file": "public/photos/portrait-20261018-113.jpg",
+      "source": "https://unsplash.com/photos/a-woman-with-blonde-hair-l8LZPdcuUf4",
+      "credit": "Brian Wangenheim",
+      "download": "https://images.unsplash.com/photo-1659481993364-4512775ed911",
+      "description": "a woman with blonde hair"
+    },
+    {
+      "id": "unsplash-FJj9JnT-scY",
+      "file": "public/photos/portrait-20261018-114.jpg",
+      "source": "https://unsplash.com/photos/young-woman-with-long-brown-hair-outdoors-FJj9JnT-scY",
+      "credit": "amin naderloei",
+      "download": "https://images.unsplash.com/photo-1760552069633-c05f246a5d8c",
+      "description": "Young woman with long brown hair outdoors"
+    },
+    {
+      "id": "unsplash-KDF7-23mAU8",
+      "file": "public/photos/portrait-20261018-115.jpg",
+      "source": "https://unsplash.com/photos/young-man-with-curly-hair-against-green-background-KDF7-23mAU8",
+      "credit": "Darion Dewhirst",
+      "download": "https://images.unsplash.com/photo-1762753674498-73ec49feafc4",
+      "description": "Young man with curly hair against green background"
+    },
+    {
+      "id": "unsplash-iP-UjKwJ6Xo",
+      "file": "public/photos/portrait-20261018-116.jpg",
+      "source": "https://unsplash.com/photos/a-man-with-short-hair-iP-UjKwJ6Xo",
+      "credit": "Subin Saji",
+      "download": "https://images.unsplash.com/photo-1656874576047-db8076ad06a1",
+      "description": "a man with short hair"
+    },
+    {
+      "id": "unsplash-xU3ik41gwXY",
+      "file": "public/photos/portrait-20261018-117.jpg",
+      "source": "https://unsplash.com/photos/a-man-in-a-black-jacket-is-posing-for-a-picture-xU3ik41gwXY",
+      "credit": "isaac macdonald",
+      "download": "https://images.unsplash.com/photo-1674851993235-f730432c37f8",
+      "description": "a man in a black jacket is posing for a picture"
+    },
+    {
+      "id": "unsplash-jBTMrR6Q334",
+      "file": "public/photos/portrait-20261018-118.jpg",
+      "source": "https://unsplash.com/photos/man-in-white-collared-top-jBTMrR6Q334",
+      "credit": "Viktor Forgacs",
+      "download": "https://images.unsplash.com/photo-1568585105565-e372998a195d",
+      "description": "man in white collared top"
+    },
+    {
+      "id": "unsplash--EKIQx3h8Eg",
+      "file": "public/photos/portrait-20261018-119.jpg",
+      "source": "https://unsplash.com/photos/a-person-smiling-while-holding-a-phone--EKIQx3h8Eg",
+      "credit": "Lance Reis",
+      "download": "https://images.unsplash.com/photo-1656074166642-c1c22b309d9a",
+      "description": "a person smiling while holding a phone"
+    },
+    {
+      "id": "unsplash-sW7Ku-65Tn0",
+      "file": "public/photos/portrait-20261018-120.jpg",
+      "source": "https://unsplash.com/photos/a-man-with-glasses-sitting-in-front-of-a-wall-sW7Ku-65Tn0",
+      "credit": "Larry George II",
+      "download": "https://images.unsplash.com/photo-1642736468880-b6adf66bdd50",
+      "description": "a man with glasses sitting in front of a wall"
+    },
+    {
+      "id": "unsplash-g4ZDmStBmp0",
+      "file": "public/photos/portrait-20261018-121.jpg",
+      "source": "https://unsplash.com/photos/a-woman-in-an-orange-tank-top-posing-for-a-picture-g4ZDmStBmp0",
+      "credit": "Danielle Bailey",
+      "download": "https://images.unsplash.com/photo-1695141306893-8c373e40458e",
+      "description": "a woman in an orange tank top posing for a picture"
+    },
+    {
+      "id": "unsplash-Xaen-acsLLo",
+      "file": "public/photos/portrait-20261018-122.jpg",
+      "source": "https://unsplash.com/photos/man-standing-near-window-Xaen-acsLLo",
+      "credit": "DISRUPTIVO",
+      "download": "https://images.unsplash.com/photo-1556557286-bf3be5fd9d06",
+      "description": "man standing near window"
+    },
+    {
+      "id": "unsplash-d0peGya6R5Y",
+      "file": "public/photos/portrait-20261018-123.jpg",
+      "source": "https://unsplash.com/photos/derek-fisher-d0peGya6R5Y",
+      "credit": "Pacha パチャ Shot’s",
+      "download": "https://images.unsplash.com/photo-1529111290557-82f6d5c6cf85",
+      "description": "Derek Fisher"
+    },
+    {
+      "id": "unsplash-3DI83MV0j5I",
+      "file": "public/photos/portrait-20261018-124.jpg",
+      "source": "https://unsplash.com/photos/a-woman-in-a-green-jacket-and-black-shirt-3DI83MV0j5I",
+      "credit": "Tom Morbey",
+      "download": "https://images.unsplash.com/photo-1676369134323-243e00148e54",
+      "description": "a woman in a green jacket and black shirt"
+    },
+    {
+      "id": "unsplash-0YyO9TlvJKo",
+      "file": "public/photos/portrait-20261018-125.jpg",
+      "source": "https://unsplash.com/photos/a-man-in-a-green-shirt-is-smiling-0YyO9TlvJKo",
+      "credit": "Andrew Kayani",
+      "download": "https://images.unsplash.com/photo-1638897212550-b0f4c5d8eb3d",
+      "description": "a man in a green shirt is smiling"
+    },
+    {
+      "id": "unsplash-Vqp0ILvB-CE",
+      "file": "public/photos/portrait-20261018-126.jpg",
+      "source": "https://unsplash.com/photos/a-man-with-glasses-looks-off-to-the-side-Vqp0ILvB-CE",
+      "credit": "Gabriel Ogulu",
+      "download": "https://images.unsplash.com/photo-1749700332373-2977df37f21b",
+      "description": "A man with glasses looks off to the side"
+    },
+    {
+      "id": "unsplash-odKCELymcG8",
+      "file": "public/photos/portrait-20261018-127.jpg",
+      "source": "https://unsplash.com/photos/a-man-in-glasses-looks-off-into-the-distance-odKCELymcG8",
+      "credit": "Le Thanh Son",
+      "download": "https://images.unsplash.com/photo-1746177517042-aebcf6a34e6f",
+      "description": "A man in glasses looks off into the distance"
+    },
+    {
+      "id": "unsplash-9JskNEtOh-k",
+      "file": "public/photos/portrait-20261018-128.jpg",
+      "source": "https://unsplash.com/photos/a-man-standing-in-front-of-a-tree-9JskNEtOh-k",
+      "credit": "Nima Mot",
+      "download": "https://images.unsplash.com/photo-1631889379037-aa42d88b4871",
+      "description": "a man standing in front of a tree"
+    },
+    {
+      "id": "unsplash-CrZT7ZYdWc4",
+      "file": "public/photos/portrait-20261018-129.jpg",
+      "source": "https://unsplash.com/photos/man-in-black-hat-and-eyeglasses-CrZT7ZYdWc4",
+      "credit": "Brivel Bariki",
+      "download": "https://images.unsplash.com/photo-1614807536394-cd67bd4a634b",
+      "description": "man in black hat and eyeglasses"
+    },
+    {
+      "id": "unsplash-LDQaXF8Kv_4",
+      "file": "public/photos/portrait-20261018-130.jpg",
+      "source": "https://unsplash.com/photos/woman-in-black-vest-and-white-knit-cap-LDQaXF8Kv_4",
+      "credit": "Judith Ejike",
+      "download": "https://images.unsplash.com/photo-1627393100177-b4297e79a5be",
+      "description": "woman in black vest and white knit cap"
+    },
+    {
+      "id": "unsplash-Bg3JaBhnrg4",
+      "file": "public/photos/portrait-20261018-131.jpg",
+      "source": "https://unsplash.com/photos/woman-in-gray-crew-neck-shirt-Bg3JaBhnrg4",
+      "credit": "Andre Styles",
+      "download": "https://images.unsplash.com/photo-1609371497456-3a55a205d5eb",
+      "description": "woman in gray crew neck shirt"
+    },
+    {
+      "id": "unsplash-GsLxMF4CVJg",
+      "file": "public/photos/portrait-20261018-132.jpg",
+      "source": "https://unsplash.com/photos/man-in-white-crew-neck-t-shirt-GsLxMF4CVJg",
+      "credit": "Tau Mor",
+      "download": "https://images.unsplash.com/photo-1610903866883-c280999dcc0e",
+      "description": "man in white crew neck t-shirt"
+    },
+    {
+      "id": "unsplash-JDjLPmKDgsc",
+      "file": "public/photos/portrait-20261018-133.jpg",
+      "source": "https://unsplash.com/photos/a-woman-with-braids-is-posing-for-a-picture-JDjLPmKDgsc",
+      "credit": "Stephen Tettey Atsu",
+      "download": "https://images.unsplash.com/photo-1714617006524-13c7bf829893",
+      "description": "a woman with braids is posing for a picture"
+    },
+    {
+      "id": "unsplash-BZMP16miqno",
+      "file": "public/photos/portrait-20261018-134.jpg",
+      "source": "https://unsplash.com/photos/a-woman-laughing-with-her-hand-on-her-chin-BZMP16miqno",
+      "credit": "Brooke Balentine",
+      "download": "https://images.unsplash.com/photo-1759021997692-873600eb0ee0",
+      "description": "A woman laughing with her hand on her chin"
+    },
+    {
+      "id": "unsplash-f5NLcpxRTCY",
+      "file": "public/photos/portrait-20261018-135.jpg",
+      "source": "https://unsplash.com/photos/a-close-up-of-a-person-with-an-afro-f5NLcpxRTCY",
+      "credit": "Freddy Rezvanian",
+      "download": "https://images.unsplash.com/photo-1714666990471-0b1cb70c0824",
+      "description": "a close up of a person with an afro"
+    },
+    {
+      "id": "unsplash-ww8oiL97KU4",
+      "file": "public/photos/portrait-20261018-136.jpg",
+      "source": "https://unsplash.com/photos/man-in-blue-dress-shirt-and-pants-near-green-leafed-plants-ww8oiL97KU4",
+      "credit": "Rio Watkins",
+      "download": "https://images.unsplash.com/photo-1532799643465-f7e1abab11e7",
+      "description": "man in blue dress shirt and pants near green leafed plants"
+    },
+    {
+      "id": "unsplash-vcsHbKe3yjg",
+      "file": "public/photos/portrait-20261018-137.jpg",
+      "source": "https://unsplash.com/photos/man-wearing-glasses-and-leather-jacket-vcsHbKe3yjg",
+      "credit": "Karsten Winegeart",
+      "download": "https://images.unsplash.com/photo-1761882265757-c848f377c87d",
+      "description": "Man wearing glasses and leather jacket"
+    },
+    {
+      "id": "unsplash-eMdZZDMlOjw",
+      "file": "public/photos/portrait-20261018-138.jpg",
+      "source": "https://unsplash.com/photos/man-with-blond-hair-and-tattoos-touches-his-head-eMdZZDMlOjw",
+      "credit": "Karsten Winegeart",
+      "download": "https://images.unsplash.com/photo-1761706726713-8a962d30a622",
+      "description": "Man with blond hair and tattoos touches his head"
+    },
+    {
+      "id": "unsplash-VkdH0Eemwqs",
+      "file": "public/photos/portrait-20261018-139.jpg",
+      "source": "https://unsplash.com/photos/smiling-man-in-white-shirt-with-arms-crossed-VkdH0Eemwqs",
+      "credit": "Diego Suarez",
+      "download": "https://images.unsplash.com/photo-1771898343647-bd979ad8cca5",
+      "description": "Smiling man in white shirt with arms crossed"
+    },
+    {
+      "id": "unsplash-Ppua0I4VjqE",
+      "file": "public/photos/portrait-20261018-140.jpg",
+      "source": "https://unsplash.com/photos/a-man-in-a-black-tank-top-posing-for-a-picture-Ppua0I4VjqE",
+      "credit": "Samuel Girven",
+      "download": "https://images.unsplash.com/photo-1704223523169-52feeed90365",
+      "description": "a man in a black tank top posing for a picture"
+    },
+    {
+      "id": "unsplash-kj_tU5-qcz4",
+      "file": "public/photos/portrait-20261018-141.jpg",
+      "source": "https://unsplash.com/photos/a-man-sitting-at-a-table-with-a-laptop-kj_tU5-qcz4",
+      "credit": "Paolo Resteghini",
+      "download": "https://images.unsplash.com/photo-1723538201695-2427f49cdcde",
+      "description": "A man sitting at a table with a laptop"
+    },
+    {
+      "id": "unsplash-9QDpFd0j5o0",
+      "file": "public/photos/portrait-20261018-142.jpg",
+      "source": "https://unsplash.com/photos/gray-scale-of-mans-face-9QDpFd0j5o0",
+      "credit": "Nicolas Ladino Silva",
+      "download": "https://images.unsplash.com/photo-1542570106-c3d4aeb5c19c",
+      "description": "gray scale of man's face"
+    },
+    {
+      "id": "unsplash-sPq35RDZSkU",
+      "file": "public/photos/portrait-20261018-143.jpg",
+      "source": "https://unsplash.com/photos/a-close-up-of-a-person-wearing-a-necklace-sPq35RDZSkU",
+      "credit": "Jacob Mitani",
+      "download": "https://images.unsplash.com/photo-1721410875030-0b1668364b7d",
+      "description": "A close up of a person wearing a necklace"
+    },
+    {
+      "id": "unsplash-utnV22onlgA",
+      "file": "public/photos/portrait-20261018-144.jpg",
+      "source": "https://unsplash.com/photos/woman-in-black-turtleneck-shirt-utnV22onlgA",
+      "credit": "Meg Wagener",
+      "download": "https://images.unsplash.com/photo-1604874156629-5c6c3b3bded7",
+      "description": "woman in black turtleneck shirt"
+    },
+    {
+      "id": "unsplash-qwg6upFzsNg",
+      "file": "public/photos/portrait-20261018-145.jpg",
+      "source": "https://unsplash.com/photos/a-man-in-a-green-shirt-qwg6upFzsNg",
+      "credit": "Fayaz Ahmed Sunny",
+      "download": "https://images.unsplash.com/photo-1669175760313-9ba259ee456c",
+      "description": "a man in a green shirt"
+    },
+    {
+      "id": "unsplash-p_VF71muhRs",
+      "file": "public/photos/portrait-20261018-146.jpg",
+      "source": "https://unsplash.com/photos/man-wearing-lack-turtle-neck-long-sleeved-shirt-inside-well-lit-room-p_VF71muhRs",
+      "credit": "Rodney Gainous Jr.",
+      "download": "https://images.unsplash.com/photo-1561515075-551b90143acb",
+      "description": "man wearing lack turtle-neck long-sleeved shirt inside well lit room"
+    },
+    {
+      "id": "unsplash-_dFg4fx3MmQ",
+      "file": "public/photos/portrait-20261018-147.jpg",
+      "source": "https://unsplash.com/photos/a-man-sitting-at-a-table-with-a-camera-_dFg4fx3MmQ",
+      "credit": "Christopher Luther",
+      "download": "https://images.unsplash.com/photo-1719257751404-1dea075324bd",
+      "description": "A man sitting at a table with a camera"
+    },
+    {
+      "id": "unsplash-89HpG8WXS0M",
+      "file": "public/photos/portrait-20261018-148.jpg",
+      "source": "https://unsplash.com/photos/grayscale-photo-of-man-in-flannel-shirt-89HpG8WXS0M",
+      "credit": "Ryan Kwok",
+      "download": "https://images.unsplash.com/photo-1558531304-a4773b7e3a9c",
+      "description": "grayscale photo of man in flannel shirt"
+    },
+    {
+      "id": "unsplash-H2hTVptgLOM",
+      "file": "public/photos/portrait-20261018-149.jpg",
+      "source": "https://unsplash.com/photos/a-man-with-a-beard-smiles-at-the-camera-H2hTVptgLOM",
+      "credit": "Gabriel Ogulu",
+      "download": "https://images.unsplash.com/photo-1748572593891-049121e2e1ee",
+      "description": "A man with a beard smiles at the camera"
+    },
+    {
+      "id": "unsplash-5fsxDtC3QGo",
+      "file": "public/photos/portrait-20261018-150.jpg",
+      "source": "https://unsplash.com/photos/a-woman-wearing-a-red-tank-top-and-a-necklace-5fsxDtC3QGo",
+      "credit": "Danielle Bailey",
+      "download": "https://images.unsplash.com/photo-1695141306829-99b0b4c38a2b",
+      "description": "a woman wearing a red tank top and a necklace"
+    }
+  ],
+  "ai": [
+    {
+      "id": "ai-portrait-20261018-001",
+      "file": "public/ai images/portrait-20261018-001.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-N9HrmdEH_js",
+        "source": "https://unsplash.com/photos/woman-with-glasses-wearing-a-white-shirt-N9HrmdEH_js",
+        "credit": "Vitaly Gariev"
+      },
+      "prompt": "Use case: photorealistic-natural. Create ONE new distinct AI portrait using the attached reviewed real photograph only as a composition and ordinary photographic-lighting reference. Keep its landscape upper-body framing, eye-level camera perspective, plain gray wall, simple window illumination and relaxed expression type. Change the person clearly: an adult woman around 44, olive complexion, shorter broad face, slightly uneven brows, rounder nose, dark brown shoulder-length softly wavy hair, small round thin metal glasses, everyday faded blue cotton shirt. A normal unretouched photograph taken at conversational distance, shoulders physically relaxed, eyes looking at the lens with a quiet neutral expression. Preserve credible face structure and scene-wide light. Do not recreate the reference identity. No beauty filter, model-template face, glossy fixed eyes, sculpted cheek shading, makeup-campaign finish, cinematic split lighting, HDR, fake pores/grain, text, borders, logos or watermark. One image only; no collage.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-002",
+      "file": "public/ai images/portrait-20261018-002.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-_JAAQZ2wt5I",
+        "source": "https://unsplash.com/photos/a-woman-in-a-pink-shirt-posing-for-a-picture-_JAAQZ2wt5I",
+        "credit": "Dynamic Wang"
+      },
+      "prompt": "Use case: photorealistic-natural. Create ONE distinct new AI portrait from the attached real photograph as a composition and photographic-lighting reference. Change the identity clearly: an adult woman around 33 with a broader nose, warm medium-brown complexion, dark chin-length slightly untidy bob without bangs, an ordinary forest-green cotton T-shirt, and an open uneven smile; preserve the relaxed upper-body stance and plain pale wall. Keep ordinary window/daylight direction and credible facial anatomy, eye alignment and natural supported pose. An everyday unretouched DSLR or phone photograph, subtle individuality, coherent face and background illumination. Do not copy the original person's identity. No beauty filter, polished model-template face, glossy fixed eyes, studio beauty sculpting, cinematic warm/cool split, HDR, fake grain/pores, text, border or watermark. One separate image, no collage.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-003",
+      "file": "public/ai images/portrait-20261018-003.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-YSq9L7AWP5o",
+        "source": "https://unsplash.com/photos/woman-in-black-and-red-floral-button-up-shirt-YSq9L7AWP5o",
+        "credit": "IDMH"
+      },
+      "prompt": "Use case: photorealistic-natural. Create ONE distinct new AI portrait from the attached real photograph as a composition and photographic-lighting reference. Change the identity clearly: an adult woman around 48 with deep brown complexion, short loose salt-and-pepper curls, a broad oval face, everyday muted blue button-up cotton shirt, and a small asymmetrical smile without showing teeth; preserve the upper-body composition and plain gray background. Keep ordinary window/daylight direction and credible facial anatomy, eye alignment and natural supported pose. An everyday unretouched DSLR or phone photograph, subtle individuality, coherent face and background illumination. Do not copy the original person's identity. No beauty filter, polished model-template face, glossy fixed eyes, studio beauty sculpting, cinematic warm/cool split, HDR, fake grain/pores, text, border or watermark. One separate image, no collage.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-004",
+      "file": "public/ai images/portrait-20261018-004.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-REcX8fwYz24",
+        "source": "https://unsplash.com/photos/a-woman-with-long-hair-and-a-black-top-REcX8fwYz24",
+        "credit": "Dynamic Wang"
+      },
+      "prompt": "Use case: photorealistic-natural. Create ONE distinct new AI portrait from the attached real photograph as a composition and photographic-lighting reference. Change the identity clearly: an adult woman around 29 with dark brown complexion, short natural coiled hair, a wider jaw and gently rounded nose, ordinary gray crew-neck top, and a neutral attentive expression; preserve the modest head tilt, close upper-body crop, plain light wall and camera position. Keep ordinary window/daylight direction and credible facial anatomy, eye alignment and natural supported pose. An everyday unretouched DSLR or phone photograph, subtle individuality, coherent face and background illumination. Do not copy the original person's identity. No beauty filter, polished model-template face, glossy fixed eyes, studio beauty sculpting, cinematic warm/cool split, HDR, fake grain/pores, text, border or watermark. One separate image, no collage.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-005",
+      "file": "public/ai images/portrait-20261018-005.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-QoXMdJcHYSw",
+        "source": "https://unsplash.com/photos/a-smiling-man-with-arms-crossed-QoXMdJcHYSw",
+        "credit": "Beatriz Cattel"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult man around 41, with light brown skin, a wider face, a slightly crooked nose and medium-length dark hair, wearing an everyday cream linen shirt. Vary the facial structure substantially from the reference identity. Preserve the reference’s uncomplicated physical pose and expression type, with subtle asymmetry; do not standardize everyone to the same posed smile. Keep ordinary natural camera colors, restrained saturation and scene-wide white balance. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-006",
+      "file": "public/ai images/portrait-20261018-006.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-UzaE-ZAs-Ko",
+        "source": "https://unsplash.com/photos/a-woman-wearing-glasses-and-a-black-shirt-UzaE-ZAs-Ko",
+        "credit": "HamZa NOUASRIA"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult woman around 63, with fair complexion, a square face, faint smile lines and short softly wavy gray hair, wearing an muted burgundy sweater. Vary the facial structure substantially from the reference identity. Preserve the reference’s uncomplicated physical pose and expression type, with subtle asymmetry; do not standardize everyone to the same posed smile. Keep ordinary natural camera colors, restrained saturation and scene-wide white balance. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-007",
+      "file": "public/ai images/portrait-20261018-007.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-fE_8Zs38bR0",
+        "source": "https://unsplash.com/photos/smiling-woman-fE_8Zs38bR0",
+        "credit": "Katy Ward"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult woman around 36, with medium complexion, rounded cheeks, thin gently uneven brows and dark chin-length hair with a side part, wearing an plain blue-gray cotton top. Vary the facial structure substantially from the reference identity. Preserve the reference’s uncomplicated physical pose and expression type, with subtle asymmetry; do not standardize everyone to the same posed smile. Keep ordinary natural camera colors, restrained saturation and scene-wide white balance. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-008",
+      "file": "public/ai images/portrait-20261018-008.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-1axSISqHG9s",
+        "source": "https://unsplash.com/photos/a-person-with-white-hair-1axSISqHG9s",
+        "credit": "Urban Gyllström"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult woman around 52, with warm brown skin, a wide oval face, a broad nose, and dark shoulder-length loose curls, wearing an simple muted olive shirt. Vary the facial structure substantially from the reference identity. Preserve the reference’s uncomplicated physical pose and expression type, with subtle asymmetry; do not standardize everyone to the same posed smile. Keep ordinary natural camera colors, restrained saturation and scene-wide white balance. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-009",
+      "file": "public/ai images/portrait-20261018-009.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-UGjuYZegs88",
+        "source": "https://unsplash.com/photos/a-woman-wearing-glasses-and-a-black-top-UGjuYZegs88",
+        "credit": "Good Faces"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult woman around 26, with pale lightly sun-reddened skin, a long narrow face, a blunt nose and short straight dark-blond hair, wearing an unbranded charcoal casual top. Vary the facial structure substantially from the reference identity. Preserve the reference’s uncomplicated physical pose and expression type, with subtle asymmetry; do not standardize everyone to the same posed smile. Keep ordinary natural camera colors, restrained saturation and scene-wide white balance. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-010",
+      "file": "public/ai images/portrait-20261018-010.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-dKAUJ4uDArM",
+        "source": "https://unsplash.com/photos/a-man-wearing-glasses-dKAUJ4uDArM",
+        "credit": "Dima Solomin"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult man around 44, with light brown skin, a wider face, a slightly crooked nose and medium-length dark hair, wearing an faded rust cotton shirt. Vary the facial structure substantially from the reference identity. Preserve the reference’s uncomplicated physical pose and expression type, with subtle asymmetry; do not standardize everyone to the same posed smile. Keep ordinary natural camera colors, restrained saturation and scene-wide white balance. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-011",
+      "file": "public/ai images/portrait-20261018-011.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-wMSfkVs-05g",
+        "source": "https://unsplash.com/photos/a-woman-with-her-hands-on-her-head-wMSfkVs-05g",
+        "credit": "Amir Abbaspoor"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult woman around 68, with olive complexion, an angular long face, dark eyes and straight black hair loosely tied back, wearing an plain sage-green casual top. Vary the facial structure substantially from the reference identity. Keep the elbows physically supported and relaxed hands beside the head. Use a restrained consumer-print color look, modestly softened contrast without tinting the skin unnaturally. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-012",
+      "file": "public/ai images/portrait-20261018-012.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-uaRFLJ1okfI",
+        "source": "https://unsplash.com/photos/young-black-woman-in-white-top-with-arms-crossed-uaRFLJ1okfI",
+        "credit": "McFollis"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult woman around 31, with light brown complexion, a broad jaw, a gently crooked nose and medium-length dark waves, wearing an soft gray cotton knit. Vary the facial structure substantially from the reference identity. Keep both forearms supported on the table and the same uncomplicated crossed-arm contact. Keep ordinary natural camera colors, restrained saturation and scene-wide white balance. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-013",
+      "file": "public/ai images/portrait-20261018-013.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-cCsT_1hMu7U",
+        "source": "https://unsplash.com/photos/a-man-with-a-bald-head-and-a-goatee-cCsT_1hMu7U",
+        "credit": "TopSphere Media"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult man around 32, with olive complexion, a broad jaw, a rounded nose and untidy dark hair with light stubble, wearing an unbranded navy cotton shirt. Vary the facial structure substantially from the reference identity. Preserve the reference’s uncomplicated physical pose and expression type, with subtle asymmetry; do not standardize everyone to the same posed smile. Preserve balanced black-and-white photography with open midtones; no added scratches or fake film border. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-014",
+      "file": "public/ai images/portrait-20261018-014.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-M3kSpOY6A6g",
+        "source": "https://unsplash.com/photos/a-person-wearing-a-black-jacket-M3kSpOY6A6g",
+        "credit": "Redicul Pict"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult man around 47, with deep brown complexion, an angular face and very short salt-and-pepper hair, wearing an everyday cream linen shirt. Vary the facial structure substantially from the reference identity. Preserve the reference’s uncomplicated physical pose and expression type, with subtle asymmetry; do not standardize everyone to the same posed smile. Keep ordinary natural camera colors, restrained saturation and scene-wide white balance. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-015",
+      "file": "public/ai images/portrait-20261018-015.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-hmJFNYX4dK4",
+        "source": "https://unsplash.com/photos/woman-in-black-and-white-floral-shirt-smiling-hmJFNYX4dK4",
+        "credit": "Design Hills"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult woman around 58, with warm brown skin, a wide oval face, a broad nose, and dark shoulder-length loose curls, wearing an muted burgundy sweater. Vary the facial structure substantially from the reference identity. Preserve the reference’s uncomplicated physical pose and expression type, with subtle asymmetry; do not standardize everyone to the same posed smile. Preserve balanced black-and-white photography with open midtones; no added scratches or fake film border. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-016",
+      "file": "public/ai images/portrait-20261018-016.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-ctc26srDL3Y",
+        "source": "https://unsplash.com/photos/a-person-with-the-arms-crossed-ctc26srDL3Y",
+        "credit": "Amirhossein Soltani"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult woman around 28, with pale lightly sun-reddened skin, a long narrow face, a blunt nose and short straight dark-blond hair, wearing an plain blue-gray cotton top. Vary the facial structure substantially from the reference identity. Preserve the reference’s uncomplicated physical pose and expression type, with subtle asymmetry; do not standardize everyone to the same posed smile. Keep ordinary natural camera colors, restrained saturation and scene-wide white balance. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-017",
+      "file": "public/ai images/portrait-20261018-017.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-UZoZ4UHGz6s",
+        "source": "https://unsplash.com/photos/a-black-and-white-photo-of-a-woman-wearing-glasses-UZoZ4UHGz6s",
+        "credit": "Pedro Miguel Aires"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult woman around 41, with deep brown skin, a round face, a softly broad nose and short natural coiled hair, wearing an simple muted olive shirt. Vary the facial structure substantially from the reference identity. Preserve the reference’s uncomplicated physical pose and expression type, with subtle asymmetry; do not standardize everyone to the same posed smile. Preserve balanced black-and-white photography with open midtones; no added scratches or fake film border. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-018",
+      "file": "public/ai images/portrait-20261018-018.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-40-oJFZq-aU",
+        "source": "https://unsplash.com/photos/a-man-with-his-hand-on-his-chin-40-oJFZq-aU",
+        "credit": "Amirhossein Soltani"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult woman around 63, with olive complexion, an angular long face, dark eyes and straight black hair loosely tied back, wearing an unbranded charcoal casual top. Vary the facial structure substantially from the reference identity. Keep the hand and chin naturally supported, with fingers and wrist anatomically clear. Keep ordinary natural camera colors, restrained saturation and scene-wide white balance. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-019",
+      "file": "public/ai images/portrait-20261018-019.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-8HYnWP4MRGQ",
+        "source": "https://unsplash.com/photos/young-man-in-white-t-shirt-against-a-bamboo-wall-8HYnWP4MRGQ",
+        "credit": "Cord Allman"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult man around 36, with deep brown complexion, an angular face and very short salt-and-pepper hair, wearing an faded rust cotton shirt. Vary the facial structure substantially from the reference identity. Preserve the reference’s uncomplicated physical pose and expression type, with subtle asymmetry; do not standardize everyone to the same posed smile. Keep ordinary natural camera colors, restrained saturation and scene-wide white balance. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-020",
+      "file": "public/ai images/portrait-20261018-020.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-4inPokO5kGM",
+        "source": "https://unsplash.com/photos/a-black-and-white-photo-of-a-woman-with-long-hair-4inPokO5kGM",
+        "credit": "Pablo Arenas"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult woman around 52, with fair complexion, a square face, faint smile lines and short softly wavy gray hair, wearing an plain sage-green casual top. Vary the facial structure substantially from the reference identity. Preserve the reference’s uncomplicated physical pose and expression type, with subtle asymmetry; do not standardize everyone to the same posed smile. Preserve balanced black-and-white photography with open midtones; no added scratches or fake film border. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-021",
+      "file": "public/ai images/portrait-20261018-021.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-lw-BiIFMcUQ",
+        "source": "https://unsplash.com/photos/woman-in-blue-and-yellow-crew-neck-shirt-lw-BiIFMcUQ",
+        "credit": "Yusron El Jihan"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult man around 26, with medium-brown skin, rounded cheeks, a broad nose and short cropped curly hair, wearing an soft gray cotton knit. Vary the facial structure substantially from the reference identity. Preserve the reference’s uncomplicated physical pose and expression type, with subtle asymmetry; do not standardize everyone to the same posed smile. Keep ordinary natural camera colors, restrained saturation and scene-wide white balance. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-022",
+      "file": "public/ai images/portrait-20261018-022.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-Y66b4Ig058o",
+        "source": "https://unsplash.com/photos/a-man-wearing-headphones-Y66b4Ig058o",
+        "credit": "I'M ZION"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult man around 44, with fair complexion, a longer face, prominent ears and slightly receding dark-blond hair, wearing an unbranded navy cotton shirt. Vary the facial structure substantially from the reference identity. Preserve an ordinary pair of headphones but change their design; keep the seated side-view camera perspective. Use a restrained consumer-print color look, modestly softened contrast without tinting the skin unnaturally. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-023",
+      "file": "public/ai images/portrait-20261018-023.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-2mWKL_I70qk",
+        "source": "https://unsplash.com/photos/man-in-white-dress-shirt-2mWKL_I70qk",
+        "credit": "Chalo Garcia"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult man around 68, with olive complexion, a broad jaw, a rounded nose and untidy dark hair with light stubble, wearing an everyday cream linen shirt. Vary the facial structure substantially from the reference identity. Preserve the reference’s uncomplicated physical pose and expression type, with subtle asymmetry; do not standardize everyone to the same posed smile. Keep ordinary natural camera colors, restrained saturation and scene-wide white balance. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-024",
+      "file": "public/ai images/portrait-20261018-024.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-1KBzdJF6uVU",
+        "source": "https://unsplash.com/photos/man-in-black-crew-neck-shirt-wearing-black-framed-eyeglasses-1KBzdJF6uVU",
+        "credit": "Usman Yousaf"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult man around 31, with deep brown complexion, an angular face and very short salt-and-pepper hair, wearing an muted burgundy sweater. Vary the facial structure substantially from the reference identity. Preserve the reference’s uncomplicated physical pose and expression type, with subtle asymmetry; do not standardize everyone to the same posed smile. Preserve balanced black-and-white photography with open midtones; no added scratches or fake film border. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-025",
+      "file": "public/ai images/portrait-20261018-025.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-N-H7J2WiE08",
+        "source": "https://unsplash.com/photos/black-and-white-portrait-of-a-man-outdoors-N-H7J2WiE08",
+        "credit": "Sibel Kusdemir"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult man around 32, with light brown skin, a wider face, a slightly crooked nose and medium-length dark hair, wearing an plain blue-gray cotton top. Vary the facial structure substantially from the reference identity. Preserve the reference’s uncomplicated physical pose and expression type, with subtle asymmetry; do not standardize everyone to the same posed smile. Preserve balanced black-and-white photography with open midtones; no added scratches or fake film border. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-026",
+      "file": "public/ai images/portrait-20261018-026.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-Dh36N-3PLyM",
+        "source": "https://unsplash.com/photos/young-man-in-knit-cardigan-Dh36N-3PLyM",
+        "credit": "Kai Carter"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult man around 47, with medium-brown skin, rounded cheeks, a broad nose and short cropped curly hair, wearing an simple muted olive shirt. Vary the facial structure substantially from the reference identity. Preserve the reference’s uncomplicated physical pose and expression type, with subtle asymmetry; do not standardize everyone to the same posed smile. Keep ordinary natural camera colors, restrained saturation and scene-wide white balance. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-027",
+      "file": "public/ai images/portrait-20261018-027.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-vDDU5jfMGQg",
+        "source": "https://unsplash.com/photos/man-in-white-dress-shirt-wearing-black-framed-eyeglasses-vDDU5jfMGQg",
+        "credit": "Usman Yousaf"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult man around 58, with fair complexion, a longer face, prominent ears and slightly receding dark-blond hair, wearing an unbranded charcoal casual top. Vary the facial structure substantially from the reference identity. Preserve the reference’s uncomplicated physical pose and expression type, with subtle asymmetry; do not standardize everyone to the same posed smile. Preserve balanced black-and-white photography with open midtones; no added scratches or fake film border. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-028",
+      "file": "public/ai images/portrait-20261018-028.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-2H81ZTVo-C4",
+        "source": "https://unsplash.com/photos/man-in-blue-dress-shirt-smiling-2H81ZTVo-C4",
+        "credit": "Usman Yousaf"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult man around 28, with olive complexion, a broad jaw, a rounded nose and untidy dark hair with light stubble, wearing an faded rust cotton shirt. Vary the facial structure substantially from the reference identity. Preserve the reference’s uncomplicated physical pose and expression type, with subtle asymmetry; do not standardize everyone to the same posed smile. Keep ordinary natural camera colors, restrained saturation and scene-wide white balance. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-029",
+      "file": "public/ai images/portrait-20261018-029.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-Ydc_6QLNhGs",
+        "source": "https://unsplash.com/photos/a-man-with-curly-hair-wearing-a-black-jacket-Ydc_6QLNhGs",
+        "credit": "Anastasia Brekerovska"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult man around 41, with deep brown complexion, an angular face and very short salt-and-pepper hair, wearing an plain sage-green casual top. Vary the facial structure substantially from the reference identity. Preserve the reference’s uncomplicated physical pose and expression type, with subtle asymmetry; do not standardize everyone to the same posed smile. Keep ordinary natural camera colors, restrained saturation and scene-wide white balance. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-030",
+      "file": "public/ai images/portrait-20261018-030.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-8Cbk_IGBoQU",
+        "source": "https://unsplash.com/photos/a-smiling-woman-in-a-white-shirt-and-black-outfit-8Cbk_IGBoQU",
+        "credit": "Joecalih"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult woman around 63, with pale lightly sun-reddened skin, a long narrow face, a blunt nose and short straight dark-blond hair, wearing an soft gray cotton knit. Vary the facial structure substantially from the reference identity. Preserve the reference’s uncomplicated physical pose and expression type, with subtle asymmetry; do not standardize everyone to the same posed smile. Keep ordinary natural camera colors, restrained saturation and scene-wide white balance. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-031",
+      "file": "public/ai images/portrait-20261018-031.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-QJEVpydulGs",
+        "source": "https://unsplash.com/photos/man-wearing-eyeglasses-and-blue-shirt-inside-coffee-shop-QJEVpydulGs",
+        "credit": "Darshan Patel"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult man around 36, with medium-brown skin, rounded cheeks, a broad nose and short cropped curly hair, wearing an unbranded navy cotton shirt. Vary the facial structure substantially from the reference identity. Preserve the reference’s uncomplicated physical pose and expression type, with subtle asymmetry; do not standardize everyone to the same posed smile. Keep ordinary natural camera colors, restrained saturation and scene-wide white balance. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-032",
+      "file": "public/ai images/portrait-20261018-032.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-oz2wj86hGxA",
+        "source": "https://unsplash.com/photos/a-man-in-a-blue-shirt-smiling-at-the-camera-oz2wj86hGxA",
+        "credit": "Greg Edwards"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult man around 52, with fair complexion, a longer face, prominent ears and slightly receding dark-blond hair, wearing an everyday cream linen shirt. Vary the facial structure substantially from the reference identity. Preserve the reference’s uncomplicated physical pose and expression type, with subtle asymmetry; do not standardize everyone to the same posed smile. Keep ordinary natural camera colors, restrained saturation and scene-wide white balance. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-033",
+      "file": "public/ai images/portrait-20261018-033.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-4lnzxFIgTmg",
+        "source": "https://unsplash.com/photos/man-standing-near-window-during-daytime-4lnzxFIgTmg",
+        "credit": "Ronny Sison"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult woman around 26, with light brown complexion, a broad jaw, a gently crooked nose and medium-length dark waves, wearing an muted burgundy sweater. Vary the facial structure substantially from the reference identity. Preserve the reference’s uncomplicated physical pose and expression type, with subtle asymmetry; do not standardize everyone to the same posed smile. Use a restrained consumer-print color look, modestly softened contrast without tinting the skin unnaturally. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-034",
+      "file": "public/ai images/portrait-20261018-034.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-4GL0-ynnIXc",
+        "source": "https://unsplash.com/photos/a-woman-with-red-wavy-hair-wearing-a-striped-shirt-4GL0-ynnIXc",
+        "credit": "Abu Saied"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult woman around 44, with fair complexion, a square face, faint smile lines and short softly wavy gray hair, wearing an plain blue-gray cotton top. Vary the facial structure substantially from the reference identity. Preserve the reference’s uncomplicated physical pose and expression type, with subtle asymmetry; do not standardize everyone to the same posed smile. Keep ordinary natural camera colors, restrained saturation and scene-wide white balance. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-035",
+      "file": "public/ai images/portrait-20261018-035.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-kXmKqYOGA4Y",
+        "source": "https://unsplash.com/photos/smiling-woman-sitting-on-black-chair-kXmKqYOGA4Y",
+        "credit": "Christina @ wocintechchat.com M"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult woman around 68, with medium complexion, rounded cheeks, thin gently uneven brows and dark chin-length hair with a side part, wearing an simple muted olive shirt. Vary the facial structure substantially from the reference identity. Preserve the reference’s uncomplicated physical pose and expression type, with subtle asymmetry; do not standardize everyone to the same posed smile. Keep ordinary natural camera colors, restrained saturation and scene-wide white balance. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-036",
+      "file": "public/ai images/portrait-20261018-036.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-ZAo0cKz_IKM",
+        "source": "https://unsplash.com/photos/a-person-with-a-grey-sweater-ZAo0cKz_IKM",
+        "credit": "Tony Luginsland"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult woman around 31, with warm brown skin, a wide oval face, a broad nose, and dark shoulder-length loose curls, wearing an unbranded charcoal casual top. Vary the facial structure substantially from the reference identity. Preserve the reference’s uncomplicated physical pose and expression type, with subtle asymmetry; do not standardize everyone to the same posed smile. Keep ordinary natural camera colors, restrained saturation and scene-wide white balance. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-037",
+      "file": "public/ai images/portrait-20261018-037.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-J1OScm_uHUQ",
+        "source": "https://unsplash.com/photos/women-holding-her-collar-standing-near-wall-J1OScm_uHUQ",
+        "credit": "Prince Akachi"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult woman around 32, with pale lightly sun-reddened skin, a long narrow face, a blunt nose and short straight dark-blond hair, wearing an faded rust cotton shirt. Vary the facial structure substantially from the reference identity. Preserve the reference’s uncomplicated physical pose and expression type, with subtle asymmetry; do not standardize everyone to the same posed smile. Keep ordinary natural camera colors, restrained saturation and scene-wide white balance. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-038",
+      "file": "public/ai images/portrait-20261018-038.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-f5xiGmFwXIU",
+        "source": "https://unsplash.com/photos/man-in-gray-crew-neck-shirt-f5xiGmFwXIU",
+        "credit": "Zoran Borojevic"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult man around 47, with olive complexion, a broad jaw, a rounded nose and untidy dark hair with light stubble, wearing an plain sage-green casual top. Vary the facial structure substantially from the reference identity. Preserve the reference’s uncomplicated physical pose and expression type, with subtle asymmetry; do not standardize everyone to the same posed smile. Keep ordinary natural camera colors, restrained saturation and scene-wide white balance. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-039",
+      "file": "public/ai images/portrait-20261018-039.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-ODrd-02Q6JI",
+        "source": "https://unsplash.com/photos/a-woman-in-a-blue-dress-ODrd-02Q6JI",
+        "credit": "Tony Luginsland"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult woman around 58, with olive complexion, an angular long face, dark eyes and straight black hair loosely tied back, wearing an soft gray cotton knit. Vary the facial structure substantially from the reference identity. Preserve the reference’s uncomplicated physical pose and expression type, with subtle asymmetry; do not standardize everyone to the same posed smile. Keep ordinary natural camera colors, restrained saturation and scene-wide white balance. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-040",
+      "file": "public/ai images/portrait-20261018-040.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-lQDwFkhSJrg",
+        "source": "https://unsplash.com/photos/woman-in-yellow-button-up-shirt-wearing-black-and-white-scarf-lQDwFkhSJrg",
+        "credit": "Tahiti Spears"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult woman around 28, with light brown complexion, a broad jaw, a gently crooked nose and medium-length dark waves, wearing an unbranded navy cotton shirt. Vary the facial structure substantially from the reference identity. Preserve the reference’s uncomplicated physical pose and expression type, with subtle asymmetry; do not standardize everyone to the same posed smile. Keep ordinary natural camera colors, restrained saturation and scene-wide white balance. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-041",
+      "file": "public/ai images/portrait-20261018-041.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-OswNOXPNU1k",
+        "source": "https://unsplash.com/photos/a-woman-in-a-red-shirt-and-black-jacket-OswNOXPNU1k",
+        "credit": "Tony Luginsland"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult woman around 41, with fair complexion, a square face, faint smile lines and short softly wavy gray hair, wearing an everyday cream linen shirt. Vary the facial structure substantially from the reference identity. Preserve the reference’s uncomplicated physical pose and expression type, with subtle asymmetry; do not standardize everyone to the same posed smile. Keep ordinary natural camera colors, restrained saturation and scene-wide white balance. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-042",
+      "file": "public/ai images/portrait-20261018-042.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-cdZcNIca4w0",
+        "source": "https://unsplash.com/photos/a-smiling-woman-poses-for-a-portrait-cdZcNIca4w0",
+        "credit": "Brooke Balentine"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult woman around 63, with medium complexion, rounded cheeks, thin gently uneven brows and dark chin-length hair with a side part, wearing an muted burgundy sweater. Vary the facial structure substantially from the reference identity. Preserve the reference’s uncomplicated physical pose and expression type, with subtle asymmetry; do not standardize everyone to the same posed smile. Keep ordinary natural camera colors, restrained saturation and scene-wide white balance. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-043",
+      "file": "public/ai images/portrait-20261018-043.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-_5_CBVCLBsY",
+        "source": "https://unsplash.com/photos/woman-in-gray-and-yellow-pussybow-top-_5_CBVCLBsY",
+        "credit": "Christina @ wocintechchat.com M"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult woman around 36, with warm brown skin, a wide oval face, a broad nose, and dark shoulder-length loose curls, wearing an plain blue-gray cotton top. Vary the facial structure substantially from the reference identity. Preserve the reference’s uncomplicated physical pose and expression type, with subtle asymmetry; do not standardize everyone to the same posed smile. Keep ordinary natural camera colors, restrained saturation and scene-wide white balance. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-044",
+      "file": "public/ai images/portrait-20261018-044.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash--dntKy_x8qo",
+        "source": "https://unsplash.com/photos/a-smiling-man-in-a-blue-collared-shirt--dntKy_x8qo",
+        "credit": "Abu Saied"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult man around 52, with deep brown complexion, an angular face and very short salt-and-pepper hair, wearing an simple muted olive shirt. Vary the facial structure substantially from the reference identity. Preserve the reference’s uncomplicated physical pose and expression type, with subtle asymmetry; do not standardize everyone to the same posed smile. Use a restrained consumer-print color look, modestly softened contrast without tinting the skin unnaturally. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-045",
+      "file": "public/ai images/portrait-20261018-045.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-BUlOJ2Ag_24",
+        "source": "https://unsplash.com/photos/a-woman-sitting-down-with-her-hand-on-her-chin-BUlOJ2Ag_24",
+        "credit": "Giorgio Trovato"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult woman around 26, with deep brown skin, a round face, a softly broad nose and short natural coiled hair, wearing an unbranded charcoal casual top. Vary the facial structure substantially from the reference identity. Keep the hand and chin naturally supported, with fingers and wrist anatomically clear. Keep ordinary natural camera colors, restrained saturation and scene-wide white balance. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-046",
+      "file": "public/ai images/portrait-20261018-046.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-2crxTr4jCkc",
+        "source": "https://unsplash.com/photos/woman-in-gray-jacket-2crxTr4jCkc",
+        "credit": "Connor Wilkins"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult woman around 44, with olive complexion, an angular long face, dark eyes and straight black hair loosely tied back, wearing an faded rust cotton shirt. Vary the facial structure substantially from the reference identity. Preserve the reference’s uncomplicated physical pose and expression type, with subtle asymmetry; do not standardize everyone to the same posed smile. Keep ordinary natural camera colors, restrained saturation and scene-wide white balance. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-047",
+      "file": "public/ai images/portrait-20261018-047.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-lFntEHwQvi4",
+        "source": "https://unsplash.com/photos/crossed-arm-woman-smiling-lFntEHwQvi4",
+        "credit": "Christina @ wocintechchat.com M"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult woman around 68, with light brown complexion, a broad jaw, a gently crooked nose and medium-length dark waves, wearing an plain sage-green casual top. Vary the facial structure substantially from the reference identity. Preserve the reference’s uncomplicated physical pose and expression type, with subtle asymmetry; do not standardize everyone to the same posed smile. Keep ordinary natural camera colors, restrained saturation and scene-wide white balance. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-048",
+      "file": "public/ai images/portrait-20261018-048.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-xSEFkIAopxA",
+        "source": "https://unsplash.com/photos/a-smiling-woman-poses-in-front-of-a-wall-xSEFkIAopxA",
+        "credit": "Brooke Balentine"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult woman around 31, with fair complexion, a square face, faint smile lines and short softly wavy gray hair, wearing an soft gray cotton knit. Vary the facial structure substantially from the reference identity. Preserve the reference’s uncomplicated physical pose and expression type, with subtle asymmetry; do not standardize everyone to the same posed smile. Keep ordinary natural camera colors, restrained saturation and scene-wide white balance. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-049",
+      "file": "public/ai images/portrait-20261018-049.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-eGbWStueZXU",
+        "source": "https://unsplash.com/photos/a-woman-with-white-hair-sitting-on-a-chair-eGbWStueZXU",
+        "credit": "Jennifer Kalenberg"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult woman around 32, with medium complexion, rounded cheeks, thin gently uneven brows and dark chin-length hair with a side part, wearing an unbranded navy cotton shirt. Vary the facial structure substantially from the reference identity. Keep the hand and chin naturally supported, with fingers and wrist anatomically clear. Keep ordinary natural camera colors, restrained saturation and scene-wide white balance. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    },
+    {
+      "id": "ai-portrait-20261018-050",
+      "file": "public/ai images/portrait-20261018-050.jpg",
+      "generator": "OpenAI ImageGen built-in tool",
+      "reference": {
+        "id": "unsplash-QuDxxWypu9U",
+        "source": "https://unsplash.com/photos/a-woman-wearing-glasses-and-a-black-shirt-QuDxxWypu9U",
+        "credit": "amirreza momennia"
+      },
+      "prompt": "Use case: photorealistic-natural. Make ONE new distinct AI portrait, never a collage. The attached reviewed real Unsplash photograph is only the composition, viewpoint and photographic-lighting reference. Preserve its framing, aspect ratio, camera height, ordinary setting or neutral background, light direction and plausible focus. Create a clearly DIFFERENT adult woman around 47, with warm brown skin, a wide oval face, a broad nose, and dark shoulder-length loose curls, wearing an everyday cream linen shirt. Vary the facial structure substantially from the reference identity. Preserve the reference’s uncomplicated physical pose and expression type, with subtle asymmetry; do not standardize everyone to the same posed smile. Keep ordinary natural camera colors, restrained saturation and scene-wide white balance. The result should feel like an ordinary unretouched DSLR or mobile photograph taken at a comfortable distance: a coherent person in the same light as the surroundings, natural gaze and eyelids, believable fabric and supported posture. Remove readable logos or text from clothing. Avoid beauty-filter skin, symmetrical model-template features, fixed glossy eyes, sculpted cheek lighting, cinematic teal/orange separation, glamor styling, heavy HDR, artificial pores/grain, text, watermark and border. Judge the face itself as a real photographic moment, not a texture exercise. This will be honestly labeled AI in a guessing game.",
+      "review": "Reviewed at gameplay size and close up for facial structure, gaze, lighting, pose, and scene consistency."
+    }
+  ]
+}

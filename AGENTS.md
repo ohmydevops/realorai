@@ -25,7 +25,7 @@
 
 - Each language has a dedicated /play/ page; do not use #play routes.
 - Gameplay is a continuous feed of individual images, starting with a car and alternating Cars and Portrait. If one category has no unseen images, continue with the other. Do not impose rounds or fixed real/AI ratios.
-- Use only Cars and Portrait images in new games, with at most 150 active car images and 400 active portrait images. Cars should be the main subject. Portraits should show a clear face, preferably head-and-shoulders against a white or neutral background. Keep real and AI examples visually comparable within each category.
+- Use only Cars and Portrait images in new games, with at most 150 active car images and 600 active portrait images. Cars should be the main subject. Portraits should show a clear face, preferably head-and-shoulders against a white or neutral background. Keep real and AI examples visually comparable within each category.
 - Retired images may remain available for saved game reviews, but must not enter new gameplay or the current Sources collection. Preserve their permanent IDs, seen records, and completed history.
 - Export real and AI quiz images using the same size and compression policy: JPEG, at most 1000 pixels on the longest edge, and at most 140 KiB per file. Preserve aspect ratios and compare the file-size distributions to avoid loading-speed clues. Do not pad files or delay downloads artificially to make sizes match.
 - Never repeat answered images or silently reset progress to match categories. Save each answer immediately and show whether it was correct before the player moves to the next image.
@@ -36,7 +36,7 @@
 - Before creating, selecting, or reviewing portrait images, read the project skill at `skills/realistic-portraits/SKILL.md`. Always use a reviewed real photograph as the generation reference for a new AI portrait, preserving photographic composition while changing the person and details. Use plausible real-world places, natural supported poses, and consistent camera perspective.
 - Give faces and lighting a strict realism review before accepting people images. Avoid synthetic facial structure, fixed glossy eyes, a repeated posed smile, sculpted beauty lighting, and cinematic warm/cool separation. Adding pores, grain, or camera names does not fix an artificial-looking face; judge the face at gameplay size and close up, together with its surroundings.
 - Include occasional photographic effects such as black-and-white, restrained film looks, and subtle cinematic grading alongside ordinary color images. Before generating an effects batch, read `skills/realistic-portraits/references/photographic-effects.md`. Use a coherent look per image, preserve realistic faces and physical scenes, and distribute styles across real and AI images so effects do not reveal the answer.
-- Target 400 portraits (320 real + 80 AI) and at most 150 cars (120 real + 30 AI). Keep all existing restored images active while expanding; do not retire images solely to enforce the collection ratio. Do not show category or answer clues during play. Warn before revealing image sources.
+- Target 600 portraits (470 real + 130 AI) and at most 150 cars (120 real + 30 AI). Keep all existing restored images active while expanding; do not retire images solely to enforce the collection ratio. Do not show category or answer clues during play. Warn before revealing image sources.
 
 ## Development and delivery
 
