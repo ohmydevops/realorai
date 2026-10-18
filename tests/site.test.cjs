@@ -28,7 +28,7 @@ assert(
 );
 for (const [category, maximum] of [
   ['Cars', 150],
-  ['Portrait', 650],
+  ['Portrait', 850],
 ]) {
   const collection = activeImages.filter(
     (image) => image.category.en === category,
@@ -46,7 +46,7 @@ for (const [category, maximum] of [
 }
 for (const [category, real, ai] of [
   ['Cars', 120, 30],
-  ['Portrait', 470, 180],
+  ['Portrait', 620, 230],
 ]) {
   const collection = activeImages.filter(
     (image) => image.category.en === category,
