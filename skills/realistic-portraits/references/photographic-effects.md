@@ -1,111 +1,152 @@
 # Photographic effects and capture looks
 
-Use this reference before preparing an image batch that includes photographic effects. The user wants substantial stylistic variety, including black-and-white and occasional cinematic looks, while keeping faces, places, poses, and perspective believable. Effects describe an image's rendering; they do not establish camera provenance.
+Use this reference before making a portrait or car-image batch involving black-and-white, film-inspired color, flash, unusual light, or deliberate grading. It complements [Realistic portrait photography](../SKILL.md). It is **not** a substitute for that skill's facial identity, eye-region, expression, camera, and source-provenance checks.
 
-## Selection rules
+## Governing principle: photograph first, effects second
 
-- Choose one principal look per image. Add a compatible secondary treatment only when it has a clear purpose. This is a menu, not a requirement to combine every effect.
-- Retain plenty of ordinary color photographs. Do not make processed appearance a clue to the real/AI answer: vary styles across both labels and within matching subject categories.
-- Apply the same facial and physical consistency checks to stylized images. Grain, monochrome, crushed shadows, and blur must not conceal malformed anatomy or incoherent geometry.
-- Separate capture effects from post-processing. Long exposure, flash, panning, lens flare, and depth of field need a scene and camera situation that support them. Color grading alone does not create those conditions.
-- Keep treatments moderate unless a particular strong treatment is requested. Avoid making the entire collection glossy, cinematic, vintage, or desaturated.
-- For downloaded photographs, select an existing appropriate look or apply a restrained local photographic adjustment. Preserve source credit and real-photo provenance; do not generatively alter a real photograph while retaining its real label. Record material processing when needed.
-- Do not introduce random filters during gameplay. Save the chosen finished asset so each permanent image ID has a consistent appearance.
+Photographic realism is not the same as a low-contrast, grainy, faded, or poorly framed image. Real photographs can be pristine, sharp, softly lit, strongly lit, professionally retouched, or highly stylized. AI photographs can imitate a film preset while still having a synthetic face.
+
+Effects may help tell the photographic story, but they must **never** be used to hide unconvincing anatomy, repeating AI faces, incoherent illumination, or incorrect camera geometry.
+
+### Mandatory selection rules
+
+- Choose **one primary capture/rendering look** per image. Optionally add one subtle, compatible secondary treatment, rather than stacking presets.
+- Retain plenty of ordinary color images. Use monochrome, film-style, flash, contrast, and restrained cinematic treatments across **both real and AI subsets**; otherwise the style itself becomes a guessing-game clue.
+- Evaluate the **unadorned facial structure** and expression before deciding to add grain, softness, monochrome, diffusion, or grading. Do not approve a face simply because an effect makes defects less noticeable.
+- Distinguish effects of **capture** (camera viewpoint, exposure, focus, flash, shutter movement, optical flare) from **post-processing** (color response, print tones, contrast adjustments). Grading cannot invent a physically plausible capture setup.
+- Preserve relationships across face, hair, clothes, background, reflections, and shadows. The face must not be rendered with a different contrast, texture, color science, or sharpness from objects on the same focal plane.
+- For real photographs, select an existing look or apply only appropriate conventional photographic adjustments. Preserve credits and provenance; do not generatively change a real quiz photograph while keeping a real label. Log any material conventional adjustments where needed.
+- Do not apply randomized filters at game runtime. Save each asset's final selected version under its permanent image ID.
+- Do not make camera brand, film stock, lens model, or fictional metadata an authenticity claim.
+
+## Face-specific checks that no effect may bypass
+
+1. **Identity:** the face is a specific, anatomically consistent individual, not a standardized attractive facial template.
+2. **Eyes:** sockets, brows, eyelids, visible eyeballs, catchlights, gaze, and cheeks agree; darkness or monochrome does not excuse mismatched eye geometry.
+3. **Expression:** mouth, cheeks, eyes, brow, and jaw act together; a blurred or shadowed mouth does not excuse a frozen expression.
+4. **Age:** facial volume and tissue transitions make sense; grain and wrinkle-like texture do not create age anatomy.
+5. **Face–scene integration:** camera focus, lighting, shadows, exposure, color, and processing agree across the whole frame.
+6. **Batch variety:** different subjects have genuinely different facial construction, not one repeated face disguised by presets.
+
+If any of these fundamentally fails, **reject or make a targeted structural revision** before choosing effects. Do not stack blur, grain, sepia, or hard contrast to cover the failure.
 
 ## Monochrome and tonal treatments
 
-| Look                      | How to request or apply it                                           | Check before accepting                                                       |
-| ------------------------- | -------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| Neutral black-and-white   | Convert color into a balanced grayscale image with natural midtones  | Skin and nearby surfaces remain separated; no mandatory crushed blacks       |
-| Soft monochrome           | Gentle contrast with open shadows and smooth highlight transitions   | Face retains structure without looking airbrushed                            |
-| Contrast-rich monochrome  | Stronger tonal separation for street, architecture, or direct light  | Shadows follow real lighting and do not erase important anatomy              |
-| Documentary monochrome    | Ordinary reportage framing, restrained grayscale and modest texture  | A believable event rather than a stylized poster                             |
-| Warm monochrome           | Grayscale with a slight warm print tone                              | Keep subtle; avoid orange skin-like patches in an otherwise monochrome frame |
-| Cool monochrome           | Grayscale with a slight cool print tone                              | Maintain coherent toning throughout the image                                |
-| Sepia print               | Brown-toned monochrome for an intentionally old-print appearance     | Treat as an aesthetic, not proof of age or historical origin                 |
-| Selenium-like print tone  | Restrained cool-purple depth in darker tones                         | Avoid obvious purple colorization of faces                                   |
-| Matte black point         | Slightly lifted deepest tones with normal midtone detail             | Avoid a gray veil over the entire photograph                                 |
-| Deep black point          | Deeper shadows for a scene already containing strong contrast        | Keep useful detail and do not use darkness to hide errors                    |
-| Gentle highlight roll-off | Reduce harsh clipping with soft transitions in bright areas          | Do not recover invented detail from genuinely blank source pixels            |
-| High-key rendering        | Bright, light-toned scene with retained face and surface detail      | Needs suitable light surroundings; do not simply overexpose the face         |
-| Low-key rendering         | Dark scene with a readable subject illuminated by a plausible source | No unexplained beauty spotlight or disconnected background                   |
+| Look                      | How to request or apply it                                          | Check before accepting                                                   |
+| ------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| Neutral black-and-white   | Balanced grayscale with natural midtones                            | Face and surroundings remain separated; no mandatory crushed blacks      |
+| Soft monochrome           | Mild contrast and smooth but visible tonal transitions              | Skin and eyelid structure remain legible, not airbrushed                 |
+| Contrast-rich monochrome  | Stronger separation for compatible sunlight, flash, or street light | Shadows follow the source and do not obscure essential anatomy           |
+| Documentary monochrome    | Observed ordinary framing with restrained grayscale                 | Looks like a plausible captured event, not a cinematic poster            |
+| Warm monochrome           | Subtle warm print tone                                              | Toning is consistent, without patches that look like restored skin color |
+| Cool monochrome           | Subtle cool print tone                                              | Neutral surfaces and skin render coherently throughout the frame         |
+| Sepia print               | Intentionally brown-toned monochrome                                | An aesthetic, never proof of archival age or camera origin               |
+| Selenium-like tone        | Small cool-purple bias in darker print values                       | Avoid overt purple coloration of facial tissues                          |
+| Matte black point         | Slightly raised shadow floor with preserved midtones                | Do not cover the image in a uniform gray veil                            |
+| Deep black point          | Deeper shadows when the capture has strong contrast                 | Do not hide mismatched eyes, hands, or background geometry               |
+| Gentle highlight roll-off | Soft transition near bright values                                  | Do not invent recovered information inside fully clipped source areas    |
+| High-key photograph       | Naturally bright background and balanced subject light              | Retain face structure; avoid simply overexposing the skin                |
+| Low-key photograph        | Darker environment with a real motivated light source               | Face remains credible and independently visible enough for the game      |
 
 ## Color and film-inspired looks
 
-| Look                          | How to request or apply it                                                    | Check before accepting                                                               |
-| ----------------------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| Restrained natural color      | Ordinary camera color with moderate saturation                                | Baseline for much of the collection                                                  |
-| Muted documentary color       | Slightly reduced saturation and restrained contrast                           | Skin is still alive and varied rather than uniformly gray                            |
-| Warm daylight balance         | Modest warmth consistent with sun or the camera white balance                 | Do not add automatic orange skin or sunset light                                     |
-| Cool daylight balance         | Slightly cooler rendering suited to shade, clouds, or winter                  | Preserve credible complexion and environmental color                                 |
-| Faded consumer print          | Modest fading, slightly open blacks, gently softened color                    | Do not add fake damage or imply a real archival date                                 |
-| Consumer color negative       | Ordinary family-photo color and moderate contrast                             | Avoid theatrical perfection and excessive saturation                                 |
-| Fine-grain negative           | Subtle luminance texture with realistic tonal detail                          | Grain strength fits resolution; no visible repeating noise pattern                   |
-| Higher-speed film impression  | More noticeable but restrained grain in dimmer light                          | The capture situation supports the texture; skin is not sandpaper                    |
-| Slide-film contrast           | Crisp color separation and stronger contrast in suitable daylight             | Avoid clipping or neon foliage; not a default portrait treatment                     |
-| Instant-print palette         | Soft contrast, slightly shifted muted color, intimate framing                 | No required white border, fake handwriting, or artificial damage                     |
-| Warm highlights, cool shadows | Very mild split toning tied to existing light                                 | Do not recreate the rejected exaggerated warm/cool portrait look                     |
-| Cool highlights, warm shadows | Subtle alternative split tone for suitable scenes                             | Skin and neutral surfaces retain believable relationships                            |
-| Earth-toned palette           | Restrain highly saturated colors while retaining brown, olive, and stone hues | Do not recolor objects inconsistently or flatten skin variation                      |
-| Pastel rendering              | Soft color and moderate contrast in naturally light scenes                    | Avoid plastic surfaces or uniformly bleached skin                                    |
-| Restrained cinematic grade    | Modest scene-wide color shaping and controlled contrast                       | Keep photographic faces, ordinary lighting, no automatic teal/orange or glowing eyes |
-| Bleach-bypass impression      | Reduced saturation and stronger local tonal contrast                          | Use sparingly; preserve skin and shadow detail                                       |
-| Cross-processed impression    | Deliberate mild color shifts for an occasional visibly processed image        | An aesthetic exception; do not claim natural white balance                           |
-| Duotone print                 | Two coherent print colors used across the tonal range                         | Use rarely and deliberately; do not mistake it for an untouched photo                |
+| Look                          | How to request or apply it                               | Check before accepting                                               |
+| ----------------------------- | -------------------------------------------------------- | -------------------------------------------------------------------- |
+| Restrained natural color      | Familiar camera-like color, moderate saturation          | Default for a substantial share of the collection                    |
+| Neutral modern camera color   | Clean, relatively sharp, believable white balance        | Do not reject a realistic photo simply because it is clean           |
+| Muted documentary color       | Mildly reduced saturation with normal local contrast     | Skin retains lifelike tonal and chromatic variation                  |
+| Warm daylight balance         | Moderate warmth consistent with the sun or white balance | No automatic orange complexion or fake golden hour                   |
+| Cool daylight balance         | Slightly cooler shade, winter, or overcast rendition     | Preserve credible skin and neutral environmental objects             |
+| Faded consumer print          | Gently opened blacks and modestly subdued color          | No obligatory scratches, dust, date stamp, or fake damage            |
+| Consumer color negative       | Ordinary family-photo color, moderate contrast           | Avoid advertising-grade polishing as an automatic effect             |
+| Fine-grain negative           | Subtle luminance grain matching image resolution         | No repetitive noise pattern or pore-like grain stamps                |
+| Higher-speed film impression  | Somewhat stronger noise/grain for appropriate light      | Do not turn skin into sandpaper or erase facial structure            |
+| Slide-film contrast           | Crisper color separation in compatible lighting          | No clipped faces, neon plants, or oversaturated irises               |
+| Instant-print impression      | Soft contrast and modestly shifted colors                | No fake white border or provenance implication required              |
+| Warm highlights, cool shadows | Very mild split toning supported by existing light       | No universal amber-background/cool-face beauty template              |
+| Cool highlights, warm shadows | Alternative restrained two-tone balance                  | Consistent skin and neutral-object relationships                     |
+| Earth-toned palette           | Restrained high saturation while retaining earth hues    | Do not flatten skin or recolor unrelated surfaces independently      |
+| Pastel rendering              | Gentle tones in naturally bright scenes                  | Avoid porcelain faces or washed-out highlights                       |
+| Restrained cinematic grade    | Scene-wide subtle color/contrast shaping                 | No glowing eyes, exaggerated teal/orange, or cosmetic face sculpting |
+| Bleach-bypass impression      | Mild desaturation and increased tonal contrast           | Use rarely; keep skin and shadow detail coherent                     |
+| Cross-processing impression   | Deliberately shifted but coherent color                  | Use as a clear aesthetic exception, not a false natural look         |
+| Duotone print                 | Two print colors applied consistently                    | Deliberate rarity; never presented as an untouched photo             |
 
 ## Light and optical character
 
-| Look                     | Plausible setup                                                     | Check before accepting                                               |
-| ------------------------ | ------------------------------------------------------------------- | -------------------------------------------------------------------- |
-| Overcast softness        | Large diffuse sky source outdoors                                   | Soft shadows still anchor objects                                    |
-| Window-lit portrait      | A real window in a coherent room                                    | Light direction and room exposure agree                              |
-| Open shade               | Person shaded with daylight reflected from surroundings             | No studio rim light added without a source                           |
-| Hard midday light        | Direct sun and stronger shadows                                     | Squinting, highlights, and shadow direction make sense               |
-| Golden-hour light        | Low sun and longer shadows                                          | Occasional, not every landscape or face                              |
-| Blue-hour light          | Cooler dim ambient light near dusk or dawn                          | Exposure and noise remain plausible                                  |
-| Backlight                | Source behind subject with modest reflected fill                    | Hair glow is limited and does not trace every object uniformly       |
-| Overcast rainy scene     | Wet surfaces, diffuse sky, compatible reflections                   | Reflections agree with object placement and viewing angle            |
-| Direct phone flash       | Near-camera light in a dim ordinary setting                         | Flash falloff, background darkness, and shadows are consistent       |
-| Bounced flash            | Light plausibly reflected from a nearby wall or ceiling             | No impossible bounce source or uniformly lit enormous room           |
-| Tungsten interior        | Warm practical lights in a real interior                            | A warm room does not require unnaturally orange faces                |
-| Mixed practical light    | Plausible windows, bulbs, or street/shop lights                     | Use color differences subtly; protect facial coherence               |
-| Silhouette               | Bright background and genuinely underexposed subject                | Body outline, contact, and pose still make sense                     |
-| Mild lens flare          | Bright source in or close to the frame                              | Flare placement follows the source; no random floating light effects |
-| Mild halation impression | Slight glow close to bright highlights in a film-inspired look      | No universal halo around faces, branches, or building edges          |
-| Subtle vignette          | Slight edge darkening compatible with a lens or deliberate print    | Do not make the face look spotlighted or hide failed corners         |
-| Gentle diffusion         | Small softening around bright transitions while retaining structure | Avoid beauty blur, lost eyelids, and waxy skin                       |
+| Look                     | Plausible setup                                             | Check before accepting                                                            |
+| ------------------------ | ----------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| Overcast softness        | Large diffuse sky outdoors                                  | Soft directional shape remains; facial volume is not erased                       |
+| Side window portrait     | Existing window, appropriate room surfaces                  | Eye-socket and nose shadows agree with window direction                           |
+| Open shade               | Ambient sky and surrounding bounced light                   | No invisible editorial beauty fill or inexplicable rim                            |
+| Hard midday sun          | High direct sun with strong shape-defining shadows          | Eye squint, skin highlights, and nose shadows agree                               |
+| Ordinary studio portrait | One or more specified, physically compatible studio sources | Studio light is allowed when matched by real references, not used automatically   |
+| Golden-hour light        | Low sun, longer shadows                                     | Occasional; avoid making every AI subject sunset-lit                              |
+| Blue-hour ambient light  | Dim cooler light at twilight                                | Sensible exposure and noise; face still readable if needed                        |
+| Backlighting             | Light source behind with limited reflected fill             | No uniform glowing outline tracing every hair and shoulder                        |
+| Rain/overcast exterior   | Wet surfaces, diffuse sky, compatible reflections           | Water and reflections have plausible perspective and material response            |
+| Direct phone flash       | Near-lens source in a dim ordinary scene                    | Plausible light falloff, skin shine, and background darkness                      |
+| Bounced flash            | Light redirected by a nearby physical wall or ceiling       | Compatible shadow direction and finite fill range                                 |
+| Tungsten interior        | Warm practical sources at plausible positions               | No compulsorily orange complexion or hyper-clean shadow fill                      |
+| Mixed practical light    | Windows, bulbs, street/shop sources together                | Color mixture remains modest and consistent across face and room                  |
+| Silhouette               | Background brighter than a genuinely underexposed subject   | Only when explicitly suitable; current portraits generally require a visible face |
+| Mild optical flare       | Strong source in or near frame                              | Direction follows source; no free-floating halos                                  |
+| Mild halation            | Small bright-edge glow appropriate to print/film treatment  | No face-wide radiance or indiscriminate edge bloom                                |
+| Subtle vignette          | Believable lens/print falloff                               | Do not spotlight the face or hide flawed corners                                  |
+| Gentle optical diffusion | Slight highlight-edge softness while keeping structure      | Not skin smoothing; eyelids, nostrils, and lips remain defined                    |
 
-## Focus, motion, and exposure effects
+## Focus, exposure, and motion
 
-| Look                          | Plausible setup                                                      | Check before accepting                                                          |
-| ----------------------------- | -------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
-| Moderate shallow depth        | Subject closer than background with an appropriate lens and distance | Blur changes with depth, including through gaps around limbs                    |
-| Deep environmental focus      | Phone main-camera or stopped-down environmental composition          | Do not sharpen every distant leaf equally                                       |
-| Selective foreground softness | Near obstruction or object outside the focus plane                   | Soft area has a real spatial explanation                                        |
-| Panning                       | Camera follows a moving subject during exposure                      | Subject and directional background blur describe the same motion                |
-| Subject motion blur           | Moving person or object during a slower exposure                     | Stationary surroundings can remain steadier; limbs do not duplicate arbitrarily |
-| Slight handheld softness      | Ordinary low-light camera movement                                   | Use sparingly; not a method to hide anatomy                                     |
-| Long-exposure water           | Stable camera and moving water during a longer exposure              | Static rocks remain stable and water flows coherently                           |
-| Long-exposure light trails    | Stable camera, darkness, and moving illuminated vehicles             | Trails follow real road paths and perspective                                   |
-| Rain on a window              | View through a pane with droplets in a specific focus relationship   | Droplets attach to glass; scene beyond remains spatially coherent               |
-| Reflection composition        | Real mirror, glass, or water surface and a compatible viewpoint      | Reflection geometry and light agree with the main scene                         |
+| Look                            | Plausible setup                                              | Check before accepting                                              |
+| ------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------------- |
+| Moderate shallow depth of field | Subject closer than background, suitable optics and distance | Blur changes with depth, including behind strands or arm gaps       |
+| Deep environmental focus        | Phone main camera or stopped-down setup                      | Background can remain recognizable without universal oversharpening |
+| Selective foreground softness   | A near object outside the focus plane                        | Blur has a physically present foreground cause                      |
+| Panning                         | Camera tracks a moving subject                               | Motion directions are coherent between subject and background       |
+| Subject motion blur             | Subject moves during exposure                                | Stationary scene remains relatively steady; no duplicate anatomy    |
+| Slight handheld softness        | Ordinary low-light or movement circumstance                  | Not a method of disguising eye or mouth inconsistencies             |
+| Long-exposure water             | Stationary camera and moving water                           | Water and static rocks retain coherent relationships                |
+| Long-exposure light trails      | Fixed camera and illuminated moving vehicles                 | Trails follow road direction and viewpoint                          |
+| Rain on glass                   | Actual foreground pane with droplets                         | Droplet focus and the scene beyond have plausible depth separation  |
+| Reflection composition          | Actual mirror, glass, car panel, or water surface            | Reflected face/objects agree with camera and source light           |
 
-## Effects that need explicit creative intent
+## Effects requiring deliberate approval
 
-Heavy selective color, infrared-style false color, solarization, posterization, double exposure, extreme fisheye distortion, tilt-shift miniature effects, strong light leaks, and distressed borders can be deliberate creative photography. They are not normal defaults for this game's realistic collection. Include them only when the user requests that particular direction or approves a deliberately stylized subset. They must not replace a physically coherent photograph or misrepresent a generated asset as real.
+Strong infrared-style false color, solarization, posterization, aggressive selective color, double exposures, extreme fisheye distortion, tilt-shift miniature simulation, strong light leaks, very heavy vintage damage, and distressed borders are possible creative choices but **not defaults** for this game's real-photo comparison set. Use them only when requested or for an explicitly approved experimental subset. They never authorize bad face geometry or misleading provenance.
 
-## Batch planning
+## Batch selection and style-matching procedure
 
-Prepare a subject/category and effect plan before generation. Keep the majority natural or lightly processed; distribute monochrome, restrained film looks, and occasional cinematic or optical treatments across the rest. Treat these proportions as editorial judgment rather than a fixed product rule. Avoid assigning all portraits one style and all landscapes another.
+Before generating or selecting assets:
 
-For each planned image, record the main subject, capture situation, principal look, any compatible secondary treatment, and the category shared with real examples. After generation, inspect both the whole image and important details. For portraits, use the face-first acceptance standard in the parent skill. For downloaded assets, inspect actual content rather than deriving the category from a filename or author name.
+1. List the category (Portrait or Cars), verified source/reference, subject, framing, capture method, lighting, and primary look.
+2. Choose a real-photo comparison set that contains a comparable distribution of look, crop, facial visibility, subject type, and processing for the intended AI examples.
+3. For each AI face, run the parent skill's identity-led prompt and acceptance passes **before** any optional effect. For cars, focus on coherent physical geometry, reflection, perspective, and rendering.
+4. Once accepted, apply or select a restrained effect only if it serves the desired photographic look.
+5. Check that the effect does not systematically distinguish real from AI in the game, especially in aggregate.
+6. Use the same export size and compression rules for both labels. Do not assume JPEG artifacts, grain, or poor resolution make an image real.
+7. Keep the chosen final look stable; log material edits and preserve source and generation credits.
 
-## Prompt examples
+### Compact style brief
 
-**Documentary monochrome portrait:** An adult waiting at an ordinary bus shelter on an overcast day, weight naturally supported, one hand holding a bag strap, gaze toward the road. Eye-level phone main-camera view from a few steps away. Balanced black-and-white midtones, natural skin structure, ordinary background detail. No beauty lighting, fixed smile, exaggerated grain, or cinematic glow.
+```text
+Source/reference: [verified source or approved real reference]
+Category and subject: [Portrait or Cars; short factual description]
+Capture situation: [camera position, distance, light, focus, physical scene]
+Primary look: [one look from this file]
+Optional secondary treatment: [only when physically or editorially justified]
+Identity/geometry gate: [portrait anatomy and expression, or car geometry]
+Matching real-photo look: [how it compares with real examples]
+Provenance: [real source credit or AI generator credit; no fabricated EXIF]
+```
 
-**Restrained cinematic street photograph:** A modest residential street after rain, coherent parked cars and windows, photographed from the pavement in ordinary evening light. Slightly muted scene-wide color and controlled highlights. Keep recognizable shadow detail, restrained wet reflections, believable perspective, and no neon color wash or theatrical fog.
+## Examples for current collection
 
-**Soft film-inspired food photograph:** A partially eaten ordinary lunch on a cafe table in window light, casual framing and a few believable crumbs. Muted consumer-print color with gently open shadows and very fine grain. No glossy advertising finish, immaculate staged ingredients, or extreme blur.
+**Neutral black-and-white portrait:** A different adult person photographed from the same plausible distance and head angle as a reviewed real monochrome headshot. Distinct orbital anatomy and coherent expression, ordinary background, readable gray midtones, no exaggerated iris shine, beauty rim light, deliberate wrinkles, or strong fake grain.
 
-**Overcast monochrome landscape:** A lakeside path under a plain cloudy sky, wet stones and reeds at plausible scales. DSLR normal field of view, moderate detail, soft black-and-white rendering with open shadows. No dramatic invented clouds, over-sharpened textures, or forced sunbeams.
+**Direct-flash everyday portrait:** An adult in an ordinary room, physically plausible direct near-camera flash, subtle shadows behind the subject, face shape and eyes consistent with the flash. Do not smooth the cheeks independently of the rest of the photograph or introduce implausible catchlights.
+
+**Natural-color car photograph:** A car photographed in a believable parking area under overcast daylight, realistic wheel, glass, and body-panel geometry, consistent reflections, clean modern camera color. No requirement to make it grainy or cinematic.
+
+**Restrained film-inspired car photograph:** A car on a plausible street photographed from sidewalk height; gentle consumer-negative warmth and very subtle texture applied across the entire frame. Retain coherent reflections, perspective, shadows, and source label.
+
+**Final rule:** an effect is successful when it is believable for the capture and does not make the real/AI label easier to guess. It cannot turn a structurally unconvincing face into a convincing human.
