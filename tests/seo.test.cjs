@@ -83,7 +83,15 @@ console.log(
 
 const languages = ['fa', 'en', 'ar', 'tr', 'fr', 'ru'];
 for (const lang of languages) {
-  for (const page of ['', 'about/', 'history/', 'guide/', 'sources/']) {
+  for (const page of [
+    '',
+    'about/',
+    'history/',
+    'guide/',
+    'sources/',
+    'ai-for-business/',
+    'image-generators/',
+  ]) {
     const suffix = (lang === 'fa' ? '' : `${lang}/`) + page;
     const file = suffix + 'index.html';
     const html = fs.readFileSync('public/' + file, 'utf8');

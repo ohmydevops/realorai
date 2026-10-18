@@ -2,6 +2,8 @@
 
 ## Product and design
 
+- Whenever adding or editing user-facing text, apply the same content change in all supported site languages (Persian, English, Arabic, Turkish, French, and Russian), including article content, titles, descriptions, and other localized metadata. Do not leave new pages or text available in only some languages.
+
 - Keep this a simple, mobile-friendly English/Persian image guessing game.
 - Keep Home minimal: a compact illustration comparing analog photography and neural-network image generation, one short friendly description, and a Start game button. Keep extra headings and explanatory sections off Home.
 - Keep the existing branded title visible on every page, including the game, results, and image sources. The title links to the current language's Home.
