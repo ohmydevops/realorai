@@ -92,6 +92,8 @@ for (const lang of languages) {
     'sources/',
     'ai-for-business/',
     'image-generators/',
+    'ai-professional-portrait/',
+    'selfie-to-id-photo/',
   ]) {
     const suffix = (lang === 'fa' ? '' : `${lang}/`) + page;
     const file = suffix + 'index.html';

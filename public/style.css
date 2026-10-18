@@ -24,8 +24,10 @@
   --accent: #315b4b;
   --on-accent: #fffdf5;
   --radius: 8px;
+  --error: #a12622;
 }
 :root[data-theme='dark'] {
+  --error: #ffaaa3;
   color-scheme: dark;
   --background: #17211c;
   --surface: #24332a;
@@ -616,11 +618,6 @@ nav .control {
 .start-game:hover {
   filter: brightness(1.08);
 }
-#next {
-  background: var(--accent);
-  color: var(--on-accent);
-  font-weight: 700;
-}
 :focus-visible {
   outline: 2px solid var(--link);
   outline-offset: 4px;
@@ -681,6 +678,22 @@ nav .control {
 }
 .guide p {
   margin-top: 0;
+}
+.prompt-block {
+  margin: 12px 0;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  text-align: left;
+  font-size: 15px;
+  line-height: 1.7;
+}
+.prompt-block code {
+  font-family: monospace;
 }
 .guide > .control {
   display: flex;
@@ -825,6 +838,9 @@ nav .control {
   margin: 2px 0;
   font-size: 13px;
   overflow-wrap: anywhere;
+}
+.answer-feedback-wrong {
+  color: var(--error);
 }
 .history-review time {
   display: block;

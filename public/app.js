@@ -303,7 +303,9 @@ function exhausted() {
 }
 function answerControls(record) {
   return record
-    ? '<div class="answer-feedback" role="status" tabindex="-1" id="answer-feedback"><strong>' +
+    ? '<div class="answer-feedback' +
+        (record.choice === record.real ? '' : ' answer-feedback-wrong') +
+        '" role="status" tabindex="-1" id="answer-feedback"><strong>' +
         (record.choice === record.real
           ? '✓ ' + copy.correct
           : '× ' + copy.wrong) +
