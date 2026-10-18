@@ -37,7 +37,7 @@ Do not generate a new AI portrait from text alone for this project. Every candid
 1. **Find and inspect the real reference.** Download real Unsplash portraits first when expanding the collection. Inspect the actual pixels, not just search-result text or metadata. Record source URL, creator, original asset ID, and permitted usage/attribution. Do not treat all Unsplash images as a single visual style.
 2. **Classify its capture situation.** Note framing, head angle, gaze direction, expression type, camera height and distance, lighting source, focus behavior, background complexity, image processing, and natural constraints. Notice how facial features work together; avoid extracting a supposed universal face template from one photograph.
 3. **Check the intended real/AI match.** Use references comparable to the AI target in age range, presentation, background, lighting, crop, and capture style. Do not systematically allocate neutral-background DSLR headshots to AI and candid phones to real, or vice versa.
-4. **Build a new facial identity blueprint.** Describe a *different individual* with the anatomical decisions outlined below. Keep the useful capture characteristics from the reference while changing the person's identity and any requested clothing or environmental details. Do not intentionally recreate an identifiable reference person's face.
+4. **Build a new facial identity blueprint.** Describe a _different individual_ with the anatomical decisions outlined below. Keep the useful capture characteristics from the reference while changing the person's identity and any requested clothing or environmental details. Do not intentionally recreate an identifiable reference person's face.
 5. **Construct one coherent photographic prompt.** Lead with the individual and their facial structure, then expression, pose and setting, camera position, illumination, focus, and processing. Include only details that materially guide the output.
 6. **Generate according to the tool's actual capabilities.** Supply the reviewed local reference image/path to the generation tool when the tool supports reference input. If reference input is unavailable, disclose that limitation; do not claim that a path or image was supplied when it was not. Do not silently bypass the reference requirement.
 7. **Review, reject, or revise.** Apply the face-first, full-image, and collection-level checks below. A good reference does not guarantee a usable generated face. If review fails and no edit is requested or authorized, report the issue; do not automatically create more batches.
@@ -72,7 +72,7 @@ Make the traits anatomically compatible. For example, changes in orbital depth a
 
 > An adult woman in her early forties with a slightly broad upper face narrowing to a soft jaw, somewhat deep-set eyes with heavier upper lids, a low-to-medium nasal bridge with a rounded tip, and subtly uneven cheek volume. A calm, direct expression. No obvious makeup; ordinary uncovered hair. She should look like a particular person rather than a standardized fashion model.
 
-This is a *pattern* for writing identity briefs, not a reusable default face. Change the underlying anatomy in the next portrait. Do not keep repeating these same traits.
+This is a _pattern_ for writing identity briefs, not a reusable default face. Change the underlying anatomy in the next portrait. Do not keep repeating these same traits.
 
 ### Facial diversity without stereotypes
 
@@ -265,18 +265,18 @@ A candidate is **not** accepted merely because it avoids gross anatomical errors
 
 ### Reject/repair table
 
-| Area | Accept when | Repair or reject when |
-| --- | --- | --- |
-| Facial identity | Facial proportions create a coherent, specific person | Generic beauty-template face or features inconsistent with the same skull |
-| Periorbital system | Eyes, lids, sockets, brows, gaze, cheeks, and light agree | Stylized or repeated eye shape, pasted-on outline, incompatible lid/gaze anatomy |
-| Expression | Mouth, cheeks, eyelids, brows, and jaw support one moment | Frozen eye region with animated mouth, compressed corners, repeated posed smile |
-| Age and tissue | Facial volume, soft tissue, texture, and neck agree | Youthful base face with decorative age lines or implausible tissue transitions |
-| Skin and hair | Local detail follows anatomy, optics, and illumination | Texture stamps, plastic retouch, fabricated blemishes, fused hair edges |
-| Scene and pose | Support, object contact, hands, and setting are coherent | Floating contact, impossible grip, warped furniture or geometry |
-| Camera and light | Perspective, focus, white balance, shadows, and processing belong together | Composite-looking face, cutout blur, implausible catchlights or beauty spotlight |
-| Batch diversity | Real anatomical differences between generated individuals | Same underlying face with superficial changes |
-| Real/AI matching | Comparable capture styles across labels | Consistent label clues from backgrounds, crops, sharpness, effects, or compression |
-| Provenance | Source, credits, IDs, and labels are accurate | Visual guesses used as provenance or fabricated photo history |
+| Area               | Accept when                                                                | Repair or reject when                                                              |
+| ------------------ | -------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| Facial identity    | Facial proportions create a coherent, specific person                      | Generic beauty-template face or features inconsistent with the same skull          |
+| Periorbital system | Eyes, lids, sockets, brows, gaze, cheeks, and light agree                  | Stylized or repeated eye shape, pasted-on outline, incompatible lid/gaze anatomy   |
+| Expression         | Mouth, cheeks, eyelids, brows, and jaw support one moment                  | Frozen eye region with animated mouth, compressed corners, repeated posed smile    |
+| Age and tissue     | Facial volume, soft tissue, texture, and neck agree                        | Youthful base face with decorative age lines or implausible tissue transitions     |
+| Skin and hair      | Local detail follows anatomy, optics, and illumination                     | Texture stamps, plastic retouch, fabricated blemishes, fused hair edges            |
+| Scene and pose     | Support, object contact, hands, and setting are coherent                   | Floating contact, impossible grip, warped furniture or geometry                    |
+| Camera and light   | Perspective, focus, white balance, shadows, and processing belong together | Composite-looking face, cutout blur, implausible catchlights or beauty spotlight   |
+| Batch diversity    | Real anatomical differences between generated individuals                  | Same underlying face with superficial changes                                      |
+| Real/AI matching   | Comparable capture styles across labels                                    | Consistent label clues from backgrounds, crops, sharpness, effects, or compression |
+| Provenance         | Source, credits, IDs, and labels are accurate                              | Visual guesses used as provenance or fabricated photo history                      |
 
 A candidate with a **fundamental facial-identity, eye-region, expression, or face–scene failure does not pass** simply because its background, hands, and skin texture are good. Correct the cause, not the cosmetic symptom. If a targeted edit is appropriate, preserve all unrelated image content. When repeated revisions still fail, reject the candidate and state the limitation. Do not generate new batches without authorization.
 

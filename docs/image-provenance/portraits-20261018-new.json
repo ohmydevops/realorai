@@ -1,0 +1,1499 @@
+{
+  "generator": "OpenAI ImageGen built-in tool",
+  "label": "AI",
+  "status": "50 revised AI portraits activated at the user’s explicit request on 2026-10-18; prior editorial review observations retained.",
+  "correction": "Reject waxy/pastel skin, embossed microtexture and repeating pores; reviewed real photographic references.",
+  "entries": [
+    {
+      "index": 1,
+      "prompt": "Create one ordinary unretouched camera photograph of a different person, using the attached REAL photograph as the reference for actual photographic rendering, neutral wall, camera distance and coherent broad daylight. New identity: a woman around 38 with a long rectangular face, moderately deep-set brown eyes under straight low brows, a slightly convex narrow nasal bridge, lean cheeks and a blunt chin. Dark hair casually tied back, plain charcoal cotton top. Head-and-shoulders, eye-level, relaxed mouth and gaze just beside lens. Render skin as it is captured in the real reference: subtle irregular tonal variation, small localized shine, clear but understated detail, with natural optical softness rather than a uniformly detailed surface. Preserve the hierarchy of detail: eyes and lashes in focus, cheek surface less sharply resolved, hair and clothing consistent with the same camera. Normal color and exposure. No waxy, rubbery, gummy, pastel, painterly or airbrushed skin; no repeating stippled pore pattern, embossed wrinkles, edge-enhanced microtexture, plastic specular sheets, beauty-filter smoothing, glossy doll eyes or sculpted beauty lighting. Do not copy the reference person's identity. No text, no collage.",
+      "reference": "public/photos/portrait-20261018-001.jpg",
+      "sourceFile": "C:/Users/ohmydevops/.codex/generated_images/01a14e21-af43-7b20-8ccd-153eaa029018/exec-5ed77d60-e057-4cee-a3f0-38ba51c755f4.png",
+      "id": "ai-portrait-review-20261018-new-001",
+      "outputFile": "public/ai images/portrait-20261018-new-001.jpg",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-N9HrmdEH_js",
+        "source": "https://unsplash.com/photos/woman-with-glasses-wearing-a-white-shirt-N9HrmdEH_js",
+        "credit": "Vitaly Gariev",
+        "download": "https://images.unsplash.com/photo-1758600587730-a11917c13b85"
+      },
+      "width": 1000,
+      "height": 563,
+      "bytes": 44715,
+      "sha256": "3a55655b035da19e03b46f894ba9c69eb3be2eec0dc94de6a2abee40fc0115d4",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reviewed full photograph and enlarged face. Held outside gameplay: repetitive framing and recurring facial designs; no blanket realism acceptance.",
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 2,
+      "reference": "public/photos/portrait-20261018-001.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult woman aged 46, with round face, low nasal bridge, full cheeks and small tapered chin. Dark brown complexion. Loosely tied black hair. Plain cream everyday top. Brief modest smile, cheek and lower-lid changes consistent. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Normal color and exposure. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-dfcc37fc-b2c8-4683-bbc4-751b1a49811b.png",
+      "outputFile": "public/ai images/portrait-20261018-new-002.jpg",
+      "id": "ai-portrait-review-20261018-new-002",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-N9HrmdEH_js",
+        "source": "https://unsplash.com/photos/woman-with-glasses-wearing-a-white-shirt-N9HrmdEH_js",
+        "credit": "Vitaly Gariev",
+        "download": "https://images.unsplash.com/photo-1758600587730-a11917c13b85"
+      },
+      "width": 1000,
+      "height": 563,
+      "bytes": 44225,
+      "sha256": "8a424a937c2d301f27cb47b687a8c6e0188fdca3087e170d11bf364fab48cb11",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reviewed full photograph and enlarged face. Held outside gameplay: repetitive framing and recurring facial designs; no blanket realism acceptance.",
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 3,
+      "reference": "public/photos/portrait-20261018-002.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult woman aged 57, with angular face, high bridge, close upper-lid folds and square jaw. Medium brown complexion. Short gray hair. Plain olive everyday top. Quiet serious expression, head gently turned. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Normal color and exposure. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-4279e96c-0570-4ee5-81a4-6974cfdd2316.png",
+      "outputFile": "public/ai images/portrait-20261018-new-003.jpg",
+      "id": "ai-portrait-review-20261018-new-003",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-_JAAQZ2wt5I",
+        "source": "https://unsplash.com/photos/a-woman-in-a-pink-shirt-posing-for-a-picture-_JAAQZ2wt5I",
+        "credit": "Dynamic Wang",
+        "download": "https://images.unsplash.com/photo-1695757002354-8bca71d087c7"
+      },
+      "width": 1000,
+      "height": 667,
+      "bytes": 55800,
+      "sha256": "12cd8c2fd62127a5aabcd2939d73d66c4855e1cafe89ab7e3b158106caeafe6c",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reviewed full photograph and enlarged face. Held outside gameplay: repetitive framing and recurring facial designs; no blanket realism acceptance.",
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 4,
+      "reference": "public/photos/portrait-20261018-001.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult woman aged 68, with broad forehead tapering to narrow jaw, hooded eyes and rounded nasal tip. Fair complexion. Loose natural curls. Plain brown everyday top. Attentive neutral mouth and gaze just beside camera. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Normal color and exposure. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-e9e9e7a9-c5bd-4d9a-a5b9-7df476a7c0bd.png",
+      "outputFile": "public/ai images/portrait-20261018-new-004.jpg",
+      "id": "ai-portrait-review-20261018-new-004",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-N9HrmdEH_js",
+        "source": "https://unsplash.com/photos/woman-with-glasses-wearing-a-white-shirt-N9HrmdEH_js",
+        "credit": "Vitaly Gariev",
+        "download": "https://images.unsplash.com/photo-1758600587730-a11917c13b85"
+      },
+      "width": 1000,
+      "height": 563,
+      "bytes": 54044,
+      "sha256": "019dd786493ed4facfb65f9b086edc7c0e11b28c8dfae47791c97342553b6093",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reviewed full photograph and enlarged face. Held outside gameplay: repetitive framing and recurring facial designs; no blanket realism acceptance.",
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 5,
+      "reference": "public/photos/portrait-20261018-005.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult man aged 31, with short wide face, open eyelids, broad nose and firm chin. Light complexion. Ordinary short hair. Plain blue everyday top. Relaxed face looking toward lens, lips together. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Normal color and exposure. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-5a6b6223-a7d7-449c-94bd-35cbb481529d.png",
+      "outputFile": "public/ai images/portrait-20261018-new-005.jpg",
+      "id": "ai-portrait-review-20261018-new-005",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-QoXMdJcHYSw",
+        "source": "https://unsplash.com/photos/a-smiling-man-with-arms-crossed-QoXMdJcHYSw",
+        "credit": "Beatriz Cattel",
+        "download": "https://images.unsplash.com/photo-1770058428276-7ca3d2f98568"
+      },
+      "width": 667,
+      "height": 1000,
+      "bytes": 70733,
+      "sha256": "99d546df5d704352942af1d3ce6fc15c608549d0413466209a4a11db9eae98e8",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reviewed full photograph and enlarged face. Held outside gameplay: repetitive framing and recurring facial designs; no blanket realism acceptance.",
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 6,
+      "reference": "public/photos/portrait-20261018-001.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult woman aged 42, with narrow temples, prominent mid-cheeks, long nose and soft lower jaw. Medium olive complexion. Short dark bob. Plain gray everyday top. Brief modest smile, cheek and lower-lid changes consistent. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Normal color and exposure. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-847bc34f-62df-4ca8-aebc-dab4ab1fc62b.png",
+      "outputFile": "public/ai images/portrait-20261018-new-006.jpg",
+      "id": "ai-portrait-review-20261018-new-006",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-N9HrmdEH_js",
+        "source": "https://unsplash.com/photos/woman-with-glasses-wearing-a-white-shirt-N9HrmdEH_js",
+        "credit": "Vitaly Gariev",
+        "download": "https://images.unsplash.com/photo-1758600587730-a11917c13b85"
+      },
+      "width": 1000,
+      "height": 563,
+      "bytes": 46728,
+      "sha256": "5a4d954f085c111154eafc0dab460d947ee81b50f90bb2c5989cef172c171513",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reviewed full photograph and enlarged face. Held outside gameplay: repetitive framing and recurring facial designs; no blanket realism acceptance.",
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 7,
+      "reference": "public/photos/portrait-20261018-002.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult woman aged 53, with broad lower face, small deep-set eyes, concave nasal bridge and projecting chin. Dark brown complexion. Uncovered shoulder-length wavy brown hair. Plain cream everyday top. Quiet serious expression, head gently turned. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Normal color and exposure. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-85b438fa-aa59-4f7b-8db6-1b68a3464145.png",
+      "outputFile": "public/ai images/portrait-20261018-new-007.jpg",
+      "id": "ai-portrait-review-20261018-new-007",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-_JAAQZ2wt5I",
+        "source": "https://unsplash.com/photos/a-woman-in-a-pink-shirt-posing-for-a-picture-_JAAQZ2wt5I",
+        "credit": "Dynamic Wang",
+        "download": "https://images.unsplash.com/photo-1695757002354-8bca71d087c7"
+      },
+      "width": 1000,
+      "height": 667,
+      "bytes": 51760,
+      "sha256": "054e7a6da691458d7267727344600300631215b2b25e07a9efaa7729c2aee5b1",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reviewed full photograph and enlarged face. Held outside gameplay: repetitive framing and recurring facial designs; no blanket realism acceptance.",
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 8,
+      "reference": "public/photos/portrait-20261018-001.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult woman aged 64, with compact oval face, low eyebrows, wide mouth and softly rounded cheek volumes. Medium brown complexion. Loosely tied black hair. Plain olive everyday top. Attentive neutral mouth and gaze just beside camera. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Normal color and exposure. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-49a15d84-c1c9-4735-8d06-1bdb00999dc1.png",
+      "outputFile": "public/ai images/portrait-20261018-new-008.jpg",
+      "id": "ai-portrait-review-20261018-new-008",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-N9HrmdEH_js",
+        "source": "https://unsplash.com/photos/woman-with-glasses-wearing-a-white-shirt-N9HrmdEH_js",
+        "credit": "Vitaly Gariev",
+        "download": "https://images.unsplash.com/photo-1758600587730-a11917c13b85"
+      },
+      "width": 1000,
+      "height": 563,
+      "bytes": 50261,
+      "sha256": "093177a9f510c70d5a67afcfa9b0834c60db11e9c5dcade1299c354685d4dc26",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reviewed full photograph and enlarged face. Held outside gameplay: repetitive framing and recurring facial designs; no blanket realism acceptance.",
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 9,
+      "reference": "public/photos/portrait-20261018-002.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult woman aged 27, with long midface, gently projecting cheekbones, low-set brows and narrow chin. Fair complexion. Short gray hair. Plain brown everyday top. Relaxed face looking toward lens, lips together. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Restrained consumer-film color. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-6ec94afc-fd95-4ea8-a542-c820ecc4bf95.png",
+      "outputFile": "public/ai images/portrait-20261018-new-009.jpg",
+      "id": "ai-portrait-review-20261018-new-009",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-_JAAQZ2wt5I",
+        "source": "https://unsplash.com/photos/a-woman-in-a-pink-shirt-posing-for-a-picture-_JAAQZ2wt5I",
+        "credit": "Dynamic Wang",
+        "download": "https://images.unsplash.com/photo-1695757002354-8bca71d087c7"
+      },
+      "width": 1000,
+      "height": 667,
+      "bytes": 53908,
+      "sha256": "bdafd5b05193b0ef213741f8b9e6cb435c61d50a5c2592cb0024b6a2b86cfd72",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reviewed full photograph and enlarged face. Held outside gameplay: repetitive framing and recurring facial designs; no blanket realism acceptance.",
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 10,
+      "reference": "public/photos/portrait-20261018-005.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult man aged 38, with long oval face, shallow eye sockets, straight narrow nose and rounded jaw. Light complexion. Ordinary short hair. Plain blue everyday top. Brief modest smile, cheek and lower-lid changes consistent. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Balanced monochrome midtones. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-6cf1fbfa-9fd8-49f2-bfab-f6409994ae45.png",
+      "outputFile": "public/ai images/portrait-20261018-new-010.jpg",
+      "id": "ai-portrait-review-20261018-new-010",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-QoXMdJcHYSw",
+        "source": "https://unsplash.com/photos/a-smiling-man-with-arms-crossed-QoXMdJcHYSw",
+        "credit": "Beatriz Cattel",
+        "download": "https://images.unsplash.com/photo-1770058428276-7ca3d2f98568"
+      },
+      "width": 667,
+      "height": 1000,
+      "bytes": 79597,
+      "sha256": "067f0d6a823c0f6c886c0b7ac89c00dbb56a05584de1efe527a763f4c1e8c165",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reviewed full photograph and enlarged face. Held outside gameplay: repetitive framing and recurring facial designs; no blanket realism acceptance.",
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 11,
+      "reference": "public/photos/portrait-20261018-002.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult woman aged 49, with broad cheekbones, deep-set eyes, short projecting nose and wide chin. Medium olive complexion. Straight dark hair. Plain gray everyday top. Quiet serious expression, head gently turned. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Normal color and exposure. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-2db98333-552e-43f6-b5ca-78b44002f43b.png",
+      "outputFile": "public/ai images/portrait-20261018-new-011.jpg",
+      "id": "ai-portrait-review-20261018-new-011",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-_JAAQZ2wt5I",
+        "source": "https://unsplash.com/photos/a-woman-in-a-pink-shirt-posing-for-a-picture-_JAAQZ2wt5I",
+        "credit": "Dynamic Wang",
+        "download": "https://images.unsplash.com/photo-1695757002354-8bca71d087c7"
+      },
+      "width": 1000,
+      "height": 667,
+      "bytes": 60495,
+      "sha256": "4dbce2a6a880f18857375532c622eff92a896c3b0f3ef0ed812986f11fa42600",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reviewed full photograph and enlarged face. Held outside gameplay: repetitive framing and recurring facial designs; no blanket realism acceptance.",
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 12,
+      "reference": "public/photos/portrait-20261018-001.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult woman aged 60, with round face, low nasal bridge, full cheeks and small tapered chin. Dark brown complexion. Short dark bob. Plain cream everyday top. Attentive neutral mouth and gaze just beside camera. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Normal color and exposure. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-e3776404-517b-412d-b190-f435ba93e913.png",
+      "outputFile": "public/ai images/portrait-20261018-new-012.jpg",
+      "id": "ai-portrait-review-20261018-new-012",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-N9HrmdEH_js",
+        "source": "https://unsplash.com/photos/woman-with-glasses-wearing-a-white-shirt-N9HrmdEH_js",
+        "credit": "Vitaly Gariev",
+        "download": "https://images.unsplash.com/photo-1758600587730-a11917c13b85"
+      },
+      "width": 1000,
+      "height": 563,
+      "bytes": 44167,
+      "sha256": "f05d7b3e943a8b948cb03de76ea8b79afad24ac6f7b71aacc9e6c8d2a9656392",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reviewed full photograph and enlarged face. Held outside gameplay: repetitive framing and recurring facial designs; no blanket realism acceptance.",
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 13,
+      "reference": "public/photos/portrait-20261018-002.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult woman aged 71, with angular face, high bridge, close upper-lid folds and square jaw. Medium brown complexion. Uncovered shoulder-length wavy brown hair. Plain olive everyday top. Relaxed face looking toward lens, lips together. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Normal color and exposure. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-2105a91f-366d-4881-8bfc-0fcc4a1ece3e.png",
+      "outputFile": "public/ai images/portrait-20261018-new-013.jpg",
+      "id": "ai-portrait-review-20261018-new-013",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-_JAAQZ2wt5I",
+        "source": "https://unsplash.com/photos/a-woman-in-a-pink-shirt-posing-for-a-picture-_JAAQZ2wt5I",
+        "credit": "Dynamic Wang",
+        "download": "https://images.unsplash.com/photo-1695757002354-8bca71d087c7"
+      },
+      "width": 1000,
+      "height": 667,
+      "bytes": 58497,
+      "sha256": "c30f28e39d9e670ce47fca51d85f5100ebd4303f23bf9d778f63e563336adf01",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reviewed full photograph and enlarged face. Held outside gameplay: repetitive framing and recurring facial designs; no blanket realism acceptance.",
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 14,
+      "reference": "public/photos/portrait-20261018-001.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult woman aged 34, with broad forehead tapering to narrow jaw, hooded eyes and rounded nasal tip. Fair complexion. Loosely tied black hair. Plain brown everyday top. Brief modest smile, cheek and lower-lid changes consistent. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Normal color and exposure. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-77e293db-580e-4203-8976-c4606ea6e709.png",
+      "outputFile": "public/ai images/portrait-20261018-new-014.jpg",
+      "id": "ai-portrait-review-20261018-new-014",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-N9HrmdEH_js",
+        "source": "https://unsplash.com/photos/woman-with-glasses-wearing-a-white-shirt-N9HrmdEH_js",
+        "credit": "Vitaly Gariev",
+        "download": "https://images.unsplash.com/photo-1758600587730-a11917c13b85"
+      },
+      "width": 1000,
+      "height": 563,
+      "bytes": 44698,
+      "sha256": "ba31f716adb1294be9606c4b298d04f4ee4d0eee51288c98c8745ce2e59e3790",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reviewed full photograph and enlarged face. Held outside gameplay: repetitive framing and recurring facial designs; no blanket realism acceptance.",
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 15,
+      "reference": "public/photos/portrait-20261018-005.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult man aged 45, with short wide face, open eyelids, broad nose and firm chin. Light complexion. Ordinary short hair. Plain blue everyday top. Quiet serious expression, head gently turned. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Normal color and exposure. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-3ef66272-8f8b-40e4-b5b5-93904ceb8e07.png",
+      "outputFile": "public/ai images/portrait-20261018-new-015.jpg",
+      "id": "ai-portrait-review-20261018-new-015",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-QoXMdJcHYSw",
+        "source": "https://unsplash.com/photos/a-smiling-man-with-arms-crossed-QoXMdJcHYSw",
+        "credit": "Beatriz Cattel",
+        "download": "https://images.unsplash.com/photo-1770058428276-7ca3d2f98568"
+      },
+      "width": 667,
+      "height": 1000,
+      "bytes": 91459,
+      "sha256": "e22d56fd30cacdff725659777b7f28806611310476ccf22fb5ba76fc5ef97428",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reviewed full photograph and enlarged face. Held outside gameplay: repetitive framing and recurring facial designs; no blanket realism acceptance.",
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 16,
+      "reference": "public/photos/portrait-20261018-001.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult woman aged 56, with narrow temples, prominent mid-cheeks, long nose and soft lower jaw. Medium olive complexion. Loose natural curls. Plain gray everyday top. Attentive neutral mouth and gaze just beside camera. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Normal color and exposure. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-f9f99ec5-1d9e-4a19-830e-39351d019297.png",
+      "outputFile": "public/ai images/portrait-20261018-new-016.jpg",
+      "id": "ai-portrait-review-20261018-new-016",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-N9HrmdEH_js",
+        "source": "https://unsplash.com/photos/woman-with-glasses-wearing-a-white-shirt-N9HrmdEH_js",
+        "credit": "Vitaly Gariev",
+        "download": "https://images.unsplash.com/photo-1758600587730-a11917c13b85"
+      },
+      "width": 1000,
+      "height": 563,
+      "bytes": 61535,
+      "sha256": "e971e2bae73aab19ce106fa94f4ecb92d33c873fdb868a6994c6df7815a909dd",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reviewed full photograph and enlarged face. Held outside gameplay: repetitive framing and recurring facial designs; no blanket realism acceptance.",
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 17,
+      "reference": "public/photos/portrait-20261018-002.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult woman aged 67, with broad lower face, small deep-set eyes, concave nasal bridge and projecting chin. Dark brown complexion. Straight dark hair. Plain cream everyday top. Relaxed face looking toward lens, lips together. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Normal color and exposure. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-f675e0e6-1031-4ef0-b342-d6db135ec0f4.png",
+      "outputFile": "public/ai images/portrait-20261018-new-017.jpg",
+      "id": "ai-portrait-review-20261018-new-017",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-_JAAQZ2wt5I",
+        "source": "https://unsplash.com/photos/a-woman-in-a-pink-shirt-posing-for-a-picture-_JAAQZ2wt5I",
+        "credit": "Dynamic Wang",
+        "download": "https://images.unsplash.com/photo-1695757002354-8bca71d087c7"
+      },
+      "width": 1000,
+      "height": 667,
+      "bytes": 54889,
+      "sha256": "385015624db72d2744a644c0b82e2b7a4d69dc5664c5dd755bbbfb0216d0e3dc",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reviewed full photograph and enlarged face. Held outside gameplay: repetitive framing and recurring facial designs; no blanket realism acceptance.",
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 18,
+      "reference": "public/photos/portrait-20261018-001.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult woman aged 30, with compact oval face, low eyebrows, wide mouth and softly rounded cheek volumes. Medium brown complexion. Short dark bob. Plain olive everyday top. Brief modest smile, cheek and lower-lid changes consistent. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Restrained consumer-film color. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-88c4226b-13ff-4fe9-9755-0bd71418c87d.png",
+      "outputFile": "public/ai images/portrait-20261018-new-018.jpg",
+      "id": "ai-portrait-review-20261018-new-018",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-N9HrmdEH_js",
+        "source": "https://unsplash.com/photos/woman-with-glasses-wearing-a-white-shirt-N9HrmdEH_js",
+        "credit": "Vitaly Gariev",
+        "download": "https://images.unsplash.com/photo-1758600587730-a11917c13b85"
+      },
+      "width": 1000,
+      "height": 563,
+      "bytes": 43185,
+      "sha256": "d974716ada6666bb522cdb0dffc566518ef027ac91325e6ccc9a0cfeba08780d",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reviewed full photograph and enlarged face. Held outside gameplay: repetitive framing and recurring facial designs; no blanket realism acceptance.",
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 19,
+      "reference": "public/photos/portrait-20261018-002.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult woman aged 41, with long midface, gently projecting cheekbones, low-set brows and narrow chin. Fair complexion. Uncovered shoulder-length wavy brown hair. Plain brown everyday top. Quiet serious expression, head gently turned. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Normal color and exposure. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-e19a8a69-a5d3-418f-8d7e-c7e2db0a30a6.png",
+      "outputFile": "public/ai images/portrait-20261018-new-019.jpg",
+      "id": "ai-portrait-review-20261018-new-019",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-_JAAQZ2wt5I",
+        "source": "https://unsplash.com/photos/a-woman-in-a-pink-shirt-posing-for-a-picture-_JAAQZ2wt5I",
+        "credit": "Dynamic Wang",
+        "download": "https://images.unsplash.com/photo-1695757002354-8bca71d087c7"
+      },
+      "width": 1000,
+      "height": 667,
+      "bytes": 59409,
+      "sha256": "725dbd1c4d419bf7eff354ae95f9b4d540544e25c390dc48043d43099101c71e",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reviewed full photograph and enlarged face. Held outside gameplay: repetitive framing and recurring facial designs; no blanket realism acceptance.",
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 20,
+      "reference": "public/photos/portrait-20261018-005.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult man aged 52, with long oval face, shallow eye sockets, straight narrow nose and rounded jaw. Light complexion. Ordinary short hair. Plain blue everyday top. Attentive neutral mouth and gaze just beside camera. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Balanced monochrome midtones. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-92ec8585-dc40-4d5f-9fb4-f65bd4130688.png",
+      "outputFile": "public/ai images/portrait-20261018-new-020.jpg",
+      "id": "ai-portrait-review-20261018-new-020",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-QoXMdJcHYSw",
+        "source": "https://unsplash.com/photos/a-smiling-man-with-arms-crossed-QoXMdJcHYSw",
+        "credit": "Beatriz Cattel",
+        "download": "https://images.unsplash.com/photo-1770058428276-7ca3d2f98568"
+      },
+      "width": 667,
+      "height": 1000,
+      "bytes": 84716,
+      "sha256": "971ba1999eeb2a91451c46811d1c433ca950e02ab1cea62603947177d59969d7",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reviewed full photograph and enlarged face. Held outside gameplay: repetitive framing and recurring facial designs; no blanket realism acceptance.",
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 21,
+      "reference": "public/photos/portrait-20261018-002.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult woman aged 63, with broad cheekbones, deep-set eyes, short projecting nose and wide chin. Medium olive complexion. Short gray hair. Plain gray everyday top. Relaxed face looking toward lens, lips together. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Normal color and exposure. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-b0f8d7b1-1b59-4df8-87d5-ab2ba57e2ea4.png",
+      "outputFile": "public/ai images/portrait-20261018-new-021.jpg",
+      "id": "ai-portrait-review-20261018-new-021",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-_JAAQZ2wt5I",
+        "source": "https://unsplash.com/photos/a-woman-in-a-pink-shirt-posing-for-a-picture-_JAAQZ2wt5I",
+        "credit": "Dynamic Wang",
+        "download": "https://images.unsplash.com/photo-1695757002354-8bca71d087c7"
+      },
+      "width": 1000,
+      "height": 667,
+      "bytes": 69859,
+      "sha256": "8ab5e3a57d817abebcd390e6aa6aa455b88e2d4fee489c70d93a4491994aaa6d",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reviewed full photograph and enlarged face. Held outside gameplay: repetitive framing and recurring facial designs; no blanket realism acceptance.",
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 22,
+      "reference": "public/photos/portrait-20261018-001.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult woman aged 26, with round face, low nasal bridge, full cheeks and small tapered chin. Dark brown complexion. Loose natural curls. Plain cream everyday top. Brief modest smile, cheek and lower-lid changes consistent. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Normal color and exposure. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-b88f50fe-70ef-4dd8-92a4-9a8c1e6bd911.png",
+      "outputFile": "public/ai images/portrait-20261018-new-022.jpg",
+      "id": "ai-portrait-review-20261018-new-022",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-N9HrmdEH_js",
+        "source": "https://unsplash.com/photos/woman-with-glasses-wearing-a-white-shirt-N9HrmdEH_js",
+        "credit": "Vitaly Gariev",
+        "download": "https://images.unsplash.com/photo-1758600587730-a11917c13b85"
+      },
+      "width": 1000,
+      "height": 563,
+      "bytes": 49339,
+      "sha256": "598a89ecee807190130e0ec2fdd182f0bdd67a4862e0dd39760ea4ac3b5fe614",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reviewed full photograph and enlarged face. Held outside gameplay: repetitive framing and recurring facial designs; no blanket realism acceptance.",
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 23,
+      "reference": "public/photos/portrait-20261018-002.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult woman aged 37, with angular face, high bridge, close upper-lid folds and square jaw. Medium brown complexion. Straight dark hair. Plain olive everyday top. Quiet serious expression, head gently turned. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Normal color and exposure. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-2873ccb1-9674-4bf9-bbe9-fb5f634358c5.png",
+      "outputFile": "public/ai images/portrait-20261018-new-023.jpg",
+      "id": "ai-portrait-review-20261018-new-023",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-_JAAQZ2wt5I",
+        "source": "https://unsplash.com/photos/a-woman-in-a-pink-shirt-posing-for-a-picture-_JAAQZ2wt5I",
+        "credit": "Dynamic Wang",
+        "download": "https://images.unsplash.com/photo-1695757002354-8bca71d087c7"
+      },
+      "width": 1000,
+      "height": 667,
+      "bytes": 52729,
+      "sha256": "b5cf3561e996b5ad69cf34ee4de3d27c33eace3a75e73344c8f7dad7b7b1179a",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reviewed full photograph and enlarged face. Held outside gameplay: repetitive framing and recurring facial designs; no blanket realism acceptance.",
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 24,
+      "reference": "public/photos/portrait-20261018-001.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult woman aged 48, with broad forehead tapering to narrow jaw, hooded eyes and rounded nasal tip. Fair complexion. Short dark bob. Plain brown everyday top. Attentive neutral mouth and gaze just beside camera. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Normal color and exposure. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-b60d6b3d-3375-429c-b33b-48a7401a4584.png",
+      "outputFile": "public/ai images/portrait-20261018-new-024.jpg",
+      "id": "ai-portrait-review-20261018-new-024",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-N9HrmdEH_js",
+        "source": "https://unsplash.com/photos/woman-with-glasses-wearing-a-white-shirt-N9HrmdEH_js",
+        "credit": "Vitaly Gariev",
+        "download": "https://images.unsplash.com/photo-1758600587730-a11917c13b85"
+      },
+      "width": 1000,
+      "height": 563,
+      "bytes": 44220,
+      "sha256": "672408ecd7261ec007ae7d6efa6556cbb7e40d2ba3e236e95667dab6f06d10bc",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reviewed full photograph and enlarged face. Held outside gameplay: repetitive framing and recurring facial designs; no blanket realism acceptance.",
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 25,
+      "reference": "public/photos/portrait-20261018-005.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult man aged 59, with short wide face, open eyelids, broad nose and firm chin. Light complexion. Ordinary short hair. Plain blue everyday top. Relaxed face looking toward lens, lips together. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Normal color and exposure. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-11ee4855-d2fe-4986-84f8-f44954f1da22.png",
+      "outputFile": "public/ai images/portrait-20261018-new-025.jpg",
+      "id": "ai-portrait-review-20261018-new-025",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-QoXMdJcHYSw",
+        "source": "https://unsplash.com/photos/a-smiling-man-with-arms-crossed-QoXMdJcHYSw",
+        "credit": "Beatriz Cattel",
+        "download": "https://images.unsplash.com/photo-1770058428276-7ca3d2f98568"
+      },
+      "width": 667,
+      "height": 1000,
+      "bytes": 71179,
+      "sha256": "b9bc8b591024c690229336557f19e8b48545d0f21ebac76e5782304501b31654",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reviewed full photograph and enlarged face. Held outside gameplay: repetitive framing and recurring facial designs; no blanket realism acceptance.",
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 26,
+      "reference": "public/photos/portrait-20261018-001.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult woman aged 70, with narrow temples, prominent mid-cheeks, long nose and soft lower jaw. Medium olive complexion. Loosely tied black hair. Plain gray everyday top. Brief modest smile, cheek and lower-lid changes consistent. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Normal color and exposure. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-a929c618-48b8-4260-8a3f-21b084157f76.png",
+      "outputFile": "public/ai images/portrait-20261018-new-026.jpg",
+      "id": "ai-portrait-review-20261018-new-026",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-N9HrmdEH_js",
+        "source": "https://unsplash.com/photos/woman-with-glasses-wearing-a-white-shirt-N9HrmdEH_js",
+        "credit": "Vitaly Gariev",
+        "download": "https://images.unsplash.com/photo-1758600587730-a11917c13b85"
+      },
+      "width": 1000,
+      "height": 563,
+      "bytes": 53161,
+      "sha256": "a0de6bf051834a5c39ce1d5721ca85bb88e1bfbcf4b28177f4b5c573efb03079",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reviewed full photograph and enlarged face. Held outside gameplay: repetitive framing and recurring facial designs; no blanket realism acceptance.",
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 27,
+      "reference": "public/photos/portrait-20261018-002.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult woman aged 33, with broad lower face, small deep-set eyes, concave nasal bridge and projecting chin. Dark brown complexion. Short gray hair. Plain cream everyday top. Quiet serious expression, head gently turned. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Restrained consumer-film color. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-174625f0-bcdd-49b0-869b-3d848a4117c5.png",
+      "outputFile": "public/ai images/portrait-20261018-new-027.jpg",
+      "id": "ai-portrait-review-20261018-new-027",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-_JAAQZ2wt5I",
+        "source": "https://unsplash.com/photos/a-woman-in-a-pink-shirt-posing-for-a-picture-_JAAQZ2wt5I",
+        "credit": "Dynamic Wang",
+        "download": "https://images.unsplash.com/photo-1695757002354-8bca71d087c7"
+      },
+      "width": 1000,
+      "height": 667,
+      "bytes": 45409,
+      "sha256": "e15c540f4241f8ae3efb45d453ca469ece2a873f4abcffa1524a1f9f423fe535",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reviewed full photograph and enlarged face. Held outside gameplay: repetitive framing and recurring facial designs; no blanket realism acceptance.",
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 28,
+      "reference": "public/photos/portrait-20261018-001.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult woman aged 44, with compact oval face, low eyebrows, wide mouth and softly rounded cheek volumes. Medium brown complexion. Loose natural curls. Plain olive everyday top. Attentive neutral mouth and gaze just beside camera. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Normal color and exposure. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-4bd0d842-14e6-43b7-ac09-c17f0e1b16a2.png",
+      "outputFile": "public/ai images/portrait-20261018-new-028.jpg",
+      "id": "ai-portrait-review-20261018-new-028",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-N9HrmdEH_js",
+        "source": "https://unsplash.com/photos/woman-with-glasses-wearing-a-white-shirt-N9HrmdEH_js",
+        "credit": "Vitaly Gariev",
+        "download": "https://images.unsplash.com/photo-1758600587730-a11917c13b85"
+      },
+      "width": 1000,
+      "height": 563,
+      "bytes": 50286,
+      "sha256": "7be46513b923aeb79e9d3072ac0fa73c0fc5e05ebc317f2e0df3e885cbf06de2",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reviewed full photograph and enlarged face. Held outside gameplay: repetitive framing and recurring facial designs; no blanket realism acceptance.",
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 29,
+      "reference": "public/photos/portrait-20261018-002.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult woman aged 55, with long midface, gently projecting cheekbones, low-set brows and narrow chin. Fair complexion. Straight dark hair. Plain brown everyday top. Relaxed face looking toward lens, lips together. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Normal color and exposure. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-2397b428-b0b0-4b6e-a388-7aacf91b06e1.png",
+      "outputFile": "public/ai images/portrait-20261018-new-029.jpg",
+      "id": "ai-portrait-review-20261018-new-029",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-_JAAQZ2wt5I",
+        "source": "https://unsplash.com/photos/a-woman-in-a-pink-shirt-posing-for-a-picture-_JAAQZ2wt5I",
+        "credit": "Dynamic Wang",
+        "download": "https://images.unsplash.com/photo-1695757002354-8bca71d087c7"
+      },
+      "width": 1000,
+      "height": 667,
+      "bytes": 55501,
+      "sha256": "7b6964bf6afe93b36e0db598532a9cecdc6a4ab3e65cb58879bb13e443b813a8",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reviewed full photograph and enlarged face. Held outside gameplay: repetitive framing and recurring facial designs; no blanket realism acceptance.",
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 30,
+      "reference": "public/photos/portrait-20261018-005.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult man aged 66, with long oval face, shallow eye sockets, straight narrow nose and rounded jaw. Light complexion. Ordinary short hair. Plain blue everyday top. Brief modest smile, cheek and lower-lid changes consistent. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Balanced monochrome midtones. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-3625d5b3-eaa2-4693-a7be-9e77dd2e4943.png",
+      "outputFile": "public/ai images/portrait-20261018-new-030.jpg",
+      "id": "ai-portrait-review-20261018-new-030",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-QoXMdJcHYSw",
+        "source": "https://unsplash.com/photos/a-smiling-man-with-arms-crossed-QoXMdJcHYSw",
+        "credit": "Beatriz Cattel",
+        "download": "https://images.unsplash.com/photo-1770058428276-7ca3d2f98568"
+      },
+      "width": 667,
+      "height": 1000,
+      "bytes": 82327,
+      "sha256": "26ad8d5f4942c7a91cfcca93e82334a3173cf015590b37d47b7eff3f87ed70e7",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reviewed full photograph and enlarged face. Held outside gameplay: repetitive framing and recurring facial designs; no blanket realism acceptance.",
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 31,
+      "reference": "public/photos/portrait-20261018-002.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult woman aged 29, with broad cheekbones, deep-set eyes, short projecting nose and wide chin. Medium olive complexion. Uncovered shoulder-length wavy brown hair. Plain gray everyday top. Quiet serious expression, head gently turned. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Normal color and exposure. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-bafb1110-e0b1-4639-8d5a-a4e6d3d7ddd4.png",
+      "outputFile": "public/ai images/portrait-20261018-new-031.jpg",
+      "id": "ai-portrait-review-20261018-new-031",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-_JAAQZ2wt5I",
+        "source": "https://unsplash.com/photos/a-woman-in-a-pink-shirt-posing-for-a-picture-_JAAQZ2wt5I",
+        "credit": "Dynamic Wang",
+        "download": "https://images.unsplash.com/photo-1695757002354-8bca71d087c7"
+      },
+      "width": 1000,
+      "height": 667,
+      "bytes": 68947,
+      "sha256": "f99198e887d4eae690bb175567d0b44a44c4d996248245361ae84bc397ce503a",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reviewed full photograph and enlarged face. Held outside gameplay: repetitive framing and recurring facial designs; no blanket realism acceptance.",
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 32,
+      "reference": "public/photos/portrait-20261018-001.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult woman aged 40, with round face, low nasal bridge, full cheeks and small tapered chin. Dark brown complexion. Loosely tied black hair. Plain cream everyday top. Attentive neutral mouth and gaze just beside camera. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Normal color and exposure. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-bc596efa-f962-463b-a05d-1a80aad2b68e.png",
+      "outputFile": "public/ai images/portrait-20261018-new-032.jpg",
+      "id": "ai-portrait-review-20261018-new-032",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-N9HrmdEH_js",
+        "source": "https://unsplash.com/photos/woman-with-glasses-wearing-a-white-shirt-N9HrmdEH_js",
+        "credit": "Vitaly Gariev",
+        "download": "https://images.unsplash.com/photo-1758600587730-a11917c13b85"
+      },
+      "width": 1000,
+      "height": 563,
+      "bytes": 45111,
+      "sha256": "c072406c2d7622de7e2490dbc0931ba5b6b3efa4ad8efc3bd3690b4942f5a094",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reject joint gameplay use with similar candidate: recurring facial design despite changed hair or age.",
+        "similar_candidate": 2,
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 33,
+      "reference": "public/photos/portrait-20261018-002.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult woman aged 51, with angular face, high bridge, close upper-lid folds and square jaw. Medium brown complexion. Short gray hair. Plain olive everyday top. Relaxed face looking toward lens, lips together. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Normal color and exposure. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-75fb54fb-d915-4638-9f62-84e54dc673ab.png",
+      "outputFile": "public/ai images/portrait-20261018-new-033.jpg",
+      "id": "ai-portrait-review-20261018-new-033",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-_JAAQZ2wt5I",
+        "source": "https://unsplash.com/photos/a-woman-in-a-pink-shirt-posing-for-a-picture-_JAAQZ2wt5I",
+        "credit": "Dynamic Wang",
+        "download": "https://images.unsplash.com/photo-1695757002354-8bca71d087c7"
+      },
+      "width": 1000,
+      "height": 667,
+      "bytes": 54628,
+      "sha256": "902d1528109b0f80ac3539646cd92c503045f6f55910ad6bcff78d90bcd7b079",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reject joint gameplay use with similar candidate: recurring facial design despite changed hair or age.",
+        "similar_candidate": 3,
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 34,
+      "reference": "public/photos/portrait-20261018-001.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult woman aged 62, with broad forehead tapering to narrow jaw, hooded eyes and rounded nasal tip. Fair complexion. Loose natural curls. Plain brown everyday top. Brief modest smile, cheek and lower-lid changes consistent. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Normal color and exposure. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-ad2ad1b8-5628-476a-b927-e0652dd88419.png",
+      "outputFile": "public/ai images/portrait-20261018-new-034.jpg",
+      "id": "ai-portrait-review-20261018-new-034",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-N9HrmdEH_js",
+        "source": "https://unsplash.com/photos/woman-with-glasses-wearing-a-white-shirt-N9HrmdEH_js",
+        "credit": "Vitaly Gariev",
+        "download": "https://images.unsplash.com/photo-1758600587730-a11917c13b85"
+      },
+      "width": 1000,
+      "height": 563,
+      "bytes": 56052,
+      "sha256": "40b01df965a09920e62bd1073bfe38aef8edcd744c6a0c69b23f762fd8dbe66a",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reject joint gameplay use with similar candidate: recurring facial design despite changed hair or age.",
+        "similar_candidate": 4,
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 35,
+      "reference": "public/photos/portrait-20261018-005.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult man aged 25, with short wide face, open eyelids, broad nose and firm chin. Light complexion. Ordinary short hair. Plain blue everyday top. Quiet serious expression, head gently turned. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Normal color and exposure. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-3df5ea6d-83b0-4b83-9349-e180eb8a9d9a.png",
+      "outputFile": "public/ai images/portrait-20261018-new-035.jpg",
+      "id": "ai-portrait-review-20261018-new-035",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-QoXMdJcHYSw",
+        "source": "https://unsplash.com/photos/a-smiling-man-with-arms-crossed-QoXMdJcHYSw",
+        "credit": "Beatriz Cattel",
+        "download": "https://images.unsplash.com/photo-1770058428276-7ca3d2f98568"
+      },
+      "width": 667,
+      "height": 1000,
+      "bytes": 75304,
+      "sha256": "2aa4a08149c2238efd9466d3c87caf8713d5ff2ad71081cd193ea3310312b0dc",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reviewed full photograph and enlarged face. Held outside gameplay: repetitive framing and recurring facial designs; no blanket realism acceptance.",
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 36,
+      "reference": "public/photos/portrait-20261018-001.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult woman aged 36, with narrow temples, prominent mid-cheeks, long nose and soft lower jaw. Medium olive complexion. Short dark bob. Plain gray everyday top. Attentive neutral mouth and gaze just beside camera. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Restrained consumer-film color. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-3386db95-2947-49ac-8e99-b4368bd06277.png",
+      "outputFile": "public/ai images/portrait-20261018-new-036.jpg",
+      "id": "ai-portrait-review-20261018-new-036",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-N9HrmdEH_js",
+        "source": "https://unsplash.com/photos/woman-with-glasses-wearing-a-white-shirt-N9HrmdEH_js",
+        "credit": "Vitaly Gariev",
+        "download": "https://images.unsplash.com/photo-1758600587730-a11917c13b85"
+      },
+      "width": 1000,
+      "height": 563,
+      "bytes": 48456,
+      "sha256": "ce993d39df4b0f1aa4cef4591fbf1d04731f8d66ea8e269301fbaf1651145445",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reject joint gameplay use with similar candidate: recurring facial design despite changed hair or age.",
+        "similar_candidate": 6,
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 37,
+      "reference": "public/photos/portrait-20261018-002.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult woman aged 47, with broad lower face, small deep-set eyes, concave nasal bridge and projecting chin. Dark brown complexion. Uncovered shoulder-length wavy brown hair. Plain cream everyday top. Relaxed face looking toward lens, lips together. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Normal color and exposure. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-c19712d4-0c07-4ca3-89fe-c32943953777.png",
+      "outputFile": "public/ai images/portrait-20261018-new-037.jpg",
+      "id": "ai-portrait-review-20261018-new-037",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-_JAAQZ2wt5I",
+        "source": "https://unsplash.com/photos/a-woman-in-a-pink-shirt-posing-for-a-picture-_JAAQZ2wt5I",
+        "credit": "Dynamic Wang",
+        "download": "https://images.unsplash.com/photo-1695757002354-8bca71d087c7"
+      },
+      "width": 1000,
+      "height": 667,
+      "bytes": 54063,
+      "sha256": "00093e81f6d2d16bbca7b776d582e8dd2be24157eae0975a291bacc49b5cbd61",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reject joint gameplay use with similar candidate: recurring facial design despite changed hair or age.",
+        "similar_candidate": 7,
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 38,
+      "reference": "public/photos/portrait-20261018-001.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult woman aged 58, with compact oval face, low eyebrows, wide mouth and softly rounded cheek volumes. Medium brown complexion. Loosely tied black hair. Plain olive everyday top. Brief modest smile, cheek and lower-lid changes consistent. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Normal color and exposure. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-656638ce-862a-44e9-9aa8-1595367e0b98.png",
+      "outputFile": "public/ai images/portrait-20261018-new-038.jpg",
+      "id": "ai-portrait-review-20261018-new-038",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-N9HrmdEH_js",
+        "source": "https://unsplash.com/photos/woman-with-glasses-wearing-a-white-shirt-N9HrmdEH_js",
+        "credit": "Vitaly Gariev",
+        "download": "https://images.unsplash.com/photo-1758600587730-a11917c13b85"
+      },
+      "width": 1000,
+      "height": 563,
+      "bytes": 46547,
+      "sha256": "5eb09c9d7c3a65284cbaeb9062b6b84050f688642c7e6461d9050b40de52b7fd",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reviewed full photograph and enlarged face. Held outside gameplay: repetitive framing and recurring facial designs; no blanket realism acceptance.",
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 39,
+      "reference": "public/photos/portrait-20261018-002.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult woman aged 69, with long midface, gently projecting cheekbones, low-set brows and narrow chin. Fair complexion. Short gray hair. Plain brown everyday top. Quiet serious expression, head gently turned. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Normal color and exposure. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-2d3e3d7d-a885-4a74-8c5f-02e2fef18e2e.png",
+      "outputFile": "public/ai images/portrait-20261018-new-039.jpg",
+      "id": "ai-portrait-review-20261018-new-039",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-_JAAQZ2wt5I",
+        "source": "https://unsplash.com/photos/a-woman-in-a-pink-shirt-posing-for-a-picture-_JAAQZ2wt5I",
+        "credit": "Dynamic Wang",
+        "download": "https://images.unsplash.com/photo-1695757002354-8bca71d087c7"
+      },
+      "width": 1000,
+      "height": 667,
+      "bytes": 49897,
+      "sha256": "012064c7dabd02da134403e60761b2f62bb3f29be516cd1cf0233363419136df",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reviewed full photograph and enlarged face. Held outside gameplay: repetitive framing and recurring facial designs; no blanket realism acceptance.",
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 40,
+      "reference": "public/photos/portrait-20261018-005.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult man aged 32, with long oval face, shallow eye sockets, straight narrow nose and rounded jaw. Light complexion. Ordinary short hair. Plain blue everyday top. Attentive neutral mouth and gaze just beside camera. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Balanced monochrome midtones. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-239cfde1-ac9e-47ab-a261-839a45a805f7.png",
+      "outputFile": "public/ai images/portrait-20261018-new-040.jpg",
+      "id": "ai-portrait-review-20261018-new-040",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-QoXMdJcHYSw",
+        "source": "https://unsplash.com/photos/a-smiling-man-with-arms-crossed-QoXMdJcHYSw",
+        "credit": "Beatriz Cattel",
+        "download": "https://images.unsplash.com/photo-1770058428276-7ca3d2f98568"
+      },
+      "width": 667,
+      "height": 1000,
+      "bytes": 73349,
+      "sha256": "347476c4a407fc452df78a9b3ff0825b49a7e1ad05713eefdb7a79eef00b483e",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reject joint gameplay use with similar candidate: recurring facial design despite changed hair or age.",
+        "similar_candidate": 10,
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 41,
+      "reference": "public/photos/portrait-20261018-002.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult woman aged 43, with broad cheekbones, deep-set eyes, short projecting nose and wide chin. Medium olive complexion. Straight dark hair. Plain gray everyday top. Relaxed face looking toward lens, lips together. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Normal color and exposure. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-f7ca6ad4-aa09-4736-8d78-b1f91dcc3042.png",
+      "outputFile": "public/ai images/portrait-20261018-new-041.jpg",
+      "id": "ai-portrait-review-20261018-new-041",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-_JAAQZ2wt5I",
+        "source": "https://unsplash.com/photos/a-woman-in-a-pink-shirt-posing-for-a-picture-_JAAQZ2wt5I",
+        "credit": "Dynamic Wang",
+        "download": "https://images.unsplash.com/photo-1695757002354-8bca71d087c7"
+      },
+      "width": 1000,
+      "height": 667,
+      "bytes": 69163,
+      "sha256": "86f5d6de361f71a1e67de0f8f24af77234e0be99bc66cbd95a3c355c675d97a7",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reject joint gameplay use with similar candidate: recurring facial design despite changed hair or age.",
+        "similar_candidate": 11,
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 42,
+      "reference": "public/photos/portrait-20261018-001.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult woman aged 54, with round face, low nasal bridge, full cheeks and small tapered chin. Dark brown complexion. Short dark bob. Plain cream everyday top. Brief modest smile, cheek and lower-lid changes consistent. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Normal color and exposure. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-e037caee-7ebf-477a-93fd-0fc64ddc5cbe.png",
+      "outputFile": "public/ai images/portrait-20261018-new-042.jpg",
+      "id": "ai-portrait-review-20261018-new-042",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-N9HrmdEH_js",
+        "source": "https://unsplash.com/photos/woman-with-glasses-wearing-a-white-shirt-N9HrmdEH_js",
+        "credit": "Vitaly Gariev",
+        "download": "https://images.unsplash.com/photo-1758600587730-a11917c13b85"
+      },
+      "width": 1000,
+      "height": 563,
+      "bytes": 41688,
+      "sha256": "09ebdd0b1f607de2a2791c49565fc9cac4e90a82c94ad41aaed2e44ddb502649",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reject joint gameplay use with similar candidate: recurring facial design despite changed hair or age.",
+        "similar_candidate": 12,
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 43,
+      "reference": "public/photos/portrait-20261018-002.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult woman aged 65, with angular face, high bridge, close upper-lid folds and square jaw. Medium brown complexion. Uncovered shoulder-length wavy brown hair. Plain olive everyday top. Quiet serious expression, head gently turned. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Normal color and exposure. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-d5e21470-f4b1-476c-81e0-e44b0de73216.png",
+      "outputFile": "public/ai images/portrait-20261018-new-043.jpg",
+      "id": "ai-portrait-review-20261018-new-043",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-_JAAQZ2wt5I",
+        "source": "https://unsplash.com/photos/a-woman-in-a-pink-shirt-posing-for-a-picture-_JAAQZ2wt5I",
+        "credit": "Dynamic Wang",
+        "download": "https://images.unsplash.com/photo-1695757002354-8bca71d087c7"
+      },
+      "width": 1000,
+      "height": 667,
+      "bytes": 56360,
+      "sha256": "78a60a3f0e1ee7e05dd9a95888f54f856d7df35c82e97452d1bb79f671213998",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reject joint gameplay use with similar candidate: recurring facial design despite changed hair or age.",
+        "similar_candidate": 13,
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 44,
+      "reference": "public/photos/portrait-20261018-001.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult woman aged 28, with broad forehead tapering to narrow jaw, hooded eyes and rounded nasal tip. Fair complexion. Loosely tied black hair. Plain brown everyday top. Attentive neutral mouth and gaze just beside camera. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Normal color and exposure. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-8e6f85af-f066-4a63-88df-0e97bb1e0086.png",
+      "outputFile": "public/ai images/portrait-20261018-new-044.jpg",
+      "id": "ai-portrait-review-20261018-new-044",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-N9HrmdEH_js",
+        "source": "https://unsplash.com/photos/woman-with-glasses-wearing-a-white-shirt-N9HrmdEH_js",
+        "credit": "Vitaly Gariev",
+        "download": "https://images.unsplash.com/photo-1758600587730-a11917c13b85"
+      },
+      "width": 1000,
+      "height": 563,
+      "bytes": 44498,
+      "sha256": "3bde97f94a4136dc7fc59e66fb4f2cb47bea998ea212288e849ffe2d8f755a61",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reviewed full photograph and enlarged face. Held outside gameplay: repetitive framing and recurring facial designs; no blanket realism acceptance.",
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 45,
+      "reference": "public/photos/portrait-20261018-005.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult man aged 39, with short wide face, open eyelids, broad nose and firm chin. Light complexion. Ordinary short hair. Plain blue everyday top. Relaxed face looking toward lens, lips together. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Restrained consumer-film color. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-89729bee-f1ad-450a-8745-fb24fad54fc9.png",
+      "outputFile": "public/ai images/portrait-20261018-new-045.jpg",
+      "id": "ai-portrait-review-20261018-new-045",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-QoXMdJcHYSw",
+        "source": "https://unsplash.com/photos/a-smiling-man-with-arms-crossed-QoXMdJcHYSw",
+        "credit": "Beatriz Cattel",
+        "download": "https://images.unsplash.com/photo-1770058428276-7ca3d2f98568"
+      },
+      "width": 667,
+      "height": 1000,
+      "bytes": 78270,
+      "sha256": "f104c15a73d2172dc5ff07d4539501de5a0034801c37051f60f00bc071ca2222",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reviewed full photograph and enlarged face. Held outside gameplay: repetitive framing and recurring facial designs; no blanket realism acceptance.",
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 46,
+      "reference": "public/photos/portrait-20261018-001.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult woman aged 50, with narrow temples, prominent mid-cheeks, long nose and soft lower jaw. Medium olive complexion. Loose natural curls. Plain gray everyday top. Brief modest smile, cheek and lower-lid changes consistent. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Normal color and exposure. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-e090f1ac-34a9-42dd-827e-7862ff750d49.png",
+      "outputFile": "public/ai images/portrait-20261018-new-046.jpg",
+      "id": "ai-portrait-review-20261018-new-046",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-N9HrmdEH_js",
+        "source": "https://unsplash.com/photos/woman-with-glasses-wearing-a-white-shirt-N9HrmdEH_js",
+        "credit": "Vitaly Gariev",
+        "download": "https://images.unsplash.com/photo-1758600587730-a11917c13b85"
+      },
+      "width": 1000,
+      "height": 563,
+      "bytes": 52378,
+      "sha256": "54ca33b803d296af56e97a7b3d2c083e91dfda2bb1666cbac2de266a7c747dfc",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reject joint gameplay use with similar candidate: recurring facial design despite changed hair or age.",
+        "similar_candidate": 16,
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 47,
+      "reference": "public/photos/portrait-20261018-002.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult woman aged 61, with broad lower face, small deep-set eyes, concave nasal bridge and projecting chin. Dark brown complexion. Straight dark hair. Plain cream everyday top. Quiet serious expression, head gently turned. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Normal color and exposure. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-8fef3efd-7b37-4832-8cec-afe059a7d3fc.png",
+      "outputFile": "public/ai images/portrait-20261018-new-047.jpg",
+      "id": "ai-portrait-review-20261018-new-047",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-_JAAQZ2wt5I",
+        "source": "https://unsplash.com/photos/a-woman-in-a-pink-shirt-posing-for-a-picture-_JAAQZ2wt5I",
+        "credit": "Dynamic Wang",
+        "download": "https://images.unsplash.com/photo-1695757002354-8bca71d087c7"
+      },
+      "width": 1000,
+      "height": 667,
+      "bytes": 54285,
+      "sha256": "d3caddeed82ac59092a33e065d157d86861714354a8e8010f3efed3da15a2e0d",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reject joint gameplay use with similar candidate: recurring facial design despite changed hair or age.",
+        "similar_candidate": 17,
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 48,
+      "reference": "public/photos/portrait-20261018-001.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult woman aged 24, with compact oval face, low eyebrows, wide mouth and softly rounded cheek volumes. Medium brown complexion. Short dark bob. Plain olive everyday top. Attentive neutral mouth and gaze just beside camera. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Normal color and exposure. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-c3a737df-689f-441d-9898-e54b66f6c594.png",
+      "outputFile": "public/ai images/portrait-20261018-new-048.jpg",
+      "id": "ai-portrait-review-20261018-new-048",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-N9HrmdEH_js",
+        "source": "https://unsplash.com/photos/woman-with-glasses-wearing-a-white-shirt-N9HrmdEH_js",
+        "credit": "Vitaly Gariev",
+        "download": "https://images.unsplash.com/photo-1758600587730-a11917c13b85"
+      },
+      "width": 1000,
+      "height": 563,
+      "bytes": 40376,
+      "sha256": "7b7c45bafffd0d37ed99abb7b0bd43df13c52f16f83d9704455b491176c48f27",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reject joint gameplay use with similar candidate: recurring facial design despite changed hair or age.",
+        "similar_candidate": 18,
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 49,
+      "reference": "public/photos/portrait-20261018-002.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult woman aged 35, with long midface, gently projecting cheekbones, low-set brows and narrow chin. Fair complexion. Uncovered shoulder-length wavy brown hair. Plain brown everyday top. Relaxed face looking toward lens, lips together. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Normal color and exposure. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-bb780b8a-5be8-45c5-8434-92ad9d391d6d.png",
+      "outputFile": "public/ai images/portrait-20261018-new-049.jpg",
+      "id": "ai-portrait-review-20261018-new-049",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-_JAAQZ2wt5I",
+        "source": "https://unsplash.com/photos/a-woman-in-a-pink-shirt-posing-for-a-picture-_JAAQZ2wt5I",
+        "credit": "Dynamic Wang",
+        "download": "https://images.unsplash.com/photo-1695757002354-8bca71d087c7"
+      },
+      "width": 1000,
+      "height": 667,
+      "bytes": 56166,
+      "sha256": "2e26d41ab64b011a57b985d90908d735b9122f5275101524cc4231406e8dc294",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reject joint gameplay use with similar candidate: recurring facial design despite changed hair or age.",
+        "similar_candidate": 19,
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    },
+    {
+      "index": 50,
+      "reference": "public/photos/portrait-20261018-005.jpg",
+      "prompt": "One ordinary unretouched camera photograph of a NEW individual. Supplied real photograph is the reference for photographic rendering, neutral wall, camera perspective and broad daylight; change the person's identity completely. Adult man aged 46, with long oval face, shallow eye sockets, straight narrow nose and rounded jaw. Light complexion. Ordinary short hair. Plain blue everyday top. Brief modest smile, cheek and lower-lid changes consistent. Head-and-shoulders near eye level; anatomically coherent individual face and supported posture. Skin captured as in the REAL photo: subtle irregular tonal variation and restrained detail, natural optical softness with eyes in focus and cheeks less sharply resolved. Small localized shine only. Hair, clothing and face rendered by one consistent camera. Balanced monochrome midtones. No repeating stippled pore pattern, embossed wrinkles, airbrush smoothing, waxy or rubbery pastel skin, painted face, plastic specular sheets, glossy doll eyes, beauty lighting or microcontrast enhancement. No text or watermark; one person, one photograph.",
+      "sourceFile": "C:\\Users\\ohmydevops\\.codex\\generated_images\\01a14e21-af43-7b20-8ccd-153eaa029018\\exec-0fc6fa51-8c60-4c24-b273-e96d9dcdc784.png",
+      "outputFile": "public/ai images/portrait-20261018-new-050.jpg",
+      "id": "ai-portrait-review-20261018-new-050",
+      "category": {
+        "en": "Portrait",
+        "fa": "چهره"
+      },
+      "real": false,
+      "active": true,
+      "reference_provenance": {
+        "id": "unsplash-QoXMdJcHYSw",
+        "source": "https://unsplash.com/photos/a-smiling-man-with-arms-crossed-QoXMdJcHYSw",
+        "credit": "Beatriz Cattel",
+        "download": "https://images.unsplash.com/photo-1770058428276-7ca3d2f98568"
+      },
+      "width": 667,
+      "height": 1000,
+      "bytes": 90100,
+      "sha256": "c0d4e92de2bc712ee096965f9043e915f961d85b9a252df8ec39eca620a46394",
+      "review": {
+        "gameplay_approved": false,
+        "note": "Reviewed full photograph and enlarged face. Held outside gameplay: repetitive framing and recurring facial designs; no blanket realism acceptance.",
+        "activation": "User explicitly requested activation and push on 2026-10-18 after review limitations were disclosed."
+      }
+    }
+  ],
+  "export_policy": {
+    "format": "JPEG",
+    "longest_edge": 1000,
+    "maximum_bytes": 143360,
+    "quality_steps": [85, 82, 79, 76, 73, 70, 67],
+    "optimize": true,
+    "preserve_aspect_ratio": true
+  },
+  "file_size_distribution": {
+    "new_ai": {
+      "count": 50,
+      "min": 40376,
+      "p10": 44220,
+      "median": 54174,
+      "p90": 78270,
+      "max": 91459
+    },
+    "existing_real_portraits": {
+      "count": 470,
+      "min": 27910,
+      "p10": 51736,
+      "median": 83456.5,
+      "p90": 120343,
+      "max": 143283
+    },
+    "assessment": "New batch is smaller and more uniform due to simple backgrounds and framing. Do not activate wholesale; no padding or artificial delays applied."
+  },
+  "initial_batch": "Stopped after user rejected waxy/pastel facial texture. Initial candidates excluded from delivery."
+}
